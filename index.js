@@ -23,11 +23,7 @@ app.use((err, req, res, next)=>{
 });
 console.log(process.env.CLIENT_PORT);
 
-app.use(cors({
-    origin:['http://localhost:3000', 'https://expense-tracker-dug07fy90-gagans-projects-00cb1a77.vercel.app/'],
-    credentials:true
-    }
-));
+app.use(cors());
 
 app.get('/',(req, res)=>{
     res.status(200).send("Welcome to the Auth-service GET Page");

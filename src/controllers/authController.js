@@ -59,11 +59,29 @@ export const loginUser = async(req, res)=>{
     try{
         const result = await pool.query(`SELECT * from users where EMAIL=$1`, [email]);
         if(!result.rows.length>0){
-            res.status(404).json({message:"User not registered!"});
+            return res.status(404).json({message:"User not registered!"});
+        }
+        console.log("Value of fetched password:\n",result.rows[0].password);
+        const isValidPassword = await bcrypt.compare(password, result.rows[0].password);
+        
+        if(!isValidPassword){
+            return res.status(401).json({message:"Wrong password"});
         }
         
-        
+        //now generate tokens and session with redis   
+        const accessToken = jwt.sign({email}, process.env.SECRET,{expiresIn:process.env.ACCESS_EXPIRY});
 
+        const refreshToken = jwt.sign({email}, process.env.REFRESH_SECRET,{expiresIn:process.env.ACCESS_EXPIRY});
+
+        await redisClient.set(`refresh:${email}`, refreshToken,{EX:Number(process.env.REDIS_REFRESH_EXPIRY)});
+
+        await redisClient.set(`session:${email}`, accessToken, {EX:3600});
+
+        return res.status(200).json({
+            message:"Logged In",
+            accessToken,
+            refreshToken
+        })
     }catch(err){
         logger.error("Error caught at Login step:\n",err);
     }

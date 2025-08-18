@@ -325,3 +325,233 @@
 {"level":"info","message":"Auth service running on 5000","timestamp":"2025-08-01T10:55:34.342Z"}
 {"level":"info","message":"Auth service running on 5000","timestamp":"2025-08-01T11:06:55.361Z"}
 {"level":"info","message":"Auth service running on 5000","timestamp":"2025-08-01T11:20:40.542Z"}
+{"level":"info","message":"Auth service running on 5000","timestamp":"2025-08-01T12:04:40.068Z"}
+{"level":"info","message":"Auth service running on 5000","timestamp":"2025-08-01T12:18:36.734Z"}
+{"level":"info","message":"Auth service running on 5000","timestamp":"2025-08-01T12:19:38.732Z"}
+{"level":"info","message":"Auth service running on 5000","timestamp":"2025-08-01T12:20:18.818Z"}
+{"level":"info","message":"Auth service running on 5000","timestamp":"2025-08-01T12:20:26.420Z"}
+{"level":"info","message":"Auth service running on 5000","timestamp":"2025-08-01T12:22:04.445Z"}
+{"level":"info","message":"Auth service running on 5000","timestamp":"2025-08-01T12:22:32.527Z"}
+{"level":"info","message":"Auth service running on 5000","timestamp":"2025-08-01T12:22:56.829Z"}
+{"level":"info","message":"Auth service running on 5000","timestamp":"2025-08-01T12:23:04.340Z"}
+{"level":"info","message":"Auth service running on 5000","timestamp":"2025-08-01T12:23:18.686Z"}
+{"level":"info","message":"Auth service running on 5000","timestamp":"2025-08-01T12:23:36.832Z"}
+{"level":"info","message":"Auth service running on 5000","timestamp":"2025-08-01T12:23:45.399Z"}
+{"level":"info","message":"Auth service running on 5000","timestamp":"2025-08-01T12:24:03.077Z"}
+{"level":"info","message":"Auth service running on 5000","timestamp":"2025-08-01T12:24:14.150Z"}
+{"level":"info","message":"Auth service running on 5000","timestamp":"2025-08-01T12:24:41.655Z"}
+{"level":"info","message":"Auth service running on 5000","timestamp":"2025-08-01T12:24:45.911Z"}
+{"level":"info","message":"Auth service running on 5000","timestamp":"2025-08-01T12:25:30.460Z"}
+{"level":"info","message":"Auth service running on 5000","timestamp":"2025-08-01T12:25:54.030Z"}
+{"level":"info","message":"Auth service running on 5000","timestamp":"2025-08-01T12:26:00.396Z"}
+{"level":"error","message":"Error caught at Login step:\n option maxAge is invalid","stack":"TypeError: option maxAge is invalid\n    at Object.serialize (C:\\Code\\RealTime_Personal_Finance_Dashboard\\server\\auth-service\\node_modules\\cookie\\index.js:209:13)\n    at res.cookie (C:\\Code\\RealTime_Personal_Finance_Dashboard\\server\\auth-service\\node_modules\\express\\lib\\response.js:777:36)\n    at loginUser (file:///C:/Code/RealTime_Personal_Finance_Dashboard/server/auth-service/src/controllers/authController.js:79:13)\n    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)","timestamp":"2025-08-01T12:36:20.820Z"}
+{"level":"info","message":"Auth service running on 5000","timestamp":"2025-08-01T12:37:17.025Z"}
+{"level":"error","message":"Error caught at Login step:\n option maxAge is invalid","stack":"TypeError: option maxAge is invalid\n    at Object.serialize (C:\\Code\\RealTime_Personal_Finance_Dashboard\\server\\auth-service\\node_modules\\cookie\\index.js:209:13)\n    at res.cookie (C:\\Code\\RealTime_Personal_Finance_Dashboard\\server\\auth-service\\node_modules\\express\\lib\\response.js:777:36)\n    at loginUser (file:///C:/Code/RealTime_Personal_Finance_Dashboard/server/auth-service/src/controllers/authController.js:79:13)\n    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)","timestamp":"2025-08-01T12:37:26.830Z"}
+{"level":"info","message":"Auth service running on 5000","timestamp":"2025-08-01T12:38:16.683Z"}
+{"level":"error","message":"Error caught at Login step:\n option maxAge is invalid","stack":"TypeError: option maxAge is invalid\n    at Object.serialize (C:\\Code\\RealTime_Personal_Finance_Dashboard\\server\\auth-service\\node_modules\\cookie\\index.js:209:13)\n    at res.cookie (C:\\Code\\RealTime_Personal_Finance_Dashboard\\server\\auth-service\\node_modules\\express\\lib\\response.js:777:36)\n    at loginUser (file:///C:/Code/RealTime_Personal_Finance_Dashboard/server/auth-service/src/controllers/authController.js:79:13)\n    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)","timestamp":"2025-08-01T12:38:22.328Z"}
+{"level":"info","message":"Auth service running on 5000","timestamp":"2025-08-01T12:40:08.223Z"}
+{"level":"info","message":"Auth service running on 5000","timestamp":"2025-08-01T12:41:00.404Z"}
+{"level":"info","message":"Auth service running on 5000","timestamp":"2025-08-01T12:41:24.415Z"}
+{"level":"info","message":"Auth service running on 5000","timestamp":"2025-08-01T12:42:28.198Z"}
+{"level":"info","message":"Auth service running on 5000","timestamp":"2025-08-01T12:44:29.333Z"}
+{"level":"info","message":"Auth service running on 5000","timestamp":"2025-08-01T12:45:42.066Z"}
+{"level":"info","message":"Auth service running on 5000","timestamp":"2025-08-01T12:46:18.472Z"}
+{"level":"info","message":"Auth service running on 5000","timestamp":"2025-08-01T12:46:55.969Z"}
+{"level":"info","message":"Auth service running on 5000","timestamp":"2025-08-01T12:57:45.461Z"}
+{"level":"info","message":"Auth service running on 5000","timestamp":"2025-08-01T12:58:27.442Z"}
+{"level":"info","message":"Auth service running on 5000","timestamp":"2025-08-01T12:58:48.022Z"}
+{"level":"info","message":"Auth service running on 5000","timestamp":"2025-08-01T12:59:10.060Z"}
+{"level":"info","message":"Auth service running on 5000","timestamp":"2025-08-01T12:59:18.356Z"}
+{"level":"info","message":"Auth service running on 5000","timestamp":"2025-08-01T12:59:26.963Z"}
+{"level":"info","message":"Auth service running on 5000","timestamp":"2025-08-01T12:59:38.240Z"}
+{"level":"info","message":"Auth service running on 5000","timestamp":"2025-08-01T12:59:46.836Z"}
+{"level":"info","message":"Auth service running on 5000","timestamp":"2025-08-01T13:00:45.614Z"}
+{"level":"info","message":"Auth service running on 5000","timestamp":"2025-08-01T13:01:25.269Z"}
+{"level":"info","message":"Auth service running on 5000","timestamp":"2025-08-01T13:01:41.033Z"}
+{"level":"info","message":"Auth service running on 5000","timestamp":"2025-08-01T13:01:54.943Z"}
+{"level":"info","message":"Auth service running on 5000","timestamp":"2025-08-01T13:02:07.618Z"}
+{"level":"info","message":"Auth service running on 5000","timestamp":"2025-08-01T13:02:18.856Z"}
+{"level":"info","message":"Auth service running on 5000","timestamp":"2025-08-01T13:02:27.509Z"}
+{"level":"info","message":"Auth service running on 5000","timestamp":"2025-08-01T13:03:19.659Z"}
+{"level":"info","message":"Auth service running on 5000","timestamp":"2025-08-01T13:03:24.763Z"}
+{"level":"info","message":"Auth service running on 5000","timestamp":"2025-08-01T13:03:41.752Z"}
+{"level":"info","message":"Auth service running on 5000","timestamp":"2025-08-01T13:04:02.162Z"}
+{"level":"info","message":"Auth service running on 5000","timestamp":"2025-08-01T13:04:22.660Z"}
+{"level":"info","message":"Auth service running on 5000","timestamp":"2025-08-01T13:04:40.161Z"}
+{"level":"info","message":"Auth service running on 5000","timestamp":"2025-08-01T13:05:11.687Z"}
+{"level":"info","message":"Auth service running on 5000","timestamp":"2025-08-01T13:05:20.018Z"}
+{"level":"info","message":"Auth service running on 5000","timestamp":"2025-08-01T13:05:29.676Z"}
+{"level":"info","message":"Auth service running on 5000","timestamp":"2025-08-01T13:05:52.809Z"}
+{"level":"info","message":"Auth service running on 5000","timestamp":"2025-08-01T13:06:04.125Z"}
+{"level":"info","message":"Auth service running on 5000","timestamp":"2025-08-01T13:06:14.513Z"}
+{"level":"info","message":"Auth service running on 5000","timestamp":"2025-08-01T13:06:51.016Z"}
+{"level":"info","message":"Auth service running on 5000","timestamp":"2025-08-01T13:06:56.824Z"}
+{"level":"info","message":"Auth service running on 5000","timestamp":"2025-08-01T13:07:02.659Z"}
+{"level":"error","message":"Error caught at Login step:\n res.cookies is not a function","stack":"TypeError: res.cookies is not a function\n    at setAuthCookie (file:///C:/Code/RealTime_Personal_Finance_Dashboard/server/auth-service/src/utils/cookiesSetter.js:2:9)\n    at loginUser (file:///C:/Code/RealTime_Personal_Finance_Dashboard/server/auth-service/src/controllers/authController.js:91:9)","timestamp":"2025-08-01T13:07:10.577Z"}
+{"level":"info","message":"Auth service running on 5000","timestamp":"2025-08-01T13:10:21.041Z"}
+{"level":"info","message":"Auth service running on 5000","timestamp":"2025-08-01T13:10:46.948Z"}
+{"level":"info","message":"Auth service running on 5000","timestamp":"2025-08-01T13:11:30.315Z"}
+{"level":"info","message":"Auth service running on 5000","timestamp":"2025-08-01T13:11:51.008Z"}
+{"level":"info","message":"Auth service running on 5000","timestamp":"2025-08-01T13:14:05.499Z"}
+{"level":"info","message":"Auth service running on 5000","timestamp":"2025-08-01T13:16:06.376Z"}
+{"level":"info","message":"Auth service running on 5000","timestamp":"2025-08-01T13:16:17.218Z"}
+{"level":"info","message":"Auth service running on 5000","timestamp":"2025-08-01T13:16:22.514Z"}
+{"level":"info","message":"Auth service running on 5000","timestamp":"2025-08-01T13:16:32.421Z"}
+{"level":"info","message":"Auth service running on 5000","timestamp":"2025-08-01T13:16:37.674Z"}
+{"level":"info","message":"Auth service running on 5000","timestamp":"2025-08-01T13:16:50.590Z"}
+{"level":"info","message":"Auth service running on 5000","timestamp":"2025-08-01T13:17:01.430Z"}
+{"level":"info","message":"Auth service running on 5000","timestamp":"2025-08-01T13:17:38.343Z"}
+{"level":"info","message":"Auth service running on 5000","timestamp":"2025-08-01T13:17:43.291Z"}
+{"level":"info","message":"Auth service running on 5000","timestamp":"2025-08-01T13:17:57.407Z"}
+{"level":"info","message":"Auth service running on 5000","timestamp":"2025-08-01T13:18:22.144Z"}
+{"level":"info","message":"Auth service running on 5000","timestamp":"2025-08-01T13:18:51.940Z"}
+{"level":"info","message":"Auth service running on 5000","timestamp":"2025-08-01T13:21:10.220Z"}
+{"level":"info","message":"Auth service running on 5000","timestamp":"2025-08-01T13:21:15.617Z"}
+{"level":"info","message":"Auth service running on 5000","timestamp":"2025-08-01T13:21:24.518Z"}
+{"level":"info","message":"Auth service running on 5000","timestamp":"2025-08-01T13:21:30.230Z"}
+{"level":"info","message":"Auth service running on 5000","timestamp":"2025-08-01T13:21:42.771Z"}
+{"level":"info","message":"Auth service running on 5000","timestamp":"2025-08-01T13:22:09.845Z"}
+{"level":"info","message":"Auth service running on 5000","timestamp":"2025-08-01T13:22:22.225Z"}
+{"level":"info","message":"Auth service running on 5000","timestamp":"2025-08-01T13:23:01.685Z"}
+{"level":"info","message":"Auth service running on 5000","timestamp":"2025-08-01T13:23:06.181Z"}
+{"level":"info","message":"Auth service running on 5000","timestamp":"2025-08-01T13:23:15.971Z"}
+{"level":"info","message":"Auth service running on 5000","timestamp":"2025-08-01T13:23:20.821Z"}
+{"level":"info","message":"Auth service running on 5000","timestamp":"2025-08-01T13:26:37.429Z"}
+{"level":"info","message":"Auth service running on 5000","timestamp":"2025-08-01T13:27:05.991Z"}
+{"level":"info","message":"Auth service running on 5000","timestamp":"2025-08-01T13:27:17.472Z"}
+{"level":"info","message":"Auth service running on 5000","timestamp":"2025-08-01T13:28:53.512Z"}
+{"level":"info","message":"Auth service running on 5000","timestamp":"2025-08-01T13:31:40.849Z"}
+{"level":"info","message":"Auth service running on 5000","timestamp":"2025-08-01T13:31:54.349Z"}
+{"level":"info","message":"Auth service running on 5000","timestamp":"2025-08-01T13:32:03.243Z"}
+{"level":"info","message":"Auth service running on 5000","timestamp":"2025-08-01T13:32:44.986Z"}
+{"level":"info","message":"Auth service running on 5000","timestamp":"2025-08-01T13:32:49.649Z"}
+{"level":"info","message":"Auth service running on 5000","timestamp":"2025-08-01T14:00:59.482Z"}
+{"level":"info","message":"Auth service running on 5000","timestamp":"2025-08-01T14:18:22.007Z"}
+{"level":"info","message":"Auth service running on 5000","timestamp":"2025-08-01T14:37:52.248Z"}
+{"level":"info","message":"Auth service running on 5000","timestamp":"2025-08-01T14:42:06.170Z"}
+{"code":"22P02","file":"enum.c","length":134,"level":"error","line":"128","message":"Error at registerUser with OAuth:\n invalid input value for enum auth_enum: \"OAUTH\"","name":"error","routine":"enum_in","severity":"ERROR","stack":"error: invalid input value for enum auth_enum: \"OAUTH\"\n    at C:\\Code\\RealTime_Personal_Finance_Dashboard\\server\\auth-service\\node_modules\\pg-pool\\index.js:45:11\n    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)\n    at async registerUserWithOAuth (file:///C:/Code/RealTime_Personal_Finance_Dashboard/server/auth-service/src/controllers/authController.js:131:13)","timestamp":"2025-08-01T14:50:47.242Z","where":"unnamed portal parameter $3 = '...'"}
+{"level":"info","message":"Auth service running on 5000","timestamp":"2025-08-01T16:51:53.790Z"}
+{"level":"info","message":"Auth service running on 5000","timestamp":"2025-08-01T16:56:03.490Z"}
+{"level":"info","message":"Auth service running on 5000","timestamp":"2025-08-01T16:56:17.674Z"}
+{"level":"info","message":"Auth service running on 5000","timestamp":"2025-08-01T16:56:38.458Z"}
+{"level":"info","message":"Auth service running on 5000","timestamp":"2025-08-01T17:09:48.540Z"}
+{"level":"info","message":"Auth service running on 5000","timestamp":"2025-08-01T17:16:14.577Z"}
+{"level":"info","message":"auth route / Get request hit!","timestamp":"2025-08-01T17:17:14.768Z"}
+{"level":"info","message":"Auth-service GET request hit","timestamp":"2025-08-01T18:03:20.775Z"}
+{"level":"info","message":"Auth-service GET request hit","timestamp":"2025-08-01T18:03:20.791Z"}
+{"level":"info","message":"Auth service running on 5000","timestamp":"2025-08-01T18:22:34.289Z"}
+{"level":"info","message":"Auth service running on 5000","timestamp":"2025-08-01T18:22:39.706Z"}
+{"level":"info","message":"Auth service running on 5000","timestamp":"2025-08-01T18:24:56.050Z"}
+{"level":"info","message":"Auth service running on 5000","timestamp":"2025-08-03T04:00:17.805Z"}
+{"level":"info","message":"Auth service running on 5000","timestamp":"2025-08-03T04:06:51.402Z"}
+{"level":"info","message":"Auth service running on 5000","timestamp":"2025-08-03T04:07:00.849Z"}
+{"level":"info","message":"Auth service running on 5000","timestamp":"2025-08-05T07:45:35.884Z"}
+{"level":"info","message":"Auth service running on 5000","timestamp":"2025-08-06T06:04:21.437Z"}
+{"level":"info","message":"Auth service running on 5000","timestamp":"2025-08-06T06:22:55.940Z"}
+{"level":"info","message":"Auth service running on 5000","timestamp":"2025-08-08T08:27:04.609Z"}
+{"level":"info","message":"Auth service running on 5000","timestamp":"2025-08-08T08:27:14.130Z"}
+{"level":"info","message":"Auth service running on 5000","timestamp":"2025-08-08T08:27:26.289Z"}
+{"level":"info","message":"Auth service running on 5000","timestamp":"2025-08-08T08:27:37.062Z"}
+{"level":"info","message":"Auth service running on 5000","timestamp":"2025-08-08T08:28:56.119Z"}
+{"code":"22P02","file":"enum.c","length":134,"level":"error","line":"128","message":"Error at registerUser with OAuth:\n invalid input value for enum auth_enum: \"OAUTH\"","name":"error","routine":"enum_in","severity":"ERROR","stack":"error: invalid input value for enum auth_enum: \"OAUTH\"\n    at C:\\Code\\RealTime_Personal_Finance_Dashboard\\server\\auth-service\\node_modules\\pg-pool\\index.js:45:11\n    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)\n    at async registerUserWithOAuth (file:///C:/Code/RealTime_Personal_Finance_Dashboard/server/auth-service/src/controllers/authController.js:129:13)","timestamp":"2025-08-08T08:56:05.790Z","where":"unnamed portal parameter $3 = '...'"}
+{"level":"error","message":"Error at registerUser with OAuth:\n Wrong number of segments in token: 234932173375-gos9gguc3qfajie2iv8vid04jme5n0cu.apps.googleusercontent.com","stack":"Error: Wrong number of segments in token: 234932173375-gos9gguc3qfajie2iv8vid04jme5n0cu.apps.googleusercontent.com\n    at OAuth2Client.verifySignedJwtWithCertsAsync (C:\\Code\\RealTime_Personal_Finance_Dashboard\\server\\auth-service\\node_modules\\google-auth-library\\build\\src\\auth\\oauth2client.js:692:19)\n    at OAuth2Client.verifyIdTokenAsync (C:\\Code\\RealTime_Personal_Finance_Dashboard\\server\\auth-service\\node_modules\\google-auth-library\\build\\src\\auth\\oauth2client.js:541:34)\n    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)\n    at async registerUserWithOAuth (file:///C:/Code/RealTime_Personal_Finance_Dashboard/server/auth-service/src/controllers/authController.js:112:24)","timestamp":"2025-08-08T08:58:34.600Z"}
+{"code":"22P02","file":"enum.c","length":134,"level":"error","line":"128","message":"Error at registerUser with OAuth:\n invalid input value for enum auth_enum: \"OAUTH\"","name":"error","routine":"enum_in","severity":"ERROR","stack":"error: invalid input value for enum auth_enum: \"OAUTH\"\n    at C:\\Code\\RealTime_Personal_Finance_Dashboard\\server\\auth-service\\node_modules\\pg-pool\\index.js:45:11\n    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)\n    at async registerUserWithOAuth (file:///C:/Code/RealTime_Personal_Finance_Dashboard/server/auth-service/src/controllers/authController.js:129:13)","timestamp":"2025-08-08T09:13:34.905Z","where":"unnamed portal parameter $3 = '...'"}
+{"code":"22P02","file":"enum.c","length":134,"level":"error","line":"128","message":"Error at registerUser with OAuth:\n invalid input value for enum auth_enum: \"OAUTH\"","name":"error","routine":"enum_in","severity":"ERROR","stack":"error: invalid input value for enum auth_enum: \"OAUTH\"\n    at C:\\Code\\RealTime_Personal_Finance_Dashboard\\server\\auth-service\\node_modules\\pg-pool\\index.js:45:11\n    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)\n    at async registerUserWithOAuth (file:///C:/Code/RealTime_Personal_Finance_Dashboard/server/auth-service/src/controllers/authController.js:129:13)","timestamp":"2025-08-08T09:27:23.432Z","where":"unnamed portal parameter $3 = '...'"}
+{"code":"22P02","file":"enum.c","length":134,"level":"error","line":"128","message":"Error at registerUser with OAuth:\n invalid input value for enum auth_enum: \"OAUTH\"","name":"error","routine":"enum_in","severity":"ERROR","stack":"error: invalid input value for enum auth_enum: \"OAUTH\"\n    at C:\\Code\\RealTime_Personal_Finance_Dashboard\\server\\auth-service\\node_modules\\pg-pool\\index.js:45:11\n    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)\n    at async registerUserWithOAuth (file:///C:/Code/RealTime_Personal_Finance_Dashboard/server/auth-service/src/controllers/authController.js:129:13)","timestamp":"2025-08-08T09:32:41.145Z","where":"unnamed portal parameter $3 = '...'"}
+{"code":"22P02","file":"enum.c","length":134,"level":"error","line":"128","message":"Error at registerUser with OAuth:\n invalid input value for enum auth_enum: \"OAUTH\"","name":"error","routine":"enum_in","severity":"ERROR","stack":"error: invalid input value for enum auth_enum: \"OAUTH\"\n    at C:\\Code\\RealTime_Personal_Finance_Dashboard\\server\\auth-service\\node_modules\\pg-pool\\index.js:45:11\n    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)\n    at async registerUserWithOAuth (file:///C:/Code/RealTime_Personal_Finance_Dashboard/server/auth-service/src/controllers/authController.js:129:13)","timestamp":"2025-08-08T09:35:02.268Z","where":"unnamed portal parameter $3 = '...'"}
+{"level":"info","message":"Auth service running on 5000","timestamp":"2025-08-14T06:56:09.820Z"}
+{"code":"22P02","file":"enum.c","length":134,"level":"error","line":"128","message":"Error at registerUser with OAuth:\n invalid input value for enum auth_enum: \"OAUTH\"","name":"error","routine":"enum_in","severity":"ERROR","stack":"error: invalid input value for enum auth_enum: \"OAUTH\"\n    at C:\\Code\\RealTime_Personal_Finance_Dashboard\\server\\auth-service\\node_modules\\pg-pool\\index.js:45:11\n    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)\n    at async registerUserWithOAuth (file:///C:/Code/RealTime_Personal_Finance_Dashboard/server/auth-service/src/controllers/authController.js:129:13)","timestamp":"2025-08-14T06:59:09.400Z","where":"unnamed portal parameter $3 = '...'"}
+{"code":"22P02","file":"enum.c","length":134,"level":"error","line":"128","message":"Error at registerUser with OAuth:\n invalid input value for enum auth_enum: \"OAUTH\"","name":"error","routine":"enum_in","severity":"ERROR","stack":"error: invalid input value for enum auth_enum: \"OAUTH\"\n    at C:\\Code\\RealTime_Personal_Finance_Dashboard\\server\\auth-service\\node_modules\\pg-pool\\index.js:45:11\n    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)\n    at async registerUserWithOAuth (file:///C:/Code/RealTime_Personal_Finance_Dashboard/server/auth-service/src/controllers/authController.js:129:13)","timestamp":"2025-08-14T07:01:59.508Z","where":"unnamed portal parameter $3 = '...'"}
+{"code":"22P02","file":"enum.c","length":134,"level":"error","line":"128","message":"Error at registerUser with OAuth:\n invalid input value for enum auth_enum: \"OAUTH\"","name":"error","routine":"enum_in","severity":"ERROR","stack":"error: invalid input value for enum auth_enum: \"OAUTH\"\n    at C:\\Code\\RealTime_Personal_Finance_Dashboard\\server\\auth-service\\node_modules\\pg-pool\\index.js:45:11\n    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)\n    at async registerUserWithOAuth (file:///C:/Code/RealTime_Personal_Finance_Dashboard/server/auth-service/src/controllers/authController.js:129:13)","timestamp":"2025-08-14T07:02:58.248Z","where":"unnamed portal parameter $3 = '...'"}
+{"code":"22P02","file":"enum.c","length":134,"level":"error","line":"128","message":"Error at registerUser with OAuth:\n invalid input value for enum auth_enum: \"OAUTH\"","name":"error","routine":"enum_in","severity":"ERROR","stack":"error: invalid input value for enum auth_enum: \"OAUTH\"\n    at C:\\Code\\RealTime_Personal_Finance_Dashboard\\server\\auth-service\\node_modules\\pg-pool\\index.js:45:11\n    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)\n    at async registerUserWithOAuth (file:///C:/Code/RealTime_Personal_Finance_Dashboard/server/auth-service/src/controllers/authController.js:129:13)","timestamp":"2025-08-14T07:03:50.481Z","where":"unnamed portal parameter $3 = '...'"}
+{"level":"info","message":"Auth service running on 5000","timestamp":"2025-08-14T07:06:24.497Z"}
+{"level":"info","message":"Auth service running on 5000","timestamp":"2025-08-14T07:06:59.004Z"}
+{"level":"info","message":"Auth service running on 5000","timestamp":"2025-08-14T07:07:42.071Z"}
+{"level":"info","message":"Auth service running on 5000","timestamp":"2025-08-14T07:08:01.298Z"}
+{"code":"22P02","file":"enum.c","length":134,"level":"error","line":"128","message":"Error at registerUser with OAuth:\n invalid input value for enum auth_enum: \"OAUTH\"","name":"error","routine":"enum_in","severity":"ERROR","stack":"error: invalid input value for enum auth_enum: \"OAUTH\"\n    at C:\\Code\\RealTime_Personal_Finance_Dashboard\\server\\auth-service\\node_modules\\pg-pool\\index.js:45:11\n    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)\n    at async registerUserWithOAuth (file:///C:/Code/RealTime_Personal_Finance_Dashboard/server/auth-service/src/controllers/authController.js:132:25)","timestamp":"2025-08-14T07:08:10.626Z","where":"unnamed portal parameter $3 = '...'"}
+{"level":"info","message":"Auth service running on 5000","timestamp":"2025-08-14T07:10:30.191Z"}
+{"level":"info","message":"Auth service running on 5000","timestamp":"2025-08-14T07:10:45.660Z"}
+{"code":"22P02","file":"enum.c","length":134,"level":"error","line":"128","message":"Error at registerUser with OAuth:\n invalid input value for enum auth_enum: \"OAUTH\"","name":"error","routine":"enum_in","severity":"ERROR","stack":"error: invalid input value for enum auth_enum: \"OAUTH\"\n    at C:\\Code\\RealTime_Personal_Finance_Dashboard\\server\\auth-service\\node_modules\\pg-pool\\index.js:45:11\n    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)\n    at async registerUserWithOAuth (file:///C:/Code/RealTime_Personal_Finance_Dashboard/server/auth-service/src/controllers/authController.js:132:25)","timestamp":"2025-08-14T07:10:54.137Z","where":"unnamed portal parameter $3 = '...'"}
+{"level":"info","message":"Auth service running on 5000","timestamp":"2025-08-14T07:11:26.404Z"}
+{"code":"22P02","file":"enum.c","length":134,"level":"error","line":"128","message":"Error at registerUser with OAuth:\n invalid input value for enum auth_enum: \"OAUTH\"","name":"error","routine":"enum_in","severity":"ERROR","stack":"error: invalid input value for enum auth_enum: \"OAUTH\"\n    at C:\\Code\\RealTime_Personal_Finance_Dashboard\\server\\auth-service\\node_modules\\pg-pool\\index.js:45:11\n    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)\n    at async registerUserWithOAuth (file:///C:/Code/RealTime_Personal_Finance_Dashboard/server/auth-service/src/controllers/authController.js:133:25)","timestamp":"2025-08-14T07:11:33.806Z","where":"unnamed portal parameter $3 = '...'"}
+{"level":"info","message":"Auth service running on 5000","timestamp":"2025-08-14T07:12:23.483Z"}
+{"level":"info","message":"Auth service running on 5000","timestamp":"2025-08-14T07:14:42.083Z"}
+{"level":"error","message":"Error at registerUser with OAuth:\n res.json is not a function","stack":"TypeError: res.json is not a function\n    at registerUserWithOAuth (file:///C:/Code/RealTime_Personal_Finance_Dashboard/server/auth-service/src/controllers/authController.js:137:24)\n    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)","timestamp":"2025-08-14T07:14:53.742Z"}
+{"level":"info","message":"Auth service running on 5000","timestamp":"2025-08-14T07:16:26.710Z"}
+{"level":"info","message":"Auth service running on 5000","timestamp":"2025-08-14T07:17:30.373Z"}
+{"level":"info","message":"Auth service running on 5000","timestamp":"2025-08-14T07:21:18.163Z"}
+{"level":"info","message":"Auth service running on 5000","timestamp":"2025-08-14T07:22:55.541Z"}
+{"level":"info","message":"Auth service running on 5000","timestamp":"2025-08-14T07:32:18.869Z"}
+{"level":"info","message":"Auth service running on 5000","timestamp":"2025-08-14T07:34:07.875Z"}
+{"level":"info","message":"Auth service running on 5000","timestamp":"2025-08-14T07:34:46.494Z"}
+{"level":"info","message":"Auth service running on 5000","timestamp":"2025-08-14T07:34:55.855Z"}
+{"level":"info","message":"Auth service running on 5000","timestamp":"2025-08-14T07:35:10.866Z"}
+{"level":"info","message":"Auth service running on 5000","timestamp":"2025-08-14T07:35:22.683Z"}
+{"level":"info","message":"Auth service running on 5000","timestamp":"2025-08-14T07:36:44.590Z"}
+{"level":"info","message":"Auth service running on 5000","timestamp":"2025-08-14T07:36:55.045Z"}
+{"level":"info","message":"Auth service running on 5000","timestamp":"2025-08-14T07:37:55.904Z"}
+{"level":"info","message":"Auth service running on 5000","timestamp":"2025-08-14T07:38:25.354Z"}
+{"level":"info","message":"Auth service running on 5000","timestamp":"2025-08-14T07:38:32.123Z"}
+{"level":"info","message":"Auth service running on 5000","timestamp":"2025-08-14T07:39:11.925Z"}
+{"level":"info","message":"Auth service running on 5000","timestamp":"2025-08-14T07:39:35.586Z"}
+{"level":"info","message":"Auth service running on 5000","timestamp":"2025-08-14T07:41:17.850Z"}
+{"level":"info","message":"Auth service running on 5000","timestamp":"2025-08-14T07:42:02.961Z"}
+{"level":"info","message":"Auth service running on 5000","timestamp":"2025-08-14T07:43:20.948Z"}
+{"level":"info","message":"Auth service running on 5000","timestamp":"2025-08-14T07:43:57.462Z"}
+{"level":"info","message":"Auth service running on 5000","timestamp":"2025-08-14T07:48:19.132Z"}
+{"level":"info","message":"Auth service running on 5000","timestamp":"2025-08-14T07:50:58.512Z"}
+{"level":"error","message":"Error at registerUser with OAuth:\n Cannot use a pool after calling end on the pool","stack":"Error: Cannot use a pool after calling end on the pool\n    at C:\\Code\\RealTime_Personal_Finance_Dashboard\\server\\auth-service\\node_modules\\pg-pool\\index.js:45:11\n    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)\n    at async registerUserWithOAuth (file:///C:/Code/RealTime_Personal_Finance_Dashboard/server/auth-service/src/controllers/authController.js:138:30)","timestamp":"2025-08-14T07:52:41.652Z"}
+{"level":"info","message":"Auth service running on 5000","timestamp":"2025-08-14T07:53:49.784Z"}
+{"level":"info","message":"Auth service running on 5000","timestamp":"2025-08-14T07:57:33.426Z"}
+{"level":"info","message":"Auth service running on 5000","timestamp":"2025-08-14T07:58:01.139Z"}
+{"level":"info","message":"Auth service running on 5000","timestamp":"2025-08-14T07:58:26.991Z"}
+{"level":"info","message":"Auth service running on 5000","timestamp":"2025-08-14T07:58:43.548Z"}
+{"level":"info","message":"Auth service running on 5000","timestamp":"2025-08-14T07:59:40.756Z"}
+{"level":"info","message":"Auth service running on 5000","timestamp":"2025-08-14T08:00:01.020Z"}
+{"level":"info","message":"Auth service running on 5000","timestamp":"2025-08-14T08:00:22.039Z"}
+{"level":"info","message":"Auth service running on 5000","timestamp":"2025-08-14T08:01:26.051Z"}
+{"level":"info","message":"Auth service running on 5000","timestamp":"2025-08-14T08:02:06.214Z"}
+{"level":"info","message":"Auth service running on 5000","timestamp":"2025-08-14T08:02:17.476Z"}
+{"level":"error","message":"Error at registerUser with OAuth:\n email is not defined","stack":"ReferenceError: email is not defined\n    at registerUserWithOAuth (file:///C:/Code/RealTime_Personal_Finance_Dashboard/server/auth-service/src/controllers/authController.js:147:40)\n    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)","timestamp":"2025-08-14T08:02:45.849Z"}
+{"level":"error","message":"Error at registerUser with OAuth:\n email is not defined","stack":"ReferenceError: email is not defined\n    at registerUserWithOAuth (file:///C:/Code/RealTime_Personal_Finance_Dashboard/server/auth-service/src/controllers/authController.js:147:40)\n    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)","timestamp":"2025-08-14T08:05:25.901Z"}
+{"level":"info","message":"Auth service running on 5000","timestamp":"2025-08-14T08:06:31.933Z"}
+{"level":"error","message":"Error at registerUser with OAuth:\n email is not defined","stack":"ReferenceError: email is not defined\n    at registerUserWithOAuth (file:///C:/Code/RealTime_Personal_Finance_Dashboard/server/auth-service/src/controllers/authController.js:147:40)\n    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)","timestamp":"2025-08-14T08:06:55.380Z"}
+{"level":"info","message":"Auth service running on 5000","timestamp":"2025-08-14T08:07:49.945Z"}
+{"level":"error","message":"Error at registerUser with OAuth:\n jwt is not defined","stack":"ReferenceError: jwt is not defined\n    at tokenSetter (file:///C:/Code/RealTime_Personal_Finance_Dashboard/server/auth-service/src/utils/tokenSetter.js:2:25)\n    at registerUserWithOAuth (file:///C:/Code/RealTime_Personal_Finance_Dashboard/server/auth-service/src/controllers/authController.js:147:28)\n    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)","timestamp":"2025-08-14T08:09:07.811Z"}
+{"level":"info","message":"Auth service running on 5000","timestamp":"2025-08-14T08:09:45.040Z"}
+{"level":"error","message":"Error at registerUser with OAuth:\n authToken is not defined","stack":"ReferenceError: authToken is not defined\n    at registerUserWithOAuth (file:///C:/Code/RealTime_Personal_Finance_Dashboard/server/auth-service/src/controllers/authController.js:150:63)\n    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)","timestamp":"2025-08-14T08:10:03.085Z"}
+{"level":"info","message":"Auth service running on 5000","timestamp":"2025-08-14T08:11:23.797Z"}
+{"level":"info","message":"Auth service running on 5000","timestamp":"2025-08-14T08:11:50.151Z"}
+{"level":"info","message":"Auth service running on 5000","timestamp":"2025-08-14T08:12:28.366Z"}
+{"level":"info","message":"Auth service running on 5000","timestamp":"2025-08-14T08:12:54.316Z"}
+{"level":"error","message":"Error at registerUser with OAuth:\n authToken is not defined","stack":"ReferenceError: authToken is not defined\n    at registerUserWithOAuth (file:///C:/Code/RealTime_Personal_Finance_Dashboard/server/auth-service/src/controllers/authController.js:150:63)\n    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)","timestamp":"2025-08-14T08:13:05.945Z"}
+{"level":"info","message":"Auth service running on 5000","timestamp":"2025-08-14T08:13:48.856Z"}
+{"level":"info","message":"Auth service running on 5000","timestamp":"2025-08-14T08:14:21.591Z"}
+{"level":"info","message":"Auth service running on 5000","timestamp":"2025-08-14T08:14:56.346Z"}
+{"level":"info","message":"Auth service running on 5000","timestamp":"2025-08-14T14:13:08.991Z"}
+{"level":"info","message":"Auth service running on 5000","timestamp":"2025-08-14T14:23:25.342Z"}
+{"level":"info","message":"Auth service running on 5000","timestamp":"2025-08-14T14:24:29.882Z"}
+{"level":"info","message":"Auth service running on 5000","timestamp":"2025-08-14T14:31:31.304Z"}
+{"level":"info","message":"Auth service running on 5000","timestamp":"2025-08-14T14:32:33.046Z"}
+{"level":"info","message":"Auth service running on 5000","timestamp":"2025-08-14T14:36:54.357Z"}
+{"level":"info","message":"Auth service running on 5000","timestamp":"2025-08-14T14:48:17.485Z"}
+{"level":"info","message":"Auth service running on 5000","timestamp":"2025-08-14T18:54:20.193Z"}
+{"level":"info","message":"Auth service running on 5000","timestamp":"2025-08-14T18:55:34.500Z"}
+{"level":"info","message":"Auth service running on 5000","timestamp":"2025-08-14T18:56:00.163Z"}
+{"level":"info","message":"Auth service running on 5000","timestamp":"2025-08-14T18:56:11.019Z"}
+{"level":"info","message":"Auth service running on 5000","timestamp":"2025-08-14T18:56:16.646Z"}
+{"level":"info","message":"Auth service running on 5000","timestamp":"2025-08-14T18:58:24.925Z"}
+{"level":"error","message":"Error caught at Login step:\n id is not defined","stack":"ReferenceError: id is not defined\n    at loginUser (file:///C:/Code/RealTime_Personal_Finance_Dashboard/server/auth-service/src/controllers/authController.js:106:46)","timestamp":"2025-08-14T18:58:31.662Z"}
+{"level":"error","message":"Error caught at Login step:\n Cannot use a pool after calling end on the pool","stack":"Error: Cannot use a pool after calling end on the pool\n    at C:\\Code\\RealTime_Personal_Finance_Dashboard\\server\\auth-service\\node_modules\\pg-pool\\index.js:45:11\n    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)\n    at async loginUser (file:///C:/Code/RealTime_Personal_Finance_Dashboard/server/auth-service/src/controllers/authController.js:92:24)","timestamp":"2025-08-14T18:58:34.805Z"}
+{"level":"info","message":"Auth service running on 5000","timestamp":"2025-08-14T18:58:51.094Z"}
+{"level":"info","message":"Auth service running on 5000","timestamp":"2025-08-14T18:59:00.342Z"}
+{"level":"error","message":"Error caught at Login step:\n Cannot use a pool after calling end on the pool","stack":"Error: Cannot use a pool after calling end on the pool\n    at C:\\Code\\RealTime_Personal_Finance_Dashboard\\server\\auth-service\\node_modules\\pg-pool\\index.js:45:11\n    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)\n    at async loginUser (file:///C:/Code/RealTime_Personal_Finance_Dashboard/server/auth-service/src/controllers/authController.js:92:24)","timestamp":"2025-08-14T19:18:12.593Z"}
+{"level":"info","message":"Auth service running on 5000","timestamp":"2025-08-14T19:18:49.888Z"}
+{"level":"info","message":"Auth service running on 5000","timestamp":"2025-08-14T19:42:37.486Z"}
+{"level":"info","message":"Auth service running on 5000","timestamp":"2025-08-14T19:43:00.083Z"}
+{"level":"info","message":"Auth service running on 5000","timestamp":"2025-08-14T19:44:10.177Z"}
+{"level":"info","message":"Auth service running on 5000","timestamp":"2025-08-14T19:44:51.763Z"}
+{"level":"info","message":"Auth service running on 5000","timestamp":"2025-08-14T19:45:24.214Z"}
+{"level":"info","message":"Auth service running on 5000","timestamp":"2025-08-14T19:45:52.021Z"}
+{"level":"info","message":"Auth service running on 5000","timestamp":"2025-08-14T19:46:14.937Z"}
+{"level":"info","message":"Auth service running on 5000","timestamp":"2025-08-14T19:49:22.054Z"}

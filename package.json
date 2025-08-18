@@ -1,5 +1,5 @@
 {
-  "name": "auth-service",
+  "name": "otauth-service",
   "version": "1.0.0",
   "description": "auth service package for finance dashboard backend ",
   "keywords": [
@@ -16,9 +16,10 @@
     "dev": "nodemon start"
   },
   "dependencies": {
-    "@dotenvx/dotenvx": "^1.47.5",
+    "@denvx/dotenvx": "^1.47.5",
     "bcrypt": "^6.0.0",
     "compression": "^1.8.0",
+    "cookie-parser": "^1.4.7",
     "cors": "^2.8.5",
     "express": "^5.1.0",
     "express-session": "^1.18.2",

@@ -6,10 +6,26 @@ import {redisClient } from '../utils/redisConnection.js';
 import { sendOTPEmail } from '../utils/mailer.js';
 import crypto from 'crypto';
 import bcrypt from 'bcrypt';
+import setAuthCookie from '../utils/cookiesSetter.js';
+import tokenSetter from '../utils/tokenSetter.js';
 
 const pool = new Pool({
     connectionString:process.env.POSTGRES_URL
 });
+
+export async function addColumn(req, res){
+    try{
+        console.log("value of postgres_url", process.env.POSTGRES_URL);
+        const result = await pool.query(`ALTER TABLE users ADD profile_picture TEXT`);
+        console.log("column added :",result);
+        res.status(200).json({message:"Column added"});
+    }catch(err){
+        console.error(err);
+    }finally{
+        await pool.end();
+    }
+}
+
 
 export const registerUser = async(req, res)=>{
     const {firstName, lastName, email, password} = req.body;
@@ -26,64 +42,61 @@ export const registerUser = async(req, res)=>{
         
         const userSaved = await pool.query(`
         INSERT INTO users(firstname, lastname, email, password, auth_type, created_at)
-        VALUES($1, $2, $3, $4, $5, CURRENT_TIMESTAMP)`, 
+        VALUES($1, $2, $3, $4, $5, CURRENT_TIMESTAMP) RETURNING id`, 
         [firstName, lastName, email, hashedPassword, 'PASSWORD']);
         
         if(!userSaved){
             return res.status(404).json({message:'Something went worng'});
         }
         //***************below logic will right away give the access to app no need to go to login page now */
-        const accessToken = jwt.sign({email}, process.env.SECRET, {expiresIn:process.env.ACCESS_EXPIRY});
-        console.log("AccessToken:", accessToken);
+        const tokens = tokenSetter(userSaved.rows[0].id);
+        console.log("TokensSet:\n", tokens);
+        setAuthCookie(res, tokens.refreshToken, tokens.accessToken);
 
-        const refreshToken = jwt.sign({email}, process.env.REFRESH_SECRET, {expiresIn:process.env.REFRESH_EXPIRY});
-
-        console.log("RefreshToken:", refreshToken);
-
-        await redisClient.set(`refresh:${email}`, refreshToken, {EX:Number(process.env.REDIS_REFRESH_EXPIRY)});
-        await redisClient.set(`session:${email}`, accessToken, {EX:3600});
+        await redisClient.set(`refresh:${id}`, refreshToken, {EX:Number(process.env.REDIS_REFRESH_EXPIRY)});
+        await redisClient.set(`session:${id}`, accessToken, {EX:3600});
         //******************************************************************************* */
-        return res.status(201).json({message:'User registered successfully', 
-            user:userSaved.rows[0]
-        });
+        return res.status(201).json({message:'User registered successfully'});
     }catch(err){
         logger.error('Error at registerUser:', err);
         // throw new Error('Error in registering user:', err);
         res.status(500).json({message:'Something went worng with register'});
 
+    }finally{
+        await pool.end();
     }
 }
 
 export const loginUser = async(req, res)=>{
     const {email, password} = req.body;
+    console.log("value of email:", email +"\nvalue of password:", password);
     try{
         const result = await pool.query(`SELECT * from users where EMAIL=$1`, [email]);
-        if(!result.rows.length>0){
+        if(result.rows.length===0){
             return res.status(404).json({message:"User not registered!"});
         }
-        console.log("Value of fetched password:\n",result.rows[0].password);
+        // console.log("Value of fetched password:\n",result.rows[0].password);
+        console.log("Value of result.rows[0]", );
+
         const isValidPassword = await bcrypt.compare(password, result.rows[0].password);
         
         if(!isValidPassword){
             return res.status(401).json({message:"Wrong password"});
         }
+        const id = result.rows[0].id;
         
-        //now generate tokens and session with redis   
-        const accessToken = jwt.sign({email}, process.env.SECRET,{expiresIn:process.env.ACCESS_EXPIRY});
+        const tokens = tokenSetter(id)
+        console.log("Value of tokens form login:\n", tokens);
 
-        const refreshToken = jwt.sign({email}, process.env.REFRESH_SECRET,{expiresIn:process.env.ACCESS_EXPIRY});
+        setAuthCookie(res, tokens.refreshToken, tokens.accessToken);
+        
+        await redisClient.set(`refresh:${id}`, tokens.refreshToken,{EX:Number(process.env.REDIS_REFRESH_EXPIRY)});
+        await redisClient.set(`session:${id}`, tokens.accessToken, {EX:3600});
+        return res.status(200).json({message:"Logged In", token:tokens.accessToken});
 
-        await redisClient.set(`refresh:${email}`, refreshToken,{EX:Number(process.env.REDIS_REFRESH_EXPIRY)});
-
-        await redisClient.set(`session:${email}`, accessToken, {EX:3600});
-
-        return res.status(200).json({
-            message:"Logged In",
-            accessToken,
-            refreshToken
-        })
     }catch(err){
         logger.error("Error caught at Login step:\n",err);
+        return res.status(500).send("Something went wrong! Try again later");
     }
 
 }
@@ -105,17 +118,31 @@ export const registerUserWithOAuth = async (req, res)=>{
 
         if(payload.aud!==process.env.GOOGLE_CLIENT_ID) return res.status(401).send("Unauthorized");
         
-        const existingUser = await pool.query(`SELECT * FROM users WHERE EMAIL=$1`, [payload.email]);
+        const existingUser = await pool.query(`SELECT id FROM users WHERE EMAIL=$1`, [payload.email]);
+        // console.log("Value of existing user.rows.length:\n",existingUser.rows.length!==0);
+        console.log("Value fo existing user:\n", existingUser);
 
         if(existingUser.rows.length!==0){
-            const authToken = jwt.sign({email:payload.email, name:payload.name}, process.env.SECRET, {expiresIn:'1h'});
-            await redisClient.set(`session:${payload.email}`, authToken, {'EX':3600});
-            return res.json(authToken);
+            console.log("Inside existingsuer.rows.length!==0")
+            
+            //setting access and refres token
+            const tokens = tokenSetter(existingUser.rows[0].id);
+
+            // setting http only cookie
+            setAuthCookie(res, tokens.refreshToken, tokens.accessToken);
+            
+            console.log("tokens from authcontroller:\n", tokens);
+            //setting redisClient
+            await redisClient.set(`session:${existingUser.rows[0].id}`, tokens.accessToken, {'EX':3600});
+
+            return res.json(tokens);
         }else{
-            await pool.query(`INSERT INTO users (email, firstName, auth_type, created_at) VALUES ($1,$2,$3,CURRENT_TIMESTAMP) `, [payload.email, payload.name, 'OAUTH']);
-            const authToken = jwt.sign({email:payload.email, name:payload.name},process.env.SECRET, {expiresIn:'1h'} );
-            await redisClient.set(`session:${payload.email}`, authToken, {'EX':3600});
-            return res.json({authToken});
+            console.log("inside else statement");
+            const result = await pool.query(`INSERT INTO users (email, firstName, lastName, auth_type, profile_picture, created_at) VALUES ($1,$2,$3,$4,$5,CURRENT_TIMESTAMP) RETURNING id`, [payload.email, payload.given_name, payload.family_name, "GOOGLE", payload.picture]);
+            console.log("value of res from else statement:\n", result);
+            const tokens = tokenSetter(result.rows[0].id);
+            await redisClient.set(`session:${result.rows[0].id}`, tokens.accessToken, {'EX':3600});
+            return res.json(tokens);
         }
        
     }catch(err){
@@ -128,7 +155,6 @@ export const registerUserWithOAuth = async (req, res)=>{
 export const loginWithTokens = async(req, res)=>{
     const {email} = req.body;
     const accessToken = jwt.sign({email}, process.env.SECRET, {expiresIn:process.env.ACCESS_EXPIRY});
-
     const refreshToken = jwt.sign({email}, process.env.REFRESH_SECRET, {expiresIn:process.env.REFRESH_EXPIRY});
 
     await redisClient.set(`refresh:${email}`, refreshToken, 'EX', process.env.REFRESH_EXPIRY);
@@ -155,14 +181,40 @@ export const refreshToken = async(req, res)=>{
 //********************log out logic*************** */
 
 export const logoutUser = async(req, res)=>{
-    const token = req.headers.authorization?.split(' ')[1];
-    if(!token) return res.status(400).json({message:'Token required'});
+    try{
+        const token = req.cookies.accessToken;
+        console.log("Value of token that is req.cookies.accessToken:\n",token);
+        if(!token) return res.status(400).json({message:'Token required'});
 
-    const decoded = jwt.decode(token);
-    await redisClient.del(`refresh:${decoded.email}`);
-    await redisClient.del(`session:${decoded.email}`);
+        const decoded = jwt.verify(token, process.env.SECRET);
+        console.log("Value of decoded:\n",decoded);
+        console.log('--------------------------------------------------');
+        
+        
+        res.clearCookie('accessToken', {
+            httpOnly: true,
+            secure: true,
+            sameSite: 'Strict',
+            path: '/',
+        });
+        res.clearCookie('refreshToken', {
+            httpOnly: true,
+            secure: true,
+            sameSite: 'Strict',
+            path: '/',
+        });
 
-    res.status(200).json({message:'Successfully logged out'});
+        await Promise.all([
+            redisClient.del(`refresh:${decoded.id}`),
+            redisClient.del(`session:${decoded.id}`)
+        ]);
+    
+        return res.status(200).json({message:'Successfully logged out'});
+
+    }catch(err){
+        logger.error("Error found in the logout section:", err);
+        return res.status(500).json({message:"Error in logout section", error:err});
+    }
 };
 
 //**********generate OTP***************** */
@@ -185,20 +237,25 @@ export const verifyOTP = async (req, res)=>{
     const {email, otp} = req.body;
     console.log('value of email and otp:', email, otp);
 
-    const storedOTP = await redisClient.get(`otp:${email}`);
-    console.log("value of storeOTP:", storedOTP);
-    if(!storedOTP || storedOTP!== otp){
-        return res.status(401).json({message:'Invalid or expired OTP'});
-    }
-    //clearing OTP after use
-    await redisClient.del(`otp:${email}`);
-    const existingUser = await pool.query(`SELECT * FROM users WHERE email=$1`, [email]);
-    console.log("Value of existingUser from verfiyOTP:",existingUser);
-    if(existingUser.rows.length===0){
-        await pool.query('INSERT INTO users (email) VALUES ($1)', [email]);
-    }
-    const authToken = jwt.sign({email}, process.env.SECRET, {expiresIn:'1h'});
-    await redisClient.set(`session:${email}`, authToken, {'EX': 3600});
-    res.status(200).json({authToken});
+    try{
+        const storedOTP = await redisClient.get(`otp:${email}`);
+        console.log("value of storeOTP:", storedOTP);
+        if(!storedOTP || storedOTP!== otp){
+            return res.status(401).json({message:'Invalid or expired OTP'});
+        }
+        //clearing OTP after use
+        await redisClient.del(`otp:${email}`);
+        const existingUser = await pool.query(`SELECT * FROM users WHERE email=$1`, [email]);
+        console.log("Value of existingUser from verfiyOTP:",existingUser);
+        if(existingUser.rows.length===0){
+            await pool.query('INSERT INTO users (email) VALUES ($1)', [email]);
+        }
+        const authToken = jwt.sign({email}, process.env.SECRET, {expiresIn:'1h'});
+        await redisClient.set(`session:${email}`, authToken, {'EX': 3600});
+        res.status(200).json({authToken});
+    }catch(err){
+        console.log(err);
+        logger.error('Error with OTP login:',err);
+    }finally{await pool.end();}
 }
 

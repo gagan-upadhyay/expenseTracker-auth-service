@@ -3,12 +3,14 @@ import { redisClient } from '../utils/redisConnection.js';
 
 export const verifySession = async(req, res, next)=>{
     try{
-        const token = req.headers.authorization?.split(' ')[1];
+        console.log("From verify session");
+        const token = req.cookies.accessToken;
+        console.log("Value of token from verifySession of user service:", token);
         if(!token) return res.status(401).json({message:'Token missing'});
         const decoded = jwt.verify(token, process.env.SECRET);
-        const email = decoded.email;
+        console.log("Value of decoded from auth verifySession:\n", decoded);
 
-        const cachedToken = await redisClient.get(`session:${email}`);
+        const cachedToken = await redisClient.get(`session:${decoded.id}`);
         if(cachedToken!== token){
             return res.status(401).json({message:'Invalid or expired token'})
         }

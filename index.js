@@ -6,22 +6,23 @@ import morgan from 'morgan';
 import authRouter from './src/routes/AuthRoutes.js';
 import {logger} from './config/logger.js';
 import cookieParser from 'cookie-parser';
-
+import { helmetConfig } from './config/helmet.config.js';
+// import timeout from 'connect-timeout';
 
 const app = express();
 const corsOptions = {
-    origin:['http://localhost:3000', 'https://expense-tracker-self-rho-12.vercel.app/'],
+    origin:['http://localhost:3000', 'https://expense-tracker-self-rho-12.vercel.app/', 'http://192.168.0.100', 'http://192.168.0.104', 'https://expense-tracker-self-rho-12.vercel.app'],
     credentials:true
 }
+// app.use(timeout('1ms'));
 app.use(cors(corsOptions));
-app.use(express.json())
-app.use(cookieParser())
-
+app.use(express.json());
+app.use(cookieParser());
+app.use(helmetConfig)
 
 if(process.env.NODE_ENV === 'development'){
     app.use(morgan('dev'));
 }
-
 app.use(compression());
 app.use((err, req, res, next)=>{
     console.error(err.stack);

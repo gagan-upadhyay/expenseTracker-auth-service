@@ -16,9 +16,10 @@
     "dev": "nodemon start"
   },
   "dependencies": {
-    "@denvx/dotenvx": "^1.47.5",
+    "@dotenvx/dotenvx": "^1.49.0",
     "bcrypt": "^6.0.0",
     "compression": "^1.8.0",
+    "connect-timeout": "^1.9.1",
     "cookie-parser": "^1.4.7",
     "cors": "^2.8.5",
     "express": "^5.1.0",

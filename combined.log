@@ -912,3 +912,89 @@
 {"level":"info","message":"REDIS GET: refresh:a62ab361-87ad-4311-9d63-d778e834076b","timestamp":"2025-09-22T16:26:00.523Z"}
 {"level":"info","message":"REDIS SET: refresh:a62ab361-87ad-4311-9d63-d778e834076b","timestamp":"2025-09-22T16:26:03.057Z"}
 {"level":"info","message":"REDIS SET: session:a62ab361-87ad-4311-9d63-d778e834076b","timestamp":"2025-09-22T16:26:03.360Z"}
+{"level":"info","message":"Auth service running on 5000","timestamp":"2025-09-22T17:14:43.382Z"}
+{"level":"info","message":"Auth service running on 5000","timestamp":"2025-09-22T17:14:54.188Z"}
+{"level":"info","message":"Auth service running on 5000","timestamp":"2025-09-22T17:15:25.212Z"}
+{"level":"info","message":"Auth service running on 5000","timestamp":"2025-09-22T17:15:36.079Z"}
+{"level":"info","message":"Auth service running on 5000","timestamp":"2025-09-22T17:16:00.228Z"}
+{"level":"info","message":"Auth service running on 5000","timestamp":"2025-09-22T17:16:45.514Z"}
+{"level":"info","message":"Auth service running on 5000","timestamp":"2025-09-22T17:16:53.412Z"}
+{"level":"info","message":"Auth service running on 5000","timestamp":"2025-09-22T17:17:09.184Z"}
+{"level":"info","message":"Auth service running on 5000","timestamp":"2025-09-22T17:17:19.985Z"}
+{"level":"info","message":"Auth service running on 5000","timestamp":"2025-09-22T17:17:24.621Z"}
+{"level":"info","message":"Auth service running on 5000","timestamp":"2025-09-22T17:17:31.379Z"}
+{"level":"info","message":"Auth service running on 5000","timestamp":"2025-09-22T17:17:40.913Z"}
+{"level":"info","message":"Auth service running on 5000","timestamp":"2025-09-22T17:17:46.410Z"}
+{"level":"info","message":"Auth service running on 5000","timestamp":"2025-09-22T17:17:56.281Z"}
+{"level":"info","message":"Auth service running on 5000","timestamp":"2025-09-22T17:18:07.783Z"}
+{"level":"info","message":"Auth service running on 5000","timestamp":"2025-09-22T17:18:11.694Z"}
+{"level":"info","message":"Auth service running on 5000","timestamp":"2025-09-22T17:18:19.760Z"}
+{"level":"info","message":"Auth service running on 5000","timestamp":"2025-09-22T17:18:26.581Z"}
+{"level":"info","message":"Auth service running on 5000","timestamp":"2025-09-22T17:18:40.234Z"}
+{"level":"info","message":"Auth service running on 5000","timestamp":"2025-09-22T17:18:47.575Z"}
+{"level":"info","message":"Auth service running on 5000","timestamp":"2025-09-22T17:18:53.701Z"}
+{"level":"info","message":"Auth service running on 5000","timestamp":"2025-09-22T17:19:36.891Z"}
+{"level":"info","message":"Auth service running on 5000","timestamp":"2025-09-22T17:19:50.338Z"}
+{"level":"info","message":"Auth service running on 5000","timestamp":"2025-09-22T17:19:55.928Z"}
+{"level":"info","message":"Auth service running on 5000","timestamp":"2025-09-22T17:20:06.077Z"}
+{"level":"info","message":"Auth service running on 5000","timestamp":"2025-09-22T17:20:15.792Z"}
+{"level":"info","message":"Auth service running on 5000","timestamp":"2025-09-22T17:20:23.907Z"}
+{"level":"info","message":"Auth service running on 5000","timestamp":"2025-09-22T17:20:44.806Z"}
+{"level":"info","message":"Auth service running on 5000","timestamp":"2025-09-22T17:20:56.439Z"}
+{"level":"info","message":"Auth service running on 5000","timestamp":"2025-09-22T17:21:15.087Z"}
+{"level":"info","message":"Auth service running on 5000","timestamp":"2025-09-22T17:21:33.790Z"}
+{"level":"info","message":"Auth service running on 5000","timestamp":"2025-09-22T17:21:56.803Z"}
+{"level":"info","message":"Auth service running on 5000","timestamp":"2025-09-22T17:22:14.680Z"}
+{"level":"info","message":"Auth service running on 5000","timestamp":"2025-09-22T17:22:20.241Z"}
+{"level":"info","message":"Auth service running on 5000","timestamp":"2025-09-22T17:22:50.994Z"}
+{"level":"info","message":"Auth service running on 5000","timestamp":"2025-09-22T17:28:33.583Z"}
+{"level":"info","message":"Auth service running on 5000","timestamp":"2025-09-22T17:29:05.221Z"}
+{"level":"info","message":"Auth service running on 5000","timestamp":"2025-09-22T18:10:24.022Z"}
+{"level":"info","message":"Auth service running on 5000","timestamp":"2025-09-22T18:10:44.943Z"}
+{"level":"info","message":"Auth service running on 5000","timestamp":"2025-09-22T18:11:37.697Z"}
+{"level":"info","message":"Auth service running on 5000","timestamp":"2025-09-22T18:13:42.068Z"}
+{"level":"info","message":"Auth service running on 5000","timestamp":"2025-09-22T18:15:29.492Z"}
+{"level":"info","message":"Auth service running on 5000","timestamp":"2025-09-22T18:15:35.776Z"}
+{"level":"info","message":"Auth service running on 5000","timestamp":"2025-09-22T18:16:10.572Z"}
+{"level":"info","message":"Auth service running on 5000","timestamp":"2025-09-22T18:16:34.350Z"}
+{"level":"info","message":"Auth service running on 5000","timestamp":"2025-09-22T18:16:52.771Z"}
+{"level":"info","message":"Auth service running on 5000","timestamp":"2025-09-22T18:17:00.168Z"}
+{"level":"info","message":"Auth service running on 5000","timestamp":"2025-09-22T18:17:22.576Z"}
+{"level":"info","message":"Auth service running on 5000","timestamp":"2025-09-22T18:17:51.422Z"}
+{"level":"info","message":"Auth service running on 5000","timestamp":"2025-09-22T18:20:05.473Z"}
+{"level":"info","message":"Auth service running on 5000","timestamp":"2025-09-22T18:21:03.282Z"}
+{"level":"info","message":"Auth service running on 5000","timestamp":"2025-09-22T18:21:48.293Z"}
+{"level":"info","message":"Postgres Query:SELECT * FROM users WHERE EMAIL=$1","timestamp":"2025-09-22T18:32:36.851Z"}
+{"level":"info","message":"REDIS SET: refresh:2b40d5bd-8344-430c-ba57-37488598d77d","timestamp":"2025-09-22T18:32:37.580Z"}
+{"level":"info","message":"REDIS SET: session:2b40d5bd-8344-430c-ba57-37488598d77d","timestamp":"2025-09-22T18:32:37.901Z"}
+{"level":"info","message":"Auth service running on 5000","timestamp":"2025-09-22T18:33:24.625Z"}
+{"level":"info","message":"Auth service running on 5000","timestamp":"2025-09-22T18:33:37.713Z"}
+{"level":"info","message":"Auth service running on 5000","timestamp":"2025-09-22T18:34:19.253Z"}
+{"level":"info","message":"Auth service running on 5000","timestamp":"2025-09-22T18:35:15.491Z"}
+{"level":"info","message":"Auth service running on 5000","timestamp":"2025-09-22T18:35:21.225Z"}
+{"level":"info","message":"Postgres Query:SELECT * FROM users WHERE EMAIL=$1","timestamp":"2025-09-22T18:35:25.141Z"}
+{"level":"info","message":"REDIS SET: refresh:2b40d5bd-8344-430c-ba57-37488598d77d","timestamp":"2025-09-22T18:35:25.874Z"}
+{"level":"info","message":"REDIS SET: session:2b40d5bd-8344-430c-ba57-37488598d77d","timestamp":"2025-09-22T18:35:26.204Z"}
+{"level":"info","message":"Auth service running on 5000","timestamp":"2025-09-22T18:36:40.381Z"}
+{"level":"info","message":"Auth service running on 5000","timestamp":"2025-09-22T18:36:45.414Z"}
+{"level":"info","message":"Postgres Query:SELECT * FROM users WHERE EMAIL=$1","timestamp":"2025-09-22T18:36:49.271Z"}
+{"level":"info","message":"REDIS SET: refresh:2b40d5bd-8344-430c-ba57-37488598d77d","timestamp":"2025-09-22T18:36:50.006Z"}
+{"level":"info","message":"REDIS SET: session:2b40d5bd-8344-430c-ba57-37488598d77d","timestamp":"2025-09-22T18:36:50.335Z"}
+{"level":"info","message":"Auth service running on 5000","timestamp":"2025-09-22T18:37:09.877Z"}
+{"level":"info","message":"Auth service running on 5000","timestamp":"2025-09-22T18:37:14.054Z"}
+{"level":"info","message":"Postgres Query:SELECT * FROM users WHERE EMAIL=$1","timestamp":"2025-09-22T18:37:17.745Z"}
+{"level":"info","message":"REDIS SET: refresh:2b40d5bd-8344-430c-ba57-37488598d77d","timestamp":"2025-09-22T18:37:18.490Z"}
+{"level":"info","message":"REDIS SET: session:2b40d5bd-8344-430c-ba57-37488598d77d","timestamp":"2025-09-22T18:37:18.824Z"}
+{"level":"info","message":"Postgres Query:SELECT * FROM users WHERE EMAIL=$1","timestamp":"2025-09-22T18:37:19.183Z"}
+{"level":"info","message":"Auth service running on 5000","timestamp":"2025-09-22T18:38:13.370Z"}
+{"level":"info","message":"Auth service running on 5000","timestamp":"2025-09-22T18:38:17.515Z"}
+{"level":"info","message":"Postgres Query:SELECT * FROM users WHERE EMAIL=$1","timestamp":"2025-09-22T18:38:21.274Z"}
+{"level":"info","message":"REDIS SET: refresh:2b40d5bd-8344-430c-ba57-37488598d77d","timestamp":"2025-09-22T18:38:22.009Z"}
+{"level":"info","message":"REDIS SET: session:2b40d5bd-8344-430c-ba57-37488598d77d","timestamp":"2025-09-22T18:38:22.340Z"}
+{"level":"info","message":"Postgres Query:SELECT * FROM users WHERE EMAIL=$1","timestamp":"2025-09-22T18:38:22.687Z"}
+{"level":"info","message":"Auth service running on 5000","timestamp":"2025-09-22T18:39:09.444Z"}
+{"level":"info","message":"Auth service running on 5000","timestamp":"2025-09-22T18:39:13.643Z"}
+{"level":"info","message":"Postgres Query:SELECT * FROM users WHERE EMAIL=$1","timestamp":"2025-09-22T18:39:17.484Z"}
+{"level":"info","message":"REDIS SET: refresh:2b40d5bd-8344-430c-ba57-37488598d77d","timestamp":"2025-09-22T18:39:18.213Z"}
+{"level":"info","message":"REDIS SET: session:2b40d5bd-8344-430c-ba57-37488598d77d","timestamp":"2025-09-22T18:39:18.538Z"}
+{"level":"info","message":"Postgres Query:SELECT * FROM users WHERE EMAIL=$1","timestamp":"2025-09-22T18:39:18.884Z"}

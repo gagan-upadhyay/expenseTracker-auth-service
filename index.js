@@ -47,6 +47,8 @@ app.use('/api/v1/auth', authRouter);
 
 
 app.listen(process.env.PORT,()=>{
-    console.log(`Auth service runnig at port ${process.env.PORT}`);
+    console.log(`Auth service running at port ${process.env.PORT}`);
     logger.info(`Auth service running on ${process.env.PORT}`);
 });
+
+export default app;

@@ -92,7 +92,7 @@ export const loginUserService = async(req, res)=>{
         
         //check password
         const isValidPassword = await bcrypt.compare(password, isValidUser.password);
-        if(!isValidPassword) return res.status(401).json({message:"Wrong password"});
+        if(!isValidPassword) return res.status(401).json({message:"Wrong password", error:'Wrong Password'});
 
         const id = isValidUser.id;
         
@@ -108,7 +108,7 @@ export const loginUserService = async(req, res)=>{
 
     }catch(err){
         logger.error("Error caught at Login Step:\n", err);
-        return res.status(500).json({message:"Somethig went wrong! Please try agin later."});
+        return res.status(500).json({message:"Somethig went wrong! Please try agin later.", error:err});
     }
 
 }

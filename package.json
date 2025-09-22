@@ -37,6 +37,7 @@
     "passport-google-oauth20": "^2.0.0",
     "pg": "^8.16.3",
     "redis": "^5.6.0",
+    "robust-email-validator": "^1.0.1",
     "winston": "^3.17.0"
   }
 }

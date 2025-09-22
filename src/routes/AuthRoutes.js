@@ -17,7 +17,7 @@ import { verifySession } from '../../middleware/verifySession.js';
 const authRouter = express.Router();
 //change made in the other tab
 authRouter.get('/', (req, res)=>{
-    res.status(200).send("Welcome to the authRouter");
+    res.status(200).json({message:"Welcome to the authRouter"});
     logger.info("auth route / Get request hit!");
 });
 

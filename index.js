@@ -11,10 +11,12 @@ import { helmetConfig } from './config/helmet.config.js';
 
 const app = express();
 const corsOptions = {
-    origin:['http://localhost:3000', 'https://expense-tracker-self-rho-12.vercel.app/', 'http://192.168.0.100', 'http://192.168.0.104', 'https://expense-tracker-self-rho-12.vercel.app'],
+    origin:['http://localhost:3000', 'https://expense-tracker-self-rho-12.vercel.app/', 'http://192.168.0.105:3000', 'http://192.168.0.106:3000', 'https://expense-tracker-self-rho-12.vercel.app'],
     credentials:true
 }
+
 // app.use(timeout('1ms'));
+// app.use(cors({origin:'*', credentials:'include'}));
 app.use(cors(corsOptions));
 app.use(express.json());
 app.use(cookieParser());
@@ -33,7 +35,9 @@ app.use((err, req, res, next)=>{
 
 app.get('/',(req, res)=>{
     logger.info("Auth-service GET request hit");
-    return res.status(200).send("Welcome to the Auth-service GET Page");
+    console.log("Value of IP address:", req.ip);
+    // console.log("Value of req:", req);
+    return res.status(200).json({message:"Welcome to the Auth-service GET Page"});
     
 })
 

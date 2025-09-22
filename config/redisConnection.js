@@ -56,7 +56,7 @@ const redisClient = createClient({
 // }
 
 let isConnected = false;
-async function connectWithRetry(retries = 5, delay = 1000) {
+async function connectWithRetry(retries = 15, delay = 1000) {
   for (let attempt = 1; attempt <= retries; attempt++) {
     try {
       await redisClient.connect();
@@ -79,13 +79,14 @@ redisClient.on("error", async (error) => {
   console.error("Redis client error:", error);
   if (error.name === "ConnectionTimeoutError") {
     isConnected = false;
+    console.log("Inside error, value if error.name\n",error.name );
     await connectWithRetry();
   }
 });
 
 export async function getRedisClient() {
   if (!isConnected) {
-    console.log('Value of iscobnnected', isConnected);
+    console.log('Value of isconnected', isConnected);
     await connectWithRetry();
   }
   return redisClient;

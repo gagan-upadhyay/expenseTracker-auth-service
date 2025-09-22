@@ -7,24 +7,36 @@ export const findUserByEmail = async (email) => {
 
 export const isUserExist = async(email)=>{
   const result = await pgQuery(`SELECT 1 FROM users WHERE EMAIL=$1 LIMIT 1`, [email]);
-  if(!result){
+  console.log('Value of result:\n', result.rows[0]);
+  if(!result.rows[0]){
     return {message:'User not found'}
   }
   return 'User exists'
 }
-isUserExist('gagan.aws.ac@gmail.com')
-
 export const insertEmailOnlyUser = async (email) => {
   await pgQuery(`INSERT INTO users (email) VALUES ($1)`, [email]);
 };
 
 export const insertUser = async ({ firstName, lastName, email, hashedPassword, authType, profile_picture }) => {
-  const result = await pgQuery(`
-    INSERT INTO users(firstname, lastname, email, password, auth_type, profile_picture created_at)
-    VALUES($1, $2, $3, $4, $5, $6 CURRENT_TIMESTAMP) RETURNING id`,
-    [firstName, lastName, email, hashedPassword, authType, profile_picture]
-  );
-  return result.rows[0];
+  // console.log("Value of allimports from Model:\n", firstName, lastName, email, hashedPassword, authType, profile_picture);
+  if(profile_picture){
+    const result = await pgQuery(`
+      INSERT INTO users(firstname, lastname, email, password, auth_type, profile_picture created_at)
+      VALUES($1, $2, $3, $4, $5, $6 CURRENT_TIMESTAMP) RETURNING id`,
+      [firstName, lastName, email, hashedPassword, authType, profile_picture]
+    );
+    console.log("Value of result form model:\n", result);
+    return result.rows[0];
+  }else{
+    const result = await pgQuery(`
+      INSERT INTO users(firstname, lastname, email, password, auth_type, created_at)
+      VALUES($1, $2, $3, $4, $5, CURRENT_TIMESTAMP) RETURNING id`,
+      [firstName, lastName, email, hashedPassword, authType]
+    );
+    console.log("Value of result form model:\n", result);
+    return result.rows[0];
+  }
+  
 };
 
 

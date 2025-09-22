@@ -1,8 +1,19 @@
 import { createTransport } from "nodemailer";
 import { logger } from "../config/logger.js";
+import {validate } from "./emailValidator.js";
+
+
 
 export const sendOTPEmail = async (name, email, otp)=>{
     console.log("Value of name, email, otp from sendOTP utility:\n", name, email, otp);
+    const isValid = await validate(email);
+    
+    console.log("Value of isValid\n", isValid);
+
+    if(!isValid){
+        return 'Email is not valid';
+    }
+    
     const transporter = createTransport({
         service:process.env.EMAIL_SERVICE,
         auth:{
@@ -85,7 +96,8 @@ export const sendOTPEmail = async (name, email, otp)=>{
     try{
         // const result = await transporter.verify();
         // console.log("Value of result from mailer:\n", result);
-        await transporter.sendMail(mailOptions);
+        const result = await transporter.sendMail(mailOptions);
+        // console.log("VBalue of result from mailer:", result);
         logger.info(`OTP mail sent to ${email}`);
         return 'OTP sent Successfully!';
     }catch(err){

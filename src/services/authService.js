@@ -12,21 +12,21 @@ import { promisify } from 'util';
 
 
 export const registerUserService = async (req, res) => {
-  const { firstName, lastName, email, password } = req.body;
-  const existingUser = await findUserByEmail(email);
-  if (existingUser) return res.status(409).json({ message: 'User already exists' });
+    const { firstName, lastName, email, password } = req.body;
+    const existingUser = await findUserByEmail(email);
+    console.log("Value of existingUser:\n", existingUser);
+    if (existingUser) return res.status(409).json({ message: 'User already exists' });
 
-  const hashedPassword = await bcrypt.hash(password, 12);
-  const user = await insertUser({ firstName, lastName, email, hashedPassword, authType:'PASSWORD' });
+    const hashedPassword = await bcrypt.hash(password, 12);
+    const user = await insertUser({ firstName, lastName, email, hashedPassword, authType:'PASSWORD' });
+    console.log("Value of user:\n", user);
+    const tokens = tokenSetter(user.id);
+    setAuthCookie(res, tokens.refreshToken, tokens.accessToken);
+    logger.info(`Setting refresh and session token for ${user.id}`);
+    await redisSet(`refresh:${user.id}`, tokens.refreshToken, { EX: Number(process.env.REDIS_REFRESH_EXPIRY) });
+    await redisSet(`session:${user.id}`, tokens.accessToken, { EX: 3600 });
 
-  const tokens = tokenSetter(user.id);
-  setAuthCookie(res, tokens.refreshToken, tokens.accessToken);
-  await redisSet(`refresh:${user.id}`, tokens.refreshToken, { EX: Number(process.env.REDIS_REFRESH_EXPIRY) });
-  await redisSet(`session:${user.id}`, tokens.accessToken, { EX: 3600 });
-
-
-
-  return res.status(201).json({ message: 'User registered successfully' });
+    return res.status(201).json({accessToken:tokens.accessToken, message: 'User registered successfully' });
 };
 
 
@@ -83,6 +83,7 @@ export const registerUserWithOAuthService = async(req, res)=>{
 }
 
 export const loginUserService = async(req, res)=>{
+    console.log("Value of req.ip:", req.ip);
     const{email, password} = req.body;
     try{
         //check email ID
@@ -166,11 +167,29 @@ export const generateOTPService = async (req, res) => {
   
   try{
         console.log("Value of req.body", req.body);
-        await sendOTPEmail(req.body?.name, req.body?.email, otp);
+        const emailAlreadyInUse = await isUserExist(req.body.email);
+        console.log("Value of emailAlreadyInUse:\n", emailAlreadyInUse);
+        if(emailAlreadyInUse === 'User exists'){
+            return res.status(400).json({message:'Email already in use'});
+        }
+        const result = await sendOTPEmail(req.body?.name, req.body?.email, otp);
         // if(!response.ok) return res.status(400).json({message:'Unable to send OTP, check email'});
-        console.log(`OTP for ${req.body.email}: ${otp}`);
-        await redisSet(`otp:${req.body.email}`, otp, { EX: 300 }); // 5 min expiry
-        return res.status(200).json({ message: 'OTP sent to your mail' });
+        console.log("Value of res from generateOTservice", result);
+        if(result==='OTP sent Successfully!'){
+            console.log(`OTP for ${req.body.email}: ${otp}`);
+            await redisSet(`otp:${req.body.email}`, otp, { EX: 300 });
+            console.log("Inside if statemenmt");
+            return res.status(200).json({message:'OTP sent successfully'});
+        }else if(result==='Email is not valid'){
+            return res.status(404).json({message:'Email is not valid'});
+        
+        }else{
+            console.log("Outside the if statement");
+            return res.status(404).json({message:'Failed to send OTP'});
+        }
+        
+
+
     }catch(err){
         console.error('OTP failure:\n', err);
         return res.status(500).json({message:'Failed to send OTP'});
@@ -178,15 +197,19 @@ export const generateOTPService = async (req, res) => {
 };
 
 export const verifyOTPService = async (req, res) => {
-  const { email, otp } = req.body;
-  console.log("value of req.body", req.body);
+  const { email, otp, useForLogin } = req.body;
+  console.log("value of req.body from verfiyOTP:\n", req.body);
 
   try{
     const storedOTP = await redisGet(`otp:${email}`);
+    console.log("Value of storedOTP:\n", storedOTP);
     if(!storedOTP || storedOTP !== otp) {
         return res.status(401).json({ message: 'Invalid or expired OTP' });
     }
     await redisDel(`otp:${email}`);
+    if(!useForLogin){
+        return res.status(200).json({message:'OTP verified successfully'});
+    }
     const user = await isUserExist(email);
     // console.log("value of user froem authService verifyOTP:\n", user);
     if (!user) await insertEmailOnlyUser(email);

@@ -1,5 +1,7 @@
-export function setAuthCookie(res, refreshToken, accessToken, isLoggedIn){
+const sameSiteVal = process.env.NODE_ENV==='development'?'None':'Strict';
 
+export function setAuthCookie(res, refreshToken, accessToken, isLoggedIn){
+    
     res.cookie('refreshToken', refreshToken, {
         maxAge: 7 * 24 * 3600 * 1000, // 7 days
         httpOnly: true,

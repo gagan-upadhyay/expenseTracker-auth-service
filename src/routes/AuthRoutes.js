@@ -13,6 +13,7 @@ import {
     } from '../controllers/authController.js';
 import { rateLimiter } from '../../middleware/rateLimiter.js';
 import { verifySession } from '../../middleware/verifySession.js';
+import { registerValidator } from '../../middleware/validator.js';
 
 const authRouter = express.Router();
 //change made in the other tab
@@ -24,7 +25,7 @@ authRouter.get('/', (req, res)=>{
 
 //   API route starter: /api/v1/auth/
 
-authRouter.post('/register', registerUser)
+authRouter.post('/register',registerValidator, registerUser)
 authRouter.post('/login/OAuth', registerUserWithOAuth);
 authRouter.post('/logout', verifySession, logoutUser);
 authRouter.post('/login', loginUser);

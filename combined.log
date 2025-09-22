@@ -891,3 +891,24 @@
 {"level":"info","message":"Postgres Query:SELECT * FROM users WHERE EMAIL=$1","timestamp":"2025-09-18T14:11:35.397Z"}
 {"level":"info","message":"REDIS SET: refresh:c64e68e9-42d3-4a91-893c-025e3749a576","timestamp":"2025-09-18T14:11:36.162Z"}
 {"level":"info","message":"REDIS SET: session:c64e68e9-42d3-4a91-893c-025e3749a576","timestamp":"2025-09-18T14:11:36.510Z"}
+{"level":"info","message":"Auth service running on 5000","timestamp":"2025-09-22T13:32:44.224Z"}
+{"level":"info","message":"Auth service running on 5000","timestamp":"2025-09-22T13:37:50.754Z"}
+{"level":"info","message":"Auth service running on 5000","timestamp":"2025-09-22T15:13:21.547Z"}
+{"level":"info","message":"Postgres Query:SELECT * FROM users WHERE EMAIL=$1","timestamp":"2025-09-22T15:13:30.449Z"}
+{"level":"info","message":"REDIS SET: refresh:a62ab361-87ad-4311-9d63-d778e834076b","timestamp":"2025-09-22T15:13:31.119Z"}
+{"level":"info","message":"REDIS SET: session:a62ab361-87ad-4311-9d63-d778e834076b","timestamp":"2025-09-22T15:13:31.368Z"}
+{"level":"info","message":"REDIS GET: refresh:a62ab361-87ad-4311-9d63-d778e834076b","timestamp":"2025-09-22T15:28:00.587Z"}
+{"level":"info","message":"REDIS SET: refresh:a62ab361-87ad-4311-9d63-d778e834076b","timestamp":"2025-09-22T15:28:00.834Z"}
+{"level":"info","message":"REDIS SET: session:a62ab361-87ad-4311-9d63-d778e834076b","timestamp":"2025-09-22T15:28:01.081Z"}
+{"level":"info","message":"REDIS GET: refresh:a62ab361-87ad-4311-9d63-d778e834076b","timestamp":"2025-09-22T15:42:30.557Z"}
+{"level":"info","message":"REDIS SET: refresh:a62ab361-87ad-4311-9d63-d778e834076b","timestamp":"2025-09-22T15:42:30.806Z"}
+{"level":"info","message":"REDIS SET: session:a62ab361-87ad-4311-9d63-d778e834076b","timestamp":"2025-09-22T15:42:31.063Z"}
+{"level":"info","message":"REDIS GET: refresh:a62ab361-87ad-4311-9d63-d778e834076b","timestamp":"2025-09-22T15:57:00.525Z"}
+{"level":"info","message":"REDIS SET: refresh:a62ab361-87ad-4311-9d63-d778e834076b","timestamp":"2025-09-22T15:57:00.775Z"}
+{"level":"info","message":"REDIS SET: session:a62ab361-87ad-4311-9d63-d778e834076b","timestamp":"2025-09-22T15:57:01.025Z"}
+{"level":"info","message":"REDIS GET: refresh:a62ab361-87ad-4311-9d63-d778e834076b","timestamp":"2025-09-22T16:11:30.598Z"}
+{"level":"info","message":"REDIS SET: refresh:a62ab361-87ad-4311-9d63-d778e834076b","timestamp":"2025-09-22T16:11:31.432Z"}
+{"level":"info","message":"REDIS SET: session:a62ab361-87ad-4311-9d63-d778e834076b","timestamp":"2025-09-22T16:11:32.288Z"}
+{"level":"info","message":"REDIS GET: refresh:a62ab361-87ad-4311-9d63-d778e834076b","timestamp":"2025-09-22T16:26:00.523Z"}
+{"level":"info","message":"REDIS SET: refresh:a62ab361-87ad-4311-9d63-d778e834076b","timestamp":"2025-09-22T16:26:03.057Z"}
+{"level":"info","message":"REDIS SET: session:a62ab361-87ad-4311-9d63-d778e834076b","timestamp":"2025-09-22T16:26:03.360Z"}

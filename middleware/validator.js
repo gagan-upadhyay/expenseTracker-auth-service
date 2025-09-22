@@ -5,10 +5,10 @@ export const registerValidator = async(req, res, next)=>{
         body('firstName').notEmpty().isLength({min:3}).withMessage("Username is required with minimum length 3"),
         body('lastName').optional(),
         body('email').isEmail().notEmpty().withMessage("Enter valid email"),
-        body('password').withMessage(),
-        body('gender').withMessage(),
+        body('password').notEmpty().isLength({min:8}).withMessage('Minimum password length is 8'),
+        // body('gender').withMessage(),
     ]
+    await Promise.all(rule.map(r=>r.run(req)))
+    validationResult(req);
 }
 
-await Promise.all(rule.map(r=>r.run(req)))
-validationResult(req);

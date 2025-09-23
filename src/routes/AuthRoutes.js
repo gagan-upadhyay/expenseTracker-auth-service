@@ -25,6 +25,7 @@ authRouter.get('/', (req, res)=>{
 
 //   API route starter: /api/v1/auth/
 
+
 authRouter.post('/register',registerValidator, registerUser)
 authRouter.post('/login/OAuth', registerUserWithOAuth);
 authRouter.post('/logout', verifySession, logoutUser);

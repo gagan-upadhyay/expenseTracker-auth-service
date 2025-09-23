@@ -169,7 +169,7 @@ export const generateOTPService = async (req, res) => {
         console.log("Value of req.body", req.body);
         const emailAlreadyInUse = await isUserExist(req.body.email);
         console.log("Value of emailAlreadyInUse:\n", emailAlreadyInUse);
-        if(emailAlreadyInUse === 'User exists'){
+        if(emailAlreadyInUse === 'User exists'&& req.body.type==='emailChange'){
             return res.status(400).json({message:'Email already in use'});
         }
         const result = await sendOTPEmail(req.body?.name, req.body?.email, otp);

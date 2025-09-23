@@ -1,4 +1,4 @@
-import { pgQuery } from '../../dbconnection.js';
+import { pgQuery } from '../../config/dbconnection.js';
 
 export const findUserByEmail = async (email) => {
   const result = await pgQuery(`SELECT * FROM users WHERE EMAIL=$1`, [email]);

@@ -1,6 +1,6 @@
 import {Pool} from 'pg'
-import { logger } from './config/logger.js';
-const pool = new Pool({
+import { logger } from './logger.js';
+export const pool = new Pool({
     connectionString:process.env.POSTGRES_URL,
     max:10,
     idleTimeoutMillis:30000,

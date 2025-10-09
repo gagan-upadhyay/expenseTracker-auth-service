@@ -5,6 +5,12 @@ export const findUserByEmail = async (email) => {
   return result.rows[0];
 };
 
+export const getUserCreds = async(email)=>{
+  const result = await pgQuery(`SELECT password from users WHERE EMAIL=$1`, [email]);
+  console.log("Value of result from userModel:\n", result.rows[0].password);
+  return result.rows[0].password;
+}
+
 export const isUserExist = async(email)=>{
   const result = await pgQuery(`SELECT 1 FROM users WHERE EMAIL=$1 LIMIT 1`, [email]);
   console.log('Value of result:\n', result.rows[0]);
@@ -39,8 +45,6 @@ export const insertUser = async ({ firstName, lastName, email, hashedPassword, a
   
 };
 
-
-
 export const insertOAuthUser = async (payload) => {
   const result = await pgQuery(`
     INSERT INTO users (email, firstName, lastName, auth_type, profile_picture, created_at)
@@ -54,3 +58,4 @@ export const addAccessTypeColumn = async () => {
   return await pgQuery(`ALTER TABLE users ADD accessType TEXT`);
 };
 
+// getUserCreds('urmi.bhups@asn.com');

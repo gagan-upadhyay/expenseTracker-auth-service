@@ -3,7 +3,7 @@ import jwt from 'jsonwebtoken';
 import tokenSetter from '../../utils/tokenSetter.js';
 import { deleteAuthCookie, setAuthCookie } from '../../utils/cookiesUtils.js';
 import OAuthClient from '../../utils/OAuth.js';
-import { findUserByEmail, insertUser, insertOAuthUser, insertEmailOnlyUser, isUserExist, getUserCreds } from '../model/userModel.js';
+import { findUserByEmail, insertUser, insertOAuthUser, insertEmailOnlyUser, isUserExist } from '../model/userModel.js';
 import crypto from 'crypto';
 import { sendOTPEmail } from '../../utils/mailer.js';
 import { logger } from '../../config/logger.js';
@@ -89,7 +89,7 @@ export const loginUserService = async(req, res)=>{
         //check email ID
         const isValidUser = await findUserByEmail(email);
         if(!isValidUser) return res.status(404).json({message:"User doesn't exist, register first"});
-        console.log("Value of isValidUser form service:\n",isValidUser);
+        // console.log("Value of isValidUser form service:\n",isValidUser);
 
         if(!isValidUser.password) return res.status(500).json({message:'Password error'});
         //check password
@@ -220,20 +220,3 @@ export const verifyOTPService = async (req, res) => {
     return res.status(500).json({message:'Something went wrong, please try again later.'});
   }
 };
-export const checkPasswordService = async(req, res)=>{
-    const {email, password} = req.body;
-    console.log("Value of email and password from req.body", email, password);
-    try{
-        const userPassword= await getUserCreds(email);
-        console.log("Value of userPassword:\n", userPassword);
-        const isValidPassword = await bcrypt.compare(password, userPassword);
-        console.log("Vlaue of isValidPassword:\n", isValidPassword);
-        if(!isValidPassword) {
-            console.log("Inside !isValidPOasswored");
-            return res.status(401).json({message:"Password is incorrect"});}
-        return res.status(200).json({message:'Password verified'});
-    }catch(err){
-        logger.info('Error at checkPassword level', err);
-        return res.status(500).json({message:"Error while fetching password", error:err});
-    }
-}

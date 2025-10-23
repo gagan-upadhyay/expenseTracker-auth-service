@@ -7,8 +7,7 @@ import {
   refreshTokenService,
   generateOTPService,
   verifyOTPService,
-  logoutUserService,
-  checkPasswordService
+  logoutUserService
 } from '../services/authService.js';
 
 export const registerUser = (req, res) => registerUserService(req, res);
@@ -20,4 +19,4 @@ export const generateOTP = (req, res) => generateOTPService(req, res); //done
 export const verifyOTP = (req, res) => verifyOTPService(req, res); //done
 export const clientLogs = (req, res) =>clientLogsService(req, res)
 
-export const checkPassword=(req, res)=> checkPasswordService(req, res);
+// export const checkPassword=(req, res)=> checkPasswordService(req, res);

@@ -5,11 +5,7 @@ export const findUserByEmail = async (email) => {
   return result.rows[0];
 };
 
-export const getUserCreds = async(email)=>{
-  const result = await pgQuery(`SELECT password from users WHERE EMAIL=$1`, [email]);
-  console.log("Value of result from userModel:\n", result.rows[0].password);
-  return result.rows[0].password;
-}
+
 
 export const isUserExist = async(email)=>{
   const result = await pgQuery(`SELECT 1 FROM users WHERE EMAIL=$1 LIMIT 1`, [email]);

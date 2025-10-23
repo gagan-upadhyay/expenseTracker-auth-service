@@ -7,7 +7,7 @@ const redisClient = await getRedisClient();
 
 export const redisSet = async(key, value, options={})=>{
     try{
-        console.log("Value of key, value and options", key, value, options);
+        // console.log("Value of key, value and options", key, value, options);
         await redisClient.set(key, value, options);
         logger.info(`REDIS SET: ${key}`);
     }catch(err){

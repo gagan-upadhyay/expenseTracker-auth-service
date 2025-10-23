@@ -2,7 +2,6 @@ import express from 'express';
 import {logger} from '../../config/logger.js'
 // import { registerValidator } from '../middleware/validator.js';
 import {
-    checkPassword,
     //  addColumn, 
      generateOTP, 
      loginUser, 
@@ -35,7 +34,7 @@ authRouter.post('/otp/generate',verifySession, generateOTP);
 authRouter.post('/otp/verify', verifyOTP);
 authRouter.post('/refresh',verifySession, refreshToken );
 // authRouter.post('/logs', clientLogs)
-authRouter.get('/getPassword', verifySession, checkPassword)
+
 
 // authRouter.get('/addColumn', addColumn)
 

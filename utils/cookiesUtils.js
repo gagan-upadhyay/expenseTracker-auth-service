@@ -1,20 +1,20 @@
-const sameSiteVal = process.env.NODE_ENV==='development'?'None':'Strict';
+const isProduction = process.env.NODE_ENV === 'production';
 
 export function setAuthCookie(res, refreshToken, accessToken, isLoggedIn){
     
     res.cookie('refreshToken', refreshToken, {
         maxAge: 7 * 24 * 3600 * 1000, // 7 days
         httpOnly: true,
-        secure: true,
-        sameSite: 'Strict',
+        secure: false, // localhost=HTTP => false
+        sameSite:'lax', // required
         path: '/'
     });
 
     res.cookie('accessToken', accessToken, {
         maxAge:15 * 60 * 1000,  // 15 min
         httpOnly: true,         // accessible to JS for middleware
-        secure: true,
-        sameSite: 'Strict',
+        secure: false, // localhost=HTTP => false
+        sameSite: 'lax', // required
         path: '/'
     });
     // res.cookie('isLoggedIn', isLoggedIn, {

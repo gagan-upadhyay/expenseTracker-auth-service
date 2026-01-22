@@ -1,7 +1,7 @@
 import { pgConnectTest } from '../config/dbconnection.js';
 import { logger } from '../config/logger.js';
 import { getRedisClient } from '../config/redisConnection.js';
-// import app from '../index.js';
+import app from '../index.js';
 
 export  function setupHealthCheckUp(app){
     app.get('/healthz', (req, res)=>{
@@ -12,11 +12,12 @@ export  function setupHealthCheckUp(app){
             //redis check
             const redis = await getRedisClient();
             const pong = await redis.ping();
+            console.log("Value of redis and PONG:",redis, pong);
             if(pong!=='PONG') throw new Error('Unxepected Redis response');
 
             // postgres check
             await pgConnectTest();
-
+            
             return res.status(200).json({ready:true, redis:'Connected', postgres:'Connected'});
         }catch(err){
             logger.error('🔴 Readiness check failed:', err);

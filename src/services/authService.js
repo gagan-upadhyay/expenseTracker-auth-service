@@ -5,13 +5,14 @@ import { deleteAuthCookie, setAuthCookie } from '../../utils/cookiesUtils.js';
 import OAuthClient from '../../utils/OAuth.js';
 import { findUserByEmail, insertUser, insertOAuthUser, insertEmailOnlyUser, isUserExist } from '../model/userModel.js';
 import crypto from 'crypto';
-import { sendOTPEmail } from '../../utils/mailer.js';
+import { sendOTPEmail, sendPasswordMagicLink } from '../../utils/mailer.js';
 import { logger } from '../../config/logger.js';
 import { redisDel, redisGet, redisSet } from '../../utils/redisUtility.js';
 import { promisify } from 'util';
 
 
 export const registerUserService = async (req, res) => {
+    console.log('Inside the registerUSer function with email:', req.body?.email);
     const { firstName, lastName, email, password } = req.body;
     const existingUser = await findUserByEmail(email);
     console.log("Value of existingUser:\n", existingUser);
@@ -29,7 +30,17 @@ export const registerUserService = async (req, res) => {
     return res.status(201).json({accessToken:tokens.accessToken, message: 'User registered successfully' });
 };
 
+const isEmailExist = async(email)=>{
+  
+    try{
+        const res = await findUserByEmail(email);
+        if(!res) return "user doesn't exist";
+        return res;
+    }catch(err){
+        console.error('Error while validating email', err);
+    }
 
+}
 
 export const registerUserWithOAuthService = async(req, res)=>{
     const tokenID = req.headers.authorization;
@@ -87,9 +98,10 @@ export const loginUserService = async(req, res)=>{
     const{email, password} = req.body;
     try{
         //check email ID
-        const isValidUser = await findUserByEmail(email);
-        if(!isValidUser) return res.status(404).json({message:"User doesn't exist, register first"});
-        // console.log("Value of isValidUser form service:\n",isValidUser);
+        const isValidUser = await isEmailExist(email);
+        if(isValidUser==='user doesn\'t exist') return res.status(404).json({message:"User doesn't exist, register first"});
+        console.log("Value of isValidUser form service:\n",isValidUser);
+
 
         if(!isValidUser.password) return res.status(500).json({message:'Password error'});
         //check password
@@ -106,7 +118,7 @@ export const loginUserService = async(req, res)=>{
         await redisSet(`refresh:${id}`, tokens.refreshToken,{EX:Number(process.env.REDIS_REFRESH_EXPIRY)});
         await redisSet(`session:${id}`, tokens.accessToken, {EX:3600});
 
-        return res.status(200).json({message:"Logged In", token:tokens.accessToken});
+        return res.status(200).json({message:"Logged In", accessToken:tokens.accessToken, refreshToken:tokens.refreshToken});
 
     }catch(err){
         logger.error("Error caught at Login Step:\n", err);
@@ -220,3 +232,26 @@ export const verifyOTPService = async (req, res) => {
     return res.status(500).json({message:'Something went wrong, please try again later.'});
   }
 };
+
+export const forgotPasswordService=async(req, res)=>{
+    try{
+        const {email} = req.body;
+        const res = isEmailExist(email);
+        if(!res) {return res.status(404).json({message:"User doesn't exists"})}
+        else if(res==='Email is not valid'){return res.status(400).json('Email is not valid')}
+        const token = jwt.sign({email}, process.env.SECRET, {expiresIn:'15m'});
+        const isMailSent = await sendPasswordMagicLink(email, token);
+        if(!isMailSent) return res.status(404).json({message:'Failed to send magic link'});
+        await redisSet(`resetPassword:${email}`, token, {EX:900});
+        return res.status(200).json({message:'Magic link sent'});
+    }catch(err){
+        console.error('Error while changing password', err);
+        return res.status(500).json({message:'Something went wrong, please try again later.'})
+    }
+}
+
+export const validateMagicLinkService=async(req, res)=>{
+    const token = req.body.params;
+    console.log('Vale uf params:', token);
+}
+// isEmailExist('gaganupadhyay.karan@gmail.com');

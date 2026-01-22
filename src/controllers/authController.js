@@ -7,7 +7,9 @@ import {
   refreshTokenService,
   generateOTPService,
   verifyOTPService,
-  logoutUserService
+  logoutUserService,
+  forgotPasswordService,
+  validateMagicLinkService
 } from '../services/authService.js';
 
 export const registerUser = (req, res) => registerUserService(req, res);
@@ -18,5 +20,8 @@ export const logoutUser = (req, res) => logoutUserService(req, res);
 export const generateOTP = (req, res) => generateOTPService(req, res); //done
 export const verifyOTP = (req, res) => verifyOTPService(req, res); //done
 export const clientLogs = (req, res) =>clientLogsService(req, res)
+export const forgotPassword = (req, res)=>forgotPasswordService(req, res);
+export const validateMagicLink = (req, res)=>validateMagicLinkService(req, res);
+
 
 // export const checkPassword=(req, res)=> checkPasswordService(req, res);

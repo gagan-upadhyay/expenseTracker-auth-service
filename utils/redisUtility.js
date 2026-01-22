@@ -1,9 +1,7 @@
 import { logger } from "../config/logger.js";
-// import  {redisClient} from "../config/redisConnection.js"
 import { getRedisClient } from "../config/redisConnection.js";
 
 const redisClient = await getRedisClient();
-// console.log( redisClient);
 
 export const redisSet = async(key, value, options={})=>{
     try{

@@ -1,6 +1,6 @@
 import { logger } from "../config/logger.js"
 
-export function setupGracefulShutDown(app, cleanupFns=[]){
+export function setupGracefulShutDown(server, cleanupFns=[]){
     const shutdown = async()=>{
         logger.info('Graceful shutdown initiated');
         for(const fn of cleanupFns){

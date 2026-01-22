@@ -1,7 +1,9 @@
 import { pgQuery } from '../../config/dbconnection.js';
 
 export const findUserByEmail = async (email) => {
+  console.log('Inside findUserByEmail in userModel');
   const result = await pgQuery(`SELECT * FROM users WHERE EMAIL=$1`, [email]);
+  console.log('from userModel, value of result:', result);
   return result.rows[0];
 };
 

@@ -2,6 +2,7 @@ import express from 'express';
 import {logger} from '../../config/logger.js'
 // import { registerValidator } from '../middleware/validator.js';
 import {
+    forgotPassword,
     //  addColumn, 
      generateOTP, 
      loginUser, 
@@ -9,11 +10,13 @@ import {
      refreshToken, 
      registerUser, 
      registerUserWithOAuth, 
+     validateMagicLink, 
      verifyOTP 
     } from '../controllers/authController.js';
 import { rateLimiter } from '../../middleware/rateLimiter.js';
 import { verifySession } from '../../middleware/verifySession.js';
 import { registerValidator } from '../../middleware/validator.js';
+import { setupHealthCheckUp } from '../../utils/setupHealthcheckUp.js';
 
 const authRouter = express.Router();
 //change made in the other tab
@@ -33,9 +36,10 @@ authRouter.post('/login', loginUser);
 authRouter.post('/otp/generate',verifySession, generateOTP);
 authRouter.post('/otp/verify', verifyOTP);
 authRouter.post('/refresh',verifySession, refreshToken );
+authRouter.post('/forgot-password', forgotPassword)
+authRouter.get('/password-reset/validate', validateMagicLink);
 // authRouter.post('/logs', clientLogs)
-
-
+// authRouter.get('/health', setupHealthCheckUp);
 // authRouter.get('/addColumn', addColumn)
 
 export default authRouter;

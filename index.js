@@ -14,10 +14,29 @@ import { pgConnectTest, pool } from './config/dbconnection.js';
 // import timeout from 'connect-timeout';
 
 const app = express();
+
+// const corsOptions = {
+//     origin:['http://localhost:3000', 'https://expense-tracker-6afeksr0j-gagans-projects-00cb1a77.vercel.app', 'http://192.168.0.148:3000', 'http://192.168.0.106:3000', 'https://expense-tracker-self-rho-12.vercel.app'],
+//     credentials:true
+// }
+
 const corsOptions = {
-    origin:['http://localhost:3000', 'https://expense-tracker-6afeksr0j-gagans-projects-00cb1a77.vercel.app', 'http://192.168.0.105:3000', 'http://192.168.0.106:3000', 'https://expense-tracker-self-rho-12.vercel.app'],
-    credentials:true
-}
+  origin: function (origin, callback) {
+    const allowedOrigins = [
+       'http://localhost:3000','https://expense-tracker-6afeksr0j-gagans-projects-00cb1a77.vercel.app', 'https://expense-tracker-self-rho-12.vercel.app', 'http://172.168.0.148:3000'
+    ];
+    const ipRegex = /^http:\/\/192\.168\.0\.\d{1,3}:3000$/;
+    if (!origin || allowedOrigins.includes(origin) || ipRegex.test(origin)) {
+      callback(null, true);
+    } else {
+      callback(new Error('Not allowed by CORS'));
+    }
+  },
+  credentials: true
+};
+
+// app.use(cors(corsOptions));
+
 
 // app.use(timeout('1ms'));
 // app.use(cors({origin:'*', credentials:'include'}));
@@ -52,7 +71,6 @@ app.use('/api/v1/auth', authRouter);
 
 
 const server = app.listen(process.env.PORT,()=>{
-    console.log(`Auth service running at port ${process.env.PORT}`);
     logger.info(`Auth service running on ${process.env.PORT}`);
 });
 

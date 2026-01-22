@@ -10,7 +10,9 @@
   "license": "ISC",
   "author": "Gagan Upadhyay",
   "type": "module",
-   "jest":{
+  
+  "jest":
+  {
     "transform":{}
   },
   "main": "index.js",

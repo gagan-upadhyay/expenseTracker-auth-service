@@ -9,6 +9,10 @@ export const registerValidator = async(req, res, next)=>{
         // body('gender').withMessage(),
     ]
     await Promise.all(rule.map(r=>r.run(req)))
-    validationResult(req);
+    const errors = validationResult(req);
+    if (!errors.isEmpty()) {
+        return res.status(400).json({ errors: errors.array() });
+    }
+    return next();
 }
 

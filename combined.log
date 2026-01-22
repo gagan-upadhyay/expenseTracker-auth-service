@@ -580,3 +580,1494 @@
 {"level":"info","message":"Postgres Query:SELECT * FROM users WHERE EMAIL=$1","timestamp":"2025-10-23T04:22:32.175Z"}
 {"level":"info","message":"REDIS SET: refresh:2b40d5bd-8344-430c-ba57-37488598d77d","timestamp":"2025-10-23T04:22:32.833Z"}
 {"level":"info","message":"REDIS SET: session:2b40d5bd-8344-430c-ba57-37488598d77d","timestamp":"2025-10-23T04:22:33.087Z"}
+{"level":"info","message":"REDIS GET: refresh:c52300e0-bc1e-4040-a3c0-91bf1692c923","timestamp":"2025-10-23T04:31:43.546Z"}
+{"level":"info","message":"REDIS SET: refresh:c52300e0-bc1e-4040-a3c0-91bf1692c923","timestamp":"2025-10-23T04:31:43.795Z"}
+{"level":"info","message":"REDIS SET: session:c52300e0-bc1e-4040-a3c0-91bf1692c923","timestamp":"2025-10-23T04:31:44.042Z"}
+{"level":"info","message":"Postgres Query:SELECT * FROM users WHERE EMAIL=$1","timestamp":"2025-10-23T05:30:34.900Z"}
+{"level":"info","message":"REDIS SET: refresh:c64e68e9-42d3-4a91-893c-025e3749a576","timestamp":"2025-10-23T05:30:35.556Z"}
+{"level":"info","message":"REDIS SET: session:c64e68e9-42d3-4a91-893c-025e3749a576","timestamp":"2025-10-23T05:30:35.811Z"}
+{"level":"info","message":"REDIS GET: refresh:c64e68e9-42d3-4a91-893c-025e3749a576","timestamp":"2025-10-23T05:45:07.466Z"}
+{"level":"info","message":"REDIS SET: refresh:c64e68e9-42d3-4a91-893c-025e3749a576","timestamp":"2025-10-23T05:45:07.722Z"}
+{"level":"info","message":"REDIS SET: session:c64e68e9-42d3-4a91-893c-025e3749a576","timestamp":"2025-10-23T05:45:07.966Z"}
+{"level":"info","message":"REDIS GET: refresh:c64e68e9-42d3-4a91-893c-025e3749a576","timestamp":"2025-10-23T05:59:37.634Z"}
+{"level":"info","message":"REDIS SET: refresh:c64e68e9-42d3-4a91-893c-025e3749a576","timestamp":"2025-10-23T05:59:37.883Z"}
+{"level":"info","message":"REDIS SET: session:c64e68e9-42d3-4a91-893c-025e3749a576","timestamp":"2025-10-23T05:59:38.137Z"}
+{"level":"info","message":"Postgres Query:SELECT * FROM users WHERE EMAIL=$1","timestamp":"2025-10-23T07:18:37.009Z"}
+{"level":"info","message":"Postgres Query:SELECT * FROM users WHERE EMAIL=$1","timestamp":"2025-10-23T07:18:44.248Z"}
+{"level":"info","message":"Postgres Query:SELECT * FROM users WHERE EMAIL=$1","timestamp":"2025-10-23T07:18:56.161Z"}
+{"level":"info","message":"Postgres Query:SELECT * FROM users WHERE EMAIL=$1","timestamp":"2025-10-23T07:19:40.969Z"}
+{"level":"info","message":"Postgres Query:SELECT * FROM users WHERE EMAIL=$1","timestamp":"2025-10-23T07:19:46.037Z"}
+{"level":"info","message":"Postgres Query:SELECT * FROM users WHERE EMAIL=$1","timestamp":"2025-10-23T07:19:51.260Z"}
+{"level":"info","message":"REDIS SET: refresh:c52300e0-bc1e-4040-a3c0-91bf1692c923","timestamp":"2025-10-23T07:19:51.914Z"}
+{"level":"info","message":"REDIS SET: session:c52300e0-bc1e-4040-a3c0-91bf1692c923","timestamp":"2025-10-23T07:19:52.157Z"}
+{"level":"info","message":"Postgres Query:SELECT * FROM users WHERE EMAIL=$1","timestamp":"2025-10-23T07:19:58.920Z"}
+{"level":"info","message":"REDIS SET: refresh:c52300e0-bc1e-4040-a3c0-91bf1692c923","timestamp":"2025-10-23T07:19:59.568Z"}
+{"level":"info","message":"REDIS SET: session:c52300e0-bc1e-4040-a3c0-91bf1692c923","timestamp":"2025-10-23T07:19:59.822Z"}
+{"level":"info","message":"Postgres Query:SELECT * FROM users WHERE EMAIL=$1","timestamp":"2025-10-23T07:20:10.816Z"}
+{"level":"info","message":"Postgres Query:SELECT * FROM users WHERE EMAIL=$1","timestamp":"2025-10-23T07:20:20.745Z"}
+{"level":"info","message":"REDIS SET: refresh:c52300e0-bc1e-4040-a3c0-91bf1692c923","timestamp":"2025-10-23T07:20:21.388Z"}
+{"level":"info","message":"REDIS SET: session:c52300e0-bc1e-4040-a3c0-91bf1692c923","timestamp":"2025-10-23T07:20:21.635Z"}
+{"level":"info","message":"Postgres Query:SELECT * FROM users WHERE EMAIL=$1","timestamp":"2025-10-23T07:45:43.847Z"}
+{"level":"info","message":"Postgres Query:SELECT * FROM users WHERE EMAIL=$1","timestamp":"2025-10-23T07:45:48.986Z"}
+{"level":"info","message":"Postgres Query:SELECT * FROM users WHERE EMAIL=$1","timestamp":"2025-10-23T07:45:56.588Z"}
+{"level":"info","message":"REDIS SET: refresh:c52300e0-bc1e-4040-a3c0-91bf1692c923","timestamp":"2025-10-23T07:45:57.226Z"}
+{"level":"info","message":"REDIS SET: session:c52300e0-bc1e-4040-a3c0-91bf1692c923","timestamp":"2025-10-23T07:45:57.470Z"}
+{"level":"info","message":"Auth service running on 5000","timestamp":"2025-10-24T02:13:22.759Z"}
+{"level":"info","message":"Auth service running on 5000","timestamp":"2025-10-24T05:36:52.302Z"}
+{"level":"info","message":"Postgres Query:SELECT * FROM users WHERE EMAIL=$1","timestamp":"2025-10-24T05:38:00.604Z"}
+{"level":"info","message":"REDIS SET: refresh:c64e68e9-42d3-4a91-893c-025e3749a576","timestamp":"2025-10-24T05:38:01.294Z"}
+{"level":"info","message":"REDIS SET: session:c64e68e9-42d3-4a91-893c-025e3749a576","timestamp":"2025-10-24T05:38:01.579Z"}
+{"level":"info","message":"Auth service running on 5000","timestamp":"2025-10-24T10:22:56.845Z"}
+{"level":"info","message":"Auth service running on 5000","timestamp":"2025-10-24T10:24:30.874Z"}
+{"level":"info","message":"Auth service running on 5000","timestamp":"2025-10-24T10:24:50.762Z"}
+{"level":"info","message":"Auth service running on 5000","timestamp":"2025-10-27T06:00:36.921Z"}
+{"level":"info","message":"Postgres Query:SELECT * FROM users WHERE EMAIL=$1","timestamp":"2025-10-27T06:09:56.828Z"}
+{"level":"info","message":"REDIS SET: refresh:c64e68e9-42d3-4a91-893c-025e3749a576","timestamp":"2025-10-27T06:09:57.545Z"}
+{"level":"info","message":"REDIS SET: session:c64e68e9-42d3-4a91-893c-025e3749a576","timestamp":"2025-10-27T06:09:57.866Z"}
+{"level":"info","message":"Postgres Query:SELECT * FROM users WHERE EMAIL=$1","timestamp":"2025-10-27T06:10:05.399Z"}
+{"level":"info","message":"REDIS SET: refresh:c64e68e9-42d3-4a91-893c-025e3749a576","timestamp":"2025-10-27T06:10:06.116Z"}
+{"level":"info","message":"REDIS SET: session:c64e68e9-42d3-4a91-893c-025e3749a576","timestamp":"2025-10-27T06:10:06.441Z"}
+{"level":"info","message":"Auth service running on 5000","timestamp":"2025-10-27T06:11:36.639Z"}
+{"level":"info","message":"Auth service running on 5000","timestamp":"2025-10-27T06:11:56.448Z"}
+{"level":"error","message":"Error connecting postgres: result.rows[0].now is not a function","stack":"TypeError: result.rows[0].now is not a function\n    at pgConnectTest (file:///C:/Code/ExpenseTrackerApp/server/expenseTracker-auth-service/config/dbconnection.js:32:71)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at async file:///C:/Code/ExpenseTrackerApp/server/expenseTracker-auth-service/utils/setupHealthcheckUp.js:18:13","timestamp":"2025-10-27T06:13:01.422Z"}
+{"level":"info","message":"Auth service running on 5000","timestamp":"2025-10-27T06:42:38.177Z"}
+{"level":"info","message":"Auth service running on 5000","timestamp":"2025-10-27T06:49:15.174Z"}
+{"level":"info","message":"Auth service running on 5000","timestamp":"2025-10-27T07:15:23.005Z"}
+{"level":"info","message":"Auth service running on 5000","timestamp":"2025-10-27T07:15:51.456Z"}
+{"level":"info","message":"Auth service running on 5000","timestamp":"2025-10-27T07:17:00.128Z"}
+{"level":"error","message":"🔴 Readiness check failed: NOAUTH Authentication required","timestamp":"2025-10-27T07:19:03.086Z"}
+{"level":"error","message":"🔴 Readiness check failed: NOAUTH Authentication required","timestamp":"2025-10-27T07:19:39.250Z"}
+{"level":"error","message":"🔴 Readiness check failed: NOAUTH Authentication required","timestamp":"2025-10-27T07:19:46.357Z"}
+{"level":"info","message":"Auth service running on 5000","timestamp":"2025-10-27T07:47:00.026Z"}
+{"level":"info","message":"Auth service running on 5000","timestamp":"2025-10-27T07:49:10.218Z"}
+{"level":"error","message":"🔴 Readiness check failed: NOAUTH Authentication required","timestamp":"2025-10-27T07:49:14.205Z"}
+{"level":"error","message":"🔴 Readiness check failed: NOAUTH Authentication required","timestamp":"2025-10-27T07:49:36.585Z"}
+{"level":"info","message":"Auth service running on 5000","timestamp":"2025-10-27T07:50:22.692Z"}
+{"level":"error","message":"🔴 Readiness check failed: NOAUTH Authentication required","timestamp":"2025-10-27T07:50:25.721Z"}
+{"level":"info","message":"Auth service running on 5000","timestamp":"2025-10-27T07:50:55.223Z"}
+{"level":"error","message":"🔴 Readiness check failed: NOAUTH Authentication required","timestamp":"2025-10-27T07:50:56.967Z"}
+{"level":"info","message":"Auth service running on 5000","timestamp":"2025-10-27T07:51:01.465Z"}
+{"level":"error","message":"🔴 Readiness check failed: NOAUTH Authentication required","timestamp":"2025-10-27T07:51:04.547Z"}
+{"level":"error","message":"🔴 Readiness check failed: NOAUTH Authentication required","timestamp":"2025-10-27T07:51:08.719Z"}
+{"level":"error","message":"🔴 Readiness check failed: NOAUTH Authentication required","timestamp":"2025-10-27T07:51:11.074Z"}
+{"level":"info","message":"Auth service running on 5000","timestamp":"2025-10-27T07:52:16.016Z"}
+{"level":"error","message":"🔴 Readiness check failed: NOAUTH Authentication required","timestamp":"2025-10-27T07:52:17.619Z"}
+{"level":"error","message":"🔴 Readiness check failed: NOAUTH Authentication required","timestamp":"2025-10-27T07:58:05.371Z"}
+{"level":"info","message":"Auth service running on 5000","timestamp":"2025-10-27T08:06:17.403Z"}
+{"level":"info","message":"Auth service running on 5000","timestamp":"2025-10-27T08:06:31.331Z"}
+{"level":"error","message":"Error connecting postgres: result.rows[0].now is not a function","stack":"TypeError: result.rows[0].now is not a function\n    at pgConnectTest (file:///C:/Code/ExpenseTrackerApp/server/expenseTracker-auth-service/config/dbconnection.js:32:71)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at async file:///C:/Code/ExpenseTrackerApp/server/expenseTracker-auth-service/utils/setupHealthcheckUp.js:19:28","timestamp":"2025-10-27T08:06:35.823Z"}
+{"level":"error","message":"🔴 Readiness check failed: Unexpected PG response","stack":"Error: Unexpected PG response\n    at file:///C:/Code/ExpenseTrackerApp/server/expenseTracker-auth-service/utils/setupHealthcheckUp.js:20:31\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)","timestamp":"2025-10-27T08:06:35.825Z"}
+{"level":"info","message":"Auth service running on 5000","timestamp":"2025-10-27T08:07:18.005Z"}
+{"level":"info","message":"Postgres connected. Server time:Mon Oct 27 2025 13:37:15 GMT+0530 (India Standard Time)","timestamp":"2025-10-27T08:07:23.070Z"}
+{"level":"error","message":"🔴 Readiness check failed: Unexpected PG response","stack":"Error: Unexpected PG response\n    at file:///C:/Code/ExpenseTrackerApp/server/expenseTracker-auth-service/utils/setupHealthcheckUp.js:20:31\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)","timestamp":"2025-10-27T08:07:23.071Z"}
+{"level":"info","message":"Auth service running on 5000","timestamp":"2025-10-27T08:08:08.409Z"}
+{"level":"info","message":"Postgres connected. Server time:Mon Oct 27 2025 13:38:07 GMT+0530 (India Standard Time)","timestamp":"2025-10-27T08:08:15.458Z"}
+{"level":"error","message":"🔴 Readiness check failed: Unexpected PG response","stack":"Error: Unexpected PG response\n    at file:///C:/Code/ExpenseTrackerApp/server/expenseTracker-auth-service/utils/setupHealthcheckUp.js:20:31\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)","timestamp":"2025-10-27T08:08:15.460Z"}
+{"level":"info","message":"Auth service running on 5000","timestamp":"2025-10-27T08:09:19.470Z"}
+{"level":"info","message":"Auth service running on 5000","timestamp":"2025-10-27T08:10:04.902Z"}
+{"level":"info","message":"Auth service running on 5000","timestamp":"2025-10-27T08:10:12.640Z"}
+{"level":"info","message":"Postgres connected. Server time:Mon Oct 27 2025 13:40:08 GMT+0530 (India Standard Time)","timestamp":"2025-10-27T08:10:16.420Z"}
+{"level":"error","message":"🔴 Readiness check failed: Unexpected PG response","stack":"Error: Unexpected PG response\n    at file:///C:/Code/ExpenseTrackerApp/server/expenseTracker-auth-service/utils/setupHealthcheckUp.js:20:31\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)","timestamp":"2025-10-27T08:10:16.423Z"}
+{"level":"info","message":"Auth service running on 5000","timestamp":"2025-10-27T08:10:50.483Z"}
+{"level":"info","message":"Postgres connected. Server time:Mon Oct 27 2025 13:40:46 GMT+0530 (India Standard Time)","timestamp":"2025-10-27T08:10:54.280Z"}
+{"level":"info","message":"Auth service running on 5000","timestamp":"2025-10-27T08:11:08.144Z"}
+{"level":"info","message":"Auth service running on 5000","timestamp":"2025-11-27T05:24:40.462Z"}
+{"level":"info","message":"Postgres Query:SELECT * FROM users WHERE EMAIL=$1","timestamp":"2025-11-27T05:25:38.638Z"}
+{"level":"info","message":"REDIS SET: refresh:c64e68e9-42d3-4a91-893c-025e3749a576","timestamp":"2025-11-27T05:25:39.291Z"}
+{"level":"info","message":"REDIS SET: session:c64e68e9-42d3-4a91-893c-025e3749a576","timestamp":"2025-11-27T05:25:39.534Z"}
+{"level":"info","message":"Auth service running on 5000","timestamp":"2025-11-28T04:43:20.394Z"}
+{"level":"info","message":"Postgres Query:SELECT * FROM users WHERE EMAIL=$1","timestamp":"2025-11-28T04:43:32.843Z"}
+{"level":"info","message":"REDIS SET: session:91679cc4-fcad-4ce3-9fee-aee82dd361a6","timestamp":"2025-11-28T04:43:33.091Z"}
+{"level":"info","message":"REDIS SET: refresh:91679cc4-fcad-4ce3-9fee-aee82dd361a6","timestamp":"2025-11-28T04:43:33.329Z"}
+{"level":"info","message":"REDIS GET: refresh:91679cc4-fcad-4ce3-9fee-aee82dd361a6","timestamp":"2025-11-28T04:58:02.544Z"}
+{"level":"info","message":"REDIS SET: refresh:91679cc4-fcad-4ce3-9fee-aee82dd361a6","timestamp":"2025-11-28T04:58:02.808Z"}
+{"level":"info","message":"REDIS SET: session:91679cc4-fcad-4ce3-9fee-aee82dd361a6","timestamp":"2025-11-28T04:58:03.071Z"}
+{"level":"info","message":"REDIS Del: refresh:undefined","timestamp":"2025-11-28T04:58:56.025Z"}
+{"level":"info","message":"REDIS Del: session:undefined","timestamp":"2025-11-28T04:58:56.026Z"}
+{"level":"info","message":"Postgres Query:SELECT * FROM users WHERE EMAIL=$1","timestamp":"2025-11-28T04:59:10.831Z"}
+{"level":"info","message":"REDIS SET: refresh:c64e68e9-42d3-4a91-893c-025e3749a576","timestamp":"2025-11-28T04:59:11.486Z"}
+{"level":"info","message":"REDIS SET: session:c64e68e9-42d3-4a91-893c-025e3749a576","timestamp":"2025-11-28T04:59:11.749Z"}
+{"level":"info","message":"Postgres Query:SELECT * FROM users WHERE EMAIL=$1","timestamp":"2025-11-28T05:34:30.469Z"}
+{"level":"info","message":"REDIS SET: refresh:c64e68e9-42d3-4a91-893c-025e3749a576","timestamp":"2025-11-28T05:34:31.127Z"}
+{"level":"info","message":"REDIS SET: session:c64e68e9-42d3-4a91-893c-025e3749a576","timestamp":"2025-11-28T05:34:31.385Z"}
+{"level":"info","message":"REDIS GET: refresh:c64e68e9-42d3-4a91-893c-025e3749a576","timestamp":"2025-11-28T05:49:00.562Z"}
+{"level":"info","message":"REDIS SET: refresh:c64e68e9-42d3-4a91-893c-025e3749a576","timestamp":"2025-11-28T05:49:00.805Z"}
+{"level":"info","message":"REDIS SET: session:c64e68e9-42d3-4a91-893c-025e3749a576","timestamp":"2025-11-28T05:49:01.047Z"}
+{"level":"info","message":"Postgres Query:SELECT * FROM users WHERE EMAIL=$1","timestamp":"2025-11-28T07:09:26.828Z"}
+{"level":"info","message":"REDIS SET: refresh:c64e68e9-42d3-4a91-893c-025e3749a576","timestamp":"2025-11-28T07:09:27.493Z"}
+{"level":"info","message":"REDIS SET: session:c64e68e9-42d3-4a91-893c-025e3749a576","timestamp":"2025-11-28T07:09:27.754Z"}
+{"level":"info","message":"REDIS GET: refresh:c64e68e9-42d3-4a91-893c-025e3749a576","timestamp":"2025-11-28T07:23:59.242Z"}
+{"level":"info","message":"REDIS SET: refresh:c64e68e9-42d3-4a91-893c-025e3749a576","timestamp":"2025-11-28T07:23:59.475Z"}
+{"level":"info","message":"REDIS SET: session:c64e68e9-42d3-4a91-893c-025e3749a576","timestamp":"2025-11-28T07:23:59.706Z"}
+{"level":"info","message":"Postgres Query:SELECT 1 FROM users WHERE EMAIL=$1 LIMIT 1","timestamp":"2025-11-28T07:32:06.160Z"}
+{"level":"info","message":"Postgres Query:SELECT 1 FROM users WHERE EMAIL=$1 LIMIT 1","timestamp":"2025-11-28T07:32:17.486Z"}
+{"level":"info","message":"Postgres Query:SELECT 1 FROM users WHERE EMAIL=$1 LIMIT 1","timestamp":"2025-11-28T07:32:21.509Z"}
+{"level":"info","message":"Postgres Query:SELECT 1 FROM users WHERE EMAIL=$1 LIMIT 1","timestamp":"2025-11-28T07:32:28.136Z"}
+{"level":"info","message":"Postgres Query:SELECT 1 FROM users WHERE EMAIL=$1 LIMIT 1","timestamp":"2025-11-28T07:32:38.159Z"}
+{"level":"info","message":"OTP mail sent to ancd@asdm.com","timestamp":"2025-11-28T07:32:42.027Z"}
+{"level":"info","message":"REDIS SET: otp:ancd@asdm.com","timestamp":"2025-11-28T07:32:42.259Z"}
+{"level":"info","message":"REDIS GET: refresh:c64e68e9-42d3-4a91-893c-025e3749a576","timestamp":"2025-11-28T07:38:29.486Z"}
+{"level":"info","message":"REDIS SET: refresh:c64e68e9-42d3-4a91-893c-025e3749a576","timestamp":"2025-11-28T07:38:29.721Z"}
+{"level":"info","message":"REDIS SET: session:c64e68e9-42d3-4a91-893c-025e3749a576","timestamp":"2025-11-28T07:38:29.955Z"}
+{"level":"info","message":"REDIS GET: refresh:c64e68e9-42d3-4a91-893c-025e3749a576","timestamp":"2025-11-28T07:52:59.638Z"}
+{"level":"info","message":"REDIS SET: refresh:c64e68e9-42d3-4a91-893c-025e3749a576","timestamp":"2025-11-28T07:52:59.876Z"}
+{"level":"info","message":"REDIS SET: session:c64e68e9-42d3-4a91-893c-025e3749a576","timestamp":"2025-11-28T07:53:00.113Z"}
+{"level":"info","message":"Postgres Query:SELECT 1 FROM users WHERE EMAIL=$1 LIMIT 1","timestamp":"2025-11-28T08:04:49.200Z"}
+{"level":"info","message":"REDIS GET: refresh:c64e68e9-42d3-4a91-893c-025e3749a576","timestamp":"2025-11-28T08:07:29.499Z"}
+{"level":"info","message":"REDIS SET: refresh:c64e68e9-42d3-4a91-893c-025e3749a576","timestamp":"2025-11-28T08:07:29.743Z"}
+{"level":"info","message":"REDIS SET: session:c64e68e9-42d3-4a91-893c-025e3749a576","timestamp":"2025-11-28T08:07:29.977Z"}
+{"level":"info","message":"Postgres Query:SELECT * FROM users WHERE EMAIL=$1","timestamp":"2025-11-28T09:48:29.238Z"}
+{"level":"info","message":"REDIS SET: refresh:c64e68e9-42d3-4a91-893c-025e3749a576","timestamp":"2025-11-28T09:48:29.891Z"}
+{"level":"info","message":"REDIS SET: session:c64e68e9-42d3-4a91-893c-025e3749a576","timestamp":"2025-11-28T09:48:30.251Z"}
+{"level":"info","message":"Postgres Query:SELECT * FROM users WHERE EMAIL=$1","timestamp":"2025-11-28T09:56:41.574Z"}
+{"level":"info","message":"REDIS SET: refresh:c64e68e9-42d3-4a91-893c-025e3749a576","timestamp":"2025-11-28T09:56:42.277Z"}
+{"level":"info","message":"REDIS SET: session:c64e68e9-42d3-4a91-893c-025e3749a576","timestamp":"2025-11-28T09:56:42.520Z"}
+{"level":"info","message":"REDIS GET: refresh:c64e68e9-42d3-4a91-893c-025e3749a576","timestamp":"2025-11-28T10:02:59.524Z"}
+{"level":"info","message":"REDIS SET: refresh:c64e68e9-42d3-4a91-893c-025e3749a576","timestamp":"2025-11-28T10:02:59.825Z"}
+{"level":"info","message":"REDIS SET: session:c64e68e9-42d3-4a91-893c-025e3749a576","timestamp":"2025-11-28T10:03:00.071Z"}
+{"level":"info","message":"REDIS GET: refresh:c64e68e9-42d3-4a91-893c-025e3749a576","timestamp":"2025-11-28T10:11:11.651Z"}
+{"level":"info","message":"REDIS SET: refresh:c64e68e9-42d3-4a91-893c-025e3749a576","timestamp":"2025-11-28T10:11:11.897Z"}
+{"level":"info","message":"REDIS SET: session:c64e68e9-42d3-4a91-893c-025e3749a576","timestamp":"2025-11-28T10:11:12.274Z"}
+{"level":"info","message":"REDIS GET: refresh:c64e68e9-42d3-4a91-893c-025e3749a576","timestamp":"2025-11-28T10:17:30.381Z"}
+{"level":"info","message":"REDIS SET: refresh:c64e68e9-42d3-4a91-893c-025e3749a576","timestamp":"2025-11-28T10:17:30.630Z"}
+{"level":"info","message":"REDIS SET: session:c64e68e9-42d3-4a91-893c-025e3749a576","timestamp":"2025-11-28T10:17:30.873Z"}
+{"level":"info","message":"REDIS GET: refresh:c64e68e9-42d3-4a91-893c-025e3749a576","timestamp":"2025-11-28T10:25:41.589Z"}
+{"level":"info","message":"REDIS SET: refresh:c64e68e9-42d3-4a91-893c-025e3749a576","timestamp":"2025-11-28T10:25:41.837Z"}
+{"level":"info","message":"REDIS SET: session:c64e68e9-42d3-4a91-893c-025e3749a576","timestamp":"2025-11-28T10:25:42.081Z"}
+{"level":"info","message":"REDIS GET: refresh:c64e68e9-42d3-4a91-893c-025e3749a576","timestamp":"2025-11-28T10:32:00.524Z"}
+{"level":"info","message":"REDIS SET: refresh:c64e68e9-42d3-4a91-893c-025e3749a576","timestamp":"2025-11-28T10:32:00.777Z"}
+{"level":"info","message":"REDIS SET: session:c64e68e9-42d3-4a91-893c-025e3749a576","timestamp":"2025-11-28T10:32:01.020Z"}
+{"level":"info","message":"Postgres Query:SELECT 1 FROM users WHERE EMAIL=$1 LIMIT 1","timestamp":"2025-11-28T10:32:50.788Z"}
+{"level":"info","message":"REDIS GET: refresh:c64e68e9-42d3-4a91-893c-025e3749a576","timestamp":"2025-11-28T10:46:30.521Z"}
+{"level":"info","message":"REDIS GET: refresh:c64e68e9-42d3-4a91-893c-025e3749a576","timestamp":"2025-11-28T10:46:30.535Z"}
+{"level":"info","message":"REDIS SET: refresh:c64e68e9-42d3-4a91-893c-025e3749a576","timestamp":"2025-11-28T10:46:30.776Z"}
+{"level":"info","message":"REDIS SET: refresh:c64e68e9-42d3-4a91-893c-025e3749a576","timestamp":"2025-11-28T10:46:30.777Z"}
+{"level":"info","message":"REDIS SET: session:c64e68e9-42d3-4a91-893c-025e3749a576","timestamp":"2025-11-28T10:46:31.028Z"}
+{"level":"info","message":"REDIS SET: session:c64e68e9-42d3-4a91-893c-025e3749a576","timestamp":"2025-11-28T10:46:31.028Z"}
+{"level":"info","message":"Postgres Query:SELECT 1 FROM users WHERE EMAIL=$1 LIMIT 1","timestamp":"2025-11-28T10:58:29.683Z"}
+{"level":"info","message":"OTP mail sent to tutu@astw.com","timestamp":"2025-11-28T10:58:33.350Z"}
+{"level":"info","message":"REDIS SET: otp:tutu@astw.com","timestamp":"2025-11-28T10:58:33.592Z"}
+{"level":"info","message":"REDIS GET: otp:tutu@astw.com","timestamp":"2025-11-28T10:58:50.932Z"}
+{"level":"info","message":"REDIS Del: otp:tutu@astw.com","timestamp":"2025-11-28T10:58:51.178Z"}
+{"level":"info","message":"REDIS GET: refresh:c64e68e9-42d3-4a91-893c-025e3749a576","timestamp":"2025-11-28T11:01:00.507Z"}
+{"level":"info","message":"REDIS SET: refresh:c64e68e9-42d3-4a91-893c-025e3749a576","timestamp":"2025-11-28T11:01:00.754Z"}
+{"level":"info","message":"REDIS SET: session:c64e68e9-42d3-4a91-893c-025e3749a576","timestamp":"2025-11-28T11:01:00.994Z"}
+{"level":"info","message":"REDIS GET: refresh:c64e68e9-42d3-4a91-893c-025e3749a576","timestamp":"2025-11-28T11:01:01.503Z"}
+{"level":"info","message":"REDIS SET: refresh:c64e68e9-42d3-4a91-893c-025e3749a576","timestamp":"2025-11-28T11:01:01.747Z"}
+{"level":"info","message":"REDIS SET: session:c64e68e9-42d3-4a91-893c-025e3749a576","timestamp":"2025-11-28T11:01:01.989Z"}
+{"level":"info","message":"REDIS GET: refresh:c64e68e9-42d3-4a91-893c-025e3749a576","timestamp":"2025-11-28T11:15:30.630Z"}
+{"level":"info","message":"REDIS SET: refresh:c64e68e9-42d3-4a91-893c-025e3749a576","timestamp":"2025-11-28T11:15:30.999Z"}
+{"level":"info","message":"REDIS SET: session:c64e68e9-42d3-4a91-893c-025e3749a576","timestamp":"2025-11-28T11:15:31.273Z"}
+{"level":"info","message":"REDIS GET: refresh:c64e68e9-42d3-4a91-893c-025e3749a576","timestamp":"2025-11-28T11:15:32.551Z"}
+{"level":"info","message":"REDIS SET: refresh:c64e68e9-42d3-4a91-893c-025e3749a576","timestamp":"2025-11-28T11:15:32.798Z"}
+{"level":"info","message":"REDIS SET: session:c64e68e9-42d3-4a91-893c-025e3749a576","timestamp":"2025-11-28T11:15:33.042Z"}
+{"level":"info","message":"Postgres Query:SELECT 1 FROM users WHERE EMAIL=$1 LIMIT 1","timestamp":"2025-11-28T11:17:13.208Z"}
+{"level":"info","message":"OTP mail sent to yuyu@tytyt.com","timestamp":"2025-11-28T11:17:16.697Z"}
+{"level":"info","message":"REDIS SET: otp:yuyu@tytyt.com","timestamp":"2025-11-28T11:17:16.942Z"}
+{"level":"info","message":"REDIS GET: otp:yuyu@tytyt.com","timestamp":"2025-11-28T11:20:21.864Z"}
+{"level":"info","message":"REDIS Del: otp:yuyu@tytyt.com","timestamp":"2025-11-28T11:20:22.109Z"}
+{"level":"info","message":"Postgres Query:SELECT * FROM users WHERE EMAIL=$1","timestamp":"2025-11-28T14:54:53.004Z"}
+{"level":"info","message":"REDIS SET: refresh:c64e68e9-42d3-4a91-893c-025e3749a576","timestamp":"2025-11-28T14:54:53.772Z"}
+{"level":"info","message":"REDIS SET: session:c64e68e9-42d3-4a91-893c-025e3749a576","timestamp":"2025-11-28T14:54:54.009Z"}
+{"level":"info","message":"REDIS GET: refresh:c64e68e9-42d3-4a91-893c-025e3749a576","timestamp":"2025-11-28T15:09:23.530Z"}
+{"level":"info","message":"REDIS SET: refresh:c64e68e9-42d3-4a91-893c-025e3749a576","timestamp":"2025-11-28T15:09:23.766Z"}
+{"level":"info","message":"REDIS SET: session:c64e68e9-42d3-4a91-893c-025e3749a576","timestamp":"2025-11-28T15:09:23.999Z"}
+{"level":"info","message":"Postgres Query:SELECT * FROM users WHERE EMAIL=$1","timestamp":"2025-11-28T15:31:43.704Z"}
+{"level":"info","message":"REDIS SET: refresh:c64e68e9-42d3-4a91-893c-025e3749a576","timestamp":"2025-11-28T15:31:44.362Z"}
+{"level":"info","message":"REDIS SET: session:c64e68e9-42d3-4a91-893c-025e3749a576","timestamp":"2025-11-28T15:31:44.589Z"}
+{"level":"info","message":"REDIS GET: refresh:c64e68e9-42d3-4a91-893c-025e3749a576","timestamp":"2025-11-28T15:46:14.608Z"}
+{"level":"info","message":"REDIS SET: refresh:c64e68e9-42d3-4a91-893c-025e3749a576","timestamp":"2025-11-28T15:46:14.838Z"}
+{"level":"info","message":"REDIS SET: session:c64e68e9-42d3-4a91-893c-025e3749a576","timestamp":"2025-11-28T15:46:15.066Z"}
+{"level":"info","message":"REDIS Del: refresh:undefined","timestamp":"2025-11-28T15:52:38.621Z"}
+{"level":"info","message":"REDIS Del: session:undefined","timestamp":"2025-11-28T15:52:38.622Z"}
+{"level":"info","message":"Postgres Query:SELECT * FROM users WHERE EMAIL=$1","timestamp":"2025-11-28T15:52:44.369Z"}
+{"level":"info","message":"REDIS SET: refresh:c64e68e9-42d3-4a91-893c-025e3749a576","timestamp":"2025-11-28T15:52:45.004Z"}
+{"level":"info","message":"REDIS SET: session:c64e68e9-42d3-4a91-893c-025e3749a576","timestamp":"2025-11-28T15:52:45.241Z"}
+{"level":"info","message":"REDIS Del: refresh:undefined","timestamp":"2025-11-28T15:53:59.710Z"}
+{"level":"info","message":"REDIS Del: session:undefined","timestamp":"2025-11-28T15:53:59.712Z"}
+{"level":"info","message":"Postgres Query:SELECT * FROM users WHERE EMAIL=$1","timestamp":"2025-11-28T15:54:11.007Z"}
+{"level":"info","message":"REDIS SET: refresh:c64e68e9-42d3-4a91-893c-025e3749a576","timestamp":"2025-11-28T15:54:11.629Z"}
+{"level":"info","message":"REDIS SET: session:c64e68e9-42d3-4a91-893c-025e3749a576","timestamp":"2025-11-28T15:54:11.859Z"}
+{"level":"info","message":"REDIS GET: refresh:c64e68e9-42d3-4a91-893c-025e3749a576","timestamp":"2025-11-28T16:08:41.595Z"}
+{"level":"info","message":"REDIS SET: refresh:c64e68e9-42d3-4a91-893c-025e3749a576","timestamp":"2025-11-28T16:08:41.845Z"}
+{"level":"info","message":"REDIS SET: session:c64e68e9-42d3-4a91-893c-025e3749a576","timestamp":"2025-11-28T16:08:42.070Z"}
+{"level":"info","message":"Postgres Query:SELECT * FROM users WHERE EMAIL=$1","timestamp":"2025-11-29T11:10:15.341Z"}
+{"level":"info","message":"REDIS SET: refresh:c64e68e9-42d3-4a91-893c-025e3749a576","timestamp":"2025-11-29T11:10:15.976Z"}
+{"level":"info","message":"REDIS SET: session:c64e68e9-42d3-4a91-893c-025e3749a576","timestamp":"2025-11-29T11:10:16.206Z"}
+{"level":"info","message":"REDIS GET: refresh:c64e68e9-42d3-4a91-893c-025e3749a576","timestamp":"2025-11-29T11:14:40.417Z"}
+{"level":"info","message":"REDIS SET: refresh:c64e68e9-42d3-4a91-893c-025e3749a576","timestamp":"2025-11-29T11:14:40.689Z"}
+{"level":"info","message":"REDIS SET: session:c64e68e9-42d3-4a91-893c-025e3749a576","timestamp":"2025-11-29T11:14:40.921Z"}
+{"level":"info","message":"REDIS GET: refresh:c64e68e9-42d3-4a91-893c-025e3749a576","timestamp":"2025-11-29T11:29:10.522Z"}
+{"level":"info","message":"REDIS GET: refresh:c64e68e9-42d3-4a91-893c-025e3749a576","timestamp":"2025-11-29T11:29:10.533Z"}
+{"level":"info","message":"REDIS SET: refresh:c64e68e9-42d3-4a91-893c-025e3749a576","timestamp":"2025-11-29T11:29:10.876Z"}
+{"level":"info","message":"REDIS SET: refresh:c64e68e9-42d3-4a91-893c-025e3749a576","timestamp":"2025-11-29T11:29:10.876Z"}
+{"level":"info","message":"REDIS SET: session:c64e68e9-42d3-4a91-893c-025e3749a576","timestamp":"2025-11-29T11:29:11.106Z"}
+{"level":"info","message":"REDIS SET: session:c64e68e9-42d3-4a91-893c-025e3749a576","timestamp":"2025-11-29T11:29:11.107Z"}
+{"level":"info","message":"Postgres Query:SELECT 1 FROM users WHERE EMAIL=$1 LIMIT 1","timestamp":"2025-11-29T11:42:26.834Z"}
+{"level":"info","message":"Postgres Query:SELECT 1 FROM users WHERE EMAIL=$1 LIMIT 1","timestamp":"2025-11-29T11:42:49.065Z"}
+{"level":"info","message":"REDIS GET: refresh:c64e68e9-42d3-4a91-893c-025e3749a576","timestamp":"2025-11-29T11:43:40.481Z"}
+{"level":"info","message":"REDIS GET: refresh:c64e68e9-42d3-4a91-893c-025e3749a576","timestamp":"2025-11-29T11:43:40.481Z"}
+{"level":"info","message":"REDIS SET: refresh:c64e68e9-42d3-4a91-893c-025e3749a576","timestamp":"2025-11-29T11:43:40.717Z"}
+{"level":"info","message":"REDIS SET: refresh:c64e68e9-42d3-4a91-893c-025e3749a576","timestamp":"2025-11-29T11:43:40.718Z"}
+{"level":"info","message":"REDIS SET: session:c64e68e9-42d3-4a91-893c-025e3749a576","timestamp":"2025-11-29T11:43:40.942Z"}
+{"level":"info","message":"REDIS SET: session:c64e68e9-42d3-4a91-893c-025e3749a576","timestamp":"2025-11-29T11:43:40.943Z"}
+{"level":"info","message":"REDIS GET: refresh:c64e68e9-42d3-4a91-893c-025e3749a576","timestamp":"2025-11-29T11:58:10.501Z"}
+{"level":"info","message":"REDIS GET: refresh:c64e68e9-42d3-4a91-893c-025e3749a576","timestamp":"2025-11-29T11:58:10.506Z"}
+{"level":"info","message":"REDIS SET: refresh:c64e68e9-42d3-4a91-893c-025e3749a576","timestamp":"2025-11-29T11:58:10.733Z"}
+{"level":"info","message":"REDIS SET: refresh:c64e68e9-42d3-4a91-893c-025e3749a576","timestamp":"2025-11-29T11:58:10.734Z"}
+{"level":"info","message":"REDIS SET: session:c64e68e9-42d3-4a91-893c-025e3749a576","timestamp":"2025-11-29T11:58:10.961Z"}
+{"level":"info","message":"REDIS SET: session:c64e68e9-42d3-4a91-893c-025e3749a576","timestamp":"2025-11-29T11:58:10.962Z"}
+{"level":"info","message":"Postgres Query:SELECT * FROM users WHERE EMAIL=$1","timestamp":"2025-11-30T03:59:38.282Z"}
+{"level":"info","message":"REDIS SET: refresh:c64e68e9-42d3-4a91-893c-025e3749a576","timestamp":"2025-11-30T03:59:38.943Z"}
+{"level":"info","message":"REDIS SET: session:c64e68e9-42d3-4a91-893c-025e3749a576","timestamp":"2025-11-30T03:59:39.570Z"}
+{"level":"info","message":"REDIS GET: refresh:c64e68e9-42d3-4a91-893c-025e3749a576","timestamp":"2025-11-30T03:59:58.762Z"}
+{"level":"info","message":"REDIS SET: refresh:c64e68e9-42d3-4a91-893c-025e3749a576","timestamp":"2025-11-30T03:59:59.002Z"}
+{"level":"info","message":"REDIS SET: session:c64e68e9-42d3-4a91-893c-025e3749a576","timestamp":"2025-11-30T03:59:59.242Z"}
+{"level":"info","message":"REDIS GET: refresh:c64e68e9-42d3-4a91-893c-025e3749a576","timestamp":"2025-11-30T04:14:28.901Z"}
+{"level":"info","message":"REDIS GET: refresh:c64e68e9-42d3-4a91-893c-025e3749a576","timestamp":"2025-11-30T04:14:28.912Z"}
+{"level":"info","message":"REDIS SET: refresh:c64e68e9-42d3-4a91-893c-025e3749a576","timestamp":"2025-11-30T04:14:29.148Z"}
+{"level":"info","message":"REDIS SET: refresh:c64e68e9-42d3-4a91-893c-025e3749a576","timestamp":"2025-11-30T04:14:29.152Z"}
+{"level":"info","message":"REDIS SET: session:c64e68e9-42d3-4a91-893c-025e3749a576","timestamp":"2025-11-30T04:14:29.390Z"}
+{"level":"info","message":"REDIS SET: session:c64e68e9-42d3-4a91-893c-025e3749a576","timestamp":"2025-11-30T04:14:29.394Z"}
+{"level":"info","message":"REDIS GET: refresh:c64e68e9-42d3-4a91-893c-025e3749a576","timestamp":"2025-11-30T04:28:58.623Z"}
+{"level":"info","message":"REDIS GET: refresh:c64e68e9-42d3-4a91-893c-025e3749a576","timestamp":"2025-11-30T04:28:58.626Z"}
+{"level":"info","message":"REDIS SET: refresh:c64e68e9-42d3-4a91-893c-025e3749a576","timestamp":"2025-11-30T04:28:58.872Z"}
+{"level":"info","message":"REDIS SET: refresh:c64e68e9-42d3-4a91-893c-025e3749a576","timestamp":"2025-11-30T04:28:58.873Z"}
+{"level":"info","message":"REDIS SET: session:c64e68e9-42d3-4a91-893c-025e3749a576","timestamp":"2025-11-30T04:28:59.116Z"}
+{"level":"info","message":"REDIS SET: session:c64e68e9-42d3-4a91-893c-025e3749a576","timestamp":"2025-11-30T04:28:59.116Z"}
+{"level":"info","message":"Postgres Query:SELECT * FROM users WHERE EMAIL=$1","timestamp":"2025-11-30T06:43:30.925Z"}
+{"level":"info","message":"REDIS SET: refresh:c64e68e9-42d3-4a91-893c-025e3749a576","timestamp":"2025-11-30T06:43:31.694Z"}
+{"level":"info","message":"REDIS SET: session:c64e68e9-42d3-4a91-893c-025e3749a576","timestamp":"2025-11-30T06:43:31.976Z"}
+{"level":"info","message":"REDIS GET: refresh:c64e68e9-42d3-4a91-893c-025e3749a576","timestamp":"2025-11-30T06:58:22.029Z"}
+{"level":"info","message":"REDIS SET: refresh:c64e68e9-42d3-4a91-893c-025e3749a576","timestamp":"2025-11-30T06:58:22.267Z"}
+{"level":"info","message":"REDIS SET: session:c64e68e9-42d3-4a91-893c-025e3749a576","timestamp":"2025-11-30T06:58:22.502Z"}
+{"level":"info","message":"REDIS GET: refresh:c64e68e9-42d3-4a91-893c-025e3749a576","timestamp":"2025-11-30T07:12:52.673Z"}
+{"level":"info","message":"REDIS SET: refresh:c64e68e9-42d3-4a91-893c-025e3749a576","timestamp":"2025-11-30T07:12:53.004Z"}
+{"level":"info","message":"REDIS SET: session:c64e68e9-42d3-4a91-893c-025e3749a576","timestamp":"2025-11-30T07:12:53.276Z"}
+{"level":"info","message":"Postgres Query:SELECT * FROM users WHERE EMAIL=$1","timestamp":"2025-11-30T08:07:18.974Z"}
+{"level":"info","message":"REDIS SET: refresh:c64e68e9-42d3-4a91-893c-025e3749a576","timestamp":"2025-11-30T08:07:19.601Z"}
+{"level":"info","message":"REDIS SET: session:c64e68e9-42d3-4a91-893c-025e3749a576","timestamp":"2025-11-30T08:07:19.835Z"}
+{"level":"info","message":"REDIS GET: refresh:c64e68e9-42d3-4a91-893c-025e3749a576","timestamp":"2025-11-30T08:21:49.830Z"}
+{"level":"info","message":"REDIS SET: refresh:c64e68e9-42d3-4a91-893c-025e3749a576","timestamp":"2025-11-30T08:21:50.064Z"}
+{"level":"info","message":"REDIS SET: session:c64e68e9-42d3-4a91-893c-025e3749a576","timestamp":"2025-11-30T08:21:50.297Z"}
+{"level":"info","message":"Postgres Query:SELECT * FROM users WHERE EMAIL=$1","timestamp":"2025-11-30T08:46:13.036Z"}
+{"level":"info","message":"REDIS SET: refresh:c64e68e9-42d3-4a91-893c-025e3749a576","timestamp":"2025-11-30T08:46:13.676Z"}
+{"level":"info","message":"REDIS SET: session:c64e68e9-42d3-4a91-893c-025e3749a576","timestamp":"2025-11-30T08:46:13.907Z"}
+{"level":"info","message":"Postgres Query:SELECT 1 FROM users WHERE EMAIL=$1 LIMIT 1","timestamp":"2025-11-30T08:51:11.808Z"}
+{"level":"info","message":"Postgres Query:SELECT 1 FROM users WHERE EMAIL=$1 LIMIT 1","timestamp":"2025-11-30T08:51:40.308Z"}
+{"level":"info","message":"Postgres Query:SELECT 1 FROM users WHERE EMAIL=$1 LIMIT 1","timestamp":"2025-11-30T08:52:17.989Z"}
+{"level":"info","message":"Postgres Query:SELECT 1 FROM users WHERE EMAIL=$1 LIMIT 1","timestamp":"2025-11-30T08:52:25.513Z"}
+{"level":"info","message":"Postgres Query:SELECT * FROM users WHERE EMAIL=$1","timestamp":"2025-11-30T10:26:03.782Z"}
+{"level":"info","message":"REDIS SET: refresh:c64e68e9-42d3-4a91-893c-025e3749a576","timestamp":"2025-11-30T10:26:04.515Z"}
+{"level":"info","message":"REDIS SET: session:c64e68e9-42d3-4a91-893c-025e3749a576","timestamp":"2025-11-30T10:26:04.813Z"}
+{"level":"info","message":"Postgres Query:SELECT 1 FROM users WHERE EMAIL=$1 LIMIT 1","timestamp":"2025-11-30T10:29:04.894Z"}
+{"level":"info","message":"REDIS GET: refresh:c64e68e9-42d3-4a91-893c-025e3749a576","timestamp":"2025-11-30T10:40:34.592Z"}
+{"level":"info","message":"REDIS SET: refresh:c64e68e9-42d3-4a91-893c-025e3749a576","timestamp":"2025-11-30T10:40:34.822Z"}
+{"level":"info","message":"REDIS SET: session:c64e68e9-42d3-4a91-893c-025e3749a576","timestamp":"2025-11-30T10:40:35.048Z"}
+{"level":"info","message":"REDIS GET: refresh:c64e68e9-42d3-4a91-893c-025e3749a576","timestamp":"2025-11-30T10:55:04.560Z"}
+{"level":"info","message":"REDIS GET: refresh:c64e68e9-42d3-4a91-893c-025e3749a576","timestamp":"2025-11-30T10:55:04.563Z"}
+{"level":"info","message":"REDIS SET: refresh:c64e68e9-42d3-4a91-893c-025e3749a576","timestamp":"2025-11-30T10:55:04.801Z"}
+{"level":"info","message":"REDIS SET: refresh:c64e68e9-42d3-4a91-893c-025e3749a576","timestamp":"2025-11-30T10:55:04.802Z"}
+{"level":"info","message":"REDIS SET: session:c64e68e9-42d3-4a91-893c-025e3749a576","timestamp":"2025-11-30T10:55:05.026Z"}
+{"level":"info","message":"REDIS SET: session:c64e68e9-42d3-4a91-893c-025e3749a576","timestamp":"2025-11-30T10:55:05.027Z"}
+{"level":"info","message":"REDIS GET: refresh:c64e68e9-42d3-4a91-893c-025e3749a576","timestamp":"2025-11-30T11:09:34.528Z"}
+{"level":"info","message":"REDIS GET: refresh:c64e68e9-42d3-4a91-893c-025e3749a576","timestamp":"2025-11-30T11:09:34.546Z"}
+{"level":"info","message":"REDIS SET: refresh:c64e68e9-42d3-4a91-893c-025e3749a576","timestamp":"2025-11-30T11:09:34.764Z"}
+{"level":"info","message":"REDIS SET: refresh:c64e68e9-42d3-4a91-893c-025e3749a576","timestamp":"2025-11-30T11:09:34.770Z"}
+{"level":"info","message":"REDIS SET: session:c64e68e9-42d3-4a91-893c-025e3749a576","timestamp":"2025-11-30T11:09:34.984Z"}
+{"level":"info","message":"REDIS SET: session:c64e68e9-42d3-4a91-893c-025e3749a576","timestamp":"2025-11-30T11:09:34.991Z"}
+{"level":"info","message":"REDIS GET: refresh:c64e68e9-42d3-4a91-893c-025e3749a576","timestamp":"2025-11-30T11:24:04.662Z"}
+{"level":"info","message":"REDIS SET: refresh:c64e68e9-42d3-4a91-893c-025e3749a576","timestamp":"2025-11-30T11:24:04.889Z"}
+{"level":"info","message":"REDIS GET: refresh:c64e68e9-42d3-4a91-893c-025e3749a576","timestamp":"2025-11-30T11:24:04.952Z"}
+{"level":"info","message":"REDIS SET: session:c64e68e9-42d3-4a91-893c-025e3749a576","timestamp":"2025-11-30T11:24:05.112Z"}
+{"level":"info","message":"REDIS SET: refresh:c64e68e9-42d3-4a91-893c-025e3749a576","timestamp":"2025-11-30T11:24:05.179Z"}
+{"level":"info","message":"REDIS SET: session:c64e68e9-42d3-4a91-893c-025e3749a576","timestamp":"2025-11-30T11:24:05.399Z"}
+{"level":"info","message":"REDIS GET: refresh:c64e68e9-42d3-4a91-893c-025e3749a576","timestamp":"2025-11-30T11:38:35.167Z"}
+{"level":"info","message":"REDIS GET: refresh:c64e68e9-42d3-4a91-893c-025e3749a576","timestamp":"2025-11-30T11:38:35.353Z"}
+{"level":"info","message":"REDIS SET: refresh:c64e68e9-42d3-4a91-893c-025e3749a576","timestamp":"2025-11-30T11:38:35.393Z"}
+{"level":"info","message":"REDIS SET: refresh:c64e68e9-42d3-4a91-893c-025e3749a576","timestamp":"2025-11-30T11:38:35.579Z"}
+{"level":"info","message":"REDIS SET: session:c64e68e9-42d3-4a91-893c-025e3749a576","timestamp":"2025-11-30T11:38:35.615Z"}
+{"level":"info","message":"REDIS SET: session:c64e68e9-42d3-4a91-893c-025e3749a576","timestamp":"2025-11-30T11:38:35.803Z"}
+{"level":"info","message":"Postgres Query:SELECT * FROM users WHERE EMAIL=$1","timestamp":"2025-11-30T15:28:39.659Z"}
+{"level":"info","message":"REDIS SET: refresh:c64e68e9-42d3-4a91-893c-025e3749a576","timestamp":"2025-11-30T15:28:40.289Z"}
+{"level":"info","message":"REDIS SET: session:c64e68e9-42d3-4a91-893c-025e3749a576","timestamp":"2025-11-30T15:28:40.518Z"}
+{"level":"info","message":"Postgres Query:SELECT * FROM users WHERE EMAIL=$1","timestamp":"2025-11-30T15:28:41.260Z"}
+{"level":"info","message":"REDIS SET: refresh:c64e68e9-42d3-4a91-893c-025e3749a576","timestamp":"2025-11-30T15:28:41.980Z"}
+{"level":"info","message":"REDIS SET: session:c64e68e9-42d3-4a91-893c-025e3749a576","timestamp":"2025-11-30T15:28:42.212Z"}
+{"level":"info","message":"REDIS GET: refresh:c64e68e9-42d3-4a91-893c-025e3749a576","timestamp":"2025-11-30T15:43:11.644Z"}
+{"level":"info","message":"REDIS SET: refresh:c64e68e9-42d3-4a91-893c-025e3749a576","timestamp":"2025-11-30T15:43:11.884Z"}
+{"level":"info","message":"REDIS SET: session:c64e68e9-42d3-4a91-893c-025e3749a576","timestamp":"2025-11-30T15:43:12.111Z"}
+{"level":"info","message":"REDIS Del: refresh:undefined","timestamp":"2025-11-30T15:44:40.059Z"}
+{"level":"info","message":"REDIS Del: session:undefined","timestamp":"2025-11-30T15:44:40.060Z"}
+{"level":"info","message":"Postgres Query:SELECT * FROM users WHERE EMAIL=$1","timestamp":"2025-11-30T15:44:45.636Z"}
+{"level":"info","message":"REDIS SET: refresh:c64e68e9-42d3-4a91-893c-025e3749a576","timestamp":"2025-11-30T15:44:46.266Z"}
+{"level":"info","message":"REDIS SET: session:c64e68e9-42d3-4a91-893c-025e3749a576","timestamp":"2025-11-30T15:44:46.590Z"}
+{"level":"info","message":"Postgres Query:SELECT * FROM users WHERE EMAIL=$1","timestamp":"2025-12-01T02:25:59.253Z"}
+{"level":"info","message":"REDIS SET: refresh:c64e68e9-42d3-4a91-893c-025e3749a576","timestamp":"2025-12-01T02:25:59.904Z"}
+{"level":"info","message":"REDIS SET: session:c64e68e9-42d3-4a91-893c-025e3749a576","timestamp":"2025-12-01T02:26:00.146Z"}
+{"level":"info","message":"Postgres Query:SELECT * FROM users WHERE EMAIL=$1","timestamp":"2025-12-01T02:44:31.457Z"}
+{"level":"info","message":"REDIS SET: refresh:c64e68e9-42d3-4a91-893c-025e3749a576","timestamp":"2025-12-01T02:44:32.104Z"}
+{"level":"info","message":"REDIS SET: session:c64e68e9-42d3-4a91-893c-025e3749a576","timestamp":"2025-12-01T02:44:32.346Z"}
+{"level":"info","message":"REDIS GET: refresh:c64e68e9-42d3-4a91-893c-025e3749a576","timestamp":"2025-12-01T02:59:01.602Z"}
+{"level":"info","message":"REDIS SET: refresh:c64e68e9-42d3-4a91-893c-025e3749a576","timestamp":"2025-12-01T02:59:01.852Z"}
+{"level":"info","message":"REDIS SET: session:c64e68e9-42d3-4a91-893c-025e3749a576","timestamp":"2025-12-01T02:59:02.102Z"}
+{"level":"info","message":"REDIS GET: refresh:c64e68e9-42d3-4a91-893c-025e3749a576","timestamp":"2025-12-01T03:13:31.582Z"}
+{"level":"info","message":"REDIS SET: refresh:c64e68e9-42d3-4a91-893c-025e3749a576","timestamp":"2025-12-01T03:13:31.831Z"}
+{"level":"info","message":"REDIS SET: session:c64e68e9-42d3-4a91-893c-025e3749a576","timestamp":"2025-12-01T03:13:32.075Z"}
+{"level":"info","message":"Postgres Query:SELECT * FROM users WHERE EMAIL=$1","timestamp":"2025-12-01T09:49:22.596Z"}
+{"level":"info","message":"REDIS SET: refresh:c64e68e9-42d3-4a91-893c-025e3749a576","timestamp":"2025-12-01T09:49:23.245Z"}
+{"level":"info","message":"REDIS SET: session:c64e68e9-42d3-4a91-893c-025e3749a576","timestamp":"2025-12-01T09:49:23.610Z"}
+{"level":"info","message":"REDIS GET: refresh:c64e68e9-42d3-4a91-893c-025e3749a576","timestamp":"2025-12-01T10:03:53.629Z"}
+{"level":"info","message":"REDIS SET: refresh:c64e68e9-42d3-4a91-893c-025e3749a576","timestamp":"2025-12-01T10:03:53.888Z"}
+{"level":"info","message":"REDIS SET: session:c64e68e9-42d3-4a91-893c-025e3749a576","timestamp":"2025-12-01T10:03:54.116Z"}
+{"level":"info","message":"REDIS GET: refresh:c64e68e9-42d3-4a91-893c-025e3749a576","timestamp":"2025-12-01T10:18:23.725Z"}
+{"level":"info","message":"REDIS SET: refresh:c64e68e9-42d3-4a91-893c-025e3749a576","timestamp":"2025-12-01T10:18:24.012Z"}
+{"level":"info","message":"REDIS SET: session:c64e68e9-42d3-4a91-893c-025e3749a576","timestamp":"2025-12-01T10:18:24.288Z"}
+{"level":"info","message":"REDIS GET: refresh:c64e68e9-42d3-4a91-893c-025e3749a576","timestamp":"2025-12-01T10:32:53.700Z"}
+{"level":"info","message":"REDIS SET: refresh:c64e68e9-42d3-4a91-893c-025e3749a576","timestamp":"2025-12-01T10:32:53.980Z"}
+{"level":"info","message":"REDIS SET: session:c64e68e9-42d3-4a91-893c-025e3749a576","timestamp":"2025-12-01T10:32:54.252Z"}
+{"level":"info","message":"REDIS GET: refresh:c64e68e9-42d3-4a91-893c-025e3749a576","timestamp":"2025-12-01T10:47:23.818Z"}
+{"level":"info","message":"REDIS SET: refresh:c64e68e9-42d3-4a91-893c-025e3749a576","timestamp":"2025-12-01T10:47:24.135Z"}
+{"level":"info","message":"REDIS SET: session:c64e68e9-42d3-4a91-893c-025e3749a576","timestamp":"2025-12-01T10:47:24.444Z"}
+{"level":"info","message":"REDIS GET: refresh:c64e68e9-42d3-4a91-893c-025e3749a576","timestamp":"2025-12-01T11:01:53.819Z"}
+{"level":"info","message":"REDIS SET: refresh:c64e68e9-42d3-4a91-893c-025e3749a576","timestamp":"2025-12-01T11:01:54.251Z"}
+{"level":"info","message":"REDIS SET: session:c64e68e9-42d3-4a91-893c-025e3749a576","timestamp":"2025-12-01T11:01:54.536Z"}
+{"level":"info","message":"REDIS GET: refresh:c64e68e9-42d3-4a91-893c-025e3749a576","timestamp":"2025-12-01T11:16:23.863Z"}
+{"level":"info","message":"REDIS SET: refresh:c64e68e9-42d3-4a91-893c-025e3749a576","timestamp":"2025-12-01T11:16:24.148Z"}
+{"level":"info","message":"REDIS SET: session:c64e68e9-42d3-4a91-893c-025e3749a576","timestamp":"2025-12-01T11:16:24.420Z"}
+{"level":"info","message":"REDIS GET: refresh:c64e68e9-42d3-4a91-893c-025e3749a576","timestamp":"2025-12-01T11:30:53.732Z"}
+{"level":"info","message":"REDIS SET: refresh:c64e68e9-42d3-4a91-893c-025e3749a576","timestamp":"2025-12-01T11:30:54.019Z"}
+{"level":"info","message":"REDIS SET: session:c64e68e9-42d3-4a91-893c-025e3749a576","timestamp":"2025-12-01T11:30:54.291Z"}
+{"level":"info","message":"REDIS GET: refresh:c64e68e9-42d3-4a91-893c-025e3749a576","timestamp":"2025-12-01T11:45:23.715Z"}
+{"level":"info","message":"REDIS SET: refresh:c64e68e9-42d3-4a91-893c-025e3749a576","timestamp":"2025-12-01T11:45:24.002Z"}
+{"level":"info","message":"REDIS SET: session:c64e68e9-42d3-4a91-893c-025e3749a576","timestamp":"2025-12-01T11:45:24.277Z"}
+{"level":"info","message":"REDIS GET: refresh:c64e68e9-42d3-4a91-893c-025e3749a576","timestamp":"2025-12-01T11:59:53.760Z"}
+{"level":"info","message":"REDIS SET: refresh:c64e68e9-42d3-4a91-893c-025e3749a576","timestamp":"2025-12-01T11:59:54.046Z"}
+{"level":"info","message":"REDIS SET: session:c64e68e9-42d3-4a91-893c-025e3749a576","timestamp":"2025-12-01T11:59:54.319Z"}
+{"level":"info","message":"REDIS GET: refresh:c64e68e9-42d3-4a91-893c-025e3749a576","timestamp":"2025-12-01T12:14:23.735Z"}
+{"level":"info","message":"REDIS SET: refresh:c64e68e9-42d3-4a91-893c-025e3749a576","timestamp":"2025-12-01T12:14:24.020Z"}
+{"level":"info","message":"REDIS SET: session:c64e68e9-42d3-4a91-893c-025e3749a576","timestamp":"2025-12-01T12:14:24.294Z"}
+{"level":"info","message":"REDIS GET: refresh:c64e68e9-42d3-4a91-893c-025e3749a576","timestamp":"2025-12-01T12:28:53.710Z"}
+{"level":"info","message":"REDIS SET: refresh:c64e68e9-42d3-4a91-893c-025e3749a576","timestamp":"2025-12-01T12:28:54.066Z"}
+{"level":"info","message":"REDIS SET: session:c64e68e9-42d3-4a91-893c-025e3749a576","timestamp":"2025-12-01T12:28:54.371Z"}
+{"level":"info","message":"Postgres Query:SELECT * FROM users WHERE EMAIL=$1","timestamp":"2025-12-02T03:34:45.249Z"}
+{"level":"info","message":"REDIS SET: refresh:c64e68e9-42d3-4a91-893c-025e3749a576","timestamp":"2025-12-02T03:34:45.916Z"}
+{"level":"info","message":"REDIS SET: session:c64e68e9-42d3-4a91-893c-025e3749a576","timestamp":"2025-12-02T03:34:46.156Z"}
+{"level":"info","message":"Postgres Query:SELECT * FROM users WHERE EMAIL=$1","timestamp":"2025-12-02T04:10:28.339Z"}
+{"level":"info","message":"REDIS SET: refresh:c64e68e9-42d3-4a91-893c-025e3749a576","timestamp":"2025-12-02T04:10:29.015Z"}
+{"level":"info","message":"REDIS SET: session:c64e68e9-42d3-4a91-893c-025e3749a576","timestamp":"2025-12-02T04:10:29.275Z"}
+{"level":"info","message":"REDIS GET: refresh:c64e68e9-42d3-4a91-893c-025e3749a576","timestamp":"2025-12-02T04:24:59.348Z"}
+{"level":"info","message":"REDIS SET: refresh:c64e68e9-42d3-4a91-893c-025e3749a576","timestamp":"2025-12-02T04:24:59.597Z"}
+{"level":"info","message":"REDIS SET: session:c64e68e9-42d3-4a91-893c-025e3749a576","timestamp":"2025-12-02T04:24:59.835Z"}
+{"level":"info","message":"REDIS GET: refresh:c64e68e9-42d3-4a91-893c-025e3749a576","timestamp":"2025-12-02T04:39:29.640Z"}
+{"level":"info","message":"REDIS SET: refresh:c64e68e9-42d3-4a91-893c-025e3749a576","timestamp":"2025-12-02T04:39:29.887Z"}
+{"level":"info","message":"REDIS SET: session:c64e68e9-42d3-4a91-893c-025e3749a576","timestamp":"2025-12-02T04:39:30.133Z"}
+{"code":"ECONNRESET","errno":-4077,"level":"error","message":"REDIS get error for refresh:c64e68e9-42d3-4a91-893c-025e3749a576 read ECONNRESET","stack":"Error: read ECONNRESET\n    at TCP.onStreamRead (node:internal/stream_base_commons:218:20)","syscall":"read","timestamp":"2025-12-02T05:03:07.214Z"}
+{"level":"info","message":"Postgres Query:SELECT * FROM users WHERE EMAIL=$1","timestamp":"2025-12-02T05:38:46.506Z"}
+{"level":"info","message":"REDIS SET: refresh:c64e68e9-42d3-4a91-893c-025e3749a576","timestamp":"2025-12-02T05:38:47.172Z"}
+{"level":"info","message":"REDIS SET: session:c64e68e9-42d3-4a91-893c-025e3749a576","timestamp":"2025-12-02T05:38:47.416Z"}
+{"level":"info","message":"Postgres Query:SELECT * FROM users WHERE EMAIL=$1","timestamp":"2025-12-02T07:26:37.616Z"}
+{"level":"info","message":"REDIS SET: refresh:c64e68e9-42d3-4a91-893c-025e3749a576","timestamp":"2025-12-02T07:26:38.276Z"}
+{"level":"info","message":"REDIS SET: session:c64e68e9-42d3-4a91-893c-025e3749a576","timestamp":"2025-12-02T07:26:38.517Z"}
+{"level":"info","message":"REDIS Del: refresh:undefined","timestamp":"2025-12-02T07:27:00.237Z"}
+{"level":"info","message":"REDIS Del: session:undefined","timestamp":"2025-12-02T07:27:00.238Z"}
+{"level":"info","message":"Postgres Query:SELECT * FROM users WHERE EMAIL=$1","timestamp":"2025-12-02T07:35:44.440Z"}
+{"level":"info","message":"REDIS SET: refresh:c64e68e9-42d3-4a91-893c-025e3749a576","timestamp":"2025-12-02T07:35:45.128Z"}
+{"level":"info","message":"REDIS SET: session:c64e68e9-42d3-4a91-893c-025e3749a576","timestamp":"2025-12-02T07:35:45.447Z"}
+{"level":"info","message":"Postgres Query:SELECT * FROM users WHERE EMAIL=$1","timestamp":"2025-12-02T07:51:39.710Z"}
+{"level":"info","message":"REDIS SET: refresh:c64e68e9-42d3-4a91-893c-025e3749a576","timestamp":"2025-12-02T07:51:40.377Z"}
+{"level":"info","message":"REDIS SET: session:c64e68e9-42d3-4a91-893c-025e3749a576","timestamp":"2025-12-02T07:51:40.618Z"}
+{"level":"info","message":"Auth service running on 5000","timestamp":"2025-12-03T05:27:16.486Z"}
+{"level":"info","message":"Auth service running on 5000","timestamp":"2025-12-03T05:28:14.136Z"}
+{"level":"info","message":"Auth service running on 5000","timestamp":"2025-12-03T05:50:47.035Z"}
+{"level":"info","message":"Postgres Query:SELECT * FROM users WHERE EMAIL=$1","timestamp":"2025-12-03T05:52:29.172Z"}
+{"level":"info","message":"REDIS SET: refresh:c64e68e9-42d3-4a91-893c-025e3749a576","timestamp":"2025-12-03T05:52:29.834Z"}
+{"level":"info","message":"REDIS SET: session:c64e68e9-42d3-4a91-893c-025e3749a576","timestamp":"2025-12-03T05:52:30.078Z"}
+{"level":"info","message":"REDIS GET: refresh:c64e68e9-42d3-4a91-893c-025e3749a576","timestamp":"2025-12-03T06:06:59.528Z"}
+{"level":"info","message":"REDIS SET: refresh:c64e68e9-42d3-4a91-893c-025e3749a576","timestamp":"2025-12-03T06:06:59.771Z"}
+{"level":"info","message":"REDIS SET: session:c64e68e9-42d3-4a91-893c-025e3749a576","timestamp":"2025-12-03T06:07:00.014Z"}
+{"level":"info","message":"REDIS GET: refresh:c64e68e9-42d3-4a91-893c-025e3749a576","timestamp":"2025-12-03T06:21:29.599Z"}
+{"level":"info","message":"REDIS SET: refresh:c64e68e9-42d3-4a91-893c-025e3749a576","timestamp":"2025-12-03T06:21:29.850Z"}
+{"level":"info","message":"REDIS SET: session:c64e68e9-42d3-4a91-893c-025e3749a576","timestamp":"2025-12-03T06:21:30.100Z"}
+{"level":"info","message":"REDIS GET: refresh:c64e68e9-42d3-4a91-893c-025e3749a576","timestamp":"2025-12-03T06:35:59.515Z"}
+{"level":"info","message":"REDIS SET: refresh:c64e68e9-42d3-4a91-893c-025e3749a576","timestamp":"2025-12-03T06:35:59.760Z"}
+{"level":"info","message":"REDIS SET: session:c64e68e9-42d3-4a91-893c-025e3749a576","timestamp":"2025-12-03T06:36:00.024Z"}
+{"level":"info","message":"REDIS GET: refresh:c64e68e9-42d3-4a91-893c-025e3749a576","timestamp":"2025-12-03T06:50:29.583Z"}
+{"level":"info","message":"REDIS SET: refresh:c64e68e9-42d3-4a91-893c-025e3749a576","timestamp":"2025-12-03T06:50:29.839Z"}
+{"level":"info","message":"REDIS SET: session:c64e68e9-42d3-4a91-893c-025e3749a576","timestamp":"2025-12-03T06:50:30.084Z"}
+{"level":"info","message":"Postgres Query:SELECT * FROM users WHERE EMAIL=$1","timestamp":"2025-12-03T07:39:36.634Z"}
+{"level":"info","message":"REDIS SET: refresh:c64e68e9-42d3-4a91-893c-025e3749a576","timestamp":"2025-12-03T07:39:37.283Z"}
+{"level":"info","message":"REDIS SET: session:c64e68e9-42d3-4a91-893c-025e3749a576","timestamp":"2025-12-03T07:39:37.525Z"}
+{"level":"info","message":"Auth service running on 5000","timestamp":"2025-12-03T12:56:22.001Z"}
+{"level":"info","message":"Postgres Query:SELECT * FROM users WHERE EMAIL=$1","timestamp":"2025-12-03T12:57:10.132Z"}
+{"level":"info","message":"REDIS SET: refresh:c64e68e9-42d3-4a91-893c-025e3749a576","timestamp":"2025-12-03T12:57:10.816Z"}
+{"level":"info","message":"REDIS SET: session:c64e68e9-42d3-4a91-893c-025e3749a576","timestamp":"2025-12-03T12:57:11.091Z"}
+{"level":"info","message":"REDIS Del: refresh:undefined","timestamp":"2025-12-03T13:01:48.934Z"}
+{"level":"info","message":"REDIS Del: session:undefined","timestamp":"2025-12-03T13:01:48.935Z"}
+{"level":"info","message":"Auth service running on 5000","timestamp":"2025-12-03T13:03:32.786Z"}
+{"level":"info","message":"Auth service running on 5000","timestamp":"2025-12-03T13:04:32.259Z"}
+{"level":"info","message":"Auth service running on 5000","timestamp":"2025-12-05T06:19:58.750Z"}
+{"level":"info","message":"Auth service running on 5000","timestamp":"2025-12-05T07:32:12.717Z"}
+{"level":"info","message":"Postgres Query:SELECT * FROM users WHERE EMAIL=$1","timestamp":"2025-12-05T07:32:30.610Z"}
+{"level":"info","message":"REDIS SET: refresh:c64e68e9-42d3-4a91-893c-025e3749a576","timestamp":"2025-12-05T07:32:31.245Z"}
+{"level":"info","message":"REDIS SET: session:c64e68e9-42d3-4a91-893c-025e3749a576","timestamp":"2025-12-05T07:32:31.487Z"}
+{"level":"info","message":"REDIS Del: refresh:undefined","timestamp":"2025-12-05T07:40:59.734Z"}
+{"level":"info","message":"REDIS Del: session:undefined","timestamp":"2025-12-05T07:40:59.736Z"}
+{"level":"info","message":"Postgres Query:SELECT * FROM users WHERE EMAIL=$1","timestamp":"2025-12-06T09:09:41.627Z"}
+{"level":"info","message":"REDIS SET: refresh:c64e68e9-42d3-4a91-893c-025e3749a576","timestamp":"2025-12-06T09:09:42.136Z"}
+{"level":"info","message":"REDIS SET: session:c64e68e9-42d3-4a91-893c-025e3749a576","timestamp":"2025-12-06T09:09:42.359Z"}
+{"level":"info","message":"Postgres Query:SELECT * FROM users WHERE EMAIL=$1","timestamp":"2025-12-06T09:24:39.287Z"}
+{"level":"info","message":"REDIS SET: refresh:c64e68e9-42d3-4a91-893c-025e3749a576","timestamp":"2025-12-06T09:24:39.984Z"}
+{"level":"info","message":"REDIS SET: session:c64e68e9-42d3-4a91-893c-025e3749a576","timestamp":"2025-12-06T09:24:40.278Z"}
+{"level":"info","message":"Auth service running on 5000","timestamp":"2025-12-06T09:35:57.650Z"}
+{"level":"info","message":"Postgres Query:SELECT * FROM users WHERE EMAIL=$1","timestamp":"2025-12-06T09:36:08.645Z"}
+{"level":"info","message":"Postgres Query:SELECT * FROM users WHERE EMAIL=$1","timestamp":"2025-12-06T09:36:20.249Z"}
+{"level":"info","message":"REDIS SET: refresh:c64e68e9-42d3-4a91-893c-025e3749a576","timestamp":"2025-12-06T09:36:20.878Z"}
+{"level":"info","message":"REDIS SET: session:c64e68e9-42d3-4a91-893c-025e3749a576","timestamp":"2025-12-06T09:36:21.213Z"}
+{"level":"info","message":"Postgres Query:SELECT * FROM users WHERE EMAIL=$1","timestamp":"2025-12-06T10:12:08.000Z"}
+{"level":"info","message":"REDIS SET: refresh:c64e68e9-42d3-4a91-893c-025e3749a576","timestamp":"2025-12-06T10:12:08.630Z"}
+{"level":"info","message":"REDIS SET: session:c64e68e9-42d3-4a91-893c-025e3749a576","timestamp":"2025-12-06T10:12:08.853Z"}
+{"level":"info","message":"Postgres Query:SELECT * FROM users WHERE EMAIL=$1","timestamp":"2025-12-06T10:39:20.825Z"}
+{"level":"info","message":"REDIS SET: refresh:c64e68e9-42d3-4a91-893c-025e3749a576","timestamp":"2025-12-06T10:39:21.476Z"}
+{"level":"info","message":"REDIS SET: session:c64e68e9-42d3-4a91-893c-025e3749a576","timestamp":"2025-12-06T10:39:21.700Z"}
+{"level":"info","message":"Auth service running on 5000","timestamp":"2025-12-16T13:43:08.584Z"}
+{"level":"info","message":"Postgres Query:SELECT * FROM users WHERE EMAIL=$1","timestamp":"2025-12-16T13:43:44.841Z"}
+{"level":"info","message":"REDIS SET: refresh:c64e68e9-42d3-4a91-893c-025e3749a576","timestamp":"2025-12-16T13:43:45.468Z"}
+{"level":"info","message":"REDIS SET: session:c64e68e9-42d3-4a91-893c-025e3749a576","timestamp":"2025-12-16T13:43:45.696Z"}
+{"level":"info","message":"REDIS GET: refresh:c64e68e9-42d3-4a91-893c-025e3749a576","timestamp":"2025-12-16T13:58:15.513Z"}
+{"level":"info","message":"REDIS SET: refresh:c64e68e9-42d3-4a91-893c-025e3749a576","timestamp":"2025-12-16T13:58:15.747Z"}
+{"level":"info","message":"REDIS SET: session:c64e68e9-42d3-4a91-893c-025e3749a576","timestamp":"2025-12-16T13:58:15.974Z"}
+{"level":"info","message":"REDIS GET: refresh:c64e68e9-42d3-4a91-893c-025e3749a576","timestamp":"2025-12-16T14:12:45.472Z"}
+{"level":"info","message":"REDIS SET: refresh:c64e68e9-42d3-4a91-893c-025e3749a576","timestamp":"2025-12-16T14:12:45.710Z"}
+{"level":"info","message":"REDIS SET: session:c64e68e9-42d3-4a91-893c-025e3749a576","timestamp":"2025-12-16T14:12:45.941Z"}
+{"level":"info","message":"Auth service running on 5000","timestamp":"2026-01-06T04:17:09.957Z"}
+{"level":"info","message":"Postgres Query:SELECT * FROM users WHERE EMAIL=$1","timestamp":"2026-01-06T04:30:15.948Z"}
+{"level":"info","message":"REDIS SET: refresh:c64e68e9-42d3-4a91-893c-025e3749a576","timestamp":"2026-01-06T04:30:16.568Z"}
+{"level":"info","message":"REDIS SET: session:c64e68e9-42d3-4a91-893c-025e3749a576","timestamp":"2026-01-06T04:30:16.795Z"}
+{"level":"info","message":"REDIS GET: refresh:c64e68e9-42d3-4a91-893c-025e3749a576","timestamp":"2026-01-06T04:44:46.509Z"}
+{"level":"info","message":"REDIS SET: refresh:c64e68e9-42d3-4a91-893c-025e3749a576","timestamp":"2026-01-06T04:44:46.758Z"}
+{"level":"info","message":"REDIS SET: session:c64e68e9-42d3-4a91-893c-025e3749a576","timestamp":"2026-01-06T04:44:47.000Z"}
+{"level":"info","message":"REDIS GET: refresh:c64e68e9-42d3-4a91-893c-025e3749a576","timestamp":"2026-01-06T04:59:16.497Z"}
+{"level":"info","message":"REDIS SET: refresh:c64e68e9-42d3-4a91-893c-025e3749a576","timestamp":"2026-01-06T04:59:16.747Z"}
+{"level":"info","message":"REDIS SET: session:c64e68e9-42d3-4a91-893c-025e3749a576","timestamp":"2026-01-06T04:59:16.997Z"}
+{"level":"info","message":"REDIS GET: refresh:c64e68e9-42d3-4a91-893c-025e3749a576","timestamp":"2026-01-06T05:13:46.903Z"}
+{"level":"info","message":"REDIS SET: refresh:c64e68e9-42d3-4a91-893c-025e3749a576","timestamp":"2026-01-06T05:13:47.150Z"}
+{"level":"info","message":"REDIS SET: session:c64e68e9-42d3-4a91-893c-025e3749a576","timestamp":"2026-01-06T05:13:47.394Z"}
+{"level":"info","message":"REDIS GET: refresh:c64e68e9-42d3-4a91-893c-025e3749a576","timestamp":"2026-01-06T05:28:16.494Z"}
+{"level":"info","message":"REDIS SET: refresh:c64e68e9-42d3-4a91-893c-025e3749a576","timestamp":"2026-01-06T05:28:16.735Z"}
+{"level":"info","message":"REDIS SET: session:c64e68e9-42d3-4a91-893c-025e3749a576","timestamp":"2026-01-06T05:28:16.978Z"}
+{"level":"info","message":"REDIS GET: refresh:c64e68e9-42d3-4a91-893c-025e3749a576","timestamp":"2026-01-06T05:42:46.578Z"}
+{"level":"info","message":"REDIS SET: refresh:c64e68e9-42d3-4a91-893c-025e3749a576","timestamp":"2026-01-06T05:42:46.825Z"}
+{"level":"info","message":"REDIS SET: session:c64e68e9-42d3-4a91-893c-025e3749a576","timestamp":"2026-01-06T05:42:47.067Z"}
+{"level":"info","message":"REDIS GET: refresh:c64e68e9-42d3-4a91-893c-025e3749a576","timestamp":"2026-01-06T05:57:16.673Z"}
+{"level":"info","message":"REDIS SET: refresh:c64e68e9-42d3-4a91-893c-025e3749a576","timestamp":"2026-01-06T05:57:16.918Z"}
+{"level":"info","message":"REDIS SET: session:c64e68e9-42d3-4a91-893c-025e3749a576","timestamp":"2026-01-06T05:57:17.157Z"}
+{"level":"info","message":"REDIS GET: refresh:c64e68e9-42d3-4a91-893c-025e3749a576","timestamp":"2026-01-06T06:11:46.972Z"}
+{"level":"info","message":"REDIS SET: refresh:c64e68e9-42d3-4a91-893c-025e3749a576","timestamp":"2026-01-06T06:11:47.209Z"}
+{"level":"info","message":"REDIS SET: session:c64e68e9-42d3-4a91-893c-025e3749a576","timestamp":"2026-01-06T06:11:47.437Z"}
+{"level":"info","message":"Postgres Query:SELECT * FROM users WHERE EMAIL=$1","timestamp":"2026-01-06T06:39:49.322Z"}
+{"level":"info","message":"REDIS SET: refresh:c64e68e9-42d3-4a91-893c-025e3749a576","timestamp":"2026-01-06T06:39:49.984Z"}
+{"level":"info","message":"REDIS SET: session:c64e68e9-42d3-4a91-893c-025e3749a576","timestamp":"2026-01-06T06:39:50.237Z"}
+{"level":"info","message":"REDIS GET: refresh:c64e68e9-42d3-4a91-893c-025e3749a576","timestamp":"2026-01-06T06:54:19.719Z"}
+{"level":"info","message":"REDIS SET: refresh:c64e68e9-42d3-4a91-893c-025e3749a576","timestamp":"2026-01-06T06:54:19.964Z"}
+{"level":"info","message":"REDIS SET: session:c64e68e9-42d3-4a91-893c-025e3749a576","timestamp":"2026-01-06T06:54:20.207Z"}
+{"level":"info","message":"Postgres Query:SELECT * FROM users WHERE EMAIL=$1","timestamp":"2026-01-06T10:32:10.251Z"}
+{"level":"info","message":"REDIS SET: refresh:c64e68e9-42d3-4a91-893c-025e3749a576","timestamp":"2026-01-06T10:32:10.867Z"}
+{"level":"info","message":"REDIS SET: session:c64e68e9-42d3-4a91-893c-025e3749a576","timestamp":"2026-01-06T10:32:11.092Z"}
+{"level":"info","message":"REDIS GET: refresh:c64e68e9-42d3-4a91-893c-025e3749a576","timestamp":"2026-01-06T10:46:40.609Z"}
+{"level":"info","message":"REDIS SET: refresh:c64e68e9-42d3-4a91-893c-025e3749a576","timestamp":"2026-01-06T10:46:40.833Z"}
+{"level":"info","message":"REDIS SET: session:c64e68e9-42d3-4a91-893c-025e3749a576","timestamp":"2026-01-06T10:46:41.053Z"}
+{"level":"info","message":"REDIS GET: refresh:c64e68e9-42d3-4a91-893c-025e3749a576","timestamp":"2026-01-06T11:01:10.593Z"}
+{"level":"info","message":"REDIS SET: refresh:c64e68e9-42d3-4a91-893c-025e3749a576","timestamp":"2026-01-06T11:01:10.828Z"}
+{"level":"info","message":"REDIS SET: session:c64e68e9-42d3-4a91-893c-025e3749a576","timestamp":"2026-01-06T11:01:11.050Z"}
+{"level":"info","message":"REDIS GET: refresh:c64e68e9-42d3-4a91-893c-025e3749a576","timestamp":"2026-01-06T11:15:40.742Z"}
+{"level":"info","message":"REDIS SET: refresh:c64e68e9-42d3-4a91-893c-025e3749a576","timestamp":"2026-01-06T11:15:40.977Z"}
+{"level":"info","message":"REDIS SET: session:c64e68e9-42d3-4a91-893c-025e3749a576","timestamp":"2026-01-06T11:15:41.199Z"}
+{"level":"info","message":"REDIS GET: refresh:c64e68e9-42d3-4a91-893c-025e3749a576","timestamp":"2026-01-06T11:30:10.526Z"}
+{"level":"info","message":"REDIS SET: refresh:c64e68e9-42d3-4a91-893c-025e3749a576","timestamp":"2026-01-06T11:30:10.756Z"}
+{"level":"info","message":"REDIS SET: session:c64e68e9-42d3-4a91-893c-025e3749a576","timestamp":"2026-01-06T11:30:11.084Z"}
+{"level":"info","message":"Postgres Query:SELECT * FROM users WHERE EMAIL=$1","timestamp":"2026-01-06T14:43:01.423Z"}
+{"level":"info","message":"REDIS SET: refresh:c64e68e9-42d3-4a91-893c-025e3749a576","timestamp":"2026-01-06T14:43:02.088Z"}
+{"level":"info","message":"REDIS SET: session:c64e68e9-42d3-4a91-893c-025e3749a576","timestamp":"2026-01-06T14:43:02.322Z"}
+{"level":"info","message":"Auth service running on 5000","timestamp":"2026-01-07T02:58:47.493Z"}
+{"level":"info","message":"Postgres Query:SELECT * FROM users WHERE EMAIL=$1","timestamp":"2026-01-07T02:59:40.122Z"}
+{"level":"info","message":"REDIS SET: refresh:c64e68e9-42d3-4a91-893c-025e3749a576","timestamp":"2026-01-07T02:59:40.755Z"}
+{"level":"info","message":"REDIS SET: session:c64e68e9-42d3-4a91-893c-025e3749a576","timestamp":"2026-01-07T02:59:40.994Z"}
+{"code":"ENOTFOUND","errno":-3008,"hostname":"ep-broad-king-a48rk492-pooler.us-east-1.aws.neon.tech","level":"error","message":"Postgres QUERY error:SELECT * FROM users WHERE EMAIL=$1 getaddrinfo ENOTFOUND ep-broad-king-a48rk492-pooler.us-east-1.aws.neon.tech","stack":"Error: getaddrinfo ENOTFOUND ep-broad-king-a48rk492-pooler.us-east-1.aws.neon.tech\n    at C:\\Code\\ExpenseTrackerApp\\server\\expenseTracker-auth-service\\node_modules\\pg-pool\\index.js:45:11\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at async pgQuery (file:///C:/Code/ExpenseTrackerApp/server/expenseTracker-auth-service/config/dbconnection.js:19:24)\n    at async findUserByEmail (file:///C:/Code/ExpenseTrackerApp/server/expenseTracker-auth-service/src/model/userModel.js:4:18)\n    at async loginUserService (file:///C:/Code/ExpenseTrackerApp/server/expenseTracker-auth-service/src/services/authService.js:90:29)","syscall":"getaddrinfo","timestamp":"2026-01-07T03:44:23.213Z"}
+{"code":"ENOTFOUND","errno":-3008,"hostname":"ep-broad-king-a48rk492-pooler.us-east-1.aws.neon.tech","level":"error","message":"Error caught at Login Step:\n getaddrinfo ENOTFOUND ep-broad-king-a48rk492-pooler.us-east-1.aws.neon.tech","stack":"Error: getaddrinfo ENOTFOUND ep-broad-king-a48rk492-pooler.us-east-1.aws.neon.tech\n    at C:\\Code\\ExpenseTrackerApp\\server\\expenseTracker-auth-service\\node_modules\\pg-pool\\index.js:45:11\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at async pgQuery (file:///C:/Code/ExpenseTrackerApp/server/expenseTracker-auth-service/config/dbconnection.js:19:24)\n    at async findUserByEmail (file:///C:/Code/ExpenseTrackerApp/server/expenseTracker-auth-service/src/model/userModel.js:4:18)\n    at async loginUserService (file:///C:/Code/ExpenseTrackerApp/server/expenseTracker-auth-service/src/services/authService.js:90:29)","syscall":"getaddrinfo","timestamp":"2026-01-07T03:44:23.217Z"}
+{"code":"ENOTFOUND","errno":-3008,"hostname":"ep-broad-king-a48rk492-pooler.us-east-1.aws.neon.tech","level":"error","message":"Postgres QUERY error:SELECT * FROM users WHERE EMAIL=$1 getaddrinfo ENOTFOUND ep-broad-king-a48rk492-pooler.us-east-1.aws.neon.tech","stack":"Error: getaddrinfo ENOTFOUND ep-broad-king-a48rk492-pooler.us-east-1.aws.neon.tech\n    at C:\\Code\\ExpenseTrackerApp\\server\\expenseTracker-auth-service\\node_modules\\pg-pool\\index.js:45:11\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at async pgQuery (file:///C:/Code/ExpenseTrackerApp/server/expenseTracker-auth-service/config/dbconnection.js:19:24)\n    at async findUserByEmail (file:///C:/Code/ExpenseTrackerApp/server/expenseTracker-auth-service/src/model/userModel.js:4:18)\n    at async loginUserService (file:///C:/Code/ExpenseTrackerApp/server/expenseTracker-auth-service/src/services/authService.js:90:29)","syscall":"getaddrinfo","timestamp":"2026-01-07T03:44:27.789Z"}
+{"code":"ENOTFOUND","errno":-3008,"hostname":"ep-broad-king-a48rk492-pooler.us-east-1.aws.neon.tech","level":"error","message":"Error caught at Login Step:\n getaddrinfo ENOTFOUND ep-broad-king-a48rk492-pooler.us-east-1.aws.neon.tech","stack":"Error: getaddrinfo ENOTFOUND ep-broad-king-a48rk492-pooler.us-east-1.aws.neon.tech\n    at C:\\Code\\ExpenseTrackerApp\\server\\expenseTracker-auth-service\\node_modules\\pg-pool\\index.js:45:11\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at async pgQuery (file:///C:/Code/ExpenseTrackerApp/server/expenseTracker-auth-service/config/dbconnection.js:19:24)\n    at async findUserByEmail (file:///C:/Code/ExpenseTrackerApp/server/expenseTracker-auth-service/src/model/userModel.js:4:18)\n    at async loginUserService (file:///C:/Code/ExpenseTrackerApp/server/expenseTracker-auth-service/src/services/authService.js:90:29)","syscall":"getaddrinfo","timestamp":"2026-01-07T03:44:27.790Z"}
+{"level":"info","message":"Auth service running on 5000","timestamp":"2026-01-07T03:48:00.727Z"}
+{"level":"info","message":"Postgres Query:SELECT * FROM users WHERE EMAIL=$1","timestamp":"2026-01-07T03:48:34.436Z"}
+{"level":"info","message":"REDIS SET: refresh:c64e68e9-42d3-4a91-893c-025e3749a576","timestamp":"2026-01-07T03:48:35.088Z"}
+{"level":"info","message":"REDIS SET: session:c64e68e9-42d3-4a91-893c-025e3749a576","timestamp":"2026-01-07T03:48:35.332Z"}
+{"level":"info","message":"REDIS GET: refresh:c64e68e9-42d3-4a91-893c-025e3749a576","timestamp":"2026-01-07T04:03:04.557Z"}
+{"level":"info","message":"REDIS SET: refresh:c64e68e9-42d3-4a91-893c-025e3749a576","timestamp":"2026-01-07T04:03:04.817Z"}
+{"level":"info","message":"REDIS SET: session:c64e68e9-42d3-4a91-893c-025e3749a576","timestamp":"2026-01-07T04:03:05.142Z"}
+{"level":"info","message":"REDIS GET: refresh:c64e68e9-42d3-4a91-893c-025e3749a576","timestamp":"2026-01-07T04:17:34.604Z"}
+{"level":"info","message":"REDIS SET: refresh:c64e68e9-42d3-4a91-893c-025e3749a576","timestamp":"2026-01-07T04:17:34.850Z"}
+{"level":"info","message":"REDIS SET: session:c64e68e9-42d3-4a91-893c-025e3749a576","timestamp":"2026-01-07T04:17:35.094Z"}
+{"level":"info","message":"Postgres Query:SELECT * FROM users WHERE EMAIL=$1","timestamp":"2026-01-07T04:46:56.115Z"}
+{"level":"info","message":"REDIS SET: refresh:c64e68e9-42d3-4a91-893c-025e3749a576","timestamp":"2026-01-07T04:46:56.755Z"}
+{"level":"info","message":"REDIS SET: session:c64e68e9-42d3-4a91-893c-025e3749a576","timestamp":"2026-01-07T04:46:57.006Z"}
+{"level":"info","message":"Postgres Query:SELECT * FROM users WHERE EMAIL=$1","timestamp":"2026-01-07T04:49:45.281Z"}
+{"level":"info","message":"REDIS SET: refresh:c64e68e9-42d3-4a91-893c-025e3749a576","timestamp":"2026-01-07T04:49:45.923Z"}
+{"level":"info","message":"REDIS SET: session:c64e68e9-42d3-4a91-893c-025e3749a576","timestamp":"2026-01-07T04:49:46.153Z"}
+{"level":"info","message":"Postgres Query:SELECT * FROM users WHERE EMAIL=$1","timestamp":"2026-01-07T05:02:41.719Z"}
+{"level":"info","message":"Auth service running on 5000","timestamp":"2026-01-07T05:05:47.873Z"}
+{"level":"info","message":"Auth service running on 5000","timestamp":"2026-01-07T10:17:19.931Z"}
+{"level":"info","message":"Auth service running on 5000","timestamp":"2026-01-07T10:17:28.348Z"}
+{"level":"info","message":"Auth service running on 5000","timestamp":"2026-01-07T10:17:44.832Z"}
+{"level":"info","message":"Auth service running on 5000","timestamp":"2026-01-07T10:17:49.699Z"}
+{"level":"info","message":"Auth service running on 5000","timestamp":"2026-01-07T10:24:05.184Z"}
+{"level":"info","message":"Auth service running on 5000","timestamp":"2026-01-07T10:24:24.739Z"}
+{"level":"info","message":"Auth service running on 5000","timestamp":"2026-01-07T10:28:36.305Z"}
+{"level":"info","message":"Auth service running on 5000","timestamp":"2026-01-07T10:28:40.407Z"}
+{"level":"info","message":"Auth service running on 5000","timestamp":"2026-01-07T10:28:51.944Z"}
+{"level":"info","message":"Auth service running on 5000","timestamp":"2026-01-07T10:28:56.389Z"}
+{"level":"info","message":"Auth service running on 5000","timestamp":"2026-01-07T10:29:11.078Z"}
+{"level":"info","message":"Auth service running on 5000","timestamp":"2026-01-07T10:29:17.379Z"}
+{"level":"info","message":"Auth service running on 5000","timestamp":"2026-01-07T10:40:34.597Z"}
+{"level":"info","message":"Auth service running on 5000","timestamp":"2026-01-07T10:40:43.899Z"}
+{"level":"info","message":"Auth service running on 5000","timestamp":"2026-01-07T10:41:35.224Z"}
+{"level":"info","message":"Auth service running on 5000","timestamp":"2026-01-07T10:41:42.628Z"}
+{"level":"info","message":"Auth service running on 5000","timestamp":"2026-01-07T10:42:00.049Z"}
+{"level":"info","message":"Auth service running on 5000","timestamp":"2026-01-07T10:42:14.635Z"}
+{"level":"info","message":"Auth service running on 5000","timestamp":"2026-01-07T10:42:23.280Z"}
+{"level":"info","message":"Auth service running on 5000","timestamp":"2026-01-07T10:42:31.090Z"}
+{"level":"info","message":"Auth service running on 5000","timestamp":"2026-01-07T10:42:36.162Z"}
+{"level":"info","message":"Auth service running on 5000","timestamp":"2026-01-07T10:42:43.826Z"}
+{"level":"info","message":"Auth service running on 5000","timestamp":"2026-01-07T10:43:32.929Z"}
+{"level":"info","message":"Auth service running on 5000","timestamp":"2026-01-07T10:43:36.924Z"}
+{"level":"info","message":"Auth service running on 5000","timestamp":"2026-01-07T10:44:17.966Z"}
+{"level":"info","message":"Auth service running on 5000","timestamp":"2026-01-07T10:45:19.954Z"}
+{"level":"info","message":"Auth service running on 5000","timestamp":"2026-01-07T10:53:30.670Z"}
+{"level":"info","message":"Auth service running on 5000","timestamp":"2026-01-07T10:53:37.284Z"}
+{"level":"info","message":"Auth service running on 5000","timestamp":"2026-01-07T10:53:47.805Z"}
+{"level":"info","message":"Auth service running on 5000","timestamp":"2026-01-07T10:53:52.565Z"}
+{"level":"info","message":"Auth service running on 5000","timestamp":"2026-01-07T10:54:16.399Z"}
+{"level":"info","message":"Auth service running on 5000","timestamp":"2026-01-07T10:54:24.812Z"}
+{"level":"info","message":"Auth service running on 5000","timestamp":"2026-01-07T10:54:34.181Z"}
+{"level":"info","message":"Auth service running on 5000","timestamp":"2026-01-07T10:54:43.087Z"}
+{"level":"info","message":"Auth service running on 5000","timestamp":"2026-01-07T10:55:03.283Z"}
+{"level":"info","message":"Auth service running on 5000","timestamp":"2026-01-07T10:55:17.607Z"}
+{"level":"info","message":"Auth service running on 5000","timestamp":"2026-01-07T10:55:41.158Z"}
+{"level":"info","message":"Auth service running on 5000","timestamp":"2026-01-07T10:55:45.489Z"}
+{"level":"info","message":"Auth service running on 5000","timestamp":"2026-01-07T10:55:54.083Z"}
+{"level":"info","message":"Auth service running on 5000","timestamp":"2026-01-07T10:55:57.983Z"}
+{"level":"info","message":"Auth service running on 5000","timestamp":"2026-01-07T10:56:04.012Z"}
+{"level":"info","message":"Auth service running on 5000","timestamp":"2026-01-07T10:56:56.104Z"}
+{"level":"info","message":"Auth service running on 5000","timestamp":"2026-01-07T10:57:00.347Z"}
+{"level":"info","message":"Auth service running on 5000","timestamp":"2026-01-07T10:57:06.330Z"}
+{"level":"info","message":"Auth service running on 5000","timestamp":"2026-01-07T10:57:18.275Z"}
+{"level":"info","message":"Auth service running on 5000","timestamp":"2026-01-07T10:57:27.058Z"}
+{"level":"info","message":"Auth service running on 5000","timestamp":"2026-01-07T10:58:00.705Z"}
+{"level":"info","message":"Auth service running on 5000","timestamp":"2026-01-07T10:58:33.310Z"}
+{"level":"info","message":"Auth service running on 5000","timestamp":"2026-01-07T10:58:44.965Z"}
+{"level":"info","message":"Auth service running on 5000","timestamp":"2026-01-07T10:58:57.021Z"}
+{"level":"info","message":"Auth service running on 5000","timestamp":"2026-01-07T10:59:29.098Z"}
+{"level":"info","message":"Auth service running on 5000","timestamp":"2026-01-07T10:59:39.772Z"}
+{"level":"info","message":"Auth service running on 5000","timestamp":"2026-01-07T11:00:17.201Z"}
+{"level":"info","message":"Auth service running on 5000","timestamp":"2026-01-07T11:00:35.583Z"}
+{"level":"info","message":"Auth service running on 5000","timestamp":"2026-01-07T11:00:50.143Z"}
+{"level":"info","message":"Auth service running on 5000","timestamp":"2026-01-07T11:01:10.275Z"}
+{"level":"info","message":"Auth service running on 5000","timestamp":"2026-01-07T11:01:23.408Z"}
+{"level":"info","message":"Auth service running on 5000","timestamp":"2026-01-07T11:01:30.669Z"}
+{"level":"info","message":"Auth service running on 5000","timestamp":"2026-01-07T11:02:16.735Z"}
+{"level":"info","message":"Auth service running on 5000","timestamp":"2026-01-07T11:02:39.810Z"}
+{"level":"info","message":"Auth service running on 5000","timestamp":"2026-01-07T11:04:19.208Z"}
+{"level":"info","message":"Auth service running on 5000","timestamp":"2026-01-07T11:04:31.983Z"}
+{"level":"info","message":"Auth service running on 5000","timestamp":"2026-01-07T11:05:42.635Z"}
+{"level":"info","message":"Postgres Query:SELECT * FROM users WHERE EMAIL=$1","timestamp":"2026-01-07T11:05:44.832Z"}
+{"level":"info","message":"Auth service running on 5000","timestamp":"2026-01-07T11:05:56.048Z"}
+{"level":"info","message":"Postgres Query:SELECT * FROM users WHERE EMAIL=$1","timestamp":"2026-01-07T11:05:57.800Z"}
+{"level":"info","message":"Auth service running on 5000","timestamp":"2026-01-07T11:06:40.511Z"}
+{"level":"info","message":"Postgres Query:SELECT * FROM users WHERE EMAIL=$1","timestamp":"2026-01-07T11:06:42.157Z"}
+{"level":"info","message":"Auth service running on 5000","timestamp":"2026-01-07T11:07:19.683Z"}
+{"level":"info","message":"Auth service running on 5000","timestamp":"2026-01-07T11:07:42.995Z"}
+{"level":"info","message":"Auth service running on 5000","timestamp":"2026-01-07T11:07:47.974Z"}
+{"level":"info","message":"Auth service running on 5000","timestamp":"2026-01-07T11:09:32.938Z"}
+{"level":"info","message":"Auth service running on 5000","timestamp":"2026-01-07T11:09:39.141Z"}
+{"level":"info","message":"Auth service running on 5000","timestamp":"2026-01-07T11:09:56.276Z"}
+{"level":"info","message":"Auth service running on 5000","timestamp":"2026-01-07T11:10:03.961Z"}
+{"level":"info","message":"Auth service running on 5000","timestamp":"2026-01-07T11:10:13.449Z"}
+{"level":"info","message":"Auth service running on 5000","timestamp":"2026-01-07T11:10:21.748Z"}
+{"level":"info","message":"Auth service running on 5000","timestamp":"2026-01-07T11:10:33.646Z"}
+{"level":"info","message":"Auth service running on 5000","timestamp":"2026-01-07T11:11:00.544Z"}
+{"level":"info","message":"Auth service running on 5000","timestamp":"2026-01-07T11:12:03.143Z"}
+{"level":"info","message":"Auth service running on 5000","timestamp":"2026-01-07T11:12:18.502Z"}
+{"level":"info","message":"Auth service running on 5000","timestamp":"2026-01-07T11:12:30.563Z"}
+{"level":"info","message":"Auth service running on 5000","timestamp":"2026-01-07T11:14:16.160Z"}
+{"level":"info","message":"Auth service running on 5000","timestamp":"2026-01-07T11:14:48.562Z"}
+{"level":"info","message":"Auth service running on 5000","timestamp":"2026-01-07T11:15:57.856Z"}
+{"level":"info","message":"Auth service running on 5000","timestamp":"2026-01-07T11:16:06.912Z"}
+{"level":"info","message":"Auth service running on 5000","timestamp":"2026-01-07T11:19:11.976Z"}
+{"level":"info","message":"Auth service running on 5000","timestamp":"2026-01-07T11:19:39.470Z"}
+{"level":"info","message":"Auth service running on 5000","timestamp":"2026-01-07T11:19:43.942Z"}
+{"level":"info","message":"Auth service running on 5000","timestamp":"2026-01-07T11:19:54.727Z"}
+{"level":"info","message":"Auth service running on 5000","timestamp":"2026-01-07T11:20:02.277Z"}
+{"level":"info","message":"Auth service running on 5000","timestamp":"2026-01-07T11:20:09.380Z"}
+{"level":"info","message":"Auth service running on 5000","timestamp":"2026-01-07T11:20:13.466Z"}
+{"level":"info","message":"Auth service running on 5000","timestamp":"2026-01-07T11:20:32.961Z"}
+{"level":"info","message":"Auth service running on 5000","timestamp":"2026-01-07T11:20:40.895Z"}
+{"level":"info","message":"Auth service running on 5000","timestamp":"2026-01-07T11:20:50.225Z"}
+{"level":"info","message":"Auth service running on 5000","timestamp":"2026-01-07T11:27:53.659Z"}
+{"level":"info","message":"Auth service running on 5000","timestamp":"2026-01-07T11:28:07.711Z"}
+{"level":"info","message":"Auth service running on 5000","timestamp":"2026-01-07T11:28:15.894Z"}
+{"level":"info","message":"Auth service running on 5000","timestamp":"2026-01-07T11:28:36.388Z"}
+{"level":"info","message":"Auth service running on 5000","timestamp":"2026-01-07T11:28:49.926Z"}
+{"level":"info","message":"Auth service running on 5000","timestamp":"2026-01-07T11:36:53.113Z"}
+{"level":"info","message":"Postgres Query:SELECT * FROM users WHERE EMAIL=$1","timestamp":"2026-01-07T11:39:51.410Z"}
+{"level":"info","message":"Magic link sent to email: gaganupadhyay.karan@gmail.com","timestamp":"2026-01-07T11:39:52.217Z"}
+{"level":"info","message":"REDIS SET: resetPassword:gaganupadhyay.karan@gmail.com","timestamp":"2026-01-07T11:39:52.442Z"}
+{"level":"info","message":"Auth service running on 5000","timestamp":"2026-01-07T11:50:22.280Z"}
+{"level":"info","message":"Auth service running on 5000","timestamp":"2026-01-07T11:51:58.559Z"}
+{"level":"info","message":"Auth service running on 5000","timestamp":"2026-01-07T11:52:04.659Z"}
+{"level":"info","message":"Auth service running on 5000","timestamp":"2026-01-07T11:52:11.198Z"}
+{"level":"info","message":"Auth service running on 5000","timestamp":"2026-01-07T11:52:27.611Z"}
+{"level":"info","message":"Auth service running on 5000","timestamp":"2026-01-07T11:52:34.656Z"}
+{"level":"info","message":"Auth service running on 5000","timestamp":"2026-01-07T11:53:48.257Z"}
+{"level":"info","message":"Auth service running on 5000","timestamp":"2026-01-07T11:53:57.690Z"}
+{"level":"info","message":"Auth service running on 5000","timestamp":"2026-01-07T11:54:04.208Z"}
+{"level":"info","message":"Auth service running on 5000","timestamp":"2026-01-07T11:54:10.148Z"}
+{"level":"info","message":"Auth service running on 5000","timestamp":"2026-01-08T02:25:45.599Z"}
+{"level":"info","message":"Postgres Query:SELECT * FROM users WHERE EMAIL=$1","timestamp":"2026-01-08T02:30:47.368Z"}
+{"level":"info","message":"Auth service running on 5000","timestamp":"2026-01-08T02:31:00.935Z"}
+{"level":"info","message":"Postgres Query:SELECT * FROM users WHERE EMAIL=$1","timestamp":"2026-01-08T02:31:19.527Z"}
+{"level":"info","message":"Postgres Query:SELECT * FROM users WHERE EMAIL=$1","timestamp":"2026-01-08T02:32:14.222Z"}
+{"level":"info","message":"Postgres Query:SELECT * FROM users WHERE EMAIL=$1","timestamp":"2026-01-08T02:32:33.858Z"}
+{"level":"info","message":"Postgres Query:SELECT * FROM users WHERE EMAIL=$1","timestamp":"2026-01-08T02:33:02.608Z"}
+{"level":"info","message":"Postgres Query:SELECT * FROM users WHERE EMAIL=$1","timestamp":"2026-01-08T02:33:25.259Z"}
+{"level":"info","message":"Postgres Query:SELECT * FROM users WHERE EMAIL=$1","timestamp":"2026-01-08T02:34:15.469Z"}
+{"level":"info","message":"Graceful shutdown initiated","timestamp":"2026-01-08T02:44:01.720Z"}
+{"level":"info","message":"Auth service running on 5000","timestamp":"2026-01-08T02:44:10.647Z"}
+{"level":"info","message":"Auth service running on 5000","timestamp":"2026-01-08T02:58:40.551Z"}
+{"level":"info","message":"Auth service running on 5000","timestamp":"2026-01-08T02:58:49.217Z"}
+{"level":"info","message":"Auth service running on 5000","timestamp":"2026-01-08T02:58:59.177Z"}
+{"level":"info","message":"Postgres Query:SELECT * FROM users WHERE EMAIL=$1","timestamp":"2026-01-08T03:01:27.175Z"}
+{"level":"info","message":"Graceful shutdown initiated","timestamp":"2026-01-08T03:01:38.925Z"}
+{"level":"info","message":"Auth service running on 5000","timestamp":"2026-01-08T03:01:52.790Z"}
+{"level":"info","message":"Postgres connected. Server time:Thu Jan 08 2026 08:33:06 GMT+0530 (India Standard Time)","timestamp":"2026-01-08T03:03:07.394Z"}
+{"level":"info","message":"Postgres connected. Server time:Thu Jan 08 2026 08:33:49 GMT+0530 (India Standard Time)","timestamp":"2026-01-08T03:03:50.475Z"}
+{"level":"info","message":"Graceful shutdown initiated","timestamp":"2026-01-08T03:03:55.713Z"}
+{"level":"error","message":"cleanup function failed getRedisClient.disconnect is not a function","stack":"TypeError: getRedisClient.disconnect is not a function\n    at file:///C:/Code/ExpenseTrackerApp/server/expenseTracker-auth-service/index.js:60:29\n    at process.shutdown (file:///C:/Code/ExpenseTrackerApp/server/expenseTracker-auth-service/utils/setupGracefulShutdown.js:8:23)\n    at process.emit (node:events:520:28)","timestamp":"2026-01-08T03:03:55.717Z"}
+{"level":"info","message":"Auth service running on 5000","timestamp":"2026-01-08T06:44:33.349Z"}
+{"level":"info","message":"Postgres connected. Server time:Thu Jan 08 2026 12:14:55 GMT+0530 (India Standard Time)","timestamp":"2026-01-08T06:44:56.386Z"}
+{"level":"info","message":"Auth-service GET request hit","timestamp":"2026-01-08T06:45:35.960Z"}
+{"level":"info","message":"Postgres Query:SELECT * FROM users WHERE EMAIL=$1","timestamp":"2026-01-08T06:45:58.421Z"}
+{"level":"info","message":"Auth service running on 5000","timestamp":"2026-01-08T06:47:06.879Z"}
+{"level":"info","message":"Postgres Query:SELECT * FROM users WHERE EMAIL=$1","timestamp":"2026-01-08T06:47:11.450Z"}
+{"level":"info","message":"Auth service running on 5000","timestamp":"2026-01-08T06:47:44.941Z"}
+{"level":"info","message":"Auth service running on 5000","timestamp":"2026-01-08T06:47:51.853Z"}
+{"level":"info","message":"Postgres Query:SELECT * FROM users WHERE EMAIL=$1","timestamp":"2026-01-08T06:47:55.566Z"}
+{"level":"info","message":"REDIS SET: refresh:c64e68e9-42d3-4a91-893c-025e3749a576","timestamp":"2026-01-08T06:47:56.212Z"}
+{"level":"info","message":"REDIS SET: session:c64e68e9-42d3-4a91-893c-025e3749a576","timestamp":"2026-01-08T06:47:56.437Z"}
+{"level":"info","message":"Postgres Query:SELECT * FROM users WHERE EMAIL=$1","timestamp":"2026-01-08T06:48:14.957Z"}
+{"level":"info","message":"Auth service running on 5000","timestamp":"2026-01-08T06:50:42.006Z"}
+{"level":"info","message":"Auth service running on 5000","timestamp":"2026-01-08T06:50:49.790Z"}
+{"level":"info","message":"Postgres Query:SELECT * FROM users WHERE EMAIL=$1","timestamp":"2026-01-08T06:56:40.796Z"}
+{"level":"info","message":"REDIS SET: refresh:c64e68e9-42d3-4a91-893c-025e3749a576","timestamp":"2026-01-08T06:56:41.438Z"}
+{"level":"info","message":"REDIS SET: session:c64e68e9-42d3-4a91-893c-025e3749a576","timestamp":"2026-01-08T06:56:41.669Z"}
+{"level":"info","message":"Auth service running on 5000","timestamp":"2026-01-08T06:58:21.068Z"}
+{"level":"info","message":"Auth service running on 5000","timestamp":"2026-01-08T06:58:34.642Z"}
+{"level":"info","message":"auth route / Get request hit!","timestamp":"2026-01-08T07:06:48.259Z"}
+{"level":"info","message":"Auth service running on 5000","timestamp":"2026-01-08T07:08:53.798Z"}
+{"level":"info","message":"Auth service running on 5000","timestamp":"2026-01-08T07:09:18.915Z"}
+{"level":"info","message":"Postgres Query:SELECT * FROM users WHERE EMAIL=$1","timestamp":"2026-01-08T07:09:21.164Z"}
+{"level":"info","message":"Postgres Query:SELECT * FROM users WHERE EMAIL=$1","timestamp":"2026-01-08T07:09:21.828Z"}
+{"level":"info","message":"Auth service running on 5000","timestamp":"2026-01-08T07:11:15.166Z"}
+{"level":"info","message":"Auth service running on 5000","timestamp":"2026-01-08T07:11:26.871Z"}
+{"level":"info","message":"Postgres Query:SELECT * FROM users WHERE EMAIL=$1","timestamp":"2026-01-08T07:11:28.782Z"}
+{"level":"info","message":"Postgres Query:SELECT * FROM users WHERE EMAIL=$1","timestamp":"2026-01-08T07:11:29.570Z"}
+{"level":"info","message":"Postgres Query:SELECT * FROM users WHERE EMAIL=$1","timestamp":"2026-01-08T07:15:28.329Z"}
+{"level":"info","message":"Postgres Query:\n      INSERT INTO users(firstname, lastname, email, password, auth_type, created_at)\n      VALUES($1, $2, $3, $4, $5, CURRENT_TIMESTAMP) RETURNING id","timestamp":"2026-01-08T07:15:28.972Z"}
+{"level":"info","message":"Setting refresh and session token for a459f47f-d993-4140-b1b3-4438f7a617a0","timestamp":"2026-01-08T07:15:28.981Z"}
+{"level":"info","message":"REDIS SET: refresh:a459f47f-d993-4140-b1b3-4438f7a617a0","timestamp":"2026-01-08T07:15:29.217Z"}
+{"level":"info","message":"REDIS SET: session:a459f47f-d993-4140-b1b3-4438f7a617a0","timestamp":"2026-01-08T07:15:29.453Z"}
+{"level":"info","message":"Postgres Query:SELECT * FROM users WHERE EMAIL=$1","timestamp":"2026-01-08T07:16:01.837Z"}
+{"level":"info","message":"Postgres Query:SELECT * FROM users WHERE EMAIL=$1","timestamp":"2026-01-08T07:16:36.069Z"}
+{"level":"info","message":"Postgres Query:\n      INSERT INTO users(firstname, lastname, email, password, auth_type, created_at)\n      VALUES($1, $2, $3, $4, $5, CURRENT_TIMESTAMP) RETURNING id","timestamp":"2026-01-08T07:16:36.694Z"}
+{"level":"info","message":"Setting refresh and session token for 3431b9fe-3a75-485a-b7a2-34d6b755b392","timestamp":"2026-01-08T07:16:36.699Z"}
+{"level":"info","message":"REDIS SET: refresh:3431b9fe-3a75-485a-b7a2-34d6b755b392","timestamp":"2026-01-08T07:16:36.933Z"}
+{"level":"info","message":"REDIS SET: session:3431b9fe-3a75-485a-b7a2-34d6b755b392","timestamp":"2026-01-08T07:16:37.167Z"}
+{"level":"info","message":"Postgres Query:SELECT * FROM users WHERE EMAIL=$1","timestamp":"2026-01-08T07:17:37.673Z"}
+{"level":"info","message":"REDIS SET: refresh:c64e68e9-42d3-4a91-893c-025e3749a576","timestamp":"2026-01-08T07:17:38.311Z"}
+{"level":"info","message":"REDIS SET: session:c64e68e9-42d3-4a91-893c-025e3749a576","timestamp":"2026-01-08T07:17:38.547Z"}
+{"level":"info","message":"REDIS Del: refresh:undefined","timestamp":"2026-01-08T07:17:55.026Z"}
+{"level":"info","message":"REDIS Del: session:undefined","timestamp":"2026-01-08T07:17:55.027Z"}
+{"level":"info","message":"Postgres Query:SELECT * FROM users WHERE EMAIL=$1","timestamp":"2026-01-08T13:08:59.510Z"}
+{"level":"info","message":"REDIS SET: refresh:c64e68e9-42d3-4a91-893c-025e3749a576","timestamp":"2026-01-08T13:09:00.742Z"}
+{"level":"info","message":"REDIS SET: session:c64e68e9-42d3-4a91-893c-025e3749a576","timestamp":"2026-01-08T13:09:01.049Z"}
+{"level":"info","message":"REDIS Del: refresh:undefined","timestamp":"2026-01-08T13:13:35.903Z"}
+{"level":"info","message":"REDIS Del: session:undefined","timestamp":"2026-01-08T13:13:35.909Z"}
+{"level":"info","message":"Postgres Query:SELECT * FROM users WHERE EMAIL=$1","timestamp":"2026-01-08T13:18:02.304Z"}
+{"level":"info","message":"Postgres Query:SELECT * FROM users WHERE EMAIL=$1","timestamp":"2026-01-08T13:19:05.539Z"}
+{"level":"info","message":"Postgres Query:\n      INSERT INTO users(firstname, lastname, email, password, auth_type, created_at)\n      VALUES($1, $2, $3, $4, $5, CURRENT_TIMESTAMP) RETURNING id","timestamp":"2026-01-08T13:19:06.208Z"}
+{"level":"info","message":"Setting refresh and session token for d5e83614-1bc2-462b-93a4-848d626ad1f1","timestamp":"2026-01-08T13:19:06.219Z"}
+{"level":"info","message":"REDIS SET: refresh:d5e83614-1bc2-462b-93a4-848d626ad1f1","timestamp":"2026-01-08T13:19:06.513Z"}
+{"level":"info","message":"REDIS SET: session:d5e83614-1bc2-462b-93a4-848d626ad1f1","timestamp":"2026-01-08T13:19:06.757Z"}
+{"level":"info","message":"REDIS Del: refresh:undefined","timestamp":"2026-01-08T13:19:37.382Z"}
+{"level":"info","message":"REDIS Del: session:undefined","timestamp":"2026-01-08T13:19:37.383Z"}
+{"level":"info","message":"Postgres Query:SELECT * FROM users WHERE EMAIL=$1","timestamp":"2026-01-08T13:20:16.902Z"}
+{"level":"info","message":"REDIS SET: refresh:d5e83614-1bc2-462b-93a4-848d626ad1f1","timestamp":"2026-01-08T13:20:17.584Z"}
+{"level":"info","message":"REDIS SET: session:d5e83614-1bc2-462b-93a4-848d626ad1f1","timestamp":"2026-01-08T13:20:17.868Z"}
+{"level":"info","message":"REDIS Del: refresh:undefined","timestamp":"2026-01-08T13:21:36.303Z"}
+{"level":"info","message":"REDIS Del: session:undefined","timestamp":"2026-01-08T13:21:36.303Z"}
+{"level":"info","message":"Postgres Query:SELECT * FROM users WHERE EMAIL=$1","timestamp":"2026-01-08T13:21:57.585Z"}
+{"level":"info","message":"Postgres Query:SELECT * FROM users WHERE EMAIL=$1","timestamp":"2026-01-08T13:22:10.441Z"}
+{"level":"info","message":"REDIS SET: refresh:2b40d5bd-8344-430c-ba57-37488598d77d","timestamp":"2026-01-08T13:22:11.126Z"}
+{"level":"info","message":"REDIS SET: session:2b40d5bd-8344-430c-ba57-37488598d77d","timestamp":"2026-01-08T13:22:11.402Z"}
+{"level":"info","message":"Postgres Query:SELECT * FROM users WHERE EMAIL=$1","timestamp":"2026-01-08T13:25:55.288Z"}
+{"level":"info","message":"REDIS SET: refresh:2b40d5bd-8344-430c-ba57-37488598d77d","timestamp":"2026-01-08T13:25:55.978Z"}
+{"level":"info","message":"REDIS SET: session:2b40d5bd-8344-430c-ba57-37488598d77d","timestamp":"2026-01-08T13:25:56.253Z"}
+{"level":"info","message":"Postgres Query:SELECT * FROM users WHERE EMAIL=$1","timestamp":"2026-01-08T13:41:54.436Z"}
+{"level":"info","message":"REDIS SET: refresh:2b40d5bd-8344-430c-ba57-37488598d77d","timestamp":"2026-01-08T13:41:55.109Z"}
+{"level":"info","message":"REDIS SET: session:2b40d5bd-8344-430c-ba57-37488598d77d","timestamp":"2026-01-08T13:41:55.382Z"}
+{"level":"info","message":"Postgres Query:SELECT * FROM users WHERE EMAIL=$1","timestamp":"2026-01-08T13:58:51.389Z"}
+{"level":"info","message":"REDIS SET: refresh:2b40d5bd-8344-430c-ba57-37488598d77d","timestamp":"2026-01-08T13:58:52.085Z"}
+{"level":"info","message":"REDIS SET: session:2b40d5bd-8344-430c-ba57-37488598d77d","timestamp":"2026-01-08T13:58:52.369Z"}
+{"level":"info","message":"Auth service running on 5000","timestamp":"2026-01-08T14:08:07.381Z"}
+{"level":"info","message":"Auth service running on 5000","timestamp":"2026-01-08T14:08:40.003Z"}
+{"level":"info","message":"Postgres Query:SELECT * FROM users WHERE EMAIL=$1","timestamp":"2026-01-08T14:08:42.228Z"}
+{"level":"info","message":"Auth service running on 5000","timestamp":"2026-01-08T14:09:31.000Z"}
+{"level":"info","message":"Postgres Query:SELECT * FROM users WHERE EMAIL=$1","timestamp":"2026-01-08T14:13:45.755Z"}
+{"level":"info","message":"REDIS SET: refresh:2b40d5bd-8344-430c-ba57-37488598d77d","timestamp":"2026-01-08T14:13:46.472Z"}
+{"level":"info","message":"REDIS SET: session:2b40d5bd-8344-430c-ba57-37488598d77d","timestamp":"2026-01-08T14:13:46.803Z"}
+{"level":"info","message":"Postgres Query:SELECT * FROM users WHERE EMAIL=$1","timestamp":"2026-01-08T14:19:41.162Z"}
+{"level":"info","message":"REDIS SET: refresh:2b40d5bd-8344-430c-ba57-37488598d77d","timestamp":"2026-01-08T14:19:41.865Z"}
+{"level":"info","message":"REDIS SET: session:2b40d5bd-8344-430c-ba57-37488598d77d","timestamp":"2026-01-08T14:19:42.167Z"}
+{"level":"info","message":"Postgres Query:SELECT * FROM users WHERE EMAIL=$1","timestamp":"2026-01-08T14:21:12.052Z"}
+{"level":"info","message":"Postgres Query:SELECT * FROM users WHERE EMAIL=$1","timestamp":"2026-01-08T14:21:19.732Z"}
+{"level":"info","message":"REDIS SET: refresh:c64e68e9-42d3-4a91-893c-025e3749a576","timestamp":"2026-01-08T14:21:20.437Z"}
+{"level":"info","message":"REDIS SET: session:c64e68e9-42d3-4a91-893c-025e3749a576","timestamp":"2026-01-08T14:21:20.753Z"}
+{"level":"info","message":"Graceful shutdown initiated","timestamp":"2026-01-08T14:27:32.580Z"}
+{"level":"info","message":"Auth service running on 5000","timestamp":"2026-01-08T14:27:56.181Z"}
+{"level":"info","message":"Postgres Query:SELECT * FROM users WHERE EMAIL=$1","timestamp":"2026-01-08T14:28:31.975Z"}
+{"level":"info","message":"REDIS SET: refresh:c64e68e9-42d3-4a91-893c-025e3749a576","timestamp":"2026-01-08T14:28:32.721Z"}
+{"level":"info","message":"REDIS SET: session:c64e68e9-42d3-4a91-893c-025e3749a576","timestamp":"2026-01-08T14:28:32.993Z"}
+{"level":"info","message":"Postgres Query:SELECT * FROM users WHERE EMAIL=$1","timestamp":"2026-01-08T14:31:12.443Z"}
+{"level":"info","message":"REDIS SET: refresh:c64e68e9-42d3-4a91-893c-025e3749a576","timestamp":"2026-01-08T14:31:13.156Z"}
+{"level":"info","message":"REDIS SET: session:c64e68e9-42d3-4a91-893c-025e3749a576","timestamp":"2026-01-08T14:31:13.460Z"}
+{"level":"info","message":"REDIS Del: refresh:undefined","timestamp":"2026-01-08T14:31:56.040Z"}
+{"level":"info","message":"REDIS Del: session:undefined","timestamp":"2026-01-08T14:31:56.041Z"}
+{"level":"info","message":"Postgres Query:SELECT * FROM users WHERE EMAIL=$1","timestamp":"2026-01-08T14:36:47.569Z"}
+{"level":"info","message":"REDIS SET: refresh:2b40d5bd-8344-430c-ba57-37488598d77d","timestamp":"2026-01-08T14:36:48.300Z"}
+{"level":"info","message":"REDIS SET: session:2b40d5bd-8344-430c-ba57-37488598d77d","timestamp":"2026-01-08T14:36:48.642Z"}
+{"level":"info","message":"Graceful shutdown initiated","timestamp":"2026-01-08T15:09:22.635Z"}
+{"level":"info","message":"Auth service running on 5000","timestamp":"2026-01-08T15:10:03.484Z"}
+{"level":"info","message":"Postgres Query:SELECT * FROM users WHERE EMAIL=$1","timestamp":"2026-01-08T16:05:14.784Z"}
+{"level":"info","message":"REDIS SET: refresh:2b40d5bd-8344-430c-ba57-37488598d77d","timestamp":"2026-01-08T16:05:15.484Z"}
+{"level":"info","message":"REDIS SET: session:2b40d5bd-8344-430c-ba57-37488598d77d","timestamp":"2026-01-08T16:05:15.724Z"}
+{"level":"info","message":"REDIS Del: refresh:undefined","timestamp":"2026-01-08T16:10:36.617Z"}
+{"level":"info","message":"REDIS Del: session:undefined","timestamp":"2026-01-08T16:10:36.620Z"}
+{"level":"info","message":"Postgres Query:SELECT * FROM users WHERE EMAIL=$1","timestamp":"2026-01-08T16:10:44.739Z"}
+{"level":"info","message":"REDIS SET: refresh:c64e68e9-42d3-4a91-893c-025e3749a576","timestamp":"2026-01-08T16:10:45.384Z"}
+{"level":"info","message":"REDIS SET: session:c64e68e9-42d3-4a91-893c-025e3749a576","timestamp":"2026-01-08T16:10:45.622Z"}
+{"level":"info","message":"REDIS Del: refresh:undefined","timestamp":"2026-01-08T16:11:36.550Z"}
+{"level":"info","message":"REDIS Del: session:undefined","timestamp":"2026-01-08T16:11:36.551Z"}
+{"level":"info","message":"Postgres Query:SELECT * FROM users WHERE EMAIL=$1","timestamp":"2026-01-08T16:11:50.264Z"}
+{"level":"info","message":"REDIS SET: refresh:2b40d5bd-8344-430c-ba57-37488598d77d","timestamp":"2026-01-08T16:11:50.895Z"}
+{"level":"info","message":"REDIS SET: session:2b40d5bd-8344-430c-ba57-37488598d77d","timestamp":"2026-01-08T16:11:51.133Z"}
+{"level":"info","message":"Postgres Query:SELECT * FROM users WHERE EMAIL=$1","timestamp":"2026-01-08T16:26:27.275Z"}
+{"level":"info","message":"REDIS SET: refresh:2b40d5bd-8344-430c-ba57-37488598d77d","timestamp":"2026-01-08T16:26:27.914Z"}
+{"level":"info","message":"REDIS SET: session:2b40d5bd-8344-430c-ba57-37488598d77d","timestamp":"2026-01-08T16:26:28.153Z"}
+{"level":"info","message":"REDIS GET: refresh:2b40d5bd-8344-430c-ba57-37488598d77d","timestamp":"2026-01-08T16:40:57.521Z"}
+{"level":"info","message":"REDIS SET: refresh:2b40d5bd-8344-430c-ba57-37488598d77d","timestamp":"2026-01-08T16:40:57.760Z"}
+{"level":"info","message":"REDIS SET: session:2b40d5bd-8344-430c-ba57-37488598d77d","timestamp":"2026-01-08T16:40:57.998Z"}
+{"level":"info","message":"REDIS GET: refresh:2b40d5bd-8344-430c-ba57-37488598d77d","timestamp":"2026-01-08T16:55:27.567Z"}
+{"level":"info","message":"REDIS SET: refresh:2b40d5bd-8344-430c-ba57-37488598d77d","timestamp":"2026-01-08T16:55:27.841Z"}
+{"level":"info","message":"REDIS SET: session:2b40d5bd-8344-430c-ba57-37488598d77d","timestamp":"2026-01-08T16:55:28.110Z"}
+{"level":"info","message":"REDIS GET: refresh:2b40d5bd-8344-430c-ba57-37488598d77d","timestamp":"2026-01-08T17:09:57.601Z"}
+{"level":"info","message":"REDIS SET: refresh:2b40d5bd-8344-430c-ba57-37488598d77d","timestamp":"2026-01-08T17:09:57.876Z"}
+{"level":"info","message":"REDIS SET: session:2b40d5bd-8344-430c-ba57-37488598d77d","timestamp":"2026-01-08T17:09:58.144Z"}
+{"level":"info","message":"REDIS GET: refresh:2b40d5bd-8344-430c-ba57-37488598d77d","timestamp":"2026-01-08T17:24:27.543Z"}
+{"level":"info","message":"REDIS SET: refresh:2b40d5bd-8344-430c-ba57-37488598d77d","timestamp":"2026-01-08T17:24:27.789Z"}
+{"level":"info","message":"REDIS SET: session:2b40d5bd-8344-430c-ba57-37488598d77d","timestamp":"2026-01-08T17:24:28.030Z"}
+{"level":"info","message":"REDIS Del: refresh:undefined","timestamp":"2026-01-08T17:29:42.603Z"}
+{"level":"info","message":"REDIS Del: session:undefined","timestamp":"2026-01-08T17:29:42.604Z"}
+{"level":"info","message":"Postgres Query:SELECT * FROM users WHERE EMAIL=$1","timestamp":"2026-01-09T02:47:06.449Z"}
+{"level":"info","message":"REDIS SET: refresh:2b40d5bd-8344-430c-ba57-37488598d77d","timestamp":"2026-01-09T02:47:07.163Z"}
+{"level":"info","message":"REDIS SET: session:2b40d5bd-8344-430c-ba57-37488598d77d","timestamp":"2026-01-09T02:47:07.385Z"}
+{"level":"info","message":"Postgres Query:SELECT * FROM users WHERE EMAIL=$1","timestamp":"2026-01-09T12:28:44.359Z"}
+{"level":"info","message":"REDIS SET: refresh:2b40d5bd-8344-430c-ba57-37488598d77d","timestamp":"2026-01-09T12:28:45.033Z"}
+{"level":"info","message":"REDIS SET: session:2b40d5bd-8344-430c-ba57-37488598d77d","timestamp":"2026-01-09T12:28:45.292Z"}
+{"level":"info","message":"Postgres Query:SELECT * FROM users WHERE EMAIL=$1","timestamp":"2026-01-09T12:52:01.027Z"}
+{"level":"info","message":"REDIS SET: refresh:2b40d5bd-8344-430c-ba57-37488598d77d","timestamp":"2026-01-09T12:52:01.673Z"}
+{"level":"info","message":"REDIS SET: session:2b40d5bd-8344-430c-ba57-37488598d77d","timestamp":"2026-01-09T12:52:01.933Z"}
+{"level":"info","message":"Postgres Query:SELECT * FROM users WHERE EMAIL=$1","timestamp":"2026-01-09T13:39:54.716Z"}
+{"level":"info","message":"REDIS SET: refresh:2b40d5bd-8344-430c-ba57-37488598d77d","timestamp":"2026-01-09T13:39:55.350Z"}
+{"level":"info","message":"REDIS SET: session:2b40d5bd-8344-430c-ba57-37488598d77d","timestamp":"2026-01-09T13:39:55.586Z"}
+{"level":"info","message":"REDIS GET: refresh:2b40d5bd-8344-430c-ba57-37488598d77d","timestamp":"2026-01-09T13:54:25.572Z"}
+{"level":"info","message":"REDIS SET: refresh:2b40d5bd-8344-430c-ba57-37488598d77d","timestamp":"2026-01-09T13:54:25.822Z"}
+{"level":"info","message":"REDIS SET: session:2b40d5bd-8344-430c-ba57-37488598d77d","timestamp":"2026-01-09T13:54:26.065Z"}
+{"level":"info","message":"Postgres Query:SELECT * FROM users WHERE EMAIL=$1","timestamp":"2026-01-10T08:20:18.880Z"}
+{"level":"info","message":"REDIS SET: refresh:2b40d5bd-8344-430c-ba57-37488598d77d","timestamp":"2026-01-10T08:20:19.601Z"}
+{"level":"info","message":"REDIS SET: session:2b40d5bd-8344-430c-ba57-37488598d77d","timestamp":"2026-01-10T08:20:19.847Z"}
+{"level":"info","message":"Postgres Query:SELECT * FROM users WHERE EMAIL=$1","timestamp":"2026-01-10T08:28:52.054Z"}
+{"level":"info","message":"REDIS SET: refresh:2b40d5bd-8344-430c-ba57-37488598d77d","timestamp":"2026-01-10T08:28:52.719Z"}
+{"level":"info","message":"REDIS SET: session:2b40d5bd-8344-430c-ba57-37488598d77d","timestamp":"2026-01-10T08:28:52.966Z"}
+{"level":"info","message":"Postgres Query:SELECT * FROM users WHERE EMAIL=$1","timestamp":"2026-01-10T08:45:44.264Z"}
+{"level":"info","message":"REDIS SET: refresh:2b40d5bd-8344-430c-ba57-37488598d77d","timestamp":"2026-01-10T08:45:44.902Z"}
+{"level":"info","message":"REDIS SET: session:2b40d5bd-8344-430c-ba57-37488598d77d","timestamp":"2026-01-10T08:45:45.142Z"}
+{"level":"info","message":"Postgres Query:SELECT * FROM users WHERE EMAIL=$1","timestamp":"2026-01-10T09:02:08.328Z"}
+{"level":"info","message":"REDIS SET: refresh:2b40d5bd-8344-430c-ba57-37488598d77d","timestamp":"2026-01-10T09:02:08.969Z"}
+{"level":"info","message":"REDIS SET: session:2b40d5bd-8344-430c-ba57-37488598d77d","timestamp":"2026-01-10T09:02:09.205Z"}
+{"level":"info","message":"Postgres Query:SELECT * FROM users WHERE EMAIL=$1","timestamp":"2026-01-10T09:56:53.546Z"}
+{"level":"info","message":"REDIS SET: refresh:2b40d5bd-8344-430c-ba57-37488598d77d","timestamp":"2026-01-10T09:56:54.202Z"}
+{"level":"info","message":"REDIS SET: session:2b40d5bd-8344-430c-ba57-37488598d77d","timestamp":"2026-01-10T09:56:54.452Z"}
+{"level":"info","message":"Postgres Query:SELECT * FROM users WHERE EMAIL=$1","timestamp":"2026-01-10T10:14:22.242Z"}
+{"level":"info","message":"REDIS SET: refresh:2b40d5bd-8344-430c-ba57-37488598d77d","timestamp":"2026-01-10T10:14:22.895Z"}
+{"level":"info","message":"REDIS SET: session:2b40d5bd-8344-430c-ba57-37488598d77d","timestamp":"2026-01-10T10:14:23.141Z"}
+{"level":"info","message":"Postgres Query:SELECT * FROM users WHERE EMAIL=$1","timestamp":"2026-01-10T10:14:39.623Z"}
+{"level":"info","message":"REDIS SET: refresh:2b40d5bd-8344-430c-ba57-37488598d77d","timestamp":"2026-01-10T10:14:40.309Z"}
+{"level":"info","message":"REDIS SET: session:2b40d5bd-8344-430c-ba57-37488598d77d","timestamp":"2026-01-10T10:14:40.604Z"}
+{"level":"info","message":"Postgres Query:SELECT * FROM users WHERE EMAIL=$1","timestamp":"2026-01-10T10:18:07.244Z"}
+{"level":"info","message":"REDIS SET: refresh:2b40d5bd-8344-430c-ba57-37488598d77d","timestamp":"2026-01-10T10:18:07.873Z"}
+{"level":"info","message":"REDIS SET: session:2b40d5bd-8344-430c-ba57-37488598d77d","timestamp":"2026-01-10T10:18:08.099Z"}
+{"level":"info","message":"Postgres Query:SELECT * FROM users WHERE EMAIL=$1","timestamp":"2026-01-10T10:35:40.708Z"}
+{"level":"info","message":"REDIS SET: refresh:2b40d5bd-8344-430c-ba57-37488598d77d","timestamp":"2026-01-10T10:35:41.414Z"}
+{"level":"info","message":"REDIS SET: session:2b40d5bd-8344-430c-ba57-37488598d77d","timestamp":"2026-01-10T10:35:41.773Z"}
+{"level":"info","message":"REDIS GET: refresh:2b40d5bd-8344-430c-ba57-37488598d77d","timestamp":"2026-01-10T10:50:11.553Z"}
+{"level":"info","message":"REDIS SET: refresh:2b40d5bd-8344-430c-ba57-37488598d77d","timestamp":"2026-01-10T10:50:11.792Z"}
+{"level":"info","message":"REDIS SET: session:2b40d5bd-8344-430c-ba57-37488598d77d","timestamp":"2026-01-10T10:50:12.028Z"}
+{"level":"info","message":"Postgres Query:SELECT * FROM users WHERE EMAIL=$1","timestamp":"2026-01-10T10:55:46.687Z"}
+{"level":"info","message":"Postgres Query:SELECT * FROM users WHERE EMAIL=$1","timestamp":"2026-01-10T10:55:51.568Z"}
+{"level":"info","message":"REDIS SET: refresh:c64e68e9-42d3-4a91-893c-025e3749a576","timestamp":"2026-01-10T10:55:52.206Z"}
+{"level":"info","message":"REDIS SET: session:c64e68e9-42d3-4a91-893c-025e3749a576","timestamp":"2026-01-10T10:55:52.444Z"}
+{"level":"info","message":"Postgres Query:SELECT * FROM users WHERE EMAIL=$1","timestamp":"2026-01-11T04:52:00.427Z"}
+{"level":"info","message":"REDIS SET: refresh:2b40d5bd-8344-430c-ba57-37488598d77d","timestamp":"2026-01-11T04:52:01.078Z"}
+{"level":"info","message":"REDIS SET: session:2b40d5bd-8344-430c-ba57-37488598d77d","timestamp":"2026-01-11T04:52:01.319Z"}
+{"level":"info","message":"REDIS Del: refresh:undefined","timestamp":"2026-01-11T04:56:31.256Z"}
+{"level":"info","message":"REDIS Del: session:undefined","timestamp":"2026-01-11T04:56:31.257Z"}
+{"level":"info","message":"Postgres Query:SELECT * FROM users WHERE EMAIL=$1","timestamp":"2026-01-11T04:56:37.702Z"}
+{"level":"info","message":"REDIS SET: refresh:c64e68e9-42d3-4a91-893c-025e3749a576","timestamp":"2026-01-11T04:56:38.342Z"}
+{"level":"info","message":"REDIS SET: session:c64e68e9-42d3-4a91-893c-025e3749a576","timestamp":"2026-01-11T04:56:38.584Z"}
+{"level":"info","message":"REDIS Del: refresh:undefined","timestamp":"2026-01-11T04:57:05.398Z"}
+{"level":"info","message":"REDIS Del: session:undefined","timestamp":"2026-01-11T04:57:05.399Z"}
+{"level":"info","message":"Postgres Query:SELECT * FROM users WHERE EMAIL=$1","timestamp":"2026-01-11T04:57:14.769Z"}
+{"level":"info","message":"REDIS SET: refresh:2b40d5bd-8344-430c-ba57-37488598d77d","timestamp":"2026-01-11T04:57:15.497Z"}
+{"level":"info","message":"REDIS SET: session:2b40d5bd-8344-430c-ba57-37488598d77d","timestamp":"2026-01-11T04:57:15.737Z"}
+{"level":"info","message":"REDIS GET: refresh:2b40d5bd-8344-430c-ba57-37488598d77d","timestamp":"2026-01-11T05:11:45.518Z"}
+{"level":"info","message":"REDIS SET: refresh:2b40d5bd-8344-430c-ba57-37488598d77d","timestamp":"2026-01-11T05:11:45.763Z"}
+{"level":"info","message":"REDIS SET: session:2b40d5bd-8344-430c-ba57-37488598d77d","timestamp":"2026-01-11T05:11:45.999Z"}
+{"level":"info","message":"Postgres Query:SELECT * FROM users WHERE EMAIL=$1","timestamp":"2026-01-11T05:14:55.357Z"}
+{"level":"info","message":"REDIS SET: refresh:c64e68e9-42d3-4a91-893c-025e3749a576","timestamp":"2026-01-11T05:14:56.004Z"}
+{"level":"info","message":"REDIS SET: session:c64e68e9-42d3-4a91-893c-025e3749a576","timestamp":"2026-01-11T05:14:56.241Z"}
+{"level":"info","message":"REDIS GET: refresh:2b40d5bd-8344-430c-ba57-37488598d77d","timestamp":"2026-01-11T05:26:15.501Z"}
+{"level":"info","message":"REDIS SET: refresh:2b40d5bd-8344-430c-ba57-37488598d77d","timestamp":"2026-01-11T05:26:15.742Z"}
+{"level":"info","message":"REDIS SET: session:2b40d5bd-8344-430c-ba57-37488598d77d","timestamp":"2026-01-11T05:26:15.983Z"}
+{"level":"info","message":"Postgres Query:SELECT * FROM users WHERE EMAIL=$1","timestamp":"2026-01-11T05:33:18.902Z"}
+{"level":"info","message":"REDIS SET: refresh:c64e68e9-42d3-4a91-893c-025e3749a576","timestamp":"2026-01-11T05:33:19.545Z"}
+{"level":"info","message":"REDIS SET: session:c64e68e9-42d3-4a91-893c-025e3749a576","timestamp":"2026-01-11T05:33:19.783Z"}
+{"level":"info","message":"REDIS GET: refresh:2b40d5bd-8344-430c-ba57-37488598d77d","timestamp":"2026-01-11T05:40:45.654Z"}
+{"level":"info","message":"REDIS SET: refresh:2b40d5bd-8344-430c-ba57-37488598d77d","timestamp":"2026-01-11T05:40:45.897Z"}
+{"level":"info","message":"REDIS SET: session:2b40d5bd-8344-430c-ba57-37488598d77d","timestamp":"2026-01-11T05:40:46.138Z"}
+{"level":"info","message":"REDIS GET: refresh:2b40d5bd-8344-430c-ba57-37488598d77d","timestamp":"2026-01-11T05:55:16.165Z"}
+{"level":"info","message":"REDIS SET: refresh:2b40d5bd-8344-430c-ba57-37488598d77d","timestamp":"2026-01-11T05:55:16.409Z"}
+{"level":"info","message":"REDIS SET: session:2b40d5bd-8344-430c-ba57-37488598d77d","timestamp":"2026-01-11T05:55:16.655Z"}
+{"level":"info","message":"Postgres Query:SELECT * FROM users WHERE EMAIL=$1","timestamp":"2026-01-11T06:41:47.035Z"}
+{"level":"info","message":"REDIS SET: refresh:c64e68e9-42d3-4a91-893c-025e3749a576","timestamp":"2026-01-11T06:41:48.013Z"}
+{"level":"info","message":"REDIS SET: session:c64e68e9-42d3-4a91-893c-025e3749a576","timestamp":"2026-01-11T06:41:48.261Z"}
+{"level":"info","message":"Postgres Query:SELECT * FROM users WHERE EMAIL=$1","timestamp":"2026-01-11T06:48:10.978Z"}
+{"level":"info","message":"REDIS SET: refresh:c64e68e9-42d3-4a91-893c-025e3749a576","timestamp":"2026-01-11T06:48:11.619Z"}
+{"level":"info","message":"REDIS SET: session:c64e68e9-42d3-4a91-893c-025e3749a576","timestamp":"2026-01-11T06:48:11.875Z"}
+{"level":"info","message":"REDIS Del: refresh:undefined","timestamp":"2026-01-11T06:54:18.493Z"}
+{"level":"info","message":"REDIS Del: session:undefined","timestamp":"2026-01-11T06:54:18.495Z"}
+{"level":"info","message":"Postgres Query:SELECT * FROM users WHERE EMAIL=$1","timestamp":"2026-01-11T06:57:10.201Z"}
+{"level":"info","message":"REDIS SET: refresh:c64e68e9-42d3-4a91-893c-025e3749a576","timestamp":"2026-01-11T06:57:10.850Z"}
+{"level":"info","message":"REDIS SET: session:c64e68e9-42d3-4a91-893c-025e3749a576","timestamp":"2026-01-11T06:57:11.115Z"}
+{"level":"info","message":"Postgres Query:SELECT * FROM users WHERE EMAIL=$1","timestamp":"2026-01-11T11:46:49.539Z"}
+{"level":"info","message":"REDIS SET: refresh:c64e68e9-42d3-4a91-893c-025e3749a576","timestamp":"2026-01-11T11:46:50.362Z"}
+{"level":"info","message":"REDIS SET: session:c64e68e9-42d3-4a91-893c-025e3749a576","timestamp":"2026-01-11T11:46:50.606Z"}
+{"level":"info","message":"REDIS GET: refresh:c64e68e9-42d3-4a91-893c-025e3749a576","timestamp":"2026-01-11T12:01:20.578Z"}
+{"level":"info","message":"REDIS SET: refresh:c64e68e9-42d3-4a91-893c-025e3749a576","timestamp":"2026-01-11T12:01:20.821Z"}
+{"level":"info","message":"REDIS SET: session:c64e68e9-42d3-4a91-893c-025e3749a576","timestamp":"2026-01-11T12:01:21.053Z"}
+{"level":"info","message":"REDIS GET: refresh:c64e68e9-42d3-4a91-893c-025e3749a576","timestamp":"2026-01-11T12:15:51.445Z"}
+{"level":"info","message":"REDIS SET: refresh:c64e68e9-42d3-4a91-893c-025e3749a576","timestamp":"2026-01-11T12:15:51.699Z"}
+{"level":"info","message":"REDIS SET: session:c64e68e9-42d3-4a91-893c-025e3749a576","timestamp":"2026-01-11T12:15:51.937Z"}
+{"level":"info","message":"REDIS Del: refresh:undefined","timestamp":"2026-01-11T12:24:25.961Z"}
+{"level":"info","message":"REDIS Del: session:undefined","timestamp":"2026-01-11T12:24:25.963Z"}
+{"level":"info","message":"Postgres Query:SELECT * FROM users WHERE EMAIL=$1","timestamp":"2026-01-11T12:25:03.765Z"}
+{"level":"info","message":"REDIS SET: refresh:2b40d5bd-8344-430c-ba57-37488598d77d","timestamp":"2026-01-11T12:25:04.431Z"}
+{"level":"info","message":"REDIS SET: session:2b40d5bd-8344-430c-ba57-37488598d77d","timestamp":"2026-01-11T12:25:04.661Z"}
+{"level":"info","message":"REDIS Del: refresh:undefined","timestamp":"2026-01-11T12:25:50.563Z"}
+{"level":"info","message":"REDIS Del: session:undefined","timestamp":"2026-01-11T12:25:50.564Z"}
+{"level":"info","message":"Postgres Query:SELECT * FROM users WHERE EMAIL=$1","timestamp":"2026-01-11T12:26:10.503Z"}
+{"level":"info","message":"REDIS SET: refresh:c64e68e9-42d3-4a91-893c-025e3749a576","timestamp":"2026-01-11T12:26:11.162Z"}
+{"level":"info","message":"REDIS SET: session:c64e68e9-42d3-4a91-893c-025e3749a576","timestamp":"2026-01-11T12:26:11.390Z"}
+{"level":"info","message":"REDIS Del: refresh:undefined","timestamp":"2026-01-11T12:38:54.805Z"}
+{"level":"info","message":"REDIS Del: session:undefined","timestamp":"2026-01-11T12:38:54.808Z"}
+{"level":"info","message":"Postgres Query:SELECT * FROM users WHERE EMAIL=$1","timestamp":"2026-01-11T12:39:23.173Z"}
+{"level":"info","message":"REDIS SET: refresh:2b40d5bd-8344-430c-ba57-37488598d77d","timestamp":"2026-01-11T12:39:23.803Z"}
+{"level":"info","message":"REDIS SET: session:2b40d5bd-8344-430c-ba57-37488598d77d","timestamp":"2026-01-11T12:39:24.031Z"}
+{"level":"info","message":"REDIS GET: refresh:2b40d5bd-8344-430c-ba57-37488598d77d","timestamp":"2026-01-11T12:40:41.860Z"}
+{"level":"info","message":"REDIS SET: refresh:2b40d5bd-8344-430c-ba57-37488598d77d","timestamp":"2026-01-11T12:40:42.093Z"}
+{"level":"info","message":"REDIS SET: session:2b40d5bd-8344-430c-ba57-37488598d77d","timestamp":"2026-01-11T12:40:42.325Z"}
+{"level":"info","message":"REDIS GET: refresh:2b40d5bd-8344-430c-ba57-37488598d77d","timestamp":"2026-01-11T12:55:12.331Z"}
+{"level":"info","message":"REDIS GET: refresh:2b40d5bd-8344-430c-ba57-37488598d77d","timestamp":"2026-01-11T12:55:12.333Z"}
+{"level":"info","message":"REDIS SET: refresh:2b40d5bd-8344-430c-ba57-37488598d77d","timestamp":"2026-01-11T12:55:12.574Z"}
+{"level":"info","message":"REDIS SET: refresh:2b40d5bd-8344-430c-ba57-37488598d77d","timestamp":"2026-01-11T12:55:12.576Z"}
+{"level":"info","message":"REDIS SET: session:2b40d5bd-8344-430c-ba57-37488598d77d","timestamp":"2026-01-11T12:55:12.805Z"}
+{"level":"info","message":"REDIS SET: session:2b40d5bd-8344-430c-ba57-37488598d77d","timestamp":"2026-01-11T12:55:12.806Z"}
+{"level":"info","message":"REDIS Del: refresh:undefined","timestamp":"2026-01-11T12:55:44.906Z"}
+{"level":"info","message":"REDIS Del: session:undefined","timestamp":"2026-01-11T12:55:44.907Z"}
+{"level":"info","message":"Postgres Query:SELECT * FROM users WHERE EMAIL=$1","timestamp":"2026-01-11T12:55:53.029Z"}
+{"level":"info","message":"REDIS SET: refresh:c64e68e9-42d3-4a91-893c-025e3749a576","timestamp":"2026-01-11T12:55:53.660Z"}
+{"level":"info","message":"REDIS SET: session:c64e68e9-42d3-4a91-893c-025e3749a576","timestamp":"2026-01-11T12:55:53.887Z"}
+{"level":"info","message":"Postgres Query:SELECT * FROM users WHERE EMAIL=$1","timestamp":"2026-01-12T11:56:55.358Z"}
+{"level":"info","message":"REDIS SET: refresh:c64e68e9-42d3-4a91-893c-025e3749a576","timestamp":"2026-01-12T11:56:56.003Z"}
+{"level":"info","message":"REDIS SET: session:c64e68e9-42d3-4a91-893c-025e3749a576","timestamp":"2026-01-12T11:56:56.224Z"}
+{"level":"info","message":"REDIS Del: refresh:undefined","timestamp":"2026-01-12T12:02:09.500Z"}
+{"level":"info","message":"REDIS Del: session:undefined","timestamp":"2026-01-12T12:02:09.504Z"}
+{"level":"info","message":"Postgres Query:SELECT * FROM users WHERE EMAIL=$1","timestamp":"2026-01-12T12:02:19.283Z"}
+{"level":"info","message":"REDIS SET: refresh:2b40d5bd-8344-430c-ba57-37488598d77d","timestamp":"2026-01-12T12:02:19.910Z"}
+{"level":"info","message":"REDIS SET: session:2b40d5bd-8344-430c-ba57-37488598d77d","timestamp":"2026-01-12T12:02:20.133Z"}
+{"level":"info","message":"REDIS Del: refresh:undefined","timestamp":"2026-01-12T12:11:59.883Z"}
+{"level":"info","message":"REDIS Del: session:undefined","timestamp":"2026-01-12T12:11:59.887Z"}
+{"level":"info","message":"Postgres Query:SELECT * FROM users WHERE EMAIL=$1","timestamp":"2026-01-12T12:12:32.161Z"}
+{"level":"info","message":"REDIS SET: refresh:c64e68e9-42d3-4a91-893c-025e3749a576","timestamp":"2026-01-12T12:12:33.135Z"}
+{"level":"info","message":"REDIS SET: session:c64e68e9-42d3-4a91-893c-025e3749a576","timestamp":"2026-01-12T12:12:33.352Z"}
+{"level":"info","message":"REDIS GET: refresh:c64e68e9-42d3-4a91-893c-025e3749a576","timestamp":"2026-01-12T12:16:49.511Z"}
+{"level":"info","message":"REDIS SET: refresh:c64e68e9-42d3-4a91-893c-025e3749a576","timestamp":"2026-01-12T12:16:49.735Z"}
+{"level":"info","message":"REDIS SET: session:c64e68e9-42d3-4a91-893c-025e3749a576","timestamp":"2026-01-12T12:16:49.968Z"}
+{"level":"info","message":"Postgres Query:SELECT * FROM users WHERE EMAIL=$1","timestamp":"2026-01-12T12:22:35.646Z"}
+{"level":"info","message":"REDIS SET: refresh:c64e68e9-42d3-4a91-893c-025e3749a576","timestamp":"2026-01-12T12:22:36.269Z"}
+{"level":"info","message":"REDIS SET: session:c64e68e9-42d3-4a91-893c-025e3749a576","timestamp":"2026-01-12T12:22:36.491Z"}
+{"level":"info","message":"Postgres Query:SELECT * FROM users WHERE EMAIL=$1","timestamp":"2026-01-12T13:00:51.183Z"}
+{"level":"info","message":"REDIS SET: refresh:c64e68e9-42d3-4a91-893c-025e3749a576","timestamp":"2026-01-12T13:00:51.829Z"}
+{"level":"info","message":"REDIS SET: session:c64e68e9-42d3-4a91-893c-025e3749a576","timestamp":"2026-01-12T13:00:52.077Z"}
+{"level":"info","message":"REDIS Del: refresh:undefined","timestamp":"2026-01-12T13:02:11.350Z"}
+{"level":"info","message":"REDIS Del: session:undefined","timestamp":"2026-01-12T13:02:11.351Z"}
+{"level":"info","message":"Postgres Query:SELECT * FROM users WHERE EMAIL=$1","timestamp":"2026-01-12T13:02:34.348Z"}
+{"level":"info","message":"Postgres Query:SELECT * FROM users WHERE EMAIL=$1","timestamp":"2026-01-12T13:03:35.950Z"}
+{"level":"info","message":"Postgres Query:SELECT * FROM users WHERE EMAIL=$1","timestamp":"2026-01-12T13:03:52.913Z"}
+{"level":"info","message":"Postgres Query:SELECT * FROM users WHERE EMAIL=$1","timestamp":"2026-01-12T13:04:00.654Z"}
+{"level":"info","message":"Postgres Query:SELECT * FROM users WHERE EMAIL=$1","timestamp":"2026-01-12T13:04:06.570Z"}
+{"level":"info","message":"Postgres Query:SELECT * FROM users WHERE EMAIL=$1","timestamp":"2026-01-12T13:04:26.394Z"}
+{"level":"info","message":"REDIS SET: refresh:4412f3d3-2615-43a6-a8d6-bb4652104cf5","timestamp":"2026-01-12T13:04:27.069Z"}
+{"level":"info","message":"REDIS SET: session:4412f3d3-2615-43a6-a8d6-bb4652104cf5","timestamp":"2026-01-12T13:04:27.284Z"}
+{"level":"info","message":"Postgres Query:SELECT * FROM users WHERE EMAIL=$1","timestamp":"2026-01-12T13:06:00.271Z"}
+{"level":"info","message":"REDIS SET: refresh:c64e68e9-42d3-4a91-893c-025e3749a576","timestamp":"2026-01-12T13:06:00.884Z"}
+{"level":"info","message":"REDIS SET: session:c64e68e9-42d3-4a91-893c-025e3749a576","timestamp":"2026-01-12T13:06:01.111Z"}
+{"level":"info","message":"Graceful shutdown initiated","timestamp":"2026-01-12T13:11:17.590Z"}
+{"level":"info","message":"Auth service running on 5000","timestamp":"2026-01-12T13:11:28.251Z"}
+{"level":"info","message":"REDIS GET: refresh:4412f3d3-2615-43a6-a8d6-bb4652104cf5","timestamp":"2026-01-12T13:18:56.526Z"}
+{"level":"info","message":"REDIS SET: refresh:4412f3d3-2615-43a6-a8d6-bb4652104cf5","timestamp":"2026-01-12T13:18:56.771Z"}
+{"level":"info","message":"REDIS SET: session:4412f3d3-2615-43a6-a8d6-bb4652104cf5","timestamp":"2026-01-12T13:18:57.006Z"}
+{"level":"info","message":"REDIS GET: refresh:4412f3d3-2615-43a6-a8d6-bb4652104cf5","timestamp":"2026-01-12T13:33:26.695Z"}
+{"level":"info","message":"REDIS SET: refresh:4412f3d3-2615-43a6-a8d6-bb4652104cf5","timestamp":"2026-01-12T13:33:26.959Z"}
+{"level":"info","message":"REDIS SET: session:4412f3d3-2615-43a6-a8d6-bb4652104cf5","timestamp":"2026-01-12T13:33:27.255Z"}
+{"level":"info","message":"REDIS GET: refresh:4412f3d3-2615-43a6-a8d6-bb4652104cf5","timestamp":"2026-01-12T13:47:57.050Z"}
+{"level":"info","message":"REDIS SET: refresh:4412f3d3-2615-43a6-a8d6-bb4652104cf5","timestamp":"2026-01-12T13:47:57.308Z"}
+{"level":"info","message":"REDIS SET: session:4412f3d3-2615-43a6-a8d6-bb4652104cf5","timestamp":"2026-01-12T13:47:57.556Z"}
+{"level":"info","message":"Postgres Query:SELECT * FROM users WHERE EMAIL=$1","timestamp":"2026-01-13T07:16:28.922Z"}
+{"level":"info","message":"REDIS SET: refresh:c64e68e9-42d3-4a91-893c-025e3749a576","timestamp":"2026-01-13T07:16:30.150Z"}
+{"level":"info","message":"REDIS SET: session:c64e68e9-42d3-4a91-893c-025e3749a576","timestamp":"2026-01-13T07:16:30.435Z"}
+{"level":"info","message":"Postgres Query:SELECT * FROM users WHERE EMAIL=$1","timestamp":"2026-01-13T08:13:16.422Z"}
+{"level":"info","message":"REDIS SET: refresh:c64e68e9-42d3-4a91-893c-025e3749a576","timestamp":"2026-01-13T08:13:17.047Z"}
+{"level":"info","message":"REDIS SET: session:c64e68e9-42d3-4a91-893c-025e3749a576","timestamp":"2026-01-13T08:13:17.270Z"}
+{"level":"info","message":"Postgres Query:SELECT * FROM users WHERE EMAIL=$1","timestamp":"2026-01-13T08:29:50.642Z"}
+{"level":"info","message":"REDIS SET: refresh:c64e68e9-42d3-4a91-893c-025e3749a576","timestamp":"2026-01-13T08:29:51.287Z"}
+{"level":"info","message":"REDIS SET: session:c64e68e9-42d3-4a91-893c-025e3749a576","timestamp":"2026-01-13T08:29:51.513Z"}
+{"level":"info","message":"Postgres Query:SELECT * FROM users WHERE EMAIL=$1","timestamp":"2026-01-13T08:30:13.289Z"}
+{"level":"info","message":"REDIS SET: refresh:c64e68e9-42d3-4a91-893c-025e3749a576","timestamp":"2026-01-13T08:30:13.908Z"}
+{"level":"info","message":"REDIS SET: session:c64e68e9-42d3-4a91-893c-025e3749a576","timestamp":"2026-01-13T08:30:14.129Z"}
+{"level":"info","message":"Postgres Query:SELECT * FROM users WHERE EMAIL=$1","timestamp":"2026-01-13T10:17:18.026Z"}
+{"level":"info","message":"REDIS SET: refresh:c64e68e9-42d3-4a91-893c-025e3749a576","timestamp":"2026-01-13T10:17:18.677Z"}
+{"level":"info","message":"REDIS SET: session:c64e68e9-42d3-4a91-893c-025e3749a576","timestamp":"2026-01-13T10:17:18.913Z"}
+{"level":"info","message":"Postgres Query:SELECT * FROM users WHERE EMAIL=$1","timestamp":"2026-01-13T10:32:49.364Z"}
+{"level":"info","message":"REDIS SET: refresh:c64e68e9-42d3-4a91-893c-025e3749a576","timestamp":"2026-01-13T10:32:50.008Z"}
+{"level":"info","message":"REDIS SET: session:c64e68e9-42d3-4a91-893c-025e3749a576","timestamp":"2026-01-13T10:32:50.242Z"}
+{"level":"info","message":"Postgres Query:SELECT * FROM users WHERE EMAIL=$1","timestamp":"2026-01-13T10:51:53.811Z"}
+{"level":"info","message":"REDIS SET: refresh:c64e68e9-42d3-4a91-893c-025e3749a576","timestamp":"2026-01-13T10:51:54.440Z"}
+{"level":"info","message":"REDIS SET: session:c64e68e9-42d3-4a91-893c-025e3749a576","timestamp":"2026-01-13T10:51:54.668Z"}
+{"level":"info","message":"Postgres Query:SELECT * FROM users WHERE EMAIL=$1","timestamp":"2026-01-13T11:10:26.700Z"}
+{"level":"info","message":"REDIS SET: refresh:c64e68e9-42d3-4a91-893c-025e3749a576","timestamp":"2026-01-13T11:10:27.328Z"}
+{"level":"info","message":"REDIS SET: session:c64e68e9-42d3-4a91-893c-025e3749a576","timestamp":"2026-01-13T11:10:27.556Z"}
+{"level":"info","message":"Postgres Query:SELECT * FROM users WHERE EMAIL=$1","timestamp":"2026-01-13T11:26:36.239Z"}
+{"level":"info","message":"REDIS SET: refresh:c64e68e9-42d3-4a91-893c-025e3749a576","timestamp":"2026-01-13T11:26:36.882Z"}
+{"level":"info","message":"REDIS SET: session:c64e68e9-42d3-4a91-893c-025e3749a576","timestamp":"2026-01-13T11:26:37.111Z"}
+{"level":"info","message":"Postgres Query:SELECT * FROM users WHERE EMAIL=$1","timestamp":"2026-01-13T11:50:20.083Z"}
+{"level":"info","message":"REDIS SET: refresh:c64e68e9-42d3-4a91-893c-025e3749a576","timestamp":"2026-01-13T11:50:20.716Z"}
+{"level":"info","message":"REDIS SET: session:c64e68e9-42d3-4a91-893c-025e3749a576","timestamp":"2026-01-13T11:50:20.946Z"}
+{"level":"info","message":"Postgres Query:SELECT * FROM users WHERE EMAIL=$1","timestamp":"2026-01-13T12:59:39.405Z"}
+{"level":"info","message":"REDIS SET: refresh:c64e68e9-42d3-4a91-893c-025e3749a576","timestamp":"2026-01-13T12:59:40.153Z"}
+{"level":"info","message":"REDIS SET: session:c64e68e9-42d3-4a91-893c-025e3749a576","timestamp":"2026-01-13T12:59:40.378Z"}
+{"level":"info","message":"Postgres Query:SELECT * FROM users WHERE EMAIL=$1","timestamp":"2026-01-13T13:16:03.277Z"}
+{"level":"info","message":"REDIS SET: refresh:c64e68e9-42d3-4a91-893c-025e3749a576","timestamp":"2026-01-13T13:16:03.919Z"}
+{"level":"info","message":"REDIS SET: session:c64e68e9-42d3-4a91-893c-025e3749a576","timestamp":"2026-01-13T13:16:04.664Z"}
+{"level":"info","message":"Postgres Query:SELECT * FROM users WHERE EMAIL=$1","timestamp":"2026-01-13T13:38:07.438Z"}
+{"level":"info","message":"REDIS SET: refresh:c64e68e9-42d3-4a91-893c-025e3749a576","timestamp":"2026-01-13T13:38:08.085Z"}
+{"level":"info","message":"REDIS SET: session:c64e68e9-42d3-4a91-893c-025e3749a576","timestamp":"2026-01-13T13:38:08.314Z"}
+{"level":"info","message":"Postgres Query:SELECT * FROM users WHERE EMAIL=$1","timestamp":"2026-01-13T13:53:39.992Z"}
+{"level":"info","message":"REDIS SET: refresh:c64e68e9-42d3-4a91-893c-025e3749a576","timestamp":"2026-01-13T13:53:40.633Z"}
+{"level":"info","message":"REDIS SET: session:c64e68e9-42d3-4a91-893c-025e3749a576","timestamp":"2026-01-13T13:53:40.861Z"}
+{"level":"info","message":"Postgres Query:SELECT * FROM users WHERE EMAIL=$1","timestamp":"2026-01-13T17:14:11.437Z"}
+{"level":"info","message":"REDIS SET: refresh:c64e68e9-42d3-4a91-893c-025e3749a576","timestamp":"2026-01-13T17:14:12.107Z"}
+{"level":"info","message":"REDIS SET: session:c64e68e9-42d3-4a91-893c-025e3749a576","timestamp":"2026-01-13T17:14:12.953Z"}
+{"level":"info","message":"Auth service running on 5000","timestamp":"2026-01-14T11:38:39.211Z"}
+{"level":"info","message":"Graceful shutdown initiated","timestamp":"2026-01-14T12:00:11.823Z"}
+{"level":"info","message":"Auth service running on 5000","timestamp":"2026-01-14T12:06:19.955Z"}
+{"level":"info","message":"Postgres Query:SELECT * FROM users WHERE EMAIL=$1","timestamp":"2026-01-14T12:16:05.982Z"}
+{"level":"info","message":"REDIS SET: refresh:c64e68e9-42d3-4a91-893c-025e3749a576","timestamp":"2026-01-14T12:16:06.624Z"}
+{"level":"info","message":"REDIS SET: session:c64e68e9-42d3-4a91-893c-025e3749a576","timestamp":"2026-01-14T12:16:06.856Z"}
+{"level":"info","message":"Postgres Query:SELECT * FROM users WHERE EMAIL=$1","timestamp":"2026-01-14T12:19:09.991Z"}
+{"level":"info","message":"REDIS SET: refresh:c64e68e9-42d3-4a91-893c-025e3749a576","timestamp":"2026-01-14T12:19:10.628Z"}
+{"level":"info","message":"REDIS SET: session:c64e68e9-42d3-4a91-893c-025e3749a576","timestamp":"2026-01-14T12:19:10.857Z"}
+{"level":"info","message":"Postgres Query:SELECT * FROM users WHERE EMAIL=$1","timestamp":"2026-01-14T12:57:42.564Z"}
+{"level":"info","message":"REDIS SET: refresh:c64e68e9-42d3-4a91-893c-025e3749a576","timestamp":"2026-01-14T12:57:43.218Z"}
+{"level":"info","message":"REDIS SET: session:c64e68e9-42d3-4a91-893c-025e3749a576","timestamp":"2026-01-14T12:57:43.452Z"}
+{"level":"info","message":"Postgres Query:SELECT * FROM users WHERE EMAIL=$1","timestamp":"2026-01-14T13:03:47.766Z"}
+{"level":"info","message":"REDIS SET: refresh:c64e68e9-42d3-4a91-893c-025e3749a576","timestamp":"2026-01-14T13:03:48.399Z"}
+{"level":"info","message":"REDIS SET: session:c64e68e9-42d3-4a91-893c-025e3749a576","timestamp":"2026-01-14T13:03:48.634Z"}
+{"level":"info","message":"REDIS GET: refresh:c64e68e9-42d3-4a91-893c-025e3749a576","timestamp":"2026-01-14T13:18:19.085Z"}
+{"level":"info","message":"REDIS SET: refresh:c64e68e9-42d3-4a91-893c-025e3749a576","timestamp":"2026-01-14T13:18:19.349Z"}
+{"level":"info","message":"REDIS SET: session:c64e68e9-42d3-4a91-893c-025e3749a576","timestamp":"2026-01-14T13:18:19.619Z"}
+{"level":"info","message":"REDIS GET: refresh:c64e68e9-42d3-4a91-893c-025e3749a576","timestamp":"2026-01-14T13:32:49.516Z"}
+{"level":"info","message":"REDIS SET: refresh:c64e68e9-42d3-4a91-893c-025e3749a576","timestamp":"2026-01-14T13:32:49.761Z"}
+{"level":"info","message":"REDIS SET: session:c64e68e9-42d3-4a91-893c-025e3749a576","timestamp":"2026-01-14T13:32:50.004Z"}
+{"level":"info","message":"REDIS GET: refresh:c64e68e9-42d3-4a91-893c-025e3749a576","timestamp":"2026-01-14T13:47:19.511Z"}
+{"level":"info","message":"REDIS SET: refresh:c64e68e9-42d3-4a91-893c-025e3749a576","timestamp":"2026-01-14T13:47:19.784Z"}
+{"level":"info","message":"REDIS SET: session:c64e68e9-42d3-4a91-893c-025e3749a576","timestamp":"2026-01-14T13:47:20.024Z"}
+{"level":"info","message":"Auth service running on 5000","timestamp":"2026-01-15T14:32:21.381Z"}
+{"level":"info","message":"Postgres Query:SELECT * FROM users WHERE EMAIL=$1","timestamp":"2026-01-15T14:32:50.936Z"}
+{"level":"info","message":"REDIS SET: refresh:c64e68e9-42d3-4a91-893c-025e3749a576","timestamp":"2026-01-15T14:32:51.582Z"}
+{"level":"info","message":"REDIS SET: session:c64e68e9-42d3-4a91-893c-025e3749a576","timestamp":"2026-01-15T14:32:51.817Z"}
+{"level":"info","message":"REDIS Del: refresh:undefined","timestamp":"2026-01-15T14:46:55.397Z"}
+{"level":"info","message":"REDIS Del: session:undefined","timestamp":"2026-01-15T14:46:55.399Z"}
+{"level":"info","message":"Postgres Query:SELECT * FROM users WHERE EMAIL=$1","timestamp":"2026-01-15T15:16:13.624Z"}
+{"level":"info","message":"REDIS SET: refresh:4412f3d3-2615-43a6-a8d6-bb4652104cf5","timestamp":"2026-01-15T15:16:14.274Z"}
+{"level":"info","message":"REDIS SET: session:4412f3d3-2615-43a6-a8d6-bb4652104cf5","timestamp":"2026-01-15T15:16:14.503Z"}
+{"level":"info","message":"REDIS Del: refresh:undefined","timestamp":"2026-01-15T15:16:37.186Z"}
+{"level":"info","message":"REDIS Del: session:undefined","timestamp":"2026-01-15T15:16:37.187Z"}
+{"level":"info","message":"Postgres Query:SELECT * FROM users WHERE EMAIL=$1","timestamp":"2026-01-15T15:48:38.320Z"}
+{"level":"info","message":"REDIS SET: refresh:c64e68e9-42d3-4a91-893c-025e3749a576","timestamp":"2026-01-15T15:48:39.026Z"}
+{"level":"info","message":"REDIS SET: session:c64e68e9-42d3-4a91-893c-025e3749a576","timestamp":"2026-01-15T15:48:39.262Z"}
+{"level":"info","message":"REDIS Del: refresh:undefined","timestamp":"2026-01-15T15:49:10.564Z"}
+{"level":"info","message":"REDIS Del: session:undefined","timestamp":"2026-01-15T15:49:10.575Z"}
+{"level":"info","message":"Postgres Query:SELECT * FROM users WHERE EMAIL=$1","timestamp":"2026-01-15T15:49:17.403Z"}
+{"level":"info","message":"REDIS SET: refresh:c64e68e9-42d3-4a91-893c-025e3749a576","timestamp":"2026-01-15T15:49:18.029Z"}
+{"level":"info","message":"REDIS SET: session:c64e68e9-42d3-4a91-893c-025e3749a576","timestamp":"2026-01-15T15:49:18.258Z"}
+{"level":"info","message":"REDIS Del: refresh:undefined","timestamp":"2026-01-15T15:49:27.699Z"}
+{"level":"info","message":"REDIS Del: session:undefined","timestamp":"2026-01-15T15:49:27.708Z"}
+{"level":"info","message":"Postgres Query:SELECT * FROM users WHERE EMAIL=$1","timestamp":"2026-01-15T15:55:11.381Z"}
+{"level":"info","message":"REDIS SET: refresh:c64e68e9-42d3-4a91-893c-025e3749a576","timestamp":"2026-01-15T15:55:12.011Z"}
+{"level":"info","message":"REDIS SET: session:c64e68e9-42d3-4a91-893c-025e3749a576","timestamp":"2026-01-15T15:55:12.239Z"}
+{"level":"info","message":"Postgres Query:SELECT * FROM users WHERE EMAIL=$1","timestamp":"2026-01-16T11:31:30.528Z"}
+{"level":"info","message":"REDIS SET: refresh:c64e68e9-42d3-4a91-893c-025e3749a576","timestamp":"2026-01-16T11:31:31.146Z"}
+{"level":"info","message":"REDIS SET: session:c64e68e9-42d3-4a91-893c-025e3749a576","timestamp":"2026-01-16T11:31:31.364Z"}
+{"level":"info","message":"REDIS GET: refresh:c64e68e9-42d3-4a91-893c-025e3749a576","timestamp":"2026-01-16T11:46:01.806Z"}
+{"level":"info","message":"REDIS SET: refresh:c64e68e9-42d3-4a91-893c-025e3749a576","timestamp":"2026-01-16T11:46:02.042Z"}
+{"level":"info","message":"REDIS SET: session:c64e68e9-42d3-4a91-893c-025e3749a576","timestamp":"2026-01-16T11:46:02.266Z"}
+{"level":"info","message":"REDIS GET: refresh:c64e68e9-42d3-4a91-893c-025e3749a576","timestamp":"2026-01-16T12:00:31.453Z"}
+{"level":"info","message":"REDIS SET: refresh:c64e68e9-42d3-4a91-893c-025e3749a576","timestamp":"2026-01-16T12:00:31.679Z"}
+{"level":"info","message":"REDIS SET: session:c64e68e9-42d3-4a91-893c-025e3749a576","timestamp":"2026-01-16T12:00:31.895Z"}
+{"level":"info","message":"REDIS GET: refresh:c64e68e9-42d3-4a91-893c-025e3749a576","timestamp":"2026-01-16T12:15:01.496Z"}
+{"level":"info","message":"REDIS SET: refresh:c64e68e9-42d3-4a91-893c-025e3749a576","timestamp":"2026-01-16T12:15:01.723Z"}
+{"level":"info","message":"REDIS SET: session:c64e68e9-42d3-4a91-893c-025e3749a576","timestamp":"2026-01-16T12:15:01.946Z"}
+{"level":"info","message":"REDIS GET: refresh:c64e68e9-42d3-4a91-893c-025e3749a576","timestamp":"2026-01-16T12:29:31.926Z"}
+{"level":"info","message":"REDIS SET: refresh:c64e68e9-42d3-4a91-893c-025e3749a576","timestamp":"2026-01-16T12:29:32.156Z"}
+{"level":"info","message":"REDIS SET: session:c64e68e9-42d3-4a91-893c-025e3749a576","timestamp":"2026-01-16T12:29:32.388Z"}
+{"level":"info","message":"REDIS GET: refresh:c64e68e9-42d3-4a91-893c-025e3749a576","timestamp":"2026-01-16T12:44:01.487Z"}
+{"level":"info","message":"REDIS SET: refresh:c64e68e9-42d3-4a91-893c-025e3749a576","timestamp":"2026-01-16T12:44:01.716Z"}
+{"level":"info","message":"REDIS SET: session:c64e68e9-42d3-4a91-893c-025e3749a576","timestamp":"2026-01-16T12:44:01.931Z"}
+{"level":"info","message":"REDIS GET: refresh:c64e68e9-42d3-4a91-893c-025e3749a576","timestamp":"2026-01-16T12:58:31.555Z"}
+{"level":"info","message":"REDIS SET: refresh:c64e68e9-42d3-4a91-893c-025e3749a576","timestamp":"2026-01-16T12:58:31.783Z"}
+{"level":"info","message":"REDIS SET: session:c64e68e9-42d3-4a91-893c-025e3749a576","timestamp":"2026-01-16T12:58:31.998Z"}
+{"level":"info","message":"REDIS GET: refresh:c64e68e9-42d3-4a91-893c-025e3749a576","timestamp":"2026-01-16T13:13:01.518Z"}
+{"level":"info","message":"REDIS SET: refresh:c64e68e9-42d3-4a91-893c-025e3749a576","timestamp":"2026-01-16T13:13:01.744Z"}
+{"level":"info","message":"REDIS SET: session:c64e68e9-42d3-4a91-893c-025e3749a576","timestamp":"2026-01-16T13:13:01.967Z"}
+{"level":"info","message":"REDIS GET: refresh:c64e68e9-42d3-4a91-893c-025e3749a576","timestamp":"2026-01-16T13:27:31.466Z"}
+{"level":"info","message":"REDIS SET: refresh:c64e68e9-42d3-4a91-893c-025e3749a576","timestamp":"2026-01-16T13:27:31.682Z"}
+{"level":"info","message":"REDIS SET: session:c64e68e9-42d3-4a91-893c-025e3749a576","timestamp":"2026-01-16T13:27:31.897Z"}
+{"level":"info","message":"REDIS GET: refresh:c64e68e9-42d3-4a91-893c-025e3749a576","timestamp":"2026-01-16T13:42:01.464Z"}
+{"level":"info","message":"REDIS SET: refresh:c64e68e9-42d3-4a91-893c-025e3749a576","timestamp":"2026-01-16T13:42:01.691Z"}
+{"level":"info","message":"REDIS SET: session:c64e68e9-42d3-4a91-893c-025e3749a576","timestamp":"2026-01-16T13:42:01.908Z"}
+{"level":"info","message":"Postgres Query:SELECT * FROM users WHERE EMAIL=$1","timestamp":"2026-01-18T10:33:51.682Z"}
+{"level":"info","message":"REDIS SET: refresh:c64e68e9-42d3-4a91-893c-025e3749a576","timestamp":"2026-01-18T10:33:52.339Z"}
+{"level":"info","message":"REDIS SET: session:c64e68e9-42d3-4a91-893c-025e3749a576","timestamp":"2026-01-18T10:33:52.558Z"}
+{"level":"info","message":"Postgres Query:SELECT * FROM users WHERE EMAIL=$1","timestamp":"2026-01-18T10:45:17.166Z"}
+{"level":"info","message":"REDIS SET: refresh:c64e68e9-42d3-4a91-893c-025e3749a576","timestamp":"2026-01-18T10:45:17.798Z"}
+{"level":"info","message":"REDIS SET: session:c64e68e9-42d3-4a91-893c-025e3749a576","timestamp":"2026-01-18T10:45:18.016Z"}
+{"level":"info","message":"Postgres Query:SELECT * FROM users WHERE EMAIL=$1","timestamp":"2026-01-18T10:49:58.673Z"}
+{"level":"info","message":"REDIS SET: refresh:c64e68e9-42d3-4a91-893c-025e3749a576","timestamp":"2026-01-18T10:49:59.351Z"}
+{"level":"info","message":"REDIS SET: session:c64e68e9-42d3-4a91-893c-025e3749a576","timestamp":"2026-01-18T10:49:59.571Z"}
+{"level":"info","message":"Postgres Query:SELECT * FROM users WHERE EMAIL=$1","timestamp":"2026-01-18T10:51:49.928Z"}
+{"level":"info","message":"REDIS SET: refresh:c64e68e9-42d3-4a91-893c-025e3749a576","timestamp":"2026-01-18T10:51:50.565Z"}
+{"level":"info","message":"REDIS SET: session:c64e68e9-42d3-4a91-893c-025e3749a576","timestamp":"2026-01-18T10:51:50.784Z"}
+{"level":"info","message":"REDIS GET: refresh:c64e68e9-42d3-4a91-893c-025e3749a576","timestamp":"2026-01-18T11:06:20.554Z"}
+{"level":"info","message":"REDIS SET: refresh:c64e68e9-42d3-4a91-893c-025e3749a576","timestamp":"2026-01-18T11:06:20.840Z"}
+{"level":"info","message":"REDIS SET: session:c64e68e9-42d3-4a91-893c-025e3749a576","timestamp":"2026-01-18T11:06:21.070Z"}
+{"level":"info","message":"REDIS GET: refresh:c64e68e9-42d3-4a91-893c-025e3749a576","timestamp":"2026-01-18T11:20:50.568Z"}
+{"level":"info","message":"REDIS SET: refresh:c64e68e9-42d3-4a91-893c-025e3749a576","timestamp":"2026-01-18T11:20:50.791Z"}
+{"level":"info","message":"REDIS SET: session:c64e68e9-42d3-4a91-893c-025e3749a576","timestamp":"2026-01-18T11:20:51.011Z"}
+{"level":"info","message":"REDIS GET: refresh:c64e68e9-42d3-4a91-893c-025e3749a576","timestamp":"2026-01-18T11:35:20.534Z"}
+{"level":"info","message":"REDIS SET: refresh:c64e68e9-42d3-4a91-893c-025e3749a576","timestamp":"2026-01-18T11:35:20.834Z"}
+{"level":"info","message":"REDIS SET: session:c64e68e9-42d3-4a91-893c-025e3749a576","timestamp":"2026-01-18T11:35:21.054Z"}
+{"level":"info","message":"REDIS GET: refresh:c64e68e9-42d3-4a91-893c-025e3749a576","timestamp":"2026-01-18T11:49:52.916Z"}
+{"level":"info","message":"REDIS SET: refresh:c64e68e9-42d3-4a91-893c-025e3749a576","timestamp":"2026-01-18T11:49:53.174Z"}
+{"level":"info","message":"REDIS SET: session:c64e68e9-42d3-4a91-893c-025e3749a576","timestamp":"2026-01-18T11:49:53.394Z"}
+{"level":"info","message":"Postgres Query:SELECT * FROM users WHERE EMAIL=$1","timestamp":"2026-01-19T07:53:53.563Z"}
+{"level":"info","message":"REDIS SET: refresh:c64e68e9-42d3-4a91-893c-025e3749a576","timestamp":"2026-01-19T07:53:54.213Z"}
+{"level":"info","message":"REDIS SET: session:c64e68e9-42d3-4a91-893c-025e3749a576","timestamp":"2026-01-19T07:53:54.442Z"}
+{"level":"info","message":"REDIS GET: refresh:c64e68e9-42d3-4a91-893c-025e3749a576","timestamp":"2026-01-19T08:08:23.516Z"}
+{"level":"info","message":"REDIS SET: refresh:c64e68e9-42d3-4a91-893c-025e3749a576","timestamp":"2026-01-19T08:08:23.741Z"}
+{"level":"info","message":"REDIS SET: session:c64e68e9-42d3-4a91-893c-025e3749a576","timestamp":"2026-01-19T08:08:23.975Z"}
+{"level":"info","message":"REDIS GET: refresh:c64e68e9-42d3-4a91-893c-025e3749a576","timestamp":"2026-01-19T08:22:53.472Z"}
+{"level":"info","message":"REDIS SET: refresh:c64e68e9-42d3-4a91-893c-025e3749a576","timestamp":"2026-01-19T08:22:53.704Z"}
+{"level":"info","message":"REDIS SET: session:c64e68e9-42d3-4a91-893c-025e3749a576","timestamp":"2026-01-19T08:22:53.941Z"}
+{"level":"info","message":"Postgres Query:SELECT * FROM users WHERE EMAIL=$1","timestamp":"2026-01-19T10:39:46.289Z"}
+{"level":"info","message":"REDIS SET: refresh:c64e68e9-42d3-4a91-893c-025e3749a576","timestamp":"2026-01-19T10:39:46.975Z"}
+{"level":"info","message":"REDIS SET: session:c64e68e9-42d3-4a91-893c-025e3749a576","timestamp":"2026-01-19T10:39:47.201Z"}
+{"level":"info","message":"REDIS GET: refresh:c64e68e9-42d3-4a91-893c-025e3749a576","timestamp":"2026-01-19T10:54:16.515Z"}
+{"level":"info","message":"REDIS SET: refresh:c64e68e9-42d3-4a91-893c-025e3749a576","timestamp":"2026-01-19T10:54:16.757Z"}
+{"level":"info","message":"REDIS SET: session:c64e68e9-42d3-4a91-893c-025e3749a576","timestamp":"2026-01-19T10:54:16.984Z"}
+{"level":"info","message":"REDIS GET: refresh:c64e68e9-42d3-4a91-893c-025e3749a576","timestamp":"2026-01-19T11:08:46.501Z"}
+{"level":"info","message":"REDIS SET: refresh:c64e68e9-42d3-4a91-893c-025e3749a576","timestamp":"2026-01-19T11:08:46.733Z"}
+{"level":"info","message":"REDIS SET: session:c64e68e9-42d3-4a91-893c-025e3749a576","timestamp":"2026-01-19T11:08:46.959Z"}
+{"level":"info","message":"REDIS GET: refresh:c64e68e9-42d3-4a91-893c-025e3749a576","timestamp":"2026-01-19T11:23:16.494Z"}
+{"level":"info","message":"REDIS SET: refresh:c64e68e9-42d3-4a91-893c-025e3749a576","timestamp":"2026-01-19T11:23:16.725Z"}
+{"level":"info","message":"REDIS SET: session:c64e68e9-42d3-4a91-893c-025e3749a576","timestamp":"2026-01-19T11:23:16.941Z"}
+{"level":"info","message":"REDIS GET: refresh:c64e68e9-42d3-4a91-893c-025e3749a576","timestamp":"2026-01-19T11:37:46.525Z"}
+{"level":"info","message":"REDIS SET: refresh:c64e68e9-42d3-4a91-893c-025e3749a576","timestamp":"2026-01-19T11:37:46.752Z"}
+{"level":"info","message":"REDIS SET: session:c64e68e9-42d3-4a91-893c-025e3749a576","timestamp":"2026-01-19T11:37:46.981Z"}
+{"level":"info","message":"REDIS GET: refresh:c64e68e9-42d3-4a91-893c-025e3749a576","timestamp":"2026-01-19T11:52:17.351Z"}
+{"level":"info","message":"REDIS SET: refresh:c64e68e9-42d3-4a91-893c-025e3749a576","timestamp":"2026-01-19T11:52:17.587Z"}
+{"level":"info","message":"REDIS SET: session:c64e68e9-42d3-4a91-893c-025e3749a576","timestamp":"2026-01-19T11:52:17.811Z"}
+{"level":"info","message":"REDIS GET: refresh:c64e68e9-42d3-4a91-893c-025e3749a576","timestamp":"2026-01-19T12:06:48.058Z"}
+{"level":"info","message":"REDIS SET: refresh:c64e68e9-42d3-4a91-893c-025e3749a576","timestamp":"2026-01-19T12:06:48.287Z"}
+{"level":"info","message":"REDIS SET: session:c64e68e9-42d3-4a91-893c-025e3749a576","timestamp":"2026-01-19T12:06:48.539Z"}
+{"level":"info","message":"REDIS Del: refresh:undefined","timestamp":"2026-01-19T12:11:13.551Z"}
+{"level":"info","message":"REDIS Del: session:undefined","timestamp":"2026-01-19T12:11:13.553Z"}
+{"level":"info","message":"Postgres Query:SELECT * FROM users WHERE EMAIL=$1","timestamp":"2026-01-19T12:11:20.676Z"}
+{"level":"info","message":"REDIS SET: refresh:c64e68e9-42d3-4a91-893c-025e3749a576","timestamp":"2026-01-19T12:11:21.306Z"}
+{"level":"info","message":"REDIS SET: session:c64e68e9-42d3-4a91-893c-025e3749a576","timestamp":"2026-01-19T12:11:21.540Z"}
+{"level":"info","message":"Graceful shutdown initiated","timestamp":"2026-01-19T12:15:23.184Z"}
+{"level":"info","message":"Auth service running on 5000","timestamp":"2026-01-20T07:00:04.395Z"}
+{"level":"info","message":"Postgres Query:SELECT * FROM users WHERE EMAIL=$1","timestamp":"2026-01-20T07:00:27.323Z"}
+{"level":"info","message":"REDIS SET: refresh:c64e68e9-42d3-4a91-893c-025e3749a576","timestamp":"2026-01-20T07:00:27.970Z"}
+{"level":"info","message":"REDIS SET: session:c64e68e9-42d3-4a91-893c-025e3749a576","timestamp":"2026-01-20T07:00:28.203Z"}
+{"level":"info","message":"REDIS GET: refresh:c64e68e9-42d3-4a91-893c-025e3749a576","timestamp":"2026-01-20T07:14:57.609Z"}
+{"level":"info","message":"REDIS SET: refresh:c64e68e9-42d3-4a91-893c-025e3749a576","timestamp":"2026-01-20T07:14:57.842Z"}
+{"level":"info","message":"REDIS SET: session:c64e68e9-42d3-4a91-893c-025e3749a576","timestamp":"2026-01-20T07:14:58.075Z"}
+{"level":"info","message":"REDIS GET: refresh:c64e68e9-42d3-4a91-893c-025e3749a576","timestamp":"2026-01-20T07:29:27.540Z"}
+{"level":"info","message":"REDIS SET: refresh:c64e68e9-42d3-4a91-893c-025e3749a576","timestamp":"2026-01-20T07:29:27.777Z"}
+{"level":"info","message":"REDIS SET: session:c64e68e9-42d3-4a91-893c-025e3749a576","timestamp":"2026-01-20T07:29:28.011Z"}
+{"level":"info","message":"REDIS GET: refresh:c64e68e9-42d3-4a91-893c-025e3749a576","timestamp":"2026-01-20T07:43:58.058Z"}
+{"level":"info","message":"REDIS SET: refresh:c64e68e9-42d3-4a91-893c-025e3749a576","timestamp":"2026-01-20T07:43:58.292Z"}
+{"level":"info","message":"REDIS SET: session:c64e68e9-42d3-4a91-893c-025e3749a576","timestamp":"2026-01-20T07:43:58.524Z"}
+{"level":"info","message":"REDIS GET: refresh:c64e68e9-42d3-4a91-893c-025e3749a576","timestamp":"2026-01-20T07:58:28.713Z"}
+{"level":"info","message":"REDIS SET: refresh:c64e68e9-42d3-4a91-893c-025e3749a576","timestamp":"2026-01-20T07:58:28.964Z"}
+{"level":"info","message":"REDIS SET: session:c64e68e9-42d3-4a91-893c-025e3749a576","timestamp":"2026-01-20T07:58:29.198Z"}
+{"level":"info","message":"REDIS GET: refresh:c64e68e9-42d3-4a91-893c-025e3749a576","timestamp":"2026-01-20T08:12:58.613Z"}
+{"level":"info","message":"REDIS SET: refresh:c64e68e9-42d3-4a91-893c-025e3749a576","timestamp":"2026-01-20T08:12:58.844Z"}
+{"level":"info","message":"REDIS SET: session:c64e68e9-42d3-4a91-893c-025e3749a576","timestamp":"2026-01-20T08:12:59.104Z"}
+{"level":"info","message":"Postgres Query:SELECT * FROM users WHERE EMAIL=$1","timestamp":"2026-01-20T08:32:50.478Z"}
+{"level":"info","message":"REDIS SET: refresh:c64e68e9-42d3-4a91-893c-025e3749a576","timestamp":"2026-01-20T08:32:51.135Z"}
+{"level":"info","message":"REDIS SET: session:c64e68e9-42d3-4a91-893c-025e3749a576","timestamp":"2026-01-20T08:32:51.364Z"}
+{"level":"info","message":"Postgres Query:SELECT * FROM users WHERE EMAIL=$1","timestamp":"2026-01-20T10:03:43.656Z"}
+{"level":"info","message":"REDIS SET: refresh:c64e68e9-42d3-4a91-893c-025e3749a576","timestamp":"2026-01-20T10:03:44.315Z"}
+{"level":"info","message":"REDIS SET: session:c64e68e9-42d3-4a91-893c-025e3749a576","timestamp":"2026-01-20T10:03:44.548Z"}
+{"level":"info","message":"REDIS GET: refresh:c64e68e9-42d3-4a91-893c-025e3749a576","timestamp":"2026-01-20T10:18:14.568Z"}
+{"level":"info","message":"REDIS SET: refresh:c64e68e9-42d3-4a91-893c-025e3749a576","timestamp":"2026-01-20T10:18:14.808Z"}
+{"level":"info","message":"REDIS SET: session:c64e68e9-42d3-4a91-893c-025e3749a576","timestamp":"2026-01-20T10:18:15.041Z"}
+{"level":"info","message":"REDIS GET: refresh:c64e68e9-42d3-4a91-893c-025e3749a576","timestamp":"2026-01-20T10:32:44.641Z"}
+{"level":"info","message":"REDIS SET: refresh:c64e68e9-42d3-4a91-893c-025e3749a576","timestamp":"2026-01-20T10:32:44.879Z"}
+{"level":"info","message":"REDIS SET: session:c64e68e9-42d3-4a91-893c-025e3749a576","timestamp":"2026-01-20T10:32:45.109Z"}
+{"level":"info","message":"Postgres Query:SELECT * FROM users WHERE EMAIL=$1","timestamp":"2026-01-20T10:35:50.723Z"}
+{"level":"info","message":"REDIS SET: refresh:316cb919-afe1-4f1e-9947-254f7c63a8ac","timestamp":"2026-01-20T10:35:51.361Z"}
+{"level":"info","message":"REDIS SET: session:316cb919-afe1-4f1e-9947-254f7c63a8ac","timestamp":"2026-01-20T10:35:51.594Z"}
+{"level":"info","message":"REDIS Del: refresh:undefined","timestamp":"2026-01-20T10:41:35.146Z"}
+{"level":"info","message":"REDIS Del: session:undefined","timestamp":"2026-01-20T10:41:35.147Z"}
+{"level":"info","message":"REDIS GET: refresh:c64e68e9-42d3-4a91-893c-025e3749a576","timestamp":"2026-01-20T10:47:15.112Z"}
+{"level":"info","message":"REDIS SET: refresh:c64e68e9-42d3-4a91-893c-025e3749a576","timestamp":"2026-01-20T10:47:15.345Z"}
+{"level":"info","message":"REDIS SET: session:c64e68e9-42d3-4a91-893c-025e3749a576","timestamp":"2026-01-20T10:47:15.577Z"}
+{"level":"info","message":"Postgres Query:SELECT * FROM users WHERE EMAIL=$1","timestamp":"2026-01-20T11:03:55.656Z"}
+{"level":"info","message":"REDIS SET: refresh:316cb919-afe1-4f1e-9947-254f7c63a8ac","timestamp":"2026-01-20T11:03:56.304Z"}
+{"level":"info","message":"REDIS SET: session:316cb919-afe1-4f1e-9947-254f7c63a8ac","timestamp":"2026-01-20T11:03:56.536Z"}
+{"level":"info","message":"Postgres Query:SELECT * FROM users WHERE EMAIL=$1","timestamp":"2026-01-20T11:16:03.206Z"}
+{"level":"info","message":"Postgres Query:SELECT * FROM users WHERE EMAIL=$1","timestamp":"2026-01-20T11:16:23.246Z"}
+{"level":"info","message":"Postgres Query:SELECT * FROM users WHERE EMAIL=$1","timestamp":"2026-01-20T11:16:30.827Z"}
+{"level":"info","message":"Postgres Query:SELECT * FROM users WHERE EMAIL=$1","timestamp":"2026-01-20T11:16:45.425Z"}
+{"level":"info","message":"REDIS SET: refresh:c64e68e9-42d3-4a91-893c-025e3749a576","timestamp":"2026-01-20T11:16:46.059Z"}
+{"level":"info","message":"REDIS SET: session:c64e68e9-42d3-4a91-893c-025e3749a576","timestamp":"2026-01-20T11:16:46.291Z"}
+{"level":"info","message":"REDIS GET: refresh:316cb919-afe1-4f1e-9947-254f7c63a8ac","timestamp":"2026-01-20T11:18:27.073Z"}
+{"level":"info","message":"REDIS SET: refresh:316cb919-afe1-4f1e-9947-254f7c63a8ac","timestamp":"2026-01-20T11:18:27.307Z"}
+{"level":"info","message":"REDIS SET: session:316cb919-afe1-4f1e-9947-254f7c63a8ac","timestamp":"2026-01-20T11:18:27.540Z"}
+{"level":"info","message":"REDIS GET: refresh:c64e68e9-42d3-4a91-893c-025e3749a576","timestamp":"2026-01-20T11:31:15.559Z"}
+{"level":"info","message":"REDIS SET: refresh:c64e68e9-42d3-4a91-893c-025e3749a576","timestamp":"2026-01-20T11:31:15.823Z"}
+{"level":"info","message":"REDIS SET: session:c64e68e9-42d3-4a91-893c-025e3749a576","timestamp":"2026-01-20T11:31:16.092Z"}
+{"level":"info","message":"REDIS GET: refresh:316cb919-afe1-4f1e-9947-254f7c63a8ac","timestamp":"2026-01-20T11:32:58.025Z"}
+{"level":"info","message":"REDIS SET: refresh:316cb919-afe1-4f1e-9947-254f7c63a8ac","timestamp":"2026-01-20T11:32:58.264Z"}
+{"level":"info","message":"REDIS SET: session:316cb919-afe1-4f1e-9947-254f7c63a8ac","timestamp":"2026-01-20T11:32:58.501Z"}
+{"level":"info","message":"REDIS Del: refresh:undefined","timestamp":"2026-01-20T11:37:05.131Z"}
+{"level":"info","message":"REDIS Del: session:undefined","timestamp":"2026-01-20T11:37:05.131Z"}
+{"level":"info","message":"Postgres Query:SELECT * FROM users WHERE EMAIL=$1","timestamp":"2026-01-20T11:37:32.832Z"}
+{"level":"info","message":"REDIS SET: refresh:4412f3d3-2615-43a6-a8d6-bb4652104cf5","timestamp":"2026-01-20T11:37:33.485Z"}
+{"level":"info","message":"REDIS SET: session:4412f3d3-2615-43a6-a8d6-bb4652104cf5","timestamp":"2026-01-20T11:37:33.723Z"}
+{"level":"info","message":"REDIS GET: refresh:316cb919-afe1-4f1e-9947-254f7c63a8ac","timestamp":"2026-01-20T11:47:29.157Z"}
+{"level":"info","message":"REDIS SET: refresh:316cb919-afe1-4f1e-9947-254f7c63a8ac","timestamp":"2026-01-20T11:47:29.387Z"}
+{"level":"info","message":"REDIS SET: session:316cb919-afe1-4f1e-9947-254f7c63a8ac","timestamp":"2026-01-20T11:47:29.623Z"}
+{"level":"info","message":"REDIS GET: refresh:4412f3d3-2615-43a6-a8d6-bb4652104cf5","timestamp":"2026-01-20T11:52:04.569Z"}
+{"level":"info","message":"REDIS SET: refresh:4412f3d3-2615-43a6-a8d6-bb4652104cf5","timestamp":"2026-01-20T11:52:04.800Z"}
+{"level":"info","message":"REDIS SET: session:4412f3d3-2615-43a6-a8d6-bb4652104cf5","timestamp":"2026-01-20T11:52:05.036Z"}
+{"level":"info","message":"REDIS Del: refresh:undefined","timestamp":"2026-01-20T11:52:25.628Z"}
+{"level":"info","message":"REDIS Del: session:undefined","timestamp":"2026-01-20T11:52:25.629Z"}
+{"level":"info","message":"Postgres Query:SELECT * FROM users WHERE EMAIL=$1","timestamp":"2026-01-20T11:52:48.871Z"}
+{"level":"info","message":"REDIS SET: refresh:2b40d5bd-8344-430c-ba57-37488598d77d","timestamp":"2026-01-20T11:52:49.497Z"}
+{"level":"info","message":"REDIS SET: session:2b40d5bd-8344-430c-ba57-37488598d77d","timestamp":"2026-01-20T11:52:49.722Z"}
+{"level":"info","message":"Auth service running on 5000","timestamp":"2026-01-20T11:54:15.232Z"}
+{"level":"info","message":"Auth service running on 5000","timestamp":"2026-01-20T11:54:26.124Z"}
+{"level":"info","message":"REDIS GET: refresh:316cb919-afe1-4f1e-9947-254f7c63a8ac","timestamp":"2026-01-20T12:02:00.240Z"}
+{"level":"info","message":"REDIS SET: refresh:316cb919-afe1-4f1e-9947-254f7c63a8ac","timestamp":"2026-01-20T12:02:00.488Z"}
+{"level":"info","message":"REDIS SET: session:316cb919-afe1-4f1e-9947-254f7c63a8ac","timestamp":"2026-01-20T12:02:00.727Z"}
+{"level":"info","message":"REDIS GET: refresh:2b40d5bd-8344-430c-ba57-37488598d77d","timestamp":"2026-01-20T12:07:20.620Z"}
+{"level":"info","message":"REDIS SET: refresh:2b40d5bd-8344-430c-ba57-37488598d77d","timestamp":"2026-01-20T12:07:20.862Z"}
+{"level":"info","message":"REDIS SET: session:2b40d5bd-8344-430c-ba57-37488598d77d","timestamp":"2026-01-20T12:07:21.095Z"}
+{"level":"info","message":"REDIS Del: refresh:undefined","timestamp":"2026-01-20T12:13:43.676Z"}
+{"level":"info","message":"REDIS Del: session:undefined","timestamp":"2026-01-20T12:13:43.678Z"}
+{"level":"info","message":"Postgres Query:SELECT * FROM users WHERE EMAIL=$1","timestamp":"2026-01-20T12:13:51.796Z"}
+{"level":"info","message":"REDIS SET: refresh:c64e68e9-42d3-4a91-893c-025e3749a576","timestamp":"2026-01-20T12:13:52.431Z"}
+{"level":"info","message":"REDIS SET: session:c64e68e9-42d3-4a91-893c-025e3749a576","timestamp":"2026-01-20T12:13:52.663Z"}
+{"level":"info","message":"REDIS GET: refresh:316cb919-afe1-4f1e-9947-254f7c63a8ac","timestamp":"2026-01-20T12:16:31.239Z"}
+{"level":"info","message":"REDIS SET: refresh:316cb919-afe1-4f1e-9947-254f7c63a8ac","timestamp":"2026-01-20T12:16:31.476Z"}
+{"level":"info","message":"REDIS SET: session:316cb919-afe1-4f1e-9947-254f7c63a8ac","timestamp":"2026-01-20T12:16:31.721Z"}
+{"level":"info","message":"REDIS Del: refresh:undefined","timestamp":"2026-01-20T12:17:57.687Z"}
+{"level":"info","message":"REDIS Del: session:undefined","timestamp":"2026-01-20T12:17:57.688Z"}
+{"level":"info","message":"Postgres Query:SELECT * FROM users WHERE EMAIL=$1","timestamp":"2026-01-20T12:19:05.399Z"}
+{"level":"info","message":"REDIS SET: refresh:c64e68e9-42d3-4a91-893c-025e3749a576","timestamp":"2026-01-20T12:19:06.034Z"}
+{"level":"info","message":"REDIS SET: session:c64e68e9-42d3-4a91-893c-025e3749a576","timestamp":"2026-01-20T12:19:06.266Z"}
+{"level":"info","message":"REDIS Del: refresh:undefined","timestamp":"2026-01-20T12:20:35.535Z"}
+{"level":"info","message":"REDIS Del: session:undefined","timestamp":"2026-01-20T12:20:35.536Z"}
+{"level":"info","message":"Postgres Query:SELECT * FROM users WHERE EMAIL=$1","timestamp":"2026-01-20T12:20:40.850Z"}
+{"level":"info","message":"REDIS SET: refresh:c64e68e9-42d3-4a91-893c-025e3749a576","timestamp":"2026-01-20T12:20:41.582Z"}
+{"level":"info","message":"REDIS SET: session:c64e68e9-42d3-4a91-893c-025e3749a576","timestamp":"2026-01-20T12:20:41.811Z"}
+{"level":"info","message":"REDIS Del: refresh:undefined","timestamp":"2026-01-20T12:22:53.085Z"}
+{"level":"info","message":"REDIS Del: session:undefined","timestamp":"2026-01-20T12:22:53.086Z"}
+{"level":"info","message":"Postgres Query:SELECT * FROM users WHERE EMAIL=$1","timestamp":"2026-01-20T12:25:43.124Z"}
+{"level":"info","message":"Postgres Query:SELECT * FROM users WHERE EMAIL=$1","timestamp":"2026-01-20T12:25:57.232Z"}
+{"level":"info","message":"REDIS SET: refresh:c64e68e9-42d3-4a91-893c-025e3749a576","timestamp":"2026-01-20T12:25:57.867Z"}
+{"level":"info","message":"REDIS SET: session:c64e68e9-42d3-4a91-893c-025e3749a576","timestamp":"2026-01-20T12:25:58.098Z"}
+{"level":"info","message":"REDIS GET: refresh:316cb919-afe1-4f1e-9947-254f7c63a8ac","timestamp":"2026-01-20T12:31:02.038Z"}
+{"level":"info","message":"REDIS SET: refresh:316cb919-afe1-4f1e-9947-254f7c63a8ac","timestamp":"2026-01-20T12:31:02.270Z"}
+{"level":"info","message":"REDIS SET: session:316cb919-afe1-4f1e-9947-254f7c63a8ac","timestamp":"2026-01-20T12:31:02.502Z"}
+{"level":"info","message":"REDIS Del: refresh:undefined","timestamp":"2026-01-20T12:31:07.004Z"}
+{"level":"info","message":"REDIS Del: session:undefined","timestamp":"2026-01-20T12:31:07.005Z"}
+{"level":"info","message":"Postgres Query:SELECT * FROM users WHERE EMAIL=$1","timestamp":"2026-01-20T12:31:14.821Z"}
+{"level":"info","message":"REDIS SET: refresh:c64e68e9-42d3-4a91-893c-025e3749a576","timestamp":"2026-01-20T12:31:15.450Z"}
+{"level":"info","message":"REDIS SET: session:c64e68e9-42d3-4a91-893c-025e3749a576","timestamp":"2026-01-20T12:31:15.680Z"}
+{"level":"info","message":"REDIS Del: refresh:undefined","timestamp":"2026-01-20T12:32:49.656Z"}
+{"level":"info","message":"REDIS Del: session:undefined","timestamp":"2026-01-20T12:32:49.657Z"}
+{"level":"info","message":"Postgres Query:SELECT * FROM users WHERE EMAIL=$1","timestamp":"2026-01-20T12:32:54.509Z"}
+{"level":"info","message":"REDIS SET: refresh:c64e68e9-42d3-4a91-893c-025e3749a576","timestamp":"2026-01-20T12:32:55.156Z"}
+{"level":"info","message":"REDIS SET: session:c64e68e9-42d3-4a91-893c-025e3749a576","timestamp":"2026-01-20T12:32:55.389Z"}
+{"level":"info","message":"REDIS Del: refresh:undefined","timestamp":"2026-01-20T12:34:53.931Z"}
+{"level":"info","message":"REDIS Del: session:undefined","timestamp":"2026-01-20T12:34:53.932Z"}
+{"level":"info","message":"Postgres Query:SELECT * FROM users WHERE EMAIL=$1","timestamp":"2026-01-20T12:35:12.677Z"}
+{"level":"info","message":"REDIS SET: refresh:c64e68e9-42d3-4a91-893c-025e3749a576","timestamp":"2026-01-20T12:35:13.380Z"}
+{"level":"info","message":"REDIS SET: session:c64e68e9-42d3-4a91-893c-025e3749a576","timestamp":"2026-01-20T12:35:13.612Z"}
+{"level":"info","message":"Postgres Query:SELECT * FROM users WHERE EMAIL=$1","timestamp":"2026-01-20T13:17:27.829Z"}
+{"level":"info","message":"REDIS SET: refresh:c64e68e9-42d3-4a91-893c-025e3749a576","timestamp":"2026-01-20T13:17:28.475Z"}
+{"level":"info","message":"REDIS SET: session:c64e68e9-42d3-4a91-893c-025e3749a576","timestamp":"2026-01-20T13:17:28.702Z"}
+{"level":"info","message":"REDIS Del: refresh:undefined","timestamp":"2026-01-20T13:21:07.927Z"}
+{"level":"info","message":"REDIS Del: session:undefined","timestamp":"2026-01-20T13:21:07.929Z"}
+{"level":"info","message":"Postgres Query:SELECT * FROM users WHERE EMAIL=$1","timestamp":"2026-01-20T13:21:24.537Z"}
+{"level":"info","message":"REDIS SET: refresh:c64e68e9-42d3-4a91-893c-025e3749a576","timestamp":"2026-01-20T13:21:25.182Z"}
+{"level":"info","message":"REDIS SET: session:c64e68e9-42d3-4a91-893c-025e3749a576","timestamp":"2026-01-20T13:21:25.423Z"}
+{"level":"info","message":"Postgres Query:SELECT * FROM users WHERE EMAIL=$1","timestamp":"2026-01-20T13:24:58.214Z"}
+{"level":"info","message":"REDIS SET: refresh:c64e68e9-42d3-4a91-893c-025e3749a576","timestamp":"2026-01-20T13:24:58.849Z"}
+{"level":"info","message":"REDIS SET: session:c64e68e9-42d3-4a91-893c-025e3749a576","timestamp":"2026-01-20T13:24:59.082Z"}
+{"level":"info","message":"REDIS GET: refresh:c64e68e9-42d3-4a91-893c-025e3749a576","timestamp":"2026-01-20T13:39:28.545Z"}
+{"level":"info","message":"REDIS SET: refresh:c64e68e9-42d3-4a91-893c-025e3749a576","timestamp":"2026-01-20T13:39:28.784Z"}
+{"level":"info","message":"REDIS SET: session:c64e68e9-42d3-4a91-893c-025e3749a576","timestamp":"2026-01-20T13:39:29.011Z"}
+{"level":"info","message":"REDIS GET: refresh:c64e68e9-42d3-4a91-893c-025e3749a576","timestamp":"2026-01-20T13:53:58.688Z"}
+{"level":"info","message":"REDIS SET: refresh:c64e68e9-42d3-4a91-893c-025e3749a576","timestamp":"2026-01-20T13:53:58.916Z"}
+{"level":"info","message":"REDIS SET: session:c64e68e9-42d3-4a91-893c-025e3749a576","timestamp":"2026-01-20T13:53:59.151Z"}
+{"level":"info","message":"REDIS GET: refresh:c64e68e9-42d3-4a91-893c-025e3749a576","timestamp":"2026-01-20T14:08:28.623Z"}
+{"level":"info","message":"REDIS SET: refresh:c64e68e9-42d3-4a91-893c-025e3749a576","timestamp":"2026-01-20T14:08:28.855Z"}
+{"level":"info","message":"REDIS SET: session:c64e68e9-42d3-4a91-893c-025e3749a576","timestamp":"2026-01-20T14:08:29.082Z"}
+{"level":"info","message":"REDIS GET: refresh:c64e68e9-42d3-4a91-893c-025e3749a576","timestamp":"2026-01-20T14:22:58.522Z"}
+{"level":"info","message":"REDIS SET: refresh:c64e68e9-42d3-4a91-893c-025e3749a576","timestamp":"2026-01-20T14:22:58.752Z"}
+{"level":"info","message":"REDIS SET: session:c64e68e9-42d3-4a91-893c-025e3749a576","timestamp":"2026-01-20T14:22:58.979Z"}
+{"level":"info","message":"REDIS GET: refresh:c64e68e9-42d3-4a91-893c-025e3749a576","timestamp":"2026-01-20T14:37:28.490Z"}
+{"level":"info","message":"REDIS SET: refresh:c64e68e9-42d3-4a91-893c-025e3749a576","timestamp":"2026-01-20T14:37:28.719Z"}
+{"level":"info","message":"REDIS SET: session:c64e68e9-42d3-4a91-893c-025e3749a576","timestamp":"2026-01-20T14:37:28.946Z"}
+{"level":"info","message":"REDIS GET: refresh:c64e68e9-42d3-4a91-893c-025e3749a576","timestamp":"2026-01-20T14:51:58.526Z"}
+{"level":"info","message":"REDIS SET: refresh:c64e68e9-42d3-4a91-893c-025e3749a576","timestamp":"2026-01-20T14:51:58.764Z"}
+{"level":"info","message":"REDIS SET: session:c64e68e9-42d3-4a91-893c-025e3749a576","timestamp":"2026-01-20T14:51:58.993Z"}
+{"level":"info","message":"REDIS GET: refresh:c64e68e9-42d3-4a91-893c-025e3749a576","timestamp":"2026-01-20T15:06:28.556Z"}
+{"level":"info","message":"REDIS SET: refresh:c64e68e9-42d3-4a91-893c-025e3749a576","timestamp":"2026-01-20T15:06:28.788Z"}
+{"level":"info","message":"REDIS SET: session:c64e68e9-42d3-4a91-893c-025e3749a576","timestamp":"2026-01-20T15:06:29.020Z"}
+{"level":"info","message":"REDIS GET: refresh:c64e68e9-42d3-4a91-893c-025e3749a576","timestamp":"2026-01-20T15:20:58.498Z"}
+{"level":"info","message":"REDIS SET: refresh:c64e68e9-42d3-4a91-893c-025e3749a576","timestamp":"2026-01-20T15:20:58.748Z"}
+{"level":"info","message":"REDIS SET: session:c64e68e9-42d3-4a91-893c-025e3749a576","timestamp":"2026-01-20T15:20:58.974Z"}
+{"level":"info","message":"Auth service running on 5000","timestamp":"2026-01-21T11:50:01.734Z"}
+{"level":"info","message":"Postgres Query:SELECT * FROM users WHERE EMAIL=$1","timestamp":"2026-01-21T11:53:24.609Z"}
+{"level":"info","message":"Postgres Query:SELECT * FROM users WHERE EMAIL=$1","timestamp":"2026-01-21T11:54:01.792Z"}
+{"level":"info","message":"REDIS SET: refresh:2b40d5bd-8344-430c-ba57-37488598d77d","timestamp":"2026-01-21T11:54:02.443Z"}
+{"level":"info","message":"REDIS SET: session:2b40d5bd-8344-430c-ba57-37488598d77d","timestamp":"2026-01-21T11:54:02.680Z"}
+{"level":"info","message":"Postgres Query:SELECT * FROM users WHERE EMAIL=$1","timestamp":"2026-01-21T11:56:27.495Z"}
+{"level":"info","message":"REDIS SET: refresh:c64e68e9-42d3-4a91-893c-025e3749a576","timestamp":"2026-01-21T11:56:28.129Z"}
+{"level":"info","message":"REDIS SET: session:c64e68e9-42d3-4a91-893c-025e3749a576","timestamp":"2026-01-21T11:56:28.364Z"}
+{"level":"info","message":"REDIS GET: refresh:2b40d5bd-8344-430c-ba57-37488598d77d","timestamp":"2026-01-21T12:08:33.173Z"}
+{"level":"info","message":"REDIS SET: refresh:2b40d5bd-8344-430c-ba57-37488598d77d","timestamp":"2026-01-21T12:08:33.417Z"}
+{"level":"info","message":"REDIS SET: session:2b40d5bd-8344-430c-ba57-37488598d77d","timestamp":"2026-01-21T12:08:33.652Z"}
+{"level":"info","message":"REDIS GET: refresh:2b40d5bd-8344-430c-ba57-37488598d77d","timestamp":"2026-01-21T12:23:04.013Z"}
+{"level":"info","message":"REDIS SET: refresh:2b40d5bd-8344-430c-ba57-37488598d77d","timestamp":"2026-01-21T12:23:04.254Z"}
+{"level":"info","message":"REDIS SET: session:2b40d5bd-8344-430c-ba57-37488598d77d","timestamp":"2026-01-21T12:23:04.493Z"}
+{"level":"info","message":"REDIS GET: refresh:2b40d5bd-8344-430c-ba57-37488598d77d","timestamp":"2026-01-21T12:37:35.013Z"}
+{"level":"info","message":"REDIS SET: refresh:2b40d5bd-8344-430c-ba57-37488598d77d","timestamp":"2026-01-21T12:37:35.247Z"}
+{"level":"info","message":"REDIS SET: session:2b40d5bd-8344-430c-ba57-37488598d77d","timestamp":"2026-01-21T12:37:35.488Z"}
+{"level":"info","message":"Postgres Query:SELECT * FROM users WHERE EMAIL=$1","timestamp":"2026-01-21T13:11:26.602Z"}
+{"level":"info","message":"REDIS SET: refresh:2b40d5bd-8344-430c-ba57-37488598d77d","timestamp":"2026-01-21T13:11:27.639Z"}
+{"level":"info","message":"REDIS SET: session:2b40d5bd-8344-430c-ba57-37488598d77d","timestamp":"2026-01-21T13:11:27.880Z"}
+{"level":"info","message":"REDIS GET: refresh:2b40d5bd-8344-430c-ba57-37488598d77d","timestamp":"2026-01-21T13:25:58.115Z"}
+{"level":"info","message":"REDIS SET: refresh:2b40d5bd-8344-430c-ba57-37488598d77d","timestamp":"2026-01-21T13:25:58.345Z"}
+{"level":"info","message":"REDIS SET: session:2b40d5bd-8344-430c-ba57-37488598d77d","timestamp":"2026-01-21T13:25:58.566Z"}
+{"level":"info","message":"REDIS GET: refresh:2b40d5bd-8344-430c-ba57-37488598d77d","timestamp":"2026-01-21T13:40:28.502Z"}
+{"level":"info","message":"REDIS SET: refresh:2b40d5bd-8344-430c-ba57-37488598d77d","timestamp":"2026-01-21T13:40:28.723Z"}
+{"level":"info","message":"REDIS SET: session:2b40d5bd-8344-430c-ba57-37488598d77d","timestamp":"2026-01-21T13:40:28.949Z"}
+{"level":"info","message":"Postgres Query:SELECT * FROM users WHERE EMAIL=$1","timestamp":"2026-01-21T13:48:48.615Z"}
+{"level":"info","message":"REDIS SET: refresh:c64e68e9-42d3-4a91-893c-025e3749a576","timestamp":"2026-01-21T13:48:49.237Z"}
+{"level":"info","message":"REDIS SET: session:c64e68e9-42d3-4a91-893c-025e3749a576","timestamp":"2026-01-21T13:48:49.458Z"}
+{"level":"info","message":"Auth service running on 5000","timestamp":"2026-01-21T13:52:21.564Z"}
+{"level":"info","message":"Auth service running on 5000","timestamp":"2026-01-21T13:52:43.839Z"}
+{"level":"info","message":"Auth service running on 5000","timestamp":"2026-01-21T13:52:58.647Z"}
+{"level":"info","message":"Auth service running on 5000","timestamp":"2026-01-21T13:53:20.342Z"}
+{"level":"info","message":"Auth service running on 5000","timestamp":"2026-01-21T13:56:20.448Z"}
+{"level":"info","message":"Auth-service GET request hit","timestamp":"2026-01-21T13:56:59.449Z"}
+{"level":"info","message":"auth route / Get request hit!","timestamp":"2026-01-21T13:57:07.089Z"}
+{"level":"info","message":"Postgres Query:SELECT * FROM users WHERE EMAIL=$1","timestamp":"2026-01-21T13:57:22.704Z"}
+{"level":"info","message":"Postgres Query:SELECT * FROM users WHERE EMAIL=$1","timestamp":"2026-01-21T13:57:58.252Z"}
+{"level":"info","message":"REDIS SET: refresh:c64e68e9-42d3-4a91-893c-025e3749a576","timestamp":"2026-01-21T13:57:58.869Z"}
+{"level":"info","message":"REDIS SET: session:c64e68e9-42d3-4a91-893c-025e3749a576","timestamp":"2026-01-21T13:57:59.094Z"}
+{"level":"info","message":"Postgres Query:SELECT * FROM users WHERE EMAIL=$1","timestamp":"2026-01-21T13:59:31.829Z"}
+{"level":"info","message":"Postgres Query:SELECT * FROM users WHERE EMAIL=$1","timestamp":"2026-01-21T13:59:42.535Z"}
+{"level":"info","message":"REDIS SET: refresh:c64e68e9-42d3-4a91-893c-025e3749a576","timestamp":"2026-01-21T13:59:43.157Z"}
+{"level":"info","message":"REDIS SET: session:c64e68e9-42d3-4a91-893c-025e3749a576","timestamp":"2026-01-21T13:59:43.381Z"}
+{"level":"info","message":"Postgres Query:SELECT * FROM users WHERE EMAIL=$1","timestamp":"2026-01-21T14:00:14.826Z"}
+{"level":"info","message":"Postgres Query:SELECT * FROM users WHERE EMAIL=$1","timestamp":"2026-01-21T14:00:21.100Z"}
+{"level":"info","message":"REDIS SET: refresh:c64e68e9-42d3-4a91-893c-025e3749a576","timestamp":"2026-01-21T14:00:21.737Z"}
+{"level":"info","message":"REDIS SET: session:c64e68e9-42d3-4a91-893c-025e3749a576","timestamp":"2026-01-21T14:00:21.959Z"}
+{"level":"info","message":"Postgres Query:SELECT * FROM users WHERE EMAIL=$1","timestamp":"2026-01-21T14:01:17.672Z"}
+{"level":"info","message":"REDIS SET: refresh:c64e68e9-42d3-4a91-893c-025e3749a576","timestamp":"2026-01-21T14:01:18.294Z"}
+{"level":"info","message":"REDIS SET: session:c64e68e9-42d3-4a91-893c-025e3749a576","timestamp":"2026-01-21T14:01:18.519Z"}
+{"level":"info","message":"Postgres Query:SELECT * FROM users WHERE EMAIL=$1","timestamp":"2026-01-21T14:02:39.459Z"}
+{"level":"info","message":"REDIS SET: refresh:c64e68e9-42d3-4a91-893c-025e3749a576","timestamp":"2026-01-21T14:02:40.105Z"}
+{"level":"info","message":"REDIS SET: session:c64e68e9-42d3-4a91-893c-025e3749a576","timestamp":"2026-01-21T14:02:40.329Z"}
+{"level":"info","message":"Postgres Query:SELECT * FROM users WHERE EMAIL=$1","timestamp":"2026-01-21T14:04:15.721Z"}
+{"level":"info","message":"REDIS SET: refresh:c64e68e9-42d3-4a91-893c-025e3749a576","timestamp":"2026-01-21T14:04:16.344Z"}
+{"level":"info","message":"REDIS SET: session:c64e68e9-42d3-4a91-893c-025e3749a576","timestamp":"2026-01-21T14:04:16.569Z"}
+{"level":"info","message":"Postgres Query:SELECT * FROM users WHERE EMAIL=$1","timestamp":"2026-01-21T14:05:56.719Z"}
+{"level":"info","message":"REDIS SET: refresh:c64e68e9-42d3-4a91-893c-025e3749a576","timestamp":"2026-01-21T14:05:57.337Z"}
+{"level":"info","message":"REDIS SET: session:c64e68e9-42d3-4a91-893c-025e3749a576","timestamp":"2026-01-21T14:05:57.561Z"}
+{"level":"info","message":"Postgres Query:SELECT * FROM users WHERE EMAIL=$1","timestamp":"2026-01-21T14:06:15.831Z"}
+{"level":"info","message":"REDIS SET: refresh:c64e68e9-42d3-4a91-893c-025e3749a576","timestamp":"2026-01-21T14:06:16.472Z"}
+{"level":"info","message":"REDIS SET: session:c64e68e9-42d3-4a91-893c-025e3749a576","timestamp":"2026-01-21T14:06:16.696Z"}
+{"level":"info","message":"Auth service running on 5000","timestamp":"2026-01-21T14:07:24.066Z"}
+{"level":"info","message":"Postgres Query:SELECT * FROM users WHERE EMAIL=$1","timestamp":"2026-01-21T14:08:48.454Z"}
+{"level":"info","message":"REDIS SET: refresh:c64e68e9-42d3-4a91-893c-025e3749a576","timestamp":"2026-01-21T14:08:49.092Z"}
+{"level":"info","message":"REDIS SET: session:c64e68e9-42d3-4a91-893c-025e3749a576","timestamp":"2026-01-21T14:08:49.324Z"}
+{"level":"info","message":"Auth-service GET request hit","timestamp":"2026-01-21T14:09:56.664Z"}
+{"level":"info","message":"auth route / Get request hit!","timestamp":"2026-01-21T14:10:03.765Z"}
+{"level":"info","message":"Postgres Query:SELECT * FROM users WHERE EMAIL=$1","timestamp":"2026-01-21T14:13:14.026Z"}
+{"level":"info","message":"Postgres Query:SELECT * FROM users WHERE EMAIL=$1","timestamp":"2026-01-21T14:13:22.734Z"}
+{"level":"info","message":"REDIS SET: refresh:c64e68e9-42d3-4a91-893c-025e3749a576","timestamp":"2026-01-21T14:13:23.370Z"}
+{"level":"info","message":"REDIS SET: session:c64e68e9-42d3-4a91-893c-025e3749a576","timestamp":"2026-01-21T14:13:23.604Z"}
+{"level":"info","message":"Postgres Query:SELECT * FROM users WHERE EMAIL=$1","timestamp":"2026-01-21T14:13:58.035Z"}
+{"level":"info","message":"REDIS SET: refresh:c64e68e9-42d3-4a91-893c-025e3749a576","timestamp":"2026-01-21T14:13:58.676Z"}
+{"level":"info","message":"REDIS SET: session:c64e68e9-42d3-4a91-893c-025e3749a576","timestamp":"2026-01-21T14:13:58.911Z"}
+{"level":"info","message":"Postgres Query:SELECT * FROM users WHERE EMAIL=$1","timestamp":"2026-01-21T14:16:01.542Z"}
+{"level":"info","message":"REDIS SET: refresh:c64e68e9-42d3-4a91-893c-025e3749a576","timestamp":"2026-01-21T14:16:02.180Z"}
+{"level":"info","message":"REDIS SET: session:c64e68e9-42d3-4a91-893c-025e3749a576","timestamp":"2026-01-21T14:16:02.414Z"}
+{"level":"info","message":"Postgres Query:SELECT * FROM users WHERE EMAIL=$1","timestamp":"2026-01-21T14:18:53.377Z"}
+{"level":"info","message":"REDIS SET: refresh:c64e68e9-42d3-4a91-893c-025e3749a576","timestamp":"2026-01-21T14:18:54.028Z"}
+{"level":"info","message":"REDIS SET: session:c64e68e9-42d3-4a91-893c-025e3749a576","timestamp":"2026-01-21T14:18:54.587Z"}
+{"level":"info","message":"Postgres Query:SELECT * FROM users WHERE EMAIL=$1","timestamp":"2026-01-21T14:19:55.062Z"}
+{"level":"info","message":"REDIS SET: refresh:c64e68e9-42d3-4a91-893c-025e3749a576","timestamp":"2026-01-21T14:19:55.702Z"}
+{"level":"info","message":"REDIS SET: session:c64e68e9-42d3-4a91-893c-025e3749a576","timestamp":"2026-01-21T14:19:55.935Z"}
+{"level":"info","message":"Auth service running on 5000","timestamp":"2026-01-21T14:38:03.977Z"}
+{"level":"info","message":"auth route / Get request hit!","timestamp":"2026-01-21T14:41:11.050Z"}
+{"level":"info","message":"Auth service running on 5000","timestamp":"2026-01-21T14:44:22.394Z"}
+{"level":"info","message":"Postgres Query:SELECT * FROM users WHERE EMAIL=$1","timestamp":"2026-01-21T14:44:29.318Z"}
+{"level":"info","message":"REDIS SET: refresh:c64e68e9-42d3-4a91-893c-025e3749a576","timestamp":"2026-01-21T14:44:29.957Z"}
+{"level":"info","message":"REDIS SET: session:c64e68e9-42d3-4a91-893c-025e3749a576","timestamp":"2026-01-21T14:44:30.198Z"}
+{"level":"info","message":"Postgres Query:SELECT * FROM users WHERE EMAIL=$1","timestamp":"2026-01-21T14:45:36.320Z"}
+{"level":"info","message":"REDIS SET: refresh:c64e68e9-42d3-4a91-893c-025e3749a576","timestamp":"2026-01-21T14:45:36.957Z"}
+{"level":"info","message":"REDIS SET: session:c64e68e9-42d3-4a91-893c-025e3749a576","timestamp":"2026-01-21T14:45:37.195Z"}
+{"level":"info","message":"Postgres Query:SELECT * FROM users WHERE EMAIL=$1","timestamp":"2026-01-21T14:52:26.376Z"}
+{"level":"info","message":"REDIS SET: refresh:c64e68e9-42d3-4a91-893c-025e3749a576","timestamp":"2026-01-21T14:52:27.020Z"}
+{"level":"info","message":"REDIS SET: session:c64e68e9-42d3-4a91-893c-025e3749a576","timestamp":"2026-01-21T14:52:27.265Z"}
+{"level":"info","message":"Postgres Query:SELECT * FROM users WHERE EMAIL=$1","timestamp":"2026-01-21T14:54:20.821Z"}
+{"level":"info","message":"REDIS SET: refresh:c64e68e9-42d3-4a91-893c-025e3749a576","timestamp":"2026-01-21T14:54:21.449Z"}
+{"level":"info","message":"REDIS SET: session:c64e68e9-42d3-4a91-893c-025e3749a576","timestamp":"2026-01-21T14:54:21.693Z"}
+{"level":"info","message":"Postgres Query:SELECT * FROM users WHERE EMAIL=$1","timestamp":"2026-01-21T14:57:28.812Z"}
+{"level":"info","message":"REDIS SET: refresh:c64e68e9-42d3-4a91-893c-025e3749a576","timestamp":"2026-01-21T14:57:29.454Z"}
+{"level":"info","message":"REDIS SET: session:c64e68e9-42d3-4a91-893c-025e3749a576","timestamp":"2026-01-21T14:57:29.690Z"}
+{"level":"info","message":"Auth service running on 5000","timestamp":"2026-01-21T14:58:38.306Z"}
+{"level":"info","message":"Auth service running on 5000","timestamp":"2026-01-21T14:58:45.581Z"}
+{"level":"info","message":"Auth service running on 5000","timestamp":"2026-01-21T14:59:03.188Z"}
+{"level":"error","message":"Caught application level error:  Not allowed by CORS","stack":"Error: Not allowed by CORS\n    at origin (file:///C:/Code/ExpenseTrackerApp/server/expenseTracker-auth-service/index.js:32:16)\n    at C:\\Code\\ExpenseTrackerApp\\server\\expenseTracker-auth-service\\node_modules\\cors\\lib\\index.js:219:13\n    at optionsCallback (C:\\Code\\ExpenseTrackerApp\\server\\expenseTracker-auth-service\\node_modules\\cors\\lib\\index.js:199:9)\n    at corsMiddleware (C:\\Code\\ExpenseTrackerApp\\server\\expenseTracker-auth-service\\node_modules\\cors\\lib\\index.js:204:7)\n    at Layer.handleRequest (C:\\Code\\ExpenseTrackerApp\\server\\expenseTracker-auth-service\\node_modules\\router\\lib\\layer.js:152:17)\n    at trimPrefix (C:\\Code\\ExpenseTrackerApp\\server\\expenseTracker-auth-service\\node_modules\\router\\index.js:342:13)\n    at C:\\Code\\ExpenseTrackerApp\\server\\expenseTracker-auth-service\\node_modules\\router\\index.js:297:9\n    at processParams (C:\\Code\\ExpenseTrackerApp\\server\\expenseTracker-auth-service\\node_modules\\router\\index.js:582:12)\n    at next (C:\\Code\\ExpenseTrackerApp\\server\\expenseTracker-auth-service\\node_modules\\router\\index.js:291:5)\n    at Function.handle (C:\\Code\\ExpenseTrackerApp\\server\\expenseTracker-auth-service\\node_modules\\router\\index.js:186:3)","timestamp":"2026-01-21T14:59:24.192Z"}
+{"level":"info","message":"Auth service running on 5000","timestamp":"2026-01-21T15:00:19.696Z"}
+{"level":"info","message":"Auth service running on 5000","timestamp":"2026-01-21T15:01:02.552Z"}
+{"level":"info","message":"Auth service running on 5000","timestamp":"2026-01-21T15:01:10.543Z"}
+{"level":"info","message":"Postgres Query:SELECT * FROM users WHERE EMAIL=$1","timestamp":"2026-01-21T15:02:01.735Z"}
+{"level":"info","message":"REDIS SET: refresh:c64e68e9-42d3-4a91-893c-025e3749a576","timestamp":"2026-01-21T15:02:02.386Z"}
+{"level":"info","message":"REDIS SET: session:c64e68e9-42d3-4a91-893c-025e3749a576","timestamp":"2026-01-21T15:02:02.631Z"}
+{"level":"info","message":"Postgres Query:SELECT * FROM users WHERE EMAIL=$1","timestamp":"2026-01-21T15:02:24.974Z"}
+{"level":"info","message":"REDIS SET: refresh:c64e68e9-42d3-4a91-893c-025e3749a576","timestamp":"2026-01-21T15:02:25.689Z"}
+{"level":"info","message":"REDIS SET: session:c64e68e9-42d3-4a91-893c-025e3749a576","timestamp":"2026-01-21T15:02:25.937Z"}
+{"level":"info","message":"Postgres Query:SELECT * FROM users WHERE EMAIL=$1","timestamp":"2026-01-21T15:03:16.484Z"}
+{"level":"info","message":"REDIS SET: refresh:c64e68e9-42d3-4a91-893c-025e3749a576","timestamp":"2026-01-21T15:03:17.129Z"}
+{"level":"info","message":"REDIS SET: session:c64e68e9-42d3-4a91-893c-025e3749a576","timestamp":"2026-01-21T15:03:17.375Z"}
+{"level":"info","message":"Postgres Query:SELECT * FROM users WHERE EMAIL=$1","timestamp":"2026-01-21T15:04:41.305Z"}
+{"level":"info","message":"REDIS SET: refresh:c64e68e9-42d3-4a91-893c-025e3749a576","timestamp":"2026-01-21T15:04:41.947Z"}
+{"level":"info","message":"REDIS SET: session:c64e68e9-42d3-4a91-893c-025e3749a576","timestamp":"2026-01-21T15:04:42.190Z"}
+{"level":"info","message":"Postgres Query:SELECT * FROM users WHERE EMAIL=$1","timestamp":"2026-01-21T15:13:10.753Z"}
+{"level":"info","message":"REDIS SET: refresh:c64e68e9-42d3-4a91-893c-025e3749a576","timestamp":"2026-01-21T15:13:11.401Z"}
+{"level":"info","message":"REDIS SET: session:c64e68e9-42d3-4a91-893c-025e3749a576","timestamp":"2026-01-21T15:13:11.644Z"}
+{"level":"info","message":"Postgres Query:SELECT * FROM users WHERE EMAIL=$1","timestamp":"2026-01-21T15:17:02.661Z"}
+{"level":"info","message":"REDIS SET: refresh:c64e68e9-42d3-4a91-893c-025e3749a576","timestamp":"2026-01-21T15:17:03.301Z"}
+{"level":"info","message":"REDIS SET: session:c64e68e9-42d3-4a91-893c-025e3749a576","timestamp":"2026-01-21T15:17:03.527Z"}
+{"level":"info","message":"Auth service running on 5000","timestamp":"2026-01-21T15:20:24.454Z"}
+{"level":"info","message":"Auth service running on 5000","timestamp":"2026-01-21T15:20:30.741Z"}
+{"level":"info","message":"Auth service running on 5000","timestamp":"2026-01-21T15:20:35.547Z"}
+{"level":"info","message":"Postgres Query:SELECT * FROM users WHERE EMAIL=$1","timestamp":"2026-01-21T15:23:25.509Z"}
+{"level":"info","message":"REDIS SET: refresh:c64e68e9-42d3-4a91-893c-025e3749a576","timestamp":"2026-01-21T15:23:26.164Z"}
+{"level":"info","message":"REDIS SET: session:c64e68e9-42d3-4a91-893c-025e3749a576","timestamp":"2026-01-21T15:23:26.398Z"}
+{"level":"info","message":"Postgres Query:SELECT * FROM users WHERE EMAIL=$1","timestamp":"2026-01-21T15:27:49.715Z"}
+{"level":"info","message":"REDIS SET: refresh:c64e68e9-42d3-4a91-893c-025e3749a576","timestamp":"2026-01-21T15:27:50.347Z"}
+{"level":"info","message":"REDIS SET: session:c64e68e9-42d3-4a91-893c-025e3749a576","timestamp":"2026-01-21T15:27:50.565Z"}
+{"level":"info","message":"Auth service running on 5000","timestamp":"2026-01-21T15:32:01.947Z"}
+{"level":"info","message":"Auth service running on 5000","timestamp":"2026-01-21T15:32:11.721Z"}
+{"level":"info","message":"Auth service running on 5000","timestamp":"2026-01-21T15:32:19.709Z"}
+{"level":"info","message":"Postgres Query:SELECT * FROM users WHERE EMAIL=$1","timestamp":"2026-01-21T15:32:33.550Z"}
+{"level":"info","message":"REDIS SET: refresh:c64e68e9-42d3-4a91-893c-025e3749a576","timestamp":"2026-01-21T15:32:34.197Z"}
+{"level":"info","message":"REDIS SET: session:c64e68e9-42d3-4a91-893c-025e3749a576","timestamp":"2026-01-21T15:32:34.430Z"}
+{"level":"info","message":"Postgres Query:SELECT * FROM users WHERE EMAIL=$1","timestamp":"2026-01-21T15:34:33.997Z"}
+{"level":"info","message":"REDIS SET: refresh:c64e68e9-42d3-4a91-893c-025e3749a576","timestamp":"2026-01-21T15:34:34.643Z"}
+{"level":"info","message":"REDIS SET: session:c64e68e9-42d3-4a91-893c-025e3749a576","timestamp":"2026-01-21T15:34:34.877Z"}
+{"level":"info","message":"Postgres Query:SELECT * FROM users WHERE EMAIL=$1","timestamp":"2026-01-21T15:42:13.709Z"}
+{"level":"info","message":"REDIS SET: refresh:c64e68e9-42d3-4a91-893c-025e3749a576","timestamp":"2026-01-21T15:42:14.340Z"}
+{"level":"info","message":"REDIS SET: session:c64e68e9-42d3-4a91-893c-025e3749a576","timestamp":"2026-01-21T15:42:14.576Z"}
+{"level":"info","message":"Auth service running on 5000","timestamp":"2026-01-21T15:44:44.828Z"}
+{"level":"info","message":"Auth service running on 5000","timestamp":"2026-01-21T15:44:52.909Z"}
+{"level":"info","message":"Auth service running on 5000","timestamp":"2026-01-21T15:45:19.579Z"}
+{"level":"info","message":"Auth service running on 5000","timestamp":"2026-01-21T15:45:24.361Z"}
+{"level":"info","message":"Auth service running on 5000","timestamp":"2026-01-21T15:45:38.633Z"}
+{"level":"info","message":"Postgres Query:SELECT * FROM users WHERE EMAIL=$1","timestamp":"2026-01-21T15:47:02.488Z"}
+{"level":"info","message":"REDIS SET: refresh:c64e68e9-42d3-4a91-893c-025e3749a576","timestamp":"2026-01-21T15:47:03.125Z"}
+{"level":"info","message":"REDIS SET: session:c64e68e9-42d3-4a91-893c-025e3749a576","timestamp":"2026-01-21T15:47:03.347Z"}
+{"level":"info","message":"Auth service running on 5000","timestamp":"2026-01-21T16:01:59.220Z"}
+{"level":"info","message":"Auth service running on 5000","timestamp":"2026-01-21T16:02:17.250Z"}
+{"level":"info","message":"Postgres Query:SELECT * FROM users WHERE EMAIL=$1","timestamp":"2026-01-21T16:02:58.339Z"}
+{"level":"info","message":"REDIS SET: refresh:c64e68e9-42d3-4a91-893c-025e3749a576","timestamp":"2026-01-21T16:02:58.976Z"}
+{"level":"info","message":"REDIS SET: session:c64e68e9-42d3-4a91-893c-025e3749a576","timestamp":"2026-01-21T16:02:59.208Z"}
+{"level":"info","message":"Postgres Query:SELECT * FROM users WHERE EMAIL=$1","timestamp":"2026-01-22T07:18:09.304Z"}
+{"level":"info","message":"REDIS SET: refresh:c64e68e9-42d3-4a91-893c-025e3749a576","timestamp":"2026-01-22T07:18:09.820Z"}
+{"level":"info","message":"REDIS SET: session:c64e68e9-42d3-4a91-893c-025e3749a576","timestamp":"2026-01-22T07:18:10.045Z"}
+{"level":"info","message":"REDIS Del: refresh:undefined","timestamp":"2026-01-22T07:18:33.116Z"}
+{"level":"info","message":"REDIS Del: session:undefined","timestamp":"2026-01-22T07:18:33.117Z"}
+{"level":"info","message":"Postgres Query:SELECT * FROM users WHERE EMAIL=$1","timestamp":"2026-01-22T07:18:41.354Z"}
+{"level":"info","message":"REDIS SET: refresh:c64e68e9-42d3-4a91-893c-025e3749a576","timestamp":"2026-01-22T07:18:41.982Z"}
+{"level":"info","message":"REDIS SET: session:c64e68e9-42d3-4a91-893c-025e3749a576","timestamp":"2026-01-22T07:18:42.210Z"}

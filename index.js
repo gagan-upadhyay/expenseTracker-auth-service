@@ -11,29 +11,32 @@ import { setupHealthCheckUp } from './utils/setupHealthcheckUp.js';
 import setupGracefulShutDown from './utils/setupGracefulShutdown.js';
 import { getRedisClient } from './config/redisConnection.js';
 import { pgConnectTest, pool } from './config/dbconnection.js';
+import { initializeFirebase } from './config/firebaseAdmin.js';
+// import { addFCMTokenColumn } from './utils/fcmTokenManager.js';
 // import timeout from 'connect-timeout';
 
 const app = express();
 
-// const corsOptions = {
-//     origin:['http://localhost:3000', 'https://expense-tracker-6afeksr0j-gagans-projects-00cb1a77.vercel.app', 'http://192.168.0.148:3000', 'http://192.168.0.106:3000', 'https://expense-tracker-self-rho-12.vercel.app'],
-//     credentials:true
-// }
-
 const corsOptions = {
-  origin: function (origin, callback) {
-    const allowedOrigins = [
-       'http://localhost:3000','https://expense-tracker-6afeksr0j-gagans-projects-00cb1a77.vercel.app', 'https://expense-tracker-self-rho-12.vercel.app', 'http://172.168.0.148:3000'
-    ];
-    const ipRegex = /^http:\/\/192\.168\.0\.\d{1,3}:3000$/;
-    if (!origin || allowedOrigins.includes(origin) || ipRegex.test(origin)) {
-      callback(null, true);
-    } else {
-      callback(new Error('Not allowed by CORS'));
-    }
-  },
-  credentials: true
-};
+    origin:['http://192.168.0.126:3000', 'http://localhost:3000'],
+    credentials:true
+}
+
+
+// const corsOptions = {
+//   origin: function (origin, callback) {
+//     const allowedOrigins = [
+//        'http://localhost:3000','https://expense-tracker-6afeksr0j-gagans-projects-00cb1a77.vercel.app', 'https://expense-tracker-self-rho-12.vercel.app', 'http://172.168.0.148:3000'
+//     ];
+//     const ipRegex = /^http:\/\/192\.168\.0\.\d{1,3}:3000$/;
+//     if (!origin || allowedOrigins.includes(origin) || ipRegex.test(origin)) {
+//       callback(null, true);
+//     } else {
+//       callback(new Error('Not allowed by CORS'));
+//     }
+//   },
+//   credentials: true
+// };
 
 // app.use(cors(corsOptions));
 
@@ -68,10 +71,24 @@ setupHealthCheckUp(app);
 //app routes:
 app.use('/api/v1/auth', authRouter);
 
+// Initialize Firebase and database schema on startup
+const initializeServices = async () => {
+    try {
+        // Initialize Firebase Admin SDK
+        await initializeFirebase();
+        logger.info('Firebase Admin SDK initialized');
+        // Add FCM token column to database if needed
+        // await addFCMTokenColumn();
+        // logger.info('Database schema updated for FCM support');
+    } catch (error) {
+        logger.error('Error during service initialization:', error);
+        // Continue running even if Firebase init fails, but log the error
+    }
+};
 
-
-const server = app.listen(process.env.PORT,()=>{
+const server = app.listen(process.env.PORT, async () => {
     logger.info(`Auth service running on ${process.env.PORT}`);
+    await initializeServices();
 });
 
 setupGracefulShutDown(server, [

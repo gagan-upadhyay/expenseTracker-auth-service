@@ -3,12 +3,20 @@ import jwt from 'jsonwebtoken';
 import tokenSetter from '../../utils/tokenSetter.js';
 import { deleteAuthCookie, setAuthCookie } from '../../utils/cookiesUtils.js';
 import OAuthClient from '../../utils/OAuth.js';
-import { findUserByEmail, insertUser, insertOAuthUser, insertEmailOnlyUser, isUserExist } from '../model/userModel.js';
+import { 
+    findUserByEmail, 
+    insertUser, 
+    insertOAuthUser, 
+    insertEmailOnlyUser,
+    updateField, 
+} from '../model/userModel.js';
 import crypto from 'crypto';
 import { sendOTPEmail, sendPasswordMagicLink } from '../../utils/mailer.js';
 import { logger } from '../../config/logger.js';
 import { redisDel, redisGet, redisSet } from '../../utils/redisUtility.js';
 import { promisify } from 'util';
+import { sendLoginNotification, sendLogoutNotification } from '../../utils/fcmService.js';
+import { updateUserFCMToken, getUserFCMToken, deleteFCMToken } from '../../utils/fcmTokenManager.js';
 
 
 export const registerUserService = async (req, res) => {
@@ -31,15 +39,18 @@ export const registerUserService = async (req, res) => {
 };
 
 const isEmailExist = async(email)=>{
-  
     try{
-        const res = await findUserByEmail(email);
-        if(!res) return "user doesn't exist";
-        return res;
+        const result = await findUserByEmail(email);
+        console.log('Value of result from authService:\n', result);
+        if(result.auth_type ==='GOOGLE'){
+            return 'OAUTH AC'
+        }
+        if(!result) return false;
+        
+        return result;
     }catch(err){
         console.error('Error while validating email', err);
     }
-
 }
 
 export const registerUserWithOAuthService = async(req, res)=>{
@@ -102,7 +113,6 @@ export const loginUserService = async(req, res)=>{
         if(isValidUser==='user doesn\'t exist') return res.status(404).json({message:"User doesn't exist, register first"});
         console.log("Value of isValidUser form service:\n",isValidUser);
 
-
         if(!isValidUser.password) return res.status(500).json({message:'Password error'});
         //check password
         const isValidPassword = await bcrypt.compare(password, isValidUser.password);
@@ -117,6 +127,20 @@ export const loginUserService = async(req, res)=>{
         //setting redis
         await redisSet(`refresh:${id}`, tokens.refreshToken,{EX:Number(process.env.REDIS_REFRESH_EXPIRY)});
         await redisSet(`session:${id}`, tokens.accessToken, {EX:3600});
+        
+        // Send FCM login notification
+        try {
+            const fcmToken = await getUserFCMToken(id);
+            if (fcmToken) {
+                await sendLoginNotification(fcmToken, isValidUser);
+                logger.info(`Login notification sent to user: ${id}`);
+            } else {
+                logger.info(`No FCM token found for user: ${id}`);
+            }
+        } catch (fcmError) {
+            logger.error('Error sending FCM notification:', fcmError);
+            // Don't fail the login if FCM notification fails
+        }
 
         return res.status(200).json({message:"Logged In", accessToken:tokens.accessToken, refreshToken:tokens.refreshToken});
 
@@ -132,8 +156,22 @@ export const logoutUserService = async(req, res)=>{
         const token = req.cookies.accessToken;
         if(!token) return res.status(400).json({message:"Token required."});
 
-        const decoded = verifyAsync(token, process.env.SECRET);
+        const decoded = await verifyAsync(token, process.env.SECRET);
         deleteAuthCookie(res);
+
+        // Send FCM logout notification
+        try {
+            const fcmToken = await getUserFCMToken(decoded.id);
+            if (fcmToken) {
+                await sendLogoutNotification(fcmToken, { id: decoded.id });
+                logger.info(`Logout notification sent to user: ${decoded.id}`);
+            }
+            // Delete the FCM token on logout
+            await deleteFCMToken(decoded.id);
+        } catch (fcmError) {
+            logger.error('Error handling FCM on logout:', fcmError);
+            // Don't fail the logout if FCM operations fail
+        }
 
         await Promise.all([
             redisDel(`refresh:${decoded.id}`),
@@ -178,7 +216,7 @@ export const generateOTPService = async (req, res) => {
   
   try{
         console.log("Value of req.body", req.body);
-        const emailAlreadyInUse = await isUserExist(req.body.email);
+        const emailAlreadyInUse = await findUserByEmail(req.body.email);
         console.log("Value of emailAlreadyInUse:\n", emailAlreadyInUse);
         if(emailAlreadyInUse === 'User exists'&& req.body.type==='emailChange'){
             return res.status(400).json({message:'Email already in use'});
@@ -213,14 +251,15 @@ export const verifyOTPService = async (req, res) => {
   try{
     const storedOTP = await redisGet(`otp:${email}`);
     console.log("Value of storedOTP:\n", storedOTP);
-    if(!storedOTP || storedOTP !== otp) {
+    console.log("tyoe of stored otp and type of req.body.otp", typeof(storedOTP), typeof(req.body.otp))
+    if(!storedOTP || Number(storedOTP) !== otp) {
         return res.status(401).json({ message: 'Invalid or expired OTP' });
     }
     await redisDel(`otp:${email}`);
     if(!useForLogin){
         return res.status(200).json({message:'OTP verified successfully'});
     }
-    const user = await isUserExist(email);
+    const user = await findUserByEmail(email);
     // console.log("value of user froem authService verifyOTP:\n", user);
     if (!user) await insertEmailOnlyUser(email);
     const authToken = jwt.sign({ email }, process.env.SECRET, { expiresIn: '1h' });
@@ -236,22 +275,44 @@ export const verifyOTPService = async (req, res) => {
 export const forgotPasswordService=async(req, res)=>{
     try{
         const {email} = req.body;
-        const res = isEmailExist(email);
-        if(!res) {return res.status(404).json({message:"User doesn't exists"})}
-        else if(res==='Email is not valid'){return res.status(400).json('Email is not valid')}
+        const result = await isEmailExist(email);
+        // console.log('Value fo result form forgetPasword fn:', result);
+        
+        if(result ==='OAUTH AC'){
+            return res.status(400).json({message:"Can't change password for OAUTH type accounts"});
+        }
+        if(!result){
+        return res.status(404).json({message:"User doesn't exists"})
+        }
+        else if(result==='Email is not valid'){
+            return res.status(400).json('Email is not valid')
+        }
         const token = jwt.sign({email}, process.env.SECRET, {expiresIn:'15m'});
         const isMailSent = await sendPasswordMagicLink(email, token);
-        if(!isMailSent) return res.status(404).json({message:'Failed to send magic link'});
+        if(!isMailSent){
+            return res.status(404).json({message:'Failed to send magic link'});
+        }
         await redisSet(`resetPassword:${email}`, token, {EX:900});
-        return res.status(200).json({message:'Magic link sent'});
+        return res.status(200).json({message:'Magic link sent', token:token});
     }catch(err){
         console.error('Error while changing password', err);
         return res.status(500).json({message:'Something went wrong, please try again later.'})
     }
 }
 
-export const validateMagicLinkService=async(req, res)=>{
-    const token = req.body.params;
-    console.log('Vale uf params:', token);
+export const resetPasswordService = async(req, res)=>{
+    const email = req.email;
+    //---------------can be commented out---------
+    const isUserExists = await findUserByEmail(req.email);
+    if(!isEmailExist){
+        return req.status(400).json({message:'Back-off you sucker!!'});
+    }
+//---------------------------------------
+    const {password} = req.body.password;
+    const hashedPassword = await bcrypt.hash(password, 12);
+    const result = await updateField('password', hashedPassword, email);
+    if(!result){
+        return res.status(400).json({message:'Failure when saving password'});
+    }
+    return res.status(201).json({message:'Password changed successfully'});
 }
-// isEmailExist('gaganupadhyay.karan@gmail.com');

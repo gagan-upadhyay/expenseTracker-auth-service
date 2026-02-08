@@ -16,3 +16,21 @@ export const registerValidator = async(req, res, next)=>{
     return next();
 }
 
+export const validateMagicLinkMiddleware=async(req, res, next)=>{
+    const {token} = req.query;
+    const {email} = req.body;
+    console.log('token val:',token);
+    const isTokenValid = await redisGet(`resetPassword:${email}`);
+    console.log('value of isTokenValid', isTokenValid);
+    if(token===isTokenValid){
+        await redisDel(`resetPassword:${email}`);
+        req.email=email;
+        return res.status(200).json({message:'Link verified'});
+        next();
+    }else{
+        await redisDel(`resetPassword:${email}`);
+        return res.status(400).json({message:'Link is invalid, try generating new link'});
+    }
+   
+
+}

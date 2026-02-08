@@ -10,13 +10,10 @@
   "license": "ISC",
   "author": "Gagan Upadhyay",
   "type": "module",
-  
-  "jest":
-  {
-    "transform":{}
+  "jest": {
+    "transform": {}
   },
   "main": "index.js",
- 
   "scripts": {
     "test-windows": "node --experimental-vm-modules --trace-warnings ./node_modules/jest/bin/jest.js",
     "test-unix": "node --experimental-vm-modules node_modules/.bin/jest",
@@ -32,6 +29,7 @@
     "express": "^5.1.0",
     "express-session": "^1.18.2",
     "express-validator": "^7.2.1",
+    "firebase-admin": "^13.6.0",
     "google-auth-library": "^10.1.0",
     "helmet": "^8.1.0",
     "ioredis": "^5.6.1",

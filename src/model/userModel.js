@@ -1,22 +1,25 @@
 import { pgQuery } from '../../config/dbconnection.js';
 
 export const findUserByEmail = async (email) => {
-  console.log('Inside findUserByEmail in userModel');
-  const result = await pgQuery(`SELECT * FROM users WHERE EMAIL=$1`, [email]);
-  console.log('from userModel, value of result:', result);
-  return result.rows[0];
+  // console.log('Inside findUserByEmail in userModel');
+  const result = await pgQuery(`SELECT id, auth_type, password FROM users WHERE EMAIL=$1`, [email]);
+  // console.log('from userModel, value of result:', result.rows);
+  if(result.rows.length!==0){
+    return result.rows[0];
+  }else{
+    // console.log('Inside else statement form model');
+    return false;
+  }
 };
 
-
-
-export const isUserExist = async(email)=>{
-  const result = await pgQuery(`SELECT 1 FROM users WHERE EMAIL=$1 LIMIT 1`, [email]);
-  console.log('Value of result:\n', result.rows[0]);
-  if(!result.rows[0]){
-    return {message:'User not found'}
-  }
-  return 'User exists'
-}
+// export const isUserExist = async(email)=>{
+//   const result = await pgQuery(`SELECT 1 FROM users WHERE EMAIL=$1 LIMIT 1`, [email]);
+//   console.log('Value of result:\n', result.rows[0]);
+//   if(!result.rows[0]){
+//     return {message:'User not found'}
+//   }
+//   return 'User exists'
+// }
 export const insertEmailOnlyUser = async (email) => {
   await pgQuery(`INSERT INTO users (email) VALUES ($1)`, [email]);
 };
@@ -52,8 +55,25 @@ export const insertOAuthUser = async (payload) => {
   return result.rows[0];
 };
 
-export const addAccessTypeColumn = async () => {
-  return await pgQuery(`ALTER TABLE users ADD accessType TEXT`);
-};
+// export const addAccessTypeColumn = async () => {
+//   return await pgQuery(`ALTER TABLE users ADD accessType TEXT`);
+// };
+
+
+//update query
+export const updateField = async(fieldName, value, identifier)=>{
+  const result = await pgQuery 
+  (`
+    UPDATE users
+    SET $1 = $2
+    WHERE email = $3
+    RETURNING *
+    `, [fieldName, value, identifier]
+  );
+
+  if(result.rows.length!==0) return false;
+  return result.rows[0];
+    
+}
 
 // getUserCreds('urmi.bhups@asn.com');

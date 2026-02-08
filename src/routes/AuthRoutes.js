@@ -3,19 +3,19 @@ import {logger} from '../../config/logger.js'
 // import { registerValidator } from '../middleware/validator.js';
 import {
     forgotPassword,
-    //  addColumn, 
      generateOTP, 
      loginUser, 
      logoutUser, 
      refreshToken, 
      registerUser, 
      registerUserWithOAuth, 
-     validateMagicLink, 
+    resetPassword, 
      verifyOTP 
     } from '../controllers/authController.js';
+import { registerFCMToken, getFCMToken, removeFCMToken } from '../controllers/fcmController.js';
 import { rateLimiter } from '../../middleware/rateLimiter.js';
 import { verifySession } from '../../middleware/verifySession.js';
-import { registerValidator } from '../../middleware/validator.js';
+import { registerValidator, validateMagicLinkMiddleware } from '../../middleware/validator.js';
 import { setupHealthCheckUp } from '../../utils/setupHealthcheckUp.js';
 
 const authRouter = express.Router();
@@ -37,9 +37,27 @@ authRouter.post('/otp/generate',verifySession, generateOTP);
 authRouter.post('/otp/verify', verifyOTP);
 authRouter.post('/refresh',verifySession, refreshToken );
 authRouter.post('/forgot-password', forgotPassword)
-authRouter.get('/password-reset/validate', validateMagicLink);
+authRouter.get('/password-reset', validateMagicLinkMiddleware, resetPassword);
+
+// FCM Token Routes
+authRouter.post('/fcm/register-token', verifySession, registerFCMToken);
+authRouter.get('/fcm/token', verifySession, getFCMToken);
+authRouter.delete('/fcm/token', verifySession, removeFCMToken);
+
 // authRouter.post('/logs', clientLogs)
 // authRouter.get('/health', setupHealthCheckUp);
 // authRouter.get('/addColumn', addColumn)
 
 export default authRouter;
+
+
+// flow:
+// first user will go to /forgot-password
+// 
+// 
+// 
+// 
+// 
+// 
+// 
+// 

@@ -26,7 +26,7 @@ jobs:
               run: npm install
 
             - name: Run Tests
-              run: npm test-unix
+              run: npm "test-unix"
             
             
             - name: Build Docker Image

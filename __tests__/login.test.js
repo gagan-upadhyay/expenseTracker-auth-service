@@ -61,6 +61,13 @@ jest.unstable_mockModule("bcrypt", () => ({
   compare: jest.fn((plain, hashed) => plain === "12345678")
 }));
 
+jest.unstable_mockModule("../utils/tokenSetter.js", () => ({
+  default: jest.fn(() => ({
+    accessToken: "test-access-token",
+    refreshToken: "test-refresh-token"
+  }))
+}));
+
 // ---------------------------------------------
 // 2. IMPORT APP AFTER MOCKS
 // ---------------------------------------------

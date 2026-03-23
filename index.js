@@ -77,8 +77,8 @@ if(process.env.NODE_ENV!=="test"){
     });
 
     setupGracefulShutDown(server, [
-        async()=>getRedisClient.disconnect(),
-        async()=>pool.end()
+        async()=>await getRedisClient.disconnect(),
+        async()=>await pool.end()
     ]);
 }
 export {app, server};

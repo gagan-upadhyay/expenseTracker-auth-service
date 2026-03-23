@@ -10,7 +10,7 @@ import { helmetConfig } from './config/helmet.config.js';
 import { setupHealthCheckUp } from './utils/setupHealthcheckUp.js';
 import setupGracefulShutDown from './utils/setupGracefulShutdown.js';
 import { getRedisClient } from './config/redisConnection.js';
-import { pgConnectTest, pool } from './config/dbconnection.js';
+import {  pool } from './config/dbconnection.js';
 
 // import timeout from 'connect-timeout';
 
@@ -70,14 +70,15 @@ setupHealthCheckUp(app);
 //app routes:
 app.use('/api/v1/auth', authRouter);
 
-const server = app.listen(process.env.PORT, () => {
-    logger.info(`Auth service running on ${process.env.PORT}`);
-});
+let server = null 
+if(process.env.NODE_ENV!=="test"){
+     server = app.listen(process.env.PORT, () => {
+        logger.info(`Auth service running on ${process.env.PORT}`);
+    });
 
-setupGracefulShutDown(server, [
-    async()=>getRedisClient.disconnect(),
-    async()=>pool.end()
-]);
-
-
-export default app;
+    setupGracefulShutDown(server, [
+        async()=>getRedisClient.disconnect(),
+        async()=>pool.end()
+    ]);
+}
+export {app, server};

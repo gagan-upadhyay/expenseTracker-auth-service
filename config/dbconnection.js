@@ -14,7 +14,7 @@ pool.on('error', (err)=>{
 })
 
 
-export const pgQuery = async(queryText, params=[])=>{
+const pgQuery = async(queryText, params=[])=>{
     try{
         console.log('From db, value of queryText and params=[]', queryText, params);
         const result = await pool.query(queryText, params);
@@ -26,7 +26,7 @@ export const pgQuery = async(queryText, params=[])=>{
     }
 }
 
-export const pgConnectTest = async()=>{
+const pgConnectTest = async()=>{
     try{
         await pool.connect();
         const result = await pool.query(`SELECT NOW()`);
@@ -36,3 +36,5 @@ export const pgConnectTest = async()=>{
         logger.error('Error connecting postgres:', err);
     }
 }
+
+export {pgConnectTest, pgQuery};

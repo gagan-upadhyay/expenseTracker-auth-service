@@ -1,4 +1,4 @@
-import bcrypt from 'bcrypt';
+import * as bcrypt from "bcrypt";
 import jwt from 'jsonwebtoken';
 import tokenSetter from '../../utils/tokenSetter.js';
 import { deleteAuthCookie, setAuthCookie } from '../../utils/cookiesUtils.js';
@@ -112,11 +112,12 @@ export const loginUserService = async(req, res)=>{
     const{email, password} = req.body;
     try{
         //check email ID
+        if(!email || !password) return res.status(400).json({success:false, error:"Email and password are required"});
         const isValidUser = await isEmailExist(email);
         if(!isValidUser) return res.status(404).json({success:false, error:"User doesn't exist, register first"});
         console.log("Value of isValidUser form service:\n",isValidUser);
 
-        if(!isValidUser.password) return res.status(403).json({success:false, error:'Password error'});
+        if(!isValidUser.password) return res.status(400).json({success:false, error:'Password error'});
         //check password
         const isValidPassword = await bcrypt.compare(password, isValidUser.password);
         if(!isValidPassword) return res.status(401).json({success:false, error:'Wrong Password'});
@@ -166,7 +167,7 @@ export const refreshTokenService = async(req, res)=>{
 
     try{
         const verifyAsync = promisify(jwt.verify);
-        const decoded = await verifyAsync(oldToken, process.env.REFRESH_SECRET);        
+        const decoded = await verifyAsync(oldToken, process.env.REFRESH_SECRET);
         const id = decoded.id;
         const storedToken = await redisGet(`refresh:${id}`);
 

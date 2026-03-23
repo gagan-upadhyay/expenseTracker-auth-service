@@ -1,5 +1,22 @@
-import app from '../index.js'
-import request from 'supertest'
+import {app} from "./index.js";
+import request from "supertest";
+import { jest } from "@jest/globals";
+
+jest.mock('../config/dbconnection.js', () => ({
+  pgQuery: jest.fn(async (query, params) => {
+      // mock user that matches your test
+      if (params[0] === "asn@asn.com") {
+        return {
+          rows: [{
+            id: 'test-id',
+            auth_type: 'PASSWORD',
+            password: '$2b$12$hashed-value-here'
+          }]
+        };
+      }
+      return { rows: [] };
+  }),
+}));
 
 describe('POST /login', ()=>{
     it('Should return 200 and a token for valid credentials', async ()=>{

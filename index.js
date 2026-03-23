@@ -72,7 +72,7 @@ app.use('/api/v1/auth', authRouter);
 
 let server = null 
 if(process.env.NODE_ENV!=="test"){
-     server = app.listen(process.env.PORT, () => {
+     server = app.listen(process.env.PORT || 5000, "0.0.0.0", () => {
         logger.info(`Auth service running on ${process.env.PORT}`);
     });
 

@@ -12,7 +12,7 @@ import {
     resetPassword, 
      verifyOTP 
     } from '../controllers/authController.js';
-import { registerFCMToken, getFCMToken, removeFCMToken } from '../controllers/fcmController.js';
+
 import { rateLimiter } from '../../middleware/rateLimiter.js';
 import { verifySession } from '../../middleware/verifySession.js';
 import { registerValidator, validateMagicLinkMiddleware } from '../../middleware/validator.js';
@@ -35,14 +35,10 @@ authRouter.post('/logout', verifySession, logoutUser);
 authRouter.post('/login', loginUser);
 authRouter.post('/otp/generate',verifySession, generateOTP);
 authRouter.post('/otp/verify', verifyOTP);
-authRouter.post('/refresh',verifySession, refreshToken );
+authRouter.post('/refresh',verifySession, refreshToken);
 authRouter.post('/forgot-password', forgotPassword)
 authRouter.get('/password-reset', validateMagicLinkMiddleware, resetPassword);
 
-// FCM Token Routes
-authRouter.post('/fcm/register-token', verifySession, registerFCMToken);
-authRouter.get('/fcm/token', verifySession, getFCMToken);
-authRouter.delete('/fcm/token', verifySession, removeFCMToken);
 
 // authRouter.post('/logs', clientLogs)
 // authRouter.get('/health', setupHealthCheckUp);

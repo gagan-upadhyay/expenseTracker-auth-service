@@ -15,27 +15,32 @@ import { sendOTPEmail, sendPasswordMagicLink } from '../../utils/mailer.js';
 import { logger } from '../../config/logger.js';
 import { redisDel, redisGet, redisSet } from '../../utils/redisUtility.js';
 import { promisify } from 'util';
-import { sendLoginNotification, sendLogoutNotification } from '../../utils/fcmService.js';
-import { updateUserFCMToken, getUserFCMToken, deleteFCMToken } from '../../utils/fcmTokenManager.js';
+
 
 
 export const registerUserService = async (req, res) => {
     console.log('Inside the registerUSer function with email:', req.body?.email);
     const { firstName, lastName, email, password } = req.body;
-    const existingUser = await findUserByEmail(email);
-    console.log("Value of existingUser:\n", existingUser);
-    if (existingUser) return res.status(409).json({ message: 'User already exists' });
+    try{
+        const existingUser = await findUserByEmail(email);
+        console.log("Value of existingUser:\n", existingUser);
+        if (existingUser) return res.status(409).json({ message: 'User already exists' });
 
-    const hashedPassword = await bcrypt.hash(password, 12);
-    const user = await insertUser({ firstName, lastName, email, hashedPassword, authType:'PASSWORD' });
-    console.log("Value of user:\n", user);
-    const tokens = tokenSetter(user.id);
-    setAuthCookie(res, tokens.refreshToken, tokens.accessToken);
-    logger.info(`Setting refresh and session token for ${user.id}`);
-    await redisSet(`refresh:${user.id}`, tokens.refreshToken, { EX: Number(process.env.REDIS_REFRESH_EXPIRY) });
-    await redisSet(`session:${user.id}`, tokens.accessToken, { EX: 3600 });
+        const hashedPassword = await bcrypt.hash(password, 12);
+        const user = await insertUser({ firstName, lastName, email, hashedPassword, authType:'PASSWORD' });
+        console.log("Value of user:\n", user);
+        const tokens = tokenSetter(user.id);
+        setAuthCookie(res, tokens.refreshToken, tokens.accessToken);
+        logger.info(`Setting refresh and session token for ${user.id}`);
+        await redisSet(`refresh:${user.id}`, tokens.refreshToken, { EX: Number(process.env.REDIS_REFRESH_EXPIRY) });
+        await redisSet(`session:${user.id}`, tokens.accessToken, { EX: 3600 });
 
-    return res.status(201).json({accessToken:tokens.accessToken, message: 'User registered successfully' });
+        return res.status(201).json({accessToken:tokens.accessToken, message: 'User registered successfully' });
+    }catch(err){
+        logger.error('Error while registering user:', err);
+        return res.status(500).json({success:false, message:'Something went wrong, please try again later!'})
+    }
+   
 };
 
 const isEmailExist = async(email)=>{
@@ -45,8 +50,6 @@ const isEmailExist = async(email)=>{
         if(result.auth_type ==='GOOGLE'){
             return 'OAUTH AC'
         }
-        if(!result) return false;
-        
         return result;
     }catch(err){
         console.error('Error while validating email', err);
@@ -110,13 +113,13 @@ export const loginUserService = async(req, res)=>{
     try{
         //check email ID
         const isValidUser = await isEmailExist(email);
-        if(isValidUser==='user doesn\'t exist') return res.status(404).json({message:"User doesn't exist, register first"});
+        if(!isValidUser) return res.status(404).json({success:false, error:"User doesn't exist, register first"});
         console.log("Value of isValidUser form service:\n",isValidUser);
 
-        if(!isValidUser.password) return res.status(500).json({message:'Password error'});
+        if(!isValidUser.password) return res.status(403).json({success:false, error:'Password error'});
         //check password
         const isValidPassword = await bcrypt.compare(password, isValidUser.password);
-        if(!isValidPassword) return res.status(401).json({message:"Wrong password", error:'Wrong Password'});
+        if(!isValidPassword) return res.status(401).json({success:false, error:'Wrong Password'});
 
         const id = isValidUser.id;
         
@@ -127,88 +130,63 @@ export const loginUserService = async(req, res)=>{
         //setting redis
         await redisSet(`refresh:${id}`, tokens.refreshToken,{EX:Number(process.env.REDIS_REFRESH_EXPIRY)});
         await redisSet(`session:${id}`, tokens.accessToken, {EX:3600});
-        
-        // Send FCM login notification
-        try {
-            const fcmToken = await getUserFCMToken(id);
-            if (fcmToken) {
-                await sendLoginNotification(fcmToken, isValidUser);
-                logger.info(`Login notification sent to user: ${id}`);
-            } else {
-                logger.info(`No FCM token found for user: ${id}`);
-            }
-        } catch (fcmError) {
-            logger.error('Error sending FCM notification:', fcmError);
-            // Don't fail the login if FCM notification fails
-        }
 
-        return res.status(200).json({message:"Logged In", accessToken:tokens.accessToken, refreshToken:tokens.refreshToken});
+        return res.status(200).json({success:true, message:"Logged In", accessToken:tokens.accessToken, refreshToken:tokens.refreshToken});
 
     }catch(err){
         logger.error("Error caught at Login Step:\n", err);
-        return res.status(500).json({message:"Somethig went wrong! Please try agin later.", error:err});
+        return res.status(500).json({success:false, error:err});
     }
-
 }
 export const logoutUserService = async(req, res)=>{
     try{
         const verifyAsync = promisify(jwt.verify);
         const token = req.cookies.accessToken;
-        if(!token) return res.status(400).json({message:"Token required."});
+        if(!token) return res.status(400).json({success:false, message:"Token required."});
 
         const decoded = await verifyAsync(token, process.env.SECRET);
         deleteAuthCookie(res);
-
-        // Send FCM logout notification
-        try {
-            const fcmToken = await getUserFCMToken(decoded.id);
-            if (fcmToken) {
-                await sendLogoutNotification(fcmToken, { id: decoded.id });
-                logger.info(`Logout notification sent to user: ${decoded.id}`);
-            }
-            // Delete the FCM token on logout
-            await deleteFCMToken(decoded.id);
-        } catch (fcmError) {
-            logger.error('Error handling FCM on logout:', fcmError);
-            // Don't fail the logout if FCM operations fail
-        }
 
         await Promise.all([
             redisDel(`refresh:${decoded.id}`),
             redisDel(`session:${decoded.id}`)
         ]);
 
-        return res.status(200).json({message:"Successfully logged out"});
+        return res.status(200).json({success:true, message:"Successfully logged out"});
     }catch(err){
         logger.error("Error found in the logout section:", err);
-        return res.status(500).json({message:"Error in logout section", error:err});
+        return res.status(500).json({success:false, message:"Error in logout section", error:err});
     }
 }
 
 export const refreshTokenService = async(req, res)=>{
-    const {refreshToken} = req.cookies;
-    if (!refreshToken) return res.status(400).json({message:'Missing refresh token'});
+    const {refreshToken:oldToken} = req.cookies;
+
+    if (!oldToken) return res.status(401).json({success:false, message:'Unauthorized'});
+
     try{
         const verifyAsync = promisify(jwt.verify);
-        const decoded = await verifyAsync(refreshToken, process.env.REFRESH_SECRET);        
+        const decoded = await verifyAsync(oldToken, process.env.REFRESH_SECRET);        
         const id = decoded.id;
         const storedToken = await redisGet(`refresh:${id}`);
 
-        if(!storedToken || storedToken!==refreshToken){
-            return res.status(403).json({message:'Invalid refresh token'});
+        if(!storedToken || storedToken!==oldToken){
+            await redisDel(`refresh:${id}`);
+            return res.status(403).json({success:false, message:'Invalid refresh token'});
         }
         const newAccessToken = jwt.sign({id}, process.env.SECRET, {expiresIn:process.env.ACCESS_EXPIRY});
+        const newRefreshToken =jwt.sign({id}, process.env.REFRESH_SECRET, {expiresIn:process.env.REFRESH_EXPIRY});
 
-        //setting authCookie:
-        setAuthCookie(res, refreshToken, newAccessToken);
+
 
         //setting Redis:
-        await redisSet(`refresh:${id}`, refreshToken,{EX:Number(process.env.REDIS_REFRESH_EXPIRY)});
-        await redisSet(`session:${id}`, newAccessToken, {EX:3600});
+        await redisSet(`refresh:${id}`, newRefreshToken,{EX:Number(process.env.REDIS_REFRESH_EXPIRY)});
+        // await redisSet(`session:${id}`, newAccessToken, {EX:3600});
+        setAuthCookie(res, newRefreshToken, newAccessToken)
 
-        return res.status(200).json({accessToken:newAccessToken});
+        return res.status(200).json({success:true, accessToken:newAccessToken});
     }catch(err){
-        return res.status(403).json({message:'Token expired or invalid'});
+        return res.status(403).json({success:false, message:'Token expired or invalid'});
     }
 }
 export const generateOTPService = async (req, res) => {
@@ -219,7 +197,7 @@ export const generateOTPService = async (req, res) => {
         const emailAlreadyInUse = await findUserByEmail(req.body.email);
         console.log("Value of emailAlreadyInUse:\n", emailAlreadyInUse);
         if(emailAlreadyInUse === 'User exists'&& req.body.type==='emailChange'){
-            return res.status(400).json({message:'Email already in use'});
+            return res.status(400).json({success:false, message:'Email already in use'});
         }
         const result = await sendOTPEmail(req.body?.name, req.body?.email, otp);
         // if(!response.ok) return res.status(400).json({message:'Unable to send OTP, check email'});
@@ -228,20 +206,18 @@ export const generateOTPService = async (req, res) => {
             console.log(`OTP for ${req.body.email}: ${otp}`);
             await redisSet(`otp:${req.body.email}`, otp, { EX: 300 });
             console.log("Inside if statemenmt");
-            return res.status(200).json({message:'OTP sent successfully'});
+            return res.status(200).json({success:true, message:'OTP sent successfully'});
         }else if(result==='Email is not valid'){
-            return res.status(404).json({message:'Email is not valid'});
+            return res.status(404).json({success:false, message:'Email is not valid'});
         
         }else{
             console.log("Outside the if statement");
-            return res.status(404).json({message:'Failed to send OTP'});
+            return res.status(404).json({success:false, message:'Failed to send OTP'});
         }
-        
-
 
     }catch(err){
         console.error('OTP failure:\n', err);
-        return res.status(500).json({message:'Failed to send OTP'});
+        return res.status(500).json({success:false, message:'Failed to send OTP'});
     }
 };
 export const verifyOTPService = async (req, res) => {
@@ -279,21 +255,21 @@ export const forgotPasswordService=async(req, res)=>{
         // console.log('Value fo result form forgetPasword fn:', result);
         
         if(result ==='OAUTH AC'){
-            return res.status(400).json({message:"Can't change password for OAUTH type accounts"});
+            return res.status(400).json({success:false, message:"Can't change password for OAUTH type accounts"});
         }
         if(!result){
-        return res.status(404).json({message:"User doesn't exists"})
+        return res.status(404).json({success:false, message:"User doesn't exists"})
         }
         else if(result==='Email is not valid'){
-            return res.status(400).json('Email is not valid')
+            return res.status(400).json({success:false, message:'Email is not valid'})
         }
         const token = jwt.sign({email}, process.env.SECRET, {expiresIn:'15m'});
         const isMailSent = await sendPasswordMagicLink(email, token);
         if(!isMailSent){
-            return res.status(404).json({message:'Failed to send magic link'});
+            return res.status(404).json({success:false, message:'Failed to send magic link'});
         }
         await redisSet(`resetPassword:${email}`, token, {EX:900});
-        return res.status(200).json({message:'Magic link sent', token:token});
+        return res.status(200).json({success:true, message:'Magic link sent', token:token});
     }catch(err){
         console.error('Error while changing password', err);
         return res.status(500).json({message:'Something went wrong, please try again later.'})

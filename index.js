@@ -11,8 +11,7 @@ import { setupHealthCheckUp } from './utils/setupHealthcheckUp.js';
 import setupGracefulShutDown from './utils/setupGracefulShutdown.js';
 import { getRedisClient } from './config/redisConnection.js';
 import { pgConnectTest, pool } from './config/dbconnection.js';
-import { initializeFirebase } from './config/firebaseAdmin.js';
-// import { addFCMTokenColumn } from './utils/fcmTokenManager.js';
+
 // import timeout from 'connect-timeout';
 
 const app = express();
@@ -71,24 +70,8 @@ setupHealthCheckUp(app);
 //app routes:
 app.use('/api/v1/auth', authRouter);
 
-// Initialize Firebase and database schema on startup
-const initializeServices = async () => {
-    try {
-        // Initialize Firebase Admin SDK
-        await initializeFirebase();
-        logger.info('Firebase Admin SDK initialized');
-        // Add FCM token column to database if needed
-        // await addFCMTokenColumn();
-        // logger.info('Database schema updated for FCM support');
-    } catch (error) {
-        logger.error('Error during service initialization:', error);
-        // Continue running even if Firebase init fails, but log the error
-    }
-};
-
-const server = app.listen(process.env.PORT, async () => {
+const server = app.listen(process.env.PORT, () => {
     logger.info(`Auth service running on ${process.env.PORT}`);
-    await initializeServices();
 });
 
 setupGracefulShutDown(server, [

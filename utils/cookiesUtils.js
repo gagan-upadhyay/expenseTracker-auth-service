@@ -1,6 +1,6 @@
 const isProduction = process.env.NODE_ENV === 'production';
 
-export function setAuthCookie(res, refreshToken, accessToken, isLoggedIn){
+export function setAuthCookie(res, refreshToken, accessToken){
     
     res.cookie('refreshToken', refreshToken, {
         maxAge: 7 * 24 * 3600 * 1000, // 7 days

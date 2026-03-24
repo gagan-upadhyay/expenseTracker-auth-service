@@ -48,6 +48,6 @@ jobs:
                  docker pull ${{secrets.DOCKER_USERNAME}}/auth-service:latest
                  docker stop auth-service || true
                  docker rm auth-service || true
-                 docker run -d --env-file /home/azureuser/auth.env -p 5000:5000 --name auth-service ${{secrets.DOCKER_USERNAME}}/auth-service:latest
+                 docker run -d --env-file /home/azureuser/auth.env -p 5000:5000 --restart unless-stopped --name auth-service ${{secrets.DOCKER_USERNAME}}/auth-service:latest
 
 

@@ -17,7 +17,8 @@ import {  pool } from './config/dbconnection.js';
 const app = express();
 
 const corsOptions = {
-    origin:['http://192.168.0.126:3000', 'http://localhost:3000'],
+    origin:['http://192.168.0.126:3000', 'http://localhost:3000', 'https://expense-tracker-git-newbranch-gagans-projects-00cb1a77.vercel.app'
+    ],
     credentials:true
 }
 

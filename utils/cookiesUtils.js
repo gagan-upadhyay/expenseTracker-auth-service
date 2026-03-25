@@ -25,13 +25,13 @@ export function setAuthCookie(res, refreshToken, accessToken){
 export function deleteAuthCookie(res){
     res.clearCookie('accessToken', {
         httpOnly: true,
-        secure: false,
+        secure: true,
         sameSite: 'none',
         path: '/',
     });
     res.clearCookie('refreshToken', {
         httpOnly: true,
-        secure: false,
+        secure: true,
         sameSite: 'none',
         path: '/',
     });

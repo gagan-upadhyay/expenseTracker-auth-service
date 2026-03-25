@@ -5,7 +5,7 @@ export function setAuthCookie(res, refreshToken, accessToken){
     res.cookie('refreshToken', refreshToken, {
         maxAge: 7 * 24 * 3600 * 1000, // 7 days
         httpOnly: true,
-        secure: false, // localhost=HTTP => false
+        secure: true, // localhost=HTTP => false
         sameSite:"none", // required
         path: '/'
     });
@@ -13,7 +13,7 @@ export function setAuthCookie(res, refreshToken, accessToken){
     res.cookie('accessToken', accessToken, {
         maxAge:15 * 60 * 1000,  // 15 min
         httpOnly: true,         // accessible to JS for middleware
-        secure: false, // localhost=HTTP => false
+        secure: true, // localhost=HTTP => false
         sameSite: "none", // required
         path: '/'
     });

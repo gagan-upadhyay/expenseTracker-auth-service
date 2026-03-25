@@ -162,6 +162,8 @@ export const logoutUserService = async(req, res)=>{
 
 export const refreshTokenService = async(req, res)=>{
     const {refreshToken:oldToken} = req.cookies;
+    console.log('Value of req.cookies:', req.cookies);
+    console.log('Value of refershToken from refreshTokenservice:', oldToken);
 
     if (!oldToken) return res.status(401).json({success:false, message:'Unauthorized'});
 

@@ -1,17 +1,17 @@
 import jwt from 'jsonwebtoken';
 import { getRedisClient } from "../config/redisConnection.js";
 
-const redisClient = await getRedisClient();
+
 
 export const verifySession = async(req, res, next)=>{
+    const redisClient = await getRedisClient();
     try{
         if(process.env.NODE_ENV==='test'){
             return (req, res, next)=>next();
         }
         console.log("From verify session");
-        const token = req.cookies.accessToken 
-                    || req.headers.authorization?.split(' ')[1]
-                    || req.cookies?.accesstoken;
+        const token = req.cookies?.accessToken 
+                    || req.headers.authorization?.split(' ')[1];
         console.log("Value of token from verifySession:", token);
         if(!token) return res.status(401).json({message:'Token missing'});
         const decoded = jwt.verify(token, process.env.SECRET,{

@@ -35,7 +35,7 @@ authRouter.post('/logout', verifySession, logoutUser);
 authRouter.post('/login', loginUser);
 authRouter.post('/otp/generate',verifySession, generateOTP);
 authRouter.post('/otp/verify', verifyOTP);
-authRouter.post('/refresh',verifySession, refreshToken);
+authRouter.post('/refresh', refreshToken);
 authRouter.post('/forgot-password', forgotPassword)
 authRouter.get('/password-reset', validateMagicLinkMiddleware, resetPassword);
 

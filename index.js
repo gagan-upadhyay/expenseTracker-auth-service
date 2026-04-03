@@ -40,7 +40,7 @@ app.use((err, req, res, next)=>{
     console.error(err.stack);
     logger.error("Caught application level error: ",err)
     res.status(500).send("Something went wrong, please try again later");
-    next();
+    // next();
 });
 
 app.get('/',(req, res)=>{

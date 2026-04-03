@@ -1,8 +1,6 @@
 import jwt from 'jsonwebtoken';
 import { getRedisClient } from "../config/redisConnection.js";
 
-
-
 export const verifySession = async(req, res, next)=>{
     const redisClient = await getRedisClient();
     try{
@@ -19,10 +17,11 @@ export const verifySession = async(req, res, next)=>{
             clockTolerance:5,
         });
 
-        const cachedToken = await redisClient.get(`session:${decoded.id}`);
-        if(cachedToken!== token){
-            return res.status(401).json({message:'Invalid or expired token'})
-        }
+        // const cachedToken = await redisClient.get(`session:${decoded.id}`);
+        // if(cachedToken!== token){
+        //     return res.status(401).json({message:'Invalid or expired token'})
+        // }
+
         req.user={id:decoded.id, ...decoded};
         console.log('Value of req.user:', req.user);
         return next();

@@ -18,30 +18,50 @@ import { promisify } from 'util';
 
 
 
+// ================= REGISTER =================
 export const registerUserService = async (req, res) => {
-    console.log('Inside the registerUSer function with email:', req.body?.email);
     const { firstName, lastName, email, password } = req.body;
-    try{
+
+    try {
         const existingUser = await findUserByEmail(email);
-        console.log("Value of existingUser:\n", existingUser);
         if (existingUser) return res.status(409).json({ message: 'User already exists' });
 
         const hashedPassword = await bcrypt.hash(password, 12);
         const user = await insertUser({ firstName, lastName, email, hashedPassword, authType:'PASSWORD' });
-        console.log("Value of user:\n", user);
-        const tokens = tokenSetter(user.id);
-        setAuthCookie(res, tokens.refreshToken, tokens.accessToken);
-        logger.info(`Setting refresh and session token for ${user.id}`);
-        await redisSet(`refresh:${user.id}`, tokens.refreshToken, { EX: Number(process.env.REDIS_REFRESH_EXPIRY) });
-        await redisSet(`session:${user.id}`, tokens.accessToken, { EX: 3600 });
 
-        return res.status(201).json({accessToken:tokens.accessToken, message: 'User registered successfully' });
-    }catch(err){
-        logger.error('Error while registering user:', err);
-        return res.status(500).json({success:false, message:'Something went wrong, please try again later!'})
+        const sessionId = crypto.randomUUID();
+
+        const accessToken = jwt.sign(
+            { id: user.id },
+            process.env.SECRET,
+            { expiresIn: process.env.ACCESS_EXPIRY }
+        );
+
+        const refreshToken = jwt.sign(
+            { id: user.id, sessionId },
+            process.env.REFRESH_SECRET,
+            { expiresIn: process.env.REFRESH_EXPIRY }
+        );
+
+        setAuthCookie(res, refreshToken, accessToken);
+
+        await redisSet(
+            `refresh:${user.id}:${sessionId}`,
+            refreshToken,
+            { EX: Number(process.env.REDIS_REFRESH_EXPIRY) }
+        );
+
+        return res.status(201).json({
+            accessToken,
+            message: 'User registered successfully'
+        });
+
+    } catch (err) {
+        logger.error('Register error:', err);
+        return res.status(500).json({ success:false });
     }
-   
 };
+
 
 const isEmailExist = async(email)=>{
     try{
@@ -107,91 +127,163 @@ export const registerUserWithOAuthService = async(req, res)=>{
     }
 }
 
-export const loginUserService = async(req, res)=>{
-    console.log("Value of req.ip:", req.ip);
-    const{email, password} = req.body;
-    try{
-        //check email ID
-        if(!email || !password) return res.status(400).json({success:false, error:"Email and password are required"});
-        const isValidUser = await isEmailExist(email);
-        if(!isValidUser) return res.status(404).json({success:false, error:"User doesn't exist, register first"});
-        console.log("Value of isValidUser form service:\n",isValidUser);
+// ================= LOGIN =================
+export const loginUserService = async (req, res) => {
+    const { email, password } = req.body;
 
-        if(!isValidUser.password) return res.status(400).json({success:false, error:'Password error'});
-        //check password
-        const isValidPassword = await bcrypt.compare(password, isValidUser.password);
-        if(!isValidPassword) return res.status(401).json({success:false, error:'Wrong Password'});
+    try {
+        if (!email || !password)
+            return res.status(400).json({ success:false ,error:"Email and password are required"});
 
-        const id = isValidUser.id;
+        const user = await findUserByEmail(email);
+        if (!user) return res.status(404).json({ success:false, error:"User doesn't exist, register first"});
         
-        //setting tokens
-        const tokens=tokenSetter(id);
-        setAuthCookie(res, tokens.refreshToken, tokens.accessToken);
 
-        //setting redis
-        await redisSet(`refresh:${id}`, tokens.refreshToken,{EX:Number(process.env.REDIS_REFRESH_EXPIRY)});
-        await redisSet(`session:${id}`, tokens.accessToken, {EX:3600});
+        const isValidPassword = await bcrypt.compare(password, user.password);
+        if (!isValidPassword)
+            return res.status(401).json({ success:false, error:'Wrong Password' });
 
-        return res.status(200).json({success:true, message:"Logged In", accessToken:tokens.accessToken, refreshToken:tokens.refreshToken});
+        const sessionId = crypto.randomUUID();
 
-    }catch(err){
-        logger.error("Error caught at Login Step:\n", err);
-        return res.status(500).json({success:false, error:err});
+        const accessToken = jwt.sign(
+            { id: user.id },
+            process.env.SECRET,
+            { expiresIn: process.env.ACCESS_EXPIRY }
+        );
+
+        const refreshToken = jwt.sign(
+            { id: user.id, sessionId },
+            process.env.REFRESH_SECRET,
+            { expiresIn: process.env.REFRESH_EXPIRY }
+        );
+        console.log(`Value of refreshToken:${refreshToken} and accessToken:${accessToken}`);
+
+        setAuthCookie(res, refreshToken, accessToken);
+
+        await redisSet(
+            `refresh:${user.id}:${sessionId}`,
+            refreshToken,
+            { EX: Number(process.env.REDIS_REFRESH_EXPIRY) }
+        );
+
+        return res.status(200).json({
+            success: true,
+            accessToken
+        });
+
+    } catch (err) {
+        logger.error("Login error:", err);
+        return res.status(500).json({ success:false });
     }
-}
-export const logoutUserService = async(req, res)=>{
-    try{
-        const verifyAsync = promisify(jwt.verify);
-        const token = req.cookies.accessToken;
-        if(!token) return res.status(400).json({success:false, message:"Token required."});
+};
+// ================= LOGOUT (PER DEVICE) =================
+export const logoutUserService = async (req, res) => {
+    console.log("Inside logoutUser Service");
+    try {
+        const { refreshToken } = req.cookies;
+        if (!refreshToken)
+            return res.status(401).json({ success:false });
 
-        const decoded = await verifyAsync(token, process.env.SECRET);
+        const decoded = jwt.verify(refreshToken, process.env.REFRESH_SECRET);
+        const { id, sessionId } = decoded;
+
+        await redisDel(`refresh:${id}:${sessionId}`);
+
         deleteAuthCookie(res);
 
-        await Promise.all([
-            redisDel(`refresh:${decoded.id}`),
-            redisDel(`session:${decoded.id}`)
-        ]);
+        return res.status(200).json({
+            success: true,
+            message: "Logged out"
+        });
 
-        return res.status(200).json({success:true, message:"Successfully logged out"});
-    }catch(err){
-        logger.error("Error found in the logout section:", err);
-        return res.status(500).json({success:false, message:"Error in logout section", error:err});
+    } catch (err) {
+        logger.error("Logout error:", err);
+        return res.status(403).json({ success:false });
     }
-}
+};
+// ================= REFRESH =================
+export const refreshTokenService = async (req, res) => {
+    const { refreshToken: oldToken } = req.cookies;
+    console.log(`Value of oldToken:${oldToken}`);
 
-export const refreshTokenService = async(req, res)=>{
-    const {refreshToken:oldToken} = req.cookies;
-    console.log('Value of req.cookies:', req.cookies);
-    console.log('Value of refershToken from refreshTokenservice:', oldToken);
+    if (!oldToken)
+        return res.status(401).json({ success:false });
 
-    if (!oldToken) return res.status(401).json({success:false, message:'Unauthorized'});
-
-    try{
+    try {
         const verifyAsync = promisify(jwt.verify);
         const decoded = await verifyAsync(oldToken, process.env.REFRESH_SECRET);
-        const id = decoded.id;
-        const storedToken = await redisGet(`refresh:${id}`);
 
-        if(!storedToken || storedToken!==oldToken){
-            await redisDel(`refresh:${id}`);
-            return res.status(403).json({success:false, message:'Invalid refresh token'});
+        const { id, sessionId: oldSessionId } = decoded;
+        console.log(`Value of oldSessionId:${oldSessionId}`);
+        const storedToken = await redisGet(`refresh:${id}:${oldSessionId}`);
+
+        if (!storedToken || storedToken !== oldToken) {
+            await redisDel(`refresh:${id}:${oldSessionId}`);
+            return res.status(403).json({ success:false });
         }
-        const newAccessToken = jwt.sign({id}, process.env.SECRET, {expiresIn:process.env.ACCESS_EXPIRY});
-        const newRefreshToken =jwt.sign({id}, process.env.REFRESH_SECRET, {expiresIn:process.env.REFRESH_EXPIRY});
 
+        const newSessionId = crypto.randomUUID();
 
+        const newAccessToken = jwt.sign(
+            { id },
+            process.env.SECRET,
+            { expiresIn: process.env.ACCESS_EXPIRY }
+        );
 
-        //setting Redis:
-        await redisSet(`refresh:${id}`, newRefreshToken,{EX:Number(process.env.REDIS_REFRESH_EXPIRY)});
-        // await redisSet(`session:${id}`, newAccessToken, {EX:3600});
-        setAuthCookie(res, newRefreshToken, newAccessToken)
+        const newRefreshToken = jwt.sign(
+            { id, sessionId: newSessionId },
+            process.env.REFRESH_SECRET,
+            { expiresIn: process.env.REFRESH_EXPIRY }
+        );
 
-        return res.status(200).json({success:true, accessToken:newAccessToken});
-    }catch(err){
-        return res.status(403).json({success:false, message:'Token expired or invalid'});
+        // rotate
+        await redisDel(`refresh:${id}:${oldSessionId}`);
+
+        await redisSet(
+            `refresh:${id}:${newSessionId}`,
+            newRefreshToken,
+            { EX: Number(process.env.REDIS_REFRESH_EXPIRY) }
+        );
+
+        setAuthCookie(res, newRefreshToken, newAccessToken);
+
+        return res.status(200).json({
+            success: true,
+            accessToken: newAccessToken
+        });
+
+    } catch (err) {
+        return res.status(403).json({ success:false });
     }
-}
+};
+
+
+// ================= LOGOUT ALL DEVICES =================
+export const logoutAllDevicesService = async (req, res) => {
+    try {
+        const { refreshToken } = req.cookies;
+        const decoded = jwt.verify(refreshToken, process.env.REFRESH_SECRET);
+
+        const { id } = decoded;
+
+        const keys = await redisClient.keys(`refresh:${id}:*`);
+
+        for (const key of keys) {
+            await redisDel(key);
+        }
+
+        deleteAuthCookie(res);
+
+        return res.status(200).json({
+            success: true,
+            message: "Logged out from all devices"
+        });
+
+    } catch (err) {
+        return res.status(500).json({ success:false });
+    }
+};
+
 export const generateOTPService = async (req, res) => {
   const otp = crypto.randomInt(1000, 9999).toString();
   
@@ -199,28 +291,32 @@ export const generateOTPService = async (req, res) => {
         console.log("Value of req.body", req.body);
         const emailAlreadyInUse = await findUserByEmail(req.body.email);
         console.log("Value of emailAlreadyInUse:\n", emailAlreadyInUse);
-        if(emailAlreadyInUse === 'User exists'&& req.body.type==='emailChange'){
-            return res.status(400).json({success:false, message:'Email already in use'});
+        if(emailAlreadyInUse && req.body.type==='emailChange'){
+            return res.status(400).json({success:false, error:'Email already in use'});
         }
         const result = await sendOTPEmail(req.body?.name, req.body?.email, otp);
         // if(!response.ok) return res.status(400).json({message:'Unable to send OTP, check email'});
         console.log("Value of res from generateOTservice", result);
-        if(result==='OTP sent Successfully!'){
+        if(result.success){
             console.log(`OTP for ${req.body.email}: ${otp}`);
             await redisSet(`otp:${req.body.email}`, otp, { EX: 300 });
             console.log("Inside if statemenmt");
-            return res.status(200).json({success:true, message:'OTP sent successfully'});
-        }else if(result==='Email is not valid'){
-            return res.status(404).json({success:false, message:'Email is not valid'});
+            return res.status(200).json({success:true, message:result.message});
+        }else if(!result.success){
+            return res.status(404).json({success:false, error:result.error});
         
         }else{
             console.log("Outside the if statement");
-            return res.status(404).json({success:false, message:'Failed to send OTP'});
+            return res.status(404).json({success:false, error:'Failed to send OTP'});
         }
 
     }catch(err){
-        console.error('OTP failure:\n', err);
-        return res.status(500).json({success:false, message:'Failed to send OTP'});
+        let errorMessage;
+        if (err instanceof Error){
+            errorMessage=err.message;
+        }
+        console.error('OTP failure:\n', errorMessage);
+        return res.status(500).json({success:false, error:errorMessage});
     }
 };
 export const verifyOTPService = async (req, res) => {
@@ -229,14 +325,15 @@ export const verifyOTPService = async (req, res) => {
 
   try{
     const storedOTP = await redisGet(`otp:${email}`);
-    console.log("Value of storedOTP:\n", storedOTP);
-    console.log("tyoe of stored otp and type of req.body.otp", typeof(storedOTP), typeof(req.body.otp))
-    if(!storedOTP || Number(storedOTP) !== otp) {
-        return res.status(401).json({ message: 'Invalid or expired OTP' });
+    console.log("Value of storedOTP:\n", storedOTP, typeof(storedOTP));
+
+    if(storedOTP!== otp) {
+        console.log(`checking if storedOTP===otp: ${storedOTP===otp}`);
+        return res.status(401).json({ success:false, error: 'Invalid or expired OTP' });
     }
     await redisDel(`otp:${email}`);
     if(!useForLogin){
-        return res.status(200).json({message:'OTP verified successfully'});
+        return res.status(200).json({success:true, message:'OTP verified successfully'});
     }
     const user = await findUserByEmail(email);
     // console.log("value of user froem authService verifyOTP:\n", user);
@@ -258,18 +355,18 @@ export const forgotPasswordService=async(req, res)=>{
         // console.log('Value fo result form forgetPasword fn:', result);
         
         if(result ==='OAUTH AC'){
-            return res.status(400).json({success:false, message:"Can't change password for OAUTH type accounts"});
+            return res.status(400).json({success:false, error:"Can't change password for OAUTH type accounts"});
         }
         if(!result){
-        return res.status(404).json({success:false, message:"User doesn't exists"})
+        return res.status(404).json({success:false, error:"User doesn't exists"})
         }
         else if(result==='Email is not valid'){
-            return res.status(400).json({success:false, message:'Email is not valid'})
+            return res.status(400).json({success:false, error:'Email is not valid'})
         }
         const token = jwt.sign({email}, process.env.SECRET, {expiresIn:'15m'});
         const isMailSent = await sendPasswordMagicLink(email, token);
         if(!isMailSent){
-            return res.status(404).json({success:false, message:'Failed to send magic link'});
+            return res.status(404).json({success:false, error:'Failed to send magic link'});
         }
         await redisSet(`resetPassword:${email}`, token, {EX:900});
         return res.status(200).json({success:true, message:'Magic link sent', token:token});

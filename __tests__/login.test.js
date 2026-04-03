@@ -23,6 +23,14 @@ jest.unstable_mockModule("../src/model/userModel.js", () => ({
   updateField: jest.fn(),
 }));
 
+  jest.unstable_mockModule("jsonwebtoken", () => ({
+  default: {
+    sign: jest.fn(() => "test-token-string"),
+    verify: jest.fn(() => ({ id: "test-id" }))
+  }
+}));
+
+
 // Mock DB
 jest.unstable_mockModule("../config/dbconnection.js", () => ({
   pgQuery: jest.fn(async (query, params) => {

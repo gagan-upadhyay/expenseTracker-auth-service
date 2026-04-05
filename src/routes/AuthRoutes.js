@@ -45,15 +45,3 @@ authRouter.get('/password-reset', validateMagicLinkMiddleware, resetPassword);
 // authRouter.get('/addColumn', addColumn)
 
 export default authRouter;
-
-
-// flow:
-// first user will go to /forgot-password
-// 
-// 
-// 
-// 
-// 
-// 
-// 
-// 

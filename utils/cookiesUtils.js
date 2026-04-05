@@ -3,7 +3,7 @@ const isProduction = process.env.NODE_ENV === 'production';
 export function setAuthCookie(res, refreshToken, accessToken){
     
     res.cookie('refreshToken', refreshToken, {
-        maxAge: 7 * 24 * 3600 * 1000, // 7 days
+        maxAge:process.env.REFRESH_COOKIE_EXPIRY,
         httpOnly: true,
         secure: isProduction, // localhost=HTTP => false
         sameSite:isProduction?"none":'lax', // required
@@ -12,15 +12,12 @@ export function setAuthCookie(res, refreshToken, accessToken){
 
     
     res.cookie('accessToken', accessToken, {
-        maxAge:15 * 24 * 3600 * 1000,  // 15 min
+        maxAge:process.env.ACCESS_COOKIE_EXPIRY,
         httpOnly: true,         // accessible to JS for middleware
         secure: isProduction, // localhost=HTTP => false
         sameSite: isProduction?'none':'lax', // required
         path: '/'
     });
-    // res.cookie('isLoggedIn', isLoggedIn, {
-
-    // })
 }
 
 export function deleteAuthCookie(res){

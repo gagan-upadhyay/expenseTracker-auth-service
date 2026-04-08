@@ -3,6 +3,7 @@ import { logger } from './logger.js';
 export const pool = new Pool({
     connectionString:process.env.POSTGRES_URL,
     max:10,
+    ssl:{rejectUnauthorized:false},
     idleTimeoutMillis:30000,
     connectionTimeoutMillis:20000,
 })

@@ -15,16 +15,28 @@ import { sendOTPEmail, sendPasswordMagicLink } from '../../utils/mailer.js';
 import { logger } from '../../config/logger.js';
 import { redisDel, redisGet, redisSet } from '../../utils/redisUtility.js';
 import { promisify } from 'util';
-
-
+import { error } from "console";
+//---------------------------------------------------------------
+const getLogContext =(req, context)=> ({
+    context: context, 
+    route:req.OriginalUrl,
+    method:req.method,
+    status:req.statusCode,
+    userId: req.user?.id, 
+    accountId: req.params.id, 
+    requestId: req.headers['x-request-id']
+});
 
 // ================= REGISTER =================
 export const registerUserService = async (req, res) => {
+    const logDetails = getLogContext(req, "AuthService:Register")
     const { firstName, lastName, email, password } = req.body;
 
     try {
         const existingUser = await findUserByEmail(email);
-        if (existingUser) return res.status(409).json({ message: 'User already exists' });
+        if (existingUser) {
+            logger.info('user already exists', logDetails);
+            return res.status(409).json({ message: 'User already exists' });}
 
         const hashedPassword = await bcrypt.hash(password, 12);
         const user = await insertUser({ firstName, lastName, email, hashedPassword, authType:'PASSWORD' });
@@ -51,37 +63,45 @@ export const registerUserService = async (req, res) => {
             { EX: Number(process.env.REDIS_REFRESH_EXPIRY) }
         );
 
+        logger.info('Successfully registered and logged in', logDetails);
         return res.status(201).json({
             accessToken,
             message: 'User registered successfully'
         });
 
     } catch (err) {
-        logger.error('Register error:', err);
+        logger.error('Critical error while registering', {...logDetails, error:err.message, stack:err.stack});
         return res.status(500).json({ success:false });
     }
 };
 
 
 const isEmailExist = async(email)=>{
+    const logDetails = getLogContext(req, "AuthService:EmailExistsCheck")
     try{
         const result = await findUserByEmail(email);
         console.log('Value of result from authService:\n', result);
         if(result.auth_type ==='GOOGLE'){
+            logger.warn('User already registered with Google', logDetails);
             return 'OAUTH AC'
         }
         return result;
     }catch(err){
+        logger.error('Issue while validating email', {...logDetails, error:err.message, stack:err.stack});
         console.error('Error while validating email', err);
     }
 }
 
 export const registerUserWithOAuthService = async(req, res)=>{
+    const logDetails = getLogContext(req, "AuthService:RegisterWithOAUTH");
+
     const tokenID = req.headers.authorization;
     console.log("Value of tokenID", tokenID);
 
-    if(!tokenID || !tokenID.startsWith("Bearer ")) return res.status(401).json({message:'Missing or malformed token'});
-
+    if(!tokenID || !tokenID.startsWith("Bearer ")) {
+        logger.warn("Missing/Malformed OAUTH token", logDetails);
+        return res.status(401).json({message:'Missing or malformed token'});
+    }
     console.log("value of tokenID.slice(7)", tokenID.slice(7));
     try{
         const ticket = await OAuthClient.verifyIdToken({
@@ -90,7 +110,10 @@ export const registerUserWithOAuthService = async(req, res)=>{
         });
 
         const payload = ticket.getPayload();
-        if(payload.aud !== process.env.GOOGLE_CLIENT_ID) return res.status(401).json({message:'Unauthorized'});
+        if(payload.aud !== process.env.GOOGLE_CLIENT_ID) {
+            logger.warn("payloadAud didn't match clientID", logDetails);
+            return res.status(401).json({message:'Unauthorized'})
+        }
         
         const existingUser = await findUserByEmail(payload.email);
         console.log("Value of existingUser", existingUser);
@@ -106,8 +129,7 @@ export const registerUserWithOAuthService = async(req, res)=>{
             //setting redis session and refresh
             await redisSet(`session:${existingUser.id}`, tokens.accessToken, {'EX':3600});
             await redisSet(`refresh:${existingUser.id}`, tokens.refreshToken,{EX:Number(process.env.REDIS_REFRESH_EXPIRY)});
-
-
+            logger.info('existing user logged in', logDetails);
             return res.status(200).json({message:'Logged in successfully',tokens});
 
         }else{
@@ -117,31 +139,40 @@ export const registerUserWithOAuthService = async(req, res)=>{
 
             redisSet(`session:${result.id}`, tokens.accessToken, {'EX':3600});
             redisSet(`refresh:${result.id}`, tokens.refreshToken, {EX:Number(process.env.REDIS_REFRESH_EXPIRY)});
-
+            logger.info('New User logged in using google Oauth',logDetails);
             return res.status(200).json({message:'Logged In successfully'});
         }
 
     }catch(err){
-        logger.error("Error while logging with Google Oauth2", err);
+        logger.error("Error while logging with Google Oauth2", {...logDetails, error:err.message, stack:err.stack});
         return res.status(500).json({message:'Something went wrong! Please try again later'});
     }
 }
 
 // ================= LOGIN =================
 export const loginUserService = async (req, res) => {
+    const logDetails = getLogContext(req, "AuthService:Login");
     const { email, password } = req.body;
 
     try {
-        if (!email || !password)
+        if (!email || !password){
+            logger.warn('No email and password provided', logDetails);
             return res.status(400).json({ success:false ,error:"Email and password are required"});
+        }
+            
 
         const user = await findUserByEmail(email);
-        if (!user) return res.status(404).json({ success:false, error:"User doesn't exist, register first"});
+        if (!user) {
+            logger.warn("User doesn't exists", logDetails);
+            return res.status(404).json({ success:false, error:"User doesn't exist, register first"});}
         
 
         const isValidPassword = await bcrypt.compare(password, user.password);
-        if (!isValidPassword)
-            return res.status(401).json({ success:false, error:'Wrong Password' });
+        if (!isValidPassword){
+            logger.warn('Wrong Password', logDetails);
+            return res.status(401).json({ success:false, error:'Wrong Password' })
+        }
+            
 
         const sessionId = crypto.randomUUID();
 
@@ -165,24 +196,28 @@ export const loginUserService = async (req, res) => {
             refreshToken,
             { EX: Number(process.env.REDIS_REFRESH_EXPIRY) }
         );
-
+        logger.info('Logged in successfully', logDetails);
         return res.status(200).json({
             success: true,
             accessToken
         });
 
     } catch (err) {
-        logger.error("Login error:", err);
+        logger.error("Critical login error", {...logDetails, error:err.message, stack:err.stack});
         return res.status(500).json({ success:false });
     }
 };
+
 // ================= LOGOUT (PER DEVICE) =================
 export const logoutUserService = async (req, res) => {
-    console.log("Inside logoutUser Service");
+    const logDetails = getLogContext(req, "AuthService:LogoutService")
     try {
         const { refreshToken } = req.cookies;
-        if (!refreshToken)
+        if (!refreshToken){
+            logger.warn('No refresh token', logDetails);
             return res.status(401).json({ success:false });
+        }
+            
 
         const decoded = jwt.verify(refreshToken, process.env.REFRESH_SECRET);
         const { id, sessionId } = decoded;
@@ -190,25 +225,28 @@ export const logoutUserService = async (req, res) => {
         await redisDel(`refresh:${id}:${sessionId}`);
 
         deleteAuthCookie(res);
-
+        logger.info('Logout successfully', logDetails);
         return res.status(200).json({
             success: true,
             message: "Logged out"
         });
 
     } catch (err) {
-        logger.error("Logout error:", err);
+        logger.error("Logout error", {...logDetails,error:err.message, stack:err.stack});
         return res.status(403).json({ success:false });
     }
 };
+
 // ================= REFRESH =================
 export const refreshTokenService = async (req, res) => {
+    const logDetails = getLogContext(req, "AuthService:RefreshToken");
     const { refreshToken: oldToken } = req.cookies;
     console.log(`Value of oldToken:${oldToken}`);
 
-    if (!oldToken)
+    if (!oldToken){
+        logger.warn('No refresh Token present', logDetails);
         return res.status(401).json({ success:false });
-
+    }
     try {
         const verifyAsync = promisify(jwt.verify);
         const decoded = await verifyAsync(oldToken, process.env.REFRESH_SECRET);
@@ -219,6 +257,7 @@ export const refreshTokenService = async (req, res) => {
 
         if (!storedToken || storedToken !== oldToken) {
             await redisDel(`refresh:${id}:${oldSessionId}`);
+            logger.warn('Token mismatch', logDetails);
             return res.status(403).json({ success:false });
         }
 
@@ -247,12 +286,14 @@ export const refreshTokenService = async (req, res) => {
 
         setAuthCookie(res, newRefreshToken, newAccessToken);
 
+        logger.info('Token refreshed', logDetails);
         return res.status(200).json({
             success: true,
             accessToken: newAccessToken
         });
 
     } catch (err) {
+        logger.error('Critical error in refresh token', {...logDetails, error:err.message, stack:err.stack});
         return res.status(403).json({ success:false });
     }
 };
@@ -260,6 +301,7 @@ export const refreshTokenService = async (req, res) => {
 
 // ================= LOGOUT ALL DEVICES =================
 export const logoutAllDevicesService = async (req, res) => {
+    const logDetails = getLogContext(req, "AuthService:LogoutAllDevices");
     try {
         const { refreshToken } = req.cookies;
         const decoded = jwt.verify(refreshToken, process.env.REFRESH_SECRET);
@@ -274,17 +316,20 @@ export const logoutAllDevicesService = async (req, res) => {
 
         deleteAuthCookie(res);
 
+        logger.info('Logged out from all devices successfully', logDetails);
         return res.status(200).json({
             success: true,
             message: "Logged out from all devices"
         });
 
     } catch (err) {
+        logger.error('Critical error from log out all devices', {...logDetails, error:err.message, stack:err.stack});
         return res.status(500).json({ success:false });
     }
 };
 
 export const generateOTPService = async (req, res) => {
+    const logDetails = getLogContext(req, "AuthService:GenerateOTP")
   const otp = crypto.randomInt(1000, 9999).toString();
   
   try{
@@ -292,6 +337,7 @@ export const generateOTPService = async (req, res) => {
         const emailAlreadyInUse = await findUserByEmail(req.body.email);
         console.log("Value of emailAlreadyInUse:\n", emailAlreadyInUse);
         if(emailAlreadyInUse && req.body.type==='emailChange'){
+            logger.warn('Email already in use', logDetails);
             return res.status(400).json({success:false, error:'Email already in use'});
         }
         const result = await sendOTPEmail(req.body?.name, req.body?.email, otp);
@@ -301,11 +347,14 @@ export const generateOTPService = async (req, res) => {
             console.log(`OTP for ${req.body.email}: ${otp}`);
             await redisSet(`otp:${req.body.email}`, otp, { EX: 300 });
             console.log("Inside if statemenmt");
+            logger.info(`OTP sent to email:${req.body.email}`, logDetails);
             return res.status(200).json({success:true, message:result.message});
         }else if(!result.success){
+            logger.warn(`unable to send OTP to email:${req.body.email}`, logDetails);
             return res.status(404).json({success:false, error:result.error});
         
         }else{
+            logger.error(`Failed to send OTP to email:${req.body.email}`, logDetails);
             console.log("Outside the if statement");
             return res.status(404).json({success:false, error:'Failed to send OTP'});
         }
@@ -316,10 +365,13 @@ export const generateOTPService = async (req, res) => {
             errorMessage=err.message;
         }
         console.error('OTP failure:\n', errorMessage);
+        logger.error('Critical error in sending OTP',{...logDetails, error:errorMessage, stack, stack:err.stack});
         return res.status(500).json({success:false, error:errorMessage});
     }
 };
+
 export const verifyOTPService = async (req, res) => {
+    const logDetails = getLogContext(req, "AuthService:VerifyOTP");
   const { email, otp, useForLogin } = req.body;
   console.log("value of req.body from verfiyOTP:\n", req.body);
 
@@ -328,11 +380,13 @@ export const verifyOTPService = async (req, res) => {
     console.log("Value of storedOTP:\n", storedOTP, typeof(storedOTP));
 
     if(storedOTP!== otp) {
+        logger.warn('Invalid or expired OTP', logDetails);
         console.log(`checking if storedOTP===otp: ${storedOTP===otp}`);
         return res.status(401).json({ success:false, error: 'Invalid or expired OTP' });
     }
     await redisDel(`otp:${email}`);
     if(!useForLogin){
+        logger.info('OTP sent successfully', logDetails);
         return res.status(200).json({success:true, message:'OTP verified successfully'});
     }
     const user = await findUserByEmail(email);
@@ -340,37 +394,46 @@ export const verifyOTPService = async (req, res) => {
     if (!user) await insertEmailOnlyUser(email);
     const authToken = jwt.sign({ email }, process.env.SECRET, { expiresIn: '1h' });
     await redisSet(`session:${email}`, authToken, { EX: 3600 });
+    logger.info('OTP verified successfully', logDetails);
     return res.status(200).json({ authToken });
 
   }catch(err){
+    logger.error('Critical error in Verify OTP', {...logDetails, error:err.message, stack:err.stack});
     console.error("Error at verifying the OTP", err);
     return res.status(500).json({message:'Something went wrong, please try again later.'});
   }
 };
 
 export const forgotPasswordService=async(req, res)=>{
+    const logDetails = getLogContext(req, "AuthService:ForgotPassword")
     try{
         const {email} = req.body;
         const result = await isEmailExist(email);
         // console.log('Value fo result form forgetPasword fn:', result);
         
         if(result ==='OAUTH AC'){
+            logger.warn('User registered with OAuth', logDetails);
             return res.status(400).json({success:false, error:"Can't change password for OAUTH type accounts"});
         }
         if(!result){
+            logger.warn("User doesn't exists", logDetails);
         return res.status(404).json({success:false, error:"User doesn't exists"})
         }
         else if(result==='Email is not valid'){
+            logger.warn("Emil is not valid", logDetails);
             return res.status(400).json({success:false, error:'Email is not valid'})
         }
         const token = jwt.sign({email}, process.env.SECRET, {expiresIn:'15m'});
         const isMailSent = await sendPasswordMagicLink(email, token);
         if(!isMailSent){
+            logger.warn("Failed to send magicLink", logDetails);
             return res.status(404).json({success:false, error:'Failed to send magic link'});
         }
         await redisSet(`resetPassword:${email}`, token, {EX:900});
+        logger.info("MagicLink sent successfully", logDetails);
         return res.status(200).json({success:true, message:'Magic link sent', token:token});
     }catch(err){
+        logger.error("Critical Error: SendMagic Link", {...logDetails, error:err.message, stack:err.stack});
         console.error('Error while changing password', err);
         return res.status(500).json({message:'Something went wrong, please try again later.'})
     }

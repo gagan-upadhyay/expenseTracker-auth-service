@@ -27,15 +27,30 @@ const corsOptions = {
     credentials:true
 }
 
-// app.use(cors(corsOptions));
+// if(process.env.NODE_ENV==='development') app.use(cors(corsOptions));
 app.use(express.json());
 app.use(cookieParser());
+app.use(compression());
 app.use(helmetConfig)
 
-if(process.env.NODE_ENV === 'development'){
-    app.use(morgan('dev'));
+// if(process.env.NODE_ENV === 'development'){
+//     app.use(morgan('dev'));
+// }
+
+
+const morganFormat = process.env.NODE_ENV==='production'?'combined':'dev';
+
+if(process.env.NODE_ENV==='development'){
+    app.use(cors(corsOptions))
 }
-app.use(compression());
+
+app.use(morgan(morganFormat,{
+    stream:{
+        write:(message)=>logger.info(message.trim(), {context:'HTTP'})
+    }
+}));
+
+
 app.use((err, req, res, next)=>{
     console.error(err.stack);
     logger.error("Caught application level error: ",err)

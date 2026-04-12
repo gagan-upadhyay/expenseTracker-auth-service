@@ -12,7 +12,7 @@ export function setAuthCookie(res, refreshToken, accessToken){
 
     
     res.cookie('accessToken', accessToken, {
-        maxAge:process.env.ACCESS_COOKIE_EXPIRY,
+        maxAge:isProduction? process.env.ACCESS_COOKIE_EXPIRY:process.env.NON_PROD_ACCESS_COOKIE_EXPIRY,
         httpOnly: true,         // accessible to JS for middleware
         secure: isProduction, // localhost=HTTP => false
         sameSite: isProduction?'none':'lax', // required

@@ -175,13 +175,15 @@ export const loginUserService = async (req, res) => {
             
 
         const sessionId = crypto.randomUUID();
-
+        const isDev = process.env.NODE_ENV==='development'
         const accessToken = jwt.sign(
             { id: user.id },
             process.env.SECRET,
-            { expiresIn: process.env.ACCESS_EXPIRY }
+            { expiresIn:process.env.ACCESS_EXPIRY }
         );
-
+        //isDev ? process.env.DEV_ACCESS_EXPIRY:
+        //isDev? process.env.DEV_REFRESH_EXPIRY:
+        
         const refreshToken = jwt.sign(
             { id: user.id, sessionId },
             process.env.REFRESH_SECRET,

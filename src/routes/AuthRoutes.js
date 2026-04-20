@@ -17,6 +17,8 @@ import { rateLimiter } from '../../middleware/rateLimiter.js';
 import { verifySession } from '../../middleware/verifySession.js';
 import { registerValidator, validateMagicLinkMiddleware } from '../../middleware/validator.js';
 import { setupHealthCheckUp } from '../../utils/setupHealthcheckUp.js';
+import { subscribe, unsubscribe, sendTest, listAllSubscriptions, cleanupSubscriptions } from '../controllers/notificationController.js';
+import adminAuth from '../adminAuth.js';
 
 const authRouter = express.Router();
 //change made in the other tab
@@ -43,5 +45,14 @@ authRouter.get('/password-reset', validateMagicLinkMiddleware, resetPassword);
 // authRouter.post('/logs', clientLogs)
 // authRouter.get('/health', setupHealthCheckUp);
 // authRouter.get('/addColumn', addColumn)
+
+authRouter.post('/notifications/subscribe', verifySession, subscribe);
+authRouter.post('/notifications/unsubscribe', verifySession, unsubscribe);
+// test endpoint to send a notification (can be restricted to admins)
+authRouter.post('/notifications/send-test', verifySession, sendTest);
+
+// Admin-only endpoints
+authRouter.get('/notifications/list', adminAuth, listAllSubscriptions);
+authRouter.post('/notifications/cleanup', adminAuth, cleanupSubscriptions);
 
 export default authRouter;

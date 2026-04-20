@@ -14,7 +14,8 @@
   "scripts": {
     "test": "cross-env NODE_ENV=test node --experimental-vm-modules ./node_modules/jest/bin/jest.js --runInBand --detectOpenHandles",
     "dev": "nodemon start",
-    "start": "node index.js"
+    "start": "node index.js",
+    "db:init-push": "node ./src/initPushTable.js"
   },
   "dependencies": {
     "@dotenvx/dotenvx": "^1.49.0",
@@ -39,7 +40,8 @@
     "pg": "^8.16.3",
     "redis": "^5.6.0",
     "robust-email-validator": "^1.0.1",
-    "winston": "^3.17.0"
+    "winston": "^3.17.0",
+    "web-push": "^3.5.0"
   },
   "devDependencies": {
     "cross-env": "^10.1.0",

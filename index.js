@@ -22,7 +22,9 @@ const corsOptions = {
         'http://localhost:3000',
         'https://expense-tracker-git-newbranch-gagans-projects-00cb1a77.vercel.app',
         'https://expense-tracker-self-rho-12.vercel.app',
-        'https://expense-tracker-gagans-projects-00cb1a77.vercel.app'
+        'https://expense-tracker-gagans-projects-00cb1a77.vercel.app',
+        'http://192.168.0.185:3000',
+        'http://172.31.144.1:3000',
     ],
     credentials:true
 }
@@ -39,10 +41,10 @@ app.use(helmetConfig)
 
 
 const morganFormat = process.env.NODE_ENV==='production'?'combined':'dev';
-
-if(process.env.NODE_ENV==='development'){
-    app.use(cors(corsOptions))
-}
+app.use(cors(corsOptions))
+// if(process.env.NODE_ENV==='development'){
+//     app.use(cors(corsOptions))
+// }
 
 app.use(morgan(morganFormat,{
     stream:{
@@ -80,5 +82,20 @@ if(process.env.NODE_ENV!=="test"){
         async()=>await getRedisClient.disconnect(),
         async()=>await pool.end()
     ]);
+
+    // Periodic cleanup for old push subscriptions
+    try{
+      const { cleanupOldSubscriptions } = await import('./src/subscriptionModel.js');
+      const ttl = parseInt(process.env.SUBSCRIPTION_TTL_DAYS || '90', 10);
+      const intervalMs = parseInt(process.env.SUBSCRIPTION_CLEANUP_INTERVAL_MS || String(24*60*60*1000), 10);
+      // Run once at startup
+      cleanupOldSubscriptions(ttl).then((count)=> logger.info(`Push subscription cleanup ran on startup, deleted: ${count}`)).catch(err=>logger.error('Cleanup failed at startup', err));
+      // Schedule
+      setInterval(()=>{
+        cleanupOldSubscriptions(ttl).then(count=> logger.info(`Periodic push subscription cleanup deleted: ${count}`)).catch(err=>logger.error('Periodic cleanup failed', err));
+      }, intervalMs);
+    }catch(err){
+      logger.error('Failed to schedule subscription cleanup', err);
+    }
 }
 export {app, server};
